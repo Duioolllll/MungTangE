@@ -24,7 +24,7 @@ jobs:
       - name: Verify all local data and build site
         run: npm run verify
       - name: Upload immutable Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: site
 
