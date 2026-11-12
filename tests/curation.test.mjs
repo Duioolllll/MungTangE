@@ -8,7 +8,7 @@ const ok={
  trigger:'Use when implementing forms that must work with keyboard input.',
  practices:[
   {when:'The form needs keyboard-operable actions.',action:'Confirm each submit control can be focused and activated without a mouse.',check:'Try keyboard-only navigation and record whether submission succeeds.',evidence_lines:[6,7]},
-  {when:'The task demands an evidence-based review.',action:'Separate suggested checks from checks actually executed in a browser.',check:'Ensure any unrun test is reported as NOT RUN.',evidence_lines:[8]}
+  {when:'The task demands an evidence-based review.',action:'Separate tests actually executed in a browser from tests merely described.',check:'Ensure any unrun test is reported as NOT RUN.',evidence_lines:[8]}
  ],caveats:[],related_tags:['forms']
 };
 test('accepts structurally valid independent action and evidence',()=>{
