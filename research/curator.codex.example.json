@@ -1,0 +1,20 @@
+{
+  "model": "YOUR_ACTUAL_CODEX_MODEL",
+  "command": "codex",
+  "args": [
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "--model",
+    "{model}",
+    "--output-last-message",
+    "{outputFile}",
+    "-"
+  ],
+  "stdin_prompt": true,
+  "timeout_seconds": 900,
+  "max_source_chars": 150000,
+  "env": {}
+}
