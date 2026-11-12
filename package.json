@@ -27,7 +27,9 @@
     "lint:catalog": "node scripts/verify-catalog.mjs",
     "verify": "npm run check:skill && npm run check && npm run build:site && npm run lint:catalog",
     "sync:skill": "node scripts/sync-skill.mjs",
-    "check:skill": "node scripts/sync-skill.mjs --check"
+    "check:skill": "node scripts/sync-skill.mjs --check",
+    "analyze:sources": "node scripts/analyze-upstream-skills.mjs",
+    "check:synthesis": "node scripts/verify-synthesis.mjs"
   },
   "engines": {
     "node": ">=20"
