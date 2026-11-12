@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FAQ smoke fixture</title>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;max-width:720px;margin:3rem auto;padding:0 16px;color:#102b2c;background:white}
+button{display:block;width:100%;margin:0.7rem 0;padding:12px 18px;text-align:left;border:1px solid #276273;background:#e1f7fa;color:#113a43;border-radius:8px;cursor:pointer}
+button:focus-visible{outline:3px solid #073f80;outline-offset:3px}
+[data-testid="faq-panel"]{padding:1rem;border:1px solid #bddbe1}
+</style>
+</head>
+<body>
+<main><h1>자주 묻는 질문</h1>
+<section aria-label="질문과 답변">
+<button data-testid="faq-toggle" aria-expanded="false" aria-controls="faq1" id="b1">이 서비스는 무엇인가요?</button>
+<div data-testid="faq-panel" id="faq1" aria-labelledby="b1" hidden><p>웹 UI를 검사하는 예제입니다.</p></div>
+<button data-testid="faq-toggle" aria-expanded="false" aria-controls="faq2" id="b2">언제 사용할 수 있나요?</button>
+<div data-testid="faq-panel" id="faq2" aria-labelledby="b2" hidden><p>언제든지 사용할 수 있습니다.</p></div>
+<button data-testid="faq-toggle" aria-expanded="false" aria-controls="faq3" id="b3">비용이 있나요?</button>
+<div data-testid="faq-panel" id="faq3" aria-labelledby="b3" hidden><p>이 데모는 무료입니다.</p></div>
+</section></main>
+<script>
+document.querySelectorAll('[data-testid="faq-toggle"]').forEach(button=>{
+ button.addEventListener('click',()=>{
+  const panel=document.getElementById(button.getAttribute('aria-controls'));
+  const open=button.getAttribute('aria-expanded')==='true';
+  button.setAttribute('aria-expanded',String(!open));
+  panel.hidden=open;
+ });
+});
+</script>
+</body>
+</html>
