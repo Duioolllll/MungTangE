@@ -17,3 +17,5 @@ References are **optional**: read no more than two targeted sections when the co
 The source-specific 300-card router is structural source indexing, NOT 300 semantic expert reviews. The optional semantic curator requires an explicit --execute with a supplied external model runner; never run it automatically as CI or call it an independent human review.
 
 Brand-sensitive landing pages: consult `skills/mungtange/references/BRAND-DIRECTION.md` and, if actual browser screenshots can be inspected, `VISUAL-LOOP.md`. These references remain optional, count toward the two-reference budget and do not authorize fake proof or screenshot claims. Prefer real framework code/docs over generic SaaS visuals for developer projects.
+
+For open-ended premium landing designs, apply a 3-way narrative/hero/proof competition and project-derived Brand DNA before implementation. The Visual Critic Loop captures 1440, 768 and 390 pixels; actual screenshots must be viewed for subjective findings. Keep references optional and honor the two-reference limit.

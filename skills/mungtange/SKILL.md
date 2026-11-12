@@ -83,10 +83,13 @@ Before coding substantial UI, identify the **product archetype and trust
 mechanism** (e.g. developer framework → runnable code/docs; SaaS → real
 workflow/outcomes). Write an internal creative thesis:
 "This should feel like [specific identity] for [user/context], expressed
-through [type, composition, color, interaction]." For brand-sensitive
-work, compare materially different **content/composition/proof** directions,
-not color swaps; choose by relevance, ownability, accessibility and effort.
+through [type, composition, color, interaction]." For an open-ended brand-sensitive landing, run **Design Direction Competition**:
+compare **three** materially different narrative/hero/proof concepts, select
+one with project-grounded trade-offs, then apply **Brand Identity Engine**:
+consistent type roles, semantic tokens, ownable motif, layout grammar,
+real proof and CTA. Don't mistake palette changes for distinct directions.
 See optional [BRAND-DIRECTION.md](references/BRAND-DIRECTION.md).
+Skip competition if the user already selected a direction.
 
 Implement the smallest end-to-end journey first. Use semantic HTML,
 accessible names, keyboard focus, clear hierarchy, realistic content,
@@ -95,13 +98,13 @@ Reuse existing components and dependencies. Never call a dead button
 "functional" or a screenshot recreation "pixel perfect" without a real
 comparison.
 
-For brand-sensitive launches, **capture → inspect screenshots → fix an
-observed visual defect → re-capture** when real browser and image review
-tools exist; compare against the original brand thesis. A changed pixel
-count is not improved visual quality. See optional
+For launch-quality work, use **Visual Critic Loop** if real screenshot
+inspection tools exist: **1440 / 768 / 390px** capture → view screenshots →
+fix observed brand/layout defects → recapture and verify. Pixel changes
+cannot certify better design. See optional
 [VISUAL-LOOP.md](references/VISUAL-LOOP.md).
 
-When possible, inspect approximately **375 / 768 / 1440 px** layouts,
+When possible, inspect **1440 / 768 / 390 px** layouts,
 keyboard navigation, contrast, zoom, overflow, errors and browser
 console. Measure performance before claiming improvement. Unavailable
 tools mean NOT RUN, not invented results.
@@ -161,9 +164,9 @@ references merely because a job is STANDARD or DEEP.
 - [SECURITY.md](references/SECURITY.md):
   untrusted sources, credentials and permission boundaries.
 - [BRAND-DIRECTION.md](references/BRAND-DIRECTION.md):
-  developer frameworks versus SaaS, distinct hero directions and proof.
+  three-way Design Direction Competition and Brand Identity Engine.
 - [VISUAL-LOOP.md](references/VISUAL-LOOP.md):
-  screenshot-based visual critique and targeted iteration.
+  Visual Critic Loop with actual 1440/768/390 captures and repair.
 
 Prefer the **narrowest applicable section**, not an entire catalog.
 Apply techniques only when useful to the current work; no citation,

@@ -41,9 +41,9 @@ CLI·외부 모델 호출·서브에이전트가 없어도 지침 자체는 작�
 
 ## 브랜드 특화 랜딩페이지 업그레이드
 
-개발자 프레임워크·오픈소스 라이브러리·개발 운영 도구·B2B SaaS는 **구매/설치 의사결정에 필요한 증거가 다릅니다.** 새 [BRAND-DIRECTION.md](skills/mungtange/references/BRAND-DIRECTION.md)는 제품 유형별 히어로·실제 증거·CTA·안티패턴을 구분하고, PyNext(Python + Rust 실험적 프레임워크)의 네 가지 서로 다른 아트 디렉션을 구체적으로 예시로 듭니다.
+개발자 프레임워크·오픈소스 라이브러리·개발 운영 도구·B2B SaaS는 **구매/설치 의사결정에 필요한 증거가 다릅니다.** 새 [BRAND-DIRECTION.md](skills/mungtange/references/BRAND-DIRECTION.md)는 제품 유형별 히어로·실제 증거·CTA·안티패턴을 구분하고, PyNext(Python + Rust 실험적 프레임워크)의 **세 가지 경쟁 디자인(Design Direction Competition)**을 실제 근거·히어로·타이포·시그니처 모티프로 비교하고 최종 방향을 선정하는 예시를 제공합니다. **Brand Identity Engine**은 선택된 방향을 제품만의 일관된 시각 규칙으로 변환합니다.
 
-실제 디자인 수정이 필요하면 [VISUAL-LOOP.md](skills/mungtange/references/VISUAL-LOOP.md)에 따라 **스크린샷 기준선 → 시각적 자기평가 → 관찰된 문제의 국소 수정 → 동일 환경 재캡처**를 수행합니다. 브라우저가 있는 환경에서는 [선택형 캡처 CLI](scripts/visual-capture.mjs)가 화면별 PNG와 측정 사실을 저장합니다. 시각 품질 점수는 자동으로 만들어내지 않으며, 브라우저가 없으면 검증 결과를 NOT RUN으로 기록합니다.
+실제 디자인 수정이 필요하면 [VISUAL-LOOP.md](skills/mungtange/references/VISUAL-LOOP.md)에 따라 **1440·768·390px 스크린샷 → Visual Critic Loop → 관찰된 문제 수정 → 동일 환경 재검증**를 수행합니다. 브라우저가 있는 환경에서는 [선택형 캡처 CLI](scripts/visual-capture.mjs)가 화면별 PNG와 측정 사실을 저장합니다. 시각 품질 점수는 자동으로 만들어내지 않으며, 브라우저가 없으면 검증 결과를 NOT RUN으로 기록합니다.
 
 브라우저 설치 환경에서 테스트용 페이지로 **실제 캡처/비교 코드가 동작하는지** `npm run visual:smoke`로 검사할 수 있습니다. 이 테스트는 PyNext 랜딩의 품질 향상이나 MungTangE 점수 상승을 뜻하지 않습니다. 별도 Playwright 설치가 필요하며 일반 `npm run verify`에는 포함되지 않습니다.
 
