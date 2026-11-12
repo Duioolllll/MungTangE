@@ -79,11 +79,14 @@ issues block "ready to ship" regardless of visual quality.
 
 ## 4. Design and implementation decisions
 
-Before coding substantial UI, write an internal **creative thesis**:
+Before coding substantial UI, identify the **product archetype and trust
+mechanism** (e.g. developer framework → runnable code/docs; SaaS → real
+workflow/outcomes). Write an internal creative thesis:
 "This should feel like [specific identity] for [user/context], expressed
-through [type, composition, color, interaction]." Compare two genuinely
-different directions, then choose one on clarity, relevance,
-distinctiveness, accessibility and maintainability.
+through [type, composition, color, interaction]." For brand-sensitive
+work, compare materially different **content/composition/proof** directions,
+not color swaps; choose by relevance, ownability, accessibility and effort.
+See optional [BRAND-DIRECTION.md](skills/mungtange/references/BRAND-DIRECTION.md).
 
 Implement the smallest end-to-end journey first. Use semantic HTML,
 accessible names, keyboard focus, clear hierarchy, realistic content,
@@ -91,6 +94,12 @@ responsive layouts, meaningful feedback and reduced-motion behavior.
 Reuse existing components and dependencies. Never call a dead button
 "functional" or a screenshot recreation "pixel perfect" without a real
 comparison.
+
+For brand-sensitive launches, **capture → inspect screenshots → fix an
+observed visual defect → re-capture** when real browser and image review
+tools exist; compare against the original brand thesis. A changed pixel
+count is not improved visual quality. See optional
+[VISUAL-LOOP.md](skills/mungtange/references/VISUAL-LOOP.md).
 
 When possible, inspect approximately **375 / 768 / 1440 px** layouts,
 keyboard navigation, contrast, zoom, overflow, errors and browser
@@ -151,6 +160,10 @@ references merely because a job is STANDARD or DEEP.
   substantive UI review and evidence-based quality gates.
 - [SECURITY.md](skills/mungtange/references/SECURITY.md):
   untrusted sources, credentials and permission boundaries.
+- [BRAND-DIRECTION.md](skills/mungtange/references/BRAND-DIRECTION.md):
+  developer frameworks versus SaaS, distinct hero directions and proof.
+- [VISUAL-LOOP.md](skills/mungtange/references/VISUAL-LOOP.md):
+  screenshot-based visual critique and targeted iteration.
 
 Prefer the **narrowest applicable section**, not an entire catalog.
 Apply techniques only when useful to the current work; no citation,

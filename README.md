@@ -2,7 +2,7 @@
 
 **복잡한 스킬 실행기 대신, 프롬프트 하나로 디자인 → 개발 → 검증까지.**
 
-**[SKILLS.md 핵심 프롬프트](SKILLS.md)** · [스킬 설치용 SKILL.md](skills/mungtange/SKILL.md) · [실전 심화 가이드](skills/mungtange/references/DEEP-INTEGRATION.md)
+**[SKILLS.md 핵심 프롬프트](SKILLS.md)** · [스킬 설치용 SKILL.md](skills/mungtange/SKILL.md) · [브랜드 디자인 디렉션](skills/mungtange/references/BRAND-DIRECTION.md) · [실전 심화 가이드](skills/mungtange/references/DEEP-INTEGRATION.md)
 
 MungTangE는 웹디자인·프론트엔드·UX에 집중한 **프롬프트 중심 Agent Skill**입니다. AI가 작업을 이해하고 필요한 전문가 관점을 골라서 실제 구현과 검증을 한 흐름으로 수행하도록 설계했습니다.
 
@@ -38,6 +38,14 @@ BRIEF → EXPLORE → DESIGN → BUILD → VERIFY → DELIVER
 ~~~
 
 CLI·외부 모델 호출·서브에이전트가 없어도 지침 자체는 작동합니다. **실제 하위 에이전트가 있는 도구에서는 필요할 때만** 독립 작업으로 분리합니다. 도구가 없으면 제공 가능한 결과를 직접 만들고 실행하지 못한 검사는 명확히 표시합니다.
+
+## 브랜드 특화 랜딩페이지 업그레이드
+
+개발자 프레임워크·오픈소스 라이브러리·개발 운영 도구·B2B SaaS는 **구매/설치 의사결정에 필요한 증거가 다릅니다.** 새 [BRAND-DIRECTION.md](skills/mungtange/references/BRAND-DIRECTION.md)는 제품 유형별 히어로·실제 증거·CTA·안티패턴을 구분하고, PyNext(Python + Rust 실험적 프레임워크)의 네 가지 서로 다른 아트 디렉션을 구체적으로 예시로 듭니다.
+
+실제 디자인 수정이 필요하면 [VISUAL-LOOP.md](skills/mungtange/references/VISUAL-LOOP.md)에 따라 **스크린샷 기준선 → 시각적 자기평가 → 관찰된 문제의 국소 수정 → 동일 환경 재캡처**를 수행합니다. 브라우저가 있는 환경에서는 [선택형 캡처 CLI](scripts/visual-capture.mjs)가 화면별 PNG와 측정 사실을 저장합니다. 시각 품질 점수는 자동으로 만들어내지 않으며, 브라우저가 없으면 검증 결과를 NOT RUN으로 기록합니다.
+
+브라우저 설치 환경에서 테스트용 페이지로 **실제 캡처/비교 코드가 동작하는지** `npm run visual:smoke`로 검사할 수 있습니다. 이 테스트는 PyNext 랜딩의 품질 향상이나 MungTangE 점수 상승을 뜻하지 않습니다. 별도 Playwright 설치가 필요하며 일반 `npm run verify`에는 포함되지 않습니다.
 
 ## 포함된 기능
 

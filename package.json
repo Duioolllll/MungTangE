@@ -35,7 +35,9 @@
     "knowledge:build": "node scripts/build-knowledge.mjs",
     "knowledge:verify": "node scripts/check-knowledge.mjs",
     "knowledge:curate": "node scripts/curate-knowledge.mjs",
-    "knowledge:index": "node scripts/compile-knowledge-index.mjs"
+    "knowledge:index": "node scripts/compile-knowledge-index.mjs",
+    "visual:smoke": "node scripts/visual-smoke.mjs",
+    "visual:contract": "node --test tests/visual-direction.test.mjs"
   },
   "engines": {
     "node": ">=20"
