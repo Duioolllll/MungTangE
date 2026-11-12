@@ -66,7 +66,7 @@ npx skills add Duioolllll/MungTangE --skill mungtange
 
 기존 `mungtange` Node CLI는 호환성을 위해 저장소에 남겨두었지만, **프롬프트를 사용하거나 AI 작업을 수행하는 데 필수가 아닙니다**. CLI는 AI를 직접 실행하는 엔진이 아닙니다.
 
-## 정직한 한계
+## 한계
 
 프롬프트는 AI의 작업 절차를 강화하지만, 도구 권한을 새로 만들어주지는 않습니다. 브라우저가 없는 AI는 실제 화면을 검증할 수 없고, GitHub 쓰기 권한이 없으면 PR을 만들 수 없습니다. MungTangE는 **하지 않은 검사를 통과했다고 말하지 않도록** 설계되어 있습니다.
 
