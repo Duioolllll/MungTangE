@@ -5,7 +5,7 @@
 For user requests, follow the prompt's task router, six practical gates, design/build/QA discipline, and truthful handoff. Perform actual work with available tools; do not simulate tool calls, independent agents, tests, screenshots, CI or deployment. If an action is unavailable, label it NOT RUN or BLOCKED.
 
 **When editing this repository:**
-- Keep `SKILLS.md` and `skills/mungtange/SKILL.md` identical.
+- Edit only canonical `SKILLS.md`, run `npm run sync:skill` to generate `skills/mungtange/SKILL.md`, and use `npm run check:skill` in CI to reject drift.
 - Preserve the existing optional CLI and 300-entry link-only catalog unless a scoped change requires otherwise.
 - Never automatically execute or bulk-import upstream skill code.
 - Keep Pages keyboard-accessible and use textContent for external metadata.

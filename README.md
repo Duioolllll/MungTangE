@@ -62,7 +62,7 @@ CLI·외부 모델 호출·서브에이전트가 없어도 지침 자체는 작�
 npx skills add Duioolllll/MungTangE --skill mungtange
 ~~~
 
-표준 설치기는 `skills/mungtange/SKILL.md`를 읽습니다. 이 파일은 루트 `SKILLS.md`와 **동일한 독립형 프롬프트**이므로 별도 references 파일이나 CLI가 필요 없습니다.
+표준 설치기는 `skills/mungtange/SKILL.md`를 읽습니다. 이 파일은 루트 `SKILLS.md`에서 `npm run sync:skill`로 생성되는 **동일한 독립형 프롬프트**이므로 별도 references 파일이나 CLI가 필요 없습니다.
 
 기존 `mungtange` Node CLI는 호환성을 위해 저장소에 남겨두었지만, **프롬프트를 사용하거나 AI 작업을 수행하는 데 필수가 아닙니다**. CLI는 AI를 직접 실행하는 엔진이 아닙니다.
 
@@ -72,4 +72,4 @@ npx skills add Duioolllll/MungTangE --skill mungtange
 
 ## 개발 및 기여
 
-기존 CLI·카탈로그·GitHub Pages 기능은 유지됩니다. 저장소 개발 시 `npm run verify`로 기존 코드와 프롬프트 동기화를 검증합니다. 외부 SKILL.md의 라이선스는 해당 프로젝트에 남아 있으며 MungTangE에 자동 귀속되지 않습니다. [기여 가이드](CONTRIBUTING.md) · [보안 정책](SECURITY.md) · [라이선스](LICENSE).
+기존 CLI·카탈로그·GitHub Pages 기능은 유지됩니다. 프롬프트 수정은 루트 `SKILLS.md`만 편집한 뒤 `npm run sync:skill`로 설치용 사본을 생성합니다. `npm run verify`가 두 파일의 일치 여부와 기존 코드를 검증합니다. 외부 SKILL.md의 라이선스는 해당 프로젝트에 남아 있으며 MungTangE에 자동 귀속되지 않습니다. [기여 가이드](CONTRIBUTING.md) · [보안 정책](SECURITY.md) · [라이선스](LICENSE).

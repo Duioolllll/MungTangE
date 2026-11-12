@@ -1,5 +1,7 @@
 # The MungTangE pipeline — researched design decisions
 
+> **Optional deep reference.** Historical run IDs, manifests, JSON stage gates and CLI commands below describe the legacy Node CLI, **not requirements of the prompt-first SKILL.md**.
+
 ## Source provenance and specific adaptations
 
 This pipeline is a **synthesis**, not a copy or official endorsement. Read and credit

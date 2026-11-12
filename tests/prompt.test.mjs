@@ -5,28 +5,21 @@ import { readFileSync } from 'node:fs';
 const root = readFileSync(new URL('../SKILLS.md', import.meta.url), 'utf8');
 const installed = readFileSync(new URL('../skills/mungtange/SKILL.md', import.meta.url), 'utf8');
 
-test('root guide and installable skill are identical standalone prompts', () => {
+test('canonical source and generated installable skill match', () => {
   assert.equal(root, installed);
 });
-test('prompt includes router, autonomous build, QA and truthful evidence', () => {
-  for (const pattern of [
-    /^name: mungtange$/m,
-    /runtime: "none"/,
-    /INSTANT ROUTER/,
-    /SPECIALIST ROUTER/,
-    /SIX-GATE ENGINE/,
-    /VISUAL DIRECTION/,
-    /BUILD DISCIPLINE/,
-    /VERIFICATION/,
-    /MULTI-AGENT MODE/,
-    /ADVERSARIAL REPAIR/,
-    /EXECUTION LOOP/,
-    /NOT RUN/,
-    /Do NOT require[\s\S]{0,150}CLI/
-  ]) assert.match(root, pattern);
+test('focused metadata, concise prompt, progressive references', () => {
+  assert.match(root, /^name: mungtange$/m);
+  assert.match(root, /^description:/m);
+  assert.doesNotMatch(root, /^metadata:/m);
+  assert.ok(root.split('\n').length < 500);
+  assert.match(root, /Do not use for unrelated backend/);
+  for (const name of ['PIPELINE.md','QUALITY.md','SECURITY.md','OUTPUT.md','PLAYBOOKS.md']) {
+    assert.ok(root.includes('references/' + name), name);
+  }
 });
-test('no mandatory CLI or machine-readable report dependency', () => {
-  assert.match(root, /Do NOT require/);
-  assert.match(root, /No installation, no delegated agents/);
-  assert.match(root, /If tools do not exist/);
+test('no mandatory CLI, JSON reports or subagents', () => {
+  assert.match(root, /without a CLI, catalog, JSON report or subagents/);
+  assert.match(root, /legacy CLI-only/);
+  assert.match(root, /NOT RUN/);
 });

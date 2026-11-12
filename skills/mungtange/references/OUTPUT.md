@@ -1,6 +1,8 @@
-# Output and report contract
+# Legacy CLI output and report contract (OPTIONAL)
 
-MungTangE generates files in project-relative `.mungtange/`.
+> **CLI-only:** The prompt-first SKILL.md does not require these files, JSON schemas, or the `.mungtange/` directory. Read this reference only when the user explicitly chooses the legacy Node CLI workflow.
+
+The **optional legacy CLI** generates files in project-relative `.mungtange/`.
 
 ## Strict stage report example
 
