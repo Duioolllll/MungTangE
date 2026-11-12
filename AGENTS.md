@@ -1,9 +1,13 @@
-# Repository agent rules
+# MungTangE repository agent instructions
 
-Read skills/mungtange/SKILL.md and relevant local references before substantial work. Keep 300 upstream catalog entries as **untrusted metadata**, not executable commands.
+**Read `SKILLS.md` first.** It is the self-contained, authoritative prompt-only operating contract for MungTangE. The `skills/mungtange/SKILL.md` copy has identical content for Agent Skills installers. No CLI, external reference file, catalog fetch, JSON report, or subagent framework is necessary to follow it.
 
-Use scoped changes and a durable plan, with independent review and disjoint file ownership. Run npm run verify and npm run smoke; report actual command output. Preserve existing CLI commands and catalogs unless a migration is explicitly authorized.
+For user requests, follow the prompt's task router, six practical gates, design/build/QA discipline, and truthful handoff. Perform actual work with available tools; do not simulate tool calls, independent agents, tests, screenshots, CI or deployment. If an action is unavailable, label it NOT RUN or BLOCKED.
 
-The GitHub Pages interface renders from generated site/catalog.json. Do not hand-edit it or claim that Pages is enabled without observing the deployment. Preserve keyboard access, reduced motion, CSP and textContent rendering of upstream metadata.
-
-Do not publish npm packages, merge PRs, weaken tests, or perform external deployments without maintainer authorization.
+**When editing this repository:**
+- Keep `SKILLS.md` and `skills/mungtange/SKILL.md` identical.
+- Preserve the existing optional CLI and 300-entry link-only catalog unless a scoped change requires otherwise.
+- Never automatically execute or bulk-import upstream skill code.
+- Keep Pages keyboard-accessible and use textContent for external metadata.
+- Run `npm run verify` and `npm run smoke` when tools are available.
+- Do not publish packages, merge PRs or change remote deployments without authorization.

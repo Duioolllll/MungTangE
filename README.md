@@ -1,94 +1,75 @@
-# MungTangE 뭉탱이
+# MungTangE 뭉탱이 2.0
 
-**300 provenance-linked upstream skill references · one original design-to-code harness · evidence gates.**
+**복잡한 스킬 실행기 대신, 프롬프트 하나로 디자인 → 개발 → 검증까지.**
 
-MungTangE is a **reference-aware workflow**, not a bundle of 300 copied or automatically executed skills. It routes a design or frontend request through six checkpoints, produces explicit task packets, and blocks unverified completion claims. The catalog is split into 100 design, 100 model-output and 100 web entries. All original sources are credited; catalog inclusion is **not** an endorsement, security audit, license clearance, or performance benchmark.
+**[SKILLS.md 전체 프롬프트 열기](SKILLS.md)** · [Agent Skills 설치용 SKILL.md](skills/mungtange/SKILL.md) · [300개 스킬 출처 카탈로그](https://duioolllll.github.io/MungTangE/)
 
-[Explore the catalog](https://duioolllll.github.io/MungTangE/) · [Architecture](docs/ARCHITECTURE.md) · [Source analysis](docs/UPSTREAMS.md) · [Security](SECURITY.md)
+MungTangE는 웹디자인·프론트엔드·UX·디자인 시스템·성능 검토·AI 에이전트 협업에 특화된 **독립형 프롬프트 운영체제**입니다. AI가 작업을 이해하고 필요한 전문가 관점을 골라서 실제 구현과 검증을 한 흐름으로 수행하도록 설계했습니다.
 
-## Quick start
+> **필수 설치 없음. 필수 API 없음. 필수 CLI 없음. 추가 JSON 보고서 없음.**  
+> 오직 [SKILLS.md](SKILLS.md)를 AI의 프로젝트 지침이나 대화에 전달하면 됩니다. 실제 파일 수정·브라우저 검사·코드 실행은 사용 중인 AI의 도구 권한에 따라 달라집니다.
 
-Requires Node.js 20+ for the first-party CLI. The open `skills` installer has its own, possibly higher, runtime requirement.
+## 이렇게 쓰세요
+
+**1. [SKILLS.md](SKILLS.md)의 전체 내용을 열어 AI 에이전트의 지침으로 전달하세요.**
+
+Codex, Claude Code, OpenCode, Copilot, Gemini, ChatGPT 등에서 프롬프트 지침으로 사용할 수 있습니다. 각 도구가 `SKILLS.md`를 자동 인식한다고 가정하지 마세요. 프로젝트 지침 파일에 내용을 붙여넣거나 읽을 파일로 명시하세요. 이 저장소의 [AGENTS.md](AGENTS.md)는 루트 SKILLS.md를 명시적으로 가리킵니다.
+
+**2. 평범하게 작업을 요청하세요.**
+
+~~~text
+내 기존 Next.js 프로젝트를 분석해서 학교 커뮤니티 대시보드를
+새롭게 디자인하고 실제 코드로 구현해줘.
+모바일·키보드·로딩·에러 상태까지 검증하고 문제가 있으면 수정해줘.
+~~~
+
+**3. MungTangE가 프롬프트만으로 실행 절차를 결정합니다.**
+
+~~~text
+요청 분석
+    ↓
+전문가 관점 선택 (UX · 디자인 · 프론트엔드 · QA 등)
+    ↓
+BRIEF → EXPLORE → DESIGN → BUILD → VERIFY → DELIVER
+    ↓
+실패 시 원인 분석 → 수정 → 재검증
+    ↓
+실제 결과물 + 검증 증거 + 남은 문제
+~~~
+
+CLI·외부 모델 호출·서브에이전트가 없어도 지침 자체는 작동합니다. **실제 하위 에이전트가 있는 도구에서는 필요할 때만** 독립 작업으로 분리합니다. 도구가 없으면 제공 가능한 결과를 직접 만들고 실행하지 못한 검사는 명확히 표시합니다.
+
+## 포함된 능력
+
+| 영역 | 프롬프트의 행동 지침 |
+| --- | --- |
+| Design | 제품에 맞는 스타일, 타이포·컬러·레이아웃·반응형 설계 |
+| UX | 사용자 여정, 접근성, 입력·로딩·오류·완료 상태 |
+| Frontend | 기존 프로젝트 분석, 작은 수직 기능 단위 구현, 회귀 방지 |
+| Web QA | 키보드·반응형·스크린샷·성능·보안 검증 **(도구가 있을 때 실제 실행)** |
+| Skills | 과제에 맞는 참조 방법 선택, 출처·라이선스·보안 확인 |
+| Model Output | 증거 기반 완료 보고, 거짓 통과 방지, 실패 시 원인 분석 |
+| Orchestration | 의존성·파일 소유권 관리, 필요할 경우에만 병렬 실행 |
+| Delivery | 변경 파일·검증 내용·한계·승인 단계 정리 |
+
+기존 카탈로그에 수록된 디자인 100개, 모델·출력 100개, 웹 100개는 **참고 메타데이터**입니다. 300개를 자동 설치하거나 실행하는 기능은 아닙니다. 프롬프트는 카탈로그가 전혀 없어도 독립 실행되도록 작성했습니다.
+
+## 추가 설치는 완전히 선택 사항
+
+기존 Agent Skills 형식의 설치가 편하면 아래 명령어를 사용해도 됩니다.
 
 ~~~bash
-# Run the repository CLI directly without npm publishing
-npx --yes github:Duioolllll/MungTangE doctor
-npx --yes github:Duioolllll/MungTangE init --agent all
-npx --yes github:Duioolllll/MungTangE plan --goal "Build an accessible, distinctive school dashboard"
-npx --yes github:Duioolllll/MungTangE prompt --stage brief
-
-# Or install the standalone, portable Agent Skill (different CLI)
 npx skills add Duioolllll/MungTangE --skill mungtange
 ~~~
 
-**Security note:** `npx` resolves executable packages from a third party; inspect sources and pin a reviewed commit for sensitive projects. None of MungTangE's own commands invoke remote AI models, install upstream references, or execute upstream scripts.
+표준 설치기는 `skills/mungtange/SKILL.md`를 읽습니다. 이 파일은 루트 `SKILLS.md`와 **동일한 독립형 프롬프트**이므로 별도 references 파일이나 CLI가 필요 없습니다.
 
-## Workflow
+기존 `mungtange` Node CLI는 호환성을 위해 저장소에 남겨두었지만, **프롬프트를 사용하거나 AI 작업을 수행하는 데 필수가 아닙니다**. CLI는 AI를 직접 실행하는 엔진이 아닙니다.
 
-~~~text
-INSPECT
-   ↓
-BRIEF → RESEARCH → SYSTEM → BUILD → AUDIT → SHIP
-  gate     gate       gate     gate     gate     human approval
-~~~
+## 정직한 한계
 
-| Stage | Required artifact | Failure policy |
-| --- | --- | --- |
-| Brief | User, outcome, scope and acceptance criteria | Stop on uncertain scope |
-| Research | Real sources, two differentiated design directions | No uncited reference claims |
-| System | Tokens, states, responsive rules and interactions | No undocumented assumptions |
-| Build | End-to-end vertical slice, tests and changed-file list | Failing test blocks advancement |
-| Audit | Screenshots, keyboard, contrast and performance evidence | Independent review required |
-| Ship | Changelog, rollback, residual risks, explicit human approval | No silent deployment or merge |
+프롬프트는 AI의 작업 절차를 강화하지만, 도구 권한을 새로 만들어주지는 않습니다. 브라우저가 없는 AI는 실제 화면을 검증할 수 없고, GitHub 쓰기 권한이 없으면 PR을 만들 수 없습니다. MungTangE는 **하지 않은 검사를 통과했다고 말하지 않도록** 설계되어 있습니다.
 
-Use `mungtange gate --stage audit` only **after** real evidence has been written. The CLI checks the shape and existence of reports, **not** whether a screenshot, benchmark or user study is truthful.
+## 개발 및 기여
 
-## Core commands
-
-| Command | Purpose |
-| --- | --- |
-| `doctor` | Check environment and detect project stack |
-| `catalog --category design --limit 10` | Explore upstream references |
-| `init --agent codex,claude,opencode` | Copy the first-party skill locally |
-| `plan --goal "..."` | Rank references, create a run manifest and task packets |
-| `prompt --stage build` | Generate stage-specific agent instructions |
-| `gate --stage audit` | Verify declared report structure and dependency gates |
-| `verify` | Validate all six stage report structures |
-
-## GitHub Pages
-
-The site is a dependency-free, accessible static catalog: search, category filters, source links and a visual pipeline explanation. Its `catalog.json` is generated **from the existing catalog** — never hand-edited.
-
-~~~bash
-npm run verify
-python3 -m http.server 8080 --directory site
-# open http://localhost:8080
-~~~
-
-After merging the Pages workflow, set repository **Settings → Pages → Build and deployment → Source: GitHub Actions**. See [deployment details](docs/DEPLOYMENT.md). The URL above is an intended destination, **not a claim that Pages is already enabled**.
-
-## Design principles
-
-1. **Reference before execution**: source URLs and Git blob SHA are traceability, not permission to run.
-2. **3–5 relevant specialties, not 300 agents**: rank context fit, isolate write ownership.
-3. **Make failure visible**: missing evidence stays pending; never fabricate checks.
-4. **One owner per edit surface**: parallel research is useful, parallel writes to the same file are not.
-5. **Human release authority**: external actions require authorization.
-
-See [SKILLS.md](SKILLS.md) for the field guide and [the main Agent Skill](skills/mungtange/SKILL.md) for the detailed behavior specification.
-
-## Development
-
-~~~bash
-npm run check        # existing CLI checks and Node tests
-npm run build:site   # generate site/catalog.json deterministically
-npm run lint:catalog # catalog provenance and site contract checks
-npm run verify       # all of the above
-npm run smoke        # existing CLI smoke commands
-~~~
-
-No external npm dependencies are required. The repository package is currently **not claimed to be published on npm**. `npx --yes github:...` runs the GitHub package, while `npx skills add` invokes Vercel's independent skills installer.
-
-## Contributing and licensing
-
-Original MungTangE code, site and documentation are MIT-licensed (see [LICENSE](LICENSE)). Upstream skills remain owned and licensed by their respective authors and are **not relicensed by this repository**. Contributions require source provenance, appropriate license review, and truthful verification evidence. See [CONTRIBUTING.md](CONTRIBUTING.md).
+기존 CLI·카탈로그·GitHub Pages 기능은 유지됩니다. 저장소 개발 시 `npm run verify`로 기존 코드와 프롬프트 동기화를 검증합니다. 외부 SKILL.md의 라이선스는 해당 프로젝트에 남아 있으며 MungTangE에 자동 귀속되지 않습니다. [기여 가이드](CONTRIBUTING.md) · [보안 정책](SECURITY.md) · [라이선스](LICENSE).
