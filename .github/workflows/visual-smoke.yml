@@ -1,0 +1,31 @@
+name: Visual capture browser smoke
+
+on:
+  pull_request:
+    paths:
+      - "scripts/visual-capture.mjs"
+      - "scripts/visual-smoke.mjs"
+      - "tests/visual-direction.test.mjs"
+      - "skills/mungtange/references/BRAND-DIRECTION.md"
+      - "skills/mungtange/references/VISUAL-LOOP.md"
+      - ".github/workflows/visual-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser-capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install optional screenshot dependencies
+        run: npm install --no-save --ignore-scripts --no-audit --no-fund playwright@1.65.0 pixelmatch@6.0.0 pngjs@7.0.0
+      - name: Install headless Chromium and system dependencies
+        run: npx playwright install --with-deps chromium
+      - name: Validate prompt and capture against a local test page
+        run: node --test tests/visual-direction.test.mjs && node scripts/visual-smoke.mjs
