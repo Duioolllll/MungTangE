@@ -138,7 +138,7 @@ independent reviewers.
 ## 8. Optional specialist playbooks — only when they help
 
 **No reference is mandatory.** The default workflow is complete above.
-Use **at most two** supporting references only when a concrete question
+Use **at most two** supporting references (including source-card shards) only when a concrete question
 cannot be answered well from the request and project itself. Do not load
 references merely because a job is STANDARD or DEEP.
 
@@ -157,10 +157,15 @@ Apply techniques only when useful to the current work; no citation,
 evidence or defect-repair quota applies. **If no defect is observed,
 do not invent one.** If a check was not run, label it NOT RUN.
 
-The source catalog and automated 300-file lexical audit are archival
-research, **not an operational knowledge base**. They are not installed
-with this skill; do not load or download them at runtime. Legacy CLI
-documentation lives in the repository, not in the installed skill.
+The original 300-file research catalog remains archival; the separately
+[generated knowledge router](references/knowledge/ROUTER.md)
+indexes **all 300 pinned source files** through short, optional source
+cards. If a niche technique is relevant and the router is accessible,
+consult one narrow shard, not the whole corpus. Cards contain automatic
+source-structure evidence, **not 300 expert-reviewed summaries**. The
+original full texts are not installed or executed. Never claim full
+source instructions were read if only a card was available. Legacy CLI
+and the lexical audit remain archival repository tooling.
 
 **Bottom line:** short instructions by default, targeted expertise when
 needed, real implementation and honest evidence.

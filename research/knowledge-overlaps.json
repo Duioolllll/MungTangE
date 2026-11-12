@@ -1,0 +1,55 @@
+{
+  "source_count": 300,
+  "algorithm": "Same SHA, normalized title or same-lane heading/action token Jaccard >=0.55. Candidate only, NOT semantic redundancy proof.",
+  "exact_sha_groups": [],
+  "name_collision_groups": [
+    {
+      "normalized_name": "prototype",
+      "ids": [
+        "emilkowalski--skills--prototype",
+        "mattpocock--skills--prototype"
+      ],
+      "source_urls": [
+        "https://github.com/emilkowalski/skills/blob/dbcc1a23c66933f7372c0aacbce2b0d7cc6100b6/skills/prototype/SKILL.md",
+        "https://github.com/mattpocock/skills/blob/a0044501fe0d385b4d8575b610188ede9b236ccf/skills/engineering/prototype/SKILL.md"
+      ]
+    },
+    {
+      "normalized_name": "designsystem",
+      "ids": [
+        "nextlevelbuilder--ui-ux-pro-max-skill--design-system",
+        "alirezarezvani--claude-skills--design-system"
+      ],
+      "source_urls": [
+        "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/804e553325fedc49dd7e75c30c6cffeebaa6650b/.claude/skills/design-system/SKILL.md",
+        "https://github.com/alirezarezvani/claude-skills/blob/4b429ee21525b315b45558170fce5f588eaffceb/markdown-html/skills/design-system/SKILL.md"
+      ]
+    },
+    {
+      "normalized_name": "brandguidelines",
+      "ids": [
+        "anthropics--skills--brand-guidelines",
+        "alirezarezvani--claude-skills--brand-guidelines"
+      ],
+      "source_urls": [
+        "https://github.com/anthropics/skills/blob/47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59/skills/brand-guidelines/SKILL.md",
+        "https://github.com/alirezarezvani/claude-skills/blob/daa66f58ddd97071a34f69c83e19c3f60741f232/marketing-skill/skills/brand-guidelines/SKILL.md"
+      ]
+    }
+  ],
+  "lexical_similarity_candidates": [
+    {
+      "a": "vercel-labs--agent-skills--web-design-guidelines",
+      "b": "vercel-labs--agent-skills--writing-guidelines",
+      "lane": "web-product",
+      "jaccard": 0.778
+    },
+    {
+      "a": "MengTo--Skills--blue-laser-clean-glass-layout",
+      "b": "MengTo--Skills--dark-glass-clean-layout",
+      "lane": "visual-craft",
+      "jaccard": 0.667
+    }
+  ],
+  "any_remove_automatically": false
+}

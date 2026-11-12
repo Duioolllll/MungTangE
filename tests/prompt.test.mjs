@@ -18,7 +18,7 @@ test('focused prompt keeps optional, bounded, relevant references', () => {
   assert.match(root, /at most two/);
   assert.match(root, /do not invent one/i);
   assert.doesNotMatch(root, /For \*\*STANDARD\/DEEP web UI work\*\*, first read/);
-  for (const path of ['DEEP-INTEGRATION.md','QUALITY.md','PLAYBOOKS.md','SECURITY.md']) {
+  for (const path of ['DEEP-INTEGRATION.md','QUALITY.md','PLAYBOOKS.md','SECURITY.md','knowledge/ROUTER.md']) {
     assert.ok(root.includes('skills/mungtange/references/' + path));
   }
   for (const obsolete of ['KNOWLEDGE-ROUTER.md','DESIGN-DNA.md','WEB-ENGINEERING.md','AGENT-HARNESS.md','SOURCE-INDEX.md']) {
