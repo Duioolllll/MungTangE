@@ -14,7 +14,7 @@ if (/^runtime:/m.test(frontmatter[1]))
 
 const lines = source.trimEnd().split('\n').length;
 if (lines > 500) throw Error('Main SKILL.md exceeds 500 lines: ' + lines);
-if (source.includes('`')) throw Error('Malformed Markdown backtick marker');
+if (source.includes(String.fromCharCode(167))) throw Error('Malformed Markdown backtick marker');
 
 const references = [...source.matchAll(/\]\(references\/([^)]+\.md)\)/g)].map(match => match[1]);
 if (references.length < 5) throw Error('Progressive references not discoverable');
