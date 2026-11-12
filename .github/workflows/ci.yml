@@ -1,0 +1,38 @@
+name: Verify MungTangE
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Set up Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Test, build and validate catalog
+        run: npm run verify
+      - name: CLI smoke test
+        run: npm run smoke
+      - name: Upload static site preview for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: mungtange-site-preview
+          path: site
+          if-no-files-found: error
+          retention-days: 7
