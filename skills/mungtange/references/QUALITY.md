@@ -3,7 +3,9 @@
 This is an evaluation **contract**, not a promise that a human or browser
 evaluation actually happened. A reviewer must attach real evidence.
 
-## Weighting (100 points)
+## Weighting (100 points) — only if actual observations justify scoring
+
+Do not score untested categories or invent test artifacts to make the sum add up. For a small change, report only checks relevant to that change. If no defect is observed, report 'none observed', not a fabricated remediation.
 
 | Dimension | Points | Required evidence |
 |---|---:|---|

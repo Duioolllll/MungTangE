@@ -1,72 +1,39 @@
-# Architecture: MungTangE pipeline
+# MungTangE architecture — skill first
 
-## Responsibilities and trust boundaries
+## Primary product: a focused prompt-only design skill
 
-~~~text
-                 local user goal + project snapshot
-                                 │
-          ┌──────────────────────▼─────────────────────┐
-          │ first-party CLI / skill: task classifier   │
-          │ scanProject → loadCatalog → selectSkills   │
-          └──────────────────────┬─────────────────────┘
-                                 │
-                      metadata only (no imports)
-                                 ▼
-             100 design | 100 model output | 100 web
-                     provenance + SHA + heuristic
-                                 │
-                                 ▼
-       brief ─gate─ research ─gate─ system ─gate─ build
-          └───────── run manifest + decisions ─────────┘
-                                 │
-                          independent audit
-                                 │
-                       human release approval
-                                 ▼
-                          ship / handoff
+```text
+User asks for a web UI/design task
+                │
+                ▼
+        SKILL.md (~150 lines)
+  Route → Intent → Design → Build → Verify → Report
+                │
+                ├── Most tasks: no extra files
+                └── Specific, complex need only:
+                    ├── DEEP-INTEGRATION.md (10 directly examined sources)
+                    ├── PLAYBOOKS.md
+                    ├── QUALITY.md
+                    └── SECURITY.md
+```
 
-  main → CI/Node tests → deterministic static build → Pages
-  PR   → CI/Node tests → preview artifact NOT deployed
-~~~
+- Canonical prompt: [SKILLS.md](../SKILLS.md).
+- Installable prompt: [skills/mungtange/SKILL.md](../skills/mungtange/SKILL.md), generated from canonical source with portable relative links.
+- No mandatory CLI, JSON manifest, 300-source lookup, browser, API or subagent infrastructure. Tool-dependent checks must be reported as NOT RUN when unavailable.
+- Even for complex tasks, no reference read is automatic: only load a relevant section if it contributes meaningfully.
+- Observed defects must be fixed; a fixed defect quota must never be imposed.
 
-The upstream 300 are **candidates for discovery**, not runnable plugins. The only installable first-party skill is `skills/mungtange/SKILL.md` with local references. The app/site does not ingest or render remote Markdown.
+## Separate, optional archives
 
-## Source-of-truth files
+**Research archive:** The 300-source catalog and [source audit](SOURCE-AUDIT.md) record Git SHA checks and exploratory keyword tagging. This is NOT 300 high-quality curated instruction guides and must not be presented as measured skill effectiveness. Source texts were not copied into the installable package.
 
-| Layer | Source of truth | Output |
-| --- | --- | --- |
-| Skills catalog | `catalog/{design,model-output,web}.json` | metadata loaded by `src/catalog.js` |
-| Ranking | `src/catalog.js` | context-specific selections |
-| Project profile | `src/project.js` | framework/language detection |
-| Lifecycle | `src/pipeline.js` | `.mungtange/manifest.json` and six report templates |
-| Installation | `src/install.js` | first-party skill copied to Codex/Claude/OpenCode paths |
-| CLI | `bin/mungtange.js` | commands and nonzero exit on failed gates |
-| Web catalog | `scripts/build-site.mjs` | generated `site/catalog.json` |
-| UX | `site/index.html` + CSS/JS | filterable, static GitHub Pages front end |
-| QA/CI | `scripts/verify-catalog.mjs` + tests | schema, link allowlist, build integrity |
+**Legacy CLI:** `bin/`, `src/`, `catalog/` and the original report-gate system are retained for backward compatibility, described in [LEGACY.md](LEGACY.md). They do not implement the prompt-only workflow or run an AI model.
 
-## Data contract
+**Site:** `site/` hosts a static catalog as a secondary discovery/reference tool. Its 300 records are links and metadata, not installed skills. CI and Pages remain optional to end users.
 
-An upstream item has `id`, `name`, `category`, `source_repo`, `source_path`, `source_url`, `blob_sha`, `fit_score`, `tags`, `reviewed`. A file recorded in Git's tree is **not** necessarily safe or compatible.
+## Trust boundaries
 
-Selection uses task words, stack detection, source diversity, and a heuristic score. Do not describe `fit_score` as star count, empirical effectiveness, or security confidence.
-
-Stage reports require the correct run ID, a reviewer name, all required boolean checks and existing local evidence paths. This is structural validation, not a claim that artifacts were independently inspected. `ship` additionally requires recorded human approval.
-
-## Multi-agent scheduler policy
-
-Use a directed acyclic graph with one coordinator and bounded workers. Each task contract must include `id`, `depends_on`, `owner`, `owned_paths`, `inputs`, `outputs`, `verify_commands`, `risk` and `rollback`. Schedule only tasks whose dependencies passed and whose owned paths are disjoint. A critic cannot mark its own generated output independently verified.
-
-### Fail-closed state changes
-
-- `pending → running`: owner assigned and prerequisites passed
-- `running → evidence-ready`: files and test logs exist
-- `evidence-ready → verified`: independent reviewer reproduced checks
-- `verified → approved`: relevant human approval received
-- `any → blocked`: license uncertainty, unsafe request, failed test, conflict or stale report
-
-A failed step returns to its owner with a reproduction path, not to a blind regeneration loop. Bounded retries (default two), explicit review, no silent overrides.
-
-## Release boundaries
-
-Pages is a read-only display of repository data. No page can authorize a merge. The CI workflow uses read permission. The Pages workflow obtains only the additional GitHub Pages/OIDC permissions needed for GitHub deployment. Branch protection and Pages source selection are manual repository-admin controls.
+- External skill and web content are untrusted data.
+- Only in-scope tools and authorized changes are permitted.
+- Evidence of reading source bytes does not prove understanding, applicability, security, licensing or benchmark quality.
+- External deployments, repository merges, purchases and secrets require human authorization.

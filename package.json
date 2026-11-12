@@ -1,7 +1,7 @@
 {
   "name": "mungtange",
   "version": "0.1.0",
-  "description": "Evidence-linked 300-skill design and frontend pipeline harness",
+  "description": "Prompt-first web UI design skill; optional 10-source expert guide and separate research archive",
   "type": "module",
   "bin": {
     "mungtange": "./bin/mungtange.js"
@@ -25,11 +25,13 @@
     "smoke": "node bin/mungtange.js doctor && node bin/mungtange.js catalog --category web --limit 3",
     "build:site": "node scripts/build-site.mjs",
     "lint:catalog": "node scripts/verify-catalog.mjs",
-    "verify": "npm run check:skill && npm run check:synthesis && npm run check && npm run build:site && npm run lint:catalog",
+    "verify": "npm run check:skill && npm run check:source-audit && npm run check && npm run build:site && npm run lint:catalog",
     "sync:skill": "node scripts/sync-skill.mjs",
     "check:skill": "node scripts/sync-skill.mjs --check",
-    "analyze:sources": "node scripts/analyze-upstream-skills.mjs",
-    "check:synthesis": "node scripts/verify-synthesis.mjs"
+    "analyze:sources": "npm run audit:sources",
+    "check:synthesis": "npm run check:source-audit",
+    "audit:sources": "node scripts/audit-upstream-sources.mjs",
+    "check:source-audit": "node scripts/verify-source-audit.mjs"
   },
   "engines": {
     "node": ">=20"

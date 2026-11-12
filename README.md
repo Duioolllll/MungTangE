@@ -2,9 +2,9 @@
 
 **복잡한 스킬 실행기 대신, 프롬프트 하나로 디자인 → 개발 → 검증까지.**
 
-**[SKILLS.md 전체 프롬프트 열기](SKILLS.md)** · [Agent Skills 설치용 SKILL.md](skills/mungtange/SKILL.md) · [300개 스킬 출처 카탈로그](https://duioolllll.github.io/MungTangE/)
+**[SKILLS.md 핵심 프롬프트](SKILLS.md)** · [스킬 설치용 SKILL.md](skills/mungtange/SKILL.md) · [실전 심화 가이드](skills/mungtange/references/DEEP-INTEGRATION.md)
 
-MungTangE는 웹디자인·프론트엔드·UX·디자인 시스템·성능 검토·AI 에이전트 협업에 특화된 **독립형 프롬프트 운영체제**입니다. AI가 작업을 이해하고 필요한 전문가 관점을 골라서 실제 구현과 검증을 한 흐름으로 수행하도록 설계했습니다.
+MungTangE는 웹디자인·프론트엔드·UX에 집중한 **프롬프트 중심 Agent Skill**입니다. AI가 작업을 이해하고 필요한 전문가 관점을 골라서 실제 구현과 검증을 한 흐름으로 수행하도록 설계했습니다.
 
 > **필수 설치 없음. 필수 API 없음. 필수 CLI 없음. 추가 JSON 보고서 없음.**  
 > 오직 [SKILLS.md](SKILLS.md)를 AI의 프로젝트 지침이나 대화에 전달하면 됩니다. 실제 파일 수정·브라우저 검사·코드 실행은 사용 중인 AI의 도구 권한에 따라 달라집니다.
@@ -39,7 +39,7 @@ BRIEF → EXPLORE → DESIGN → BUILD → VERIFY → DELIVER
 
 CLI·외부 모델 호출·서브에이전트가 없어도 지침 자체는 작동합니다. **실제 하위 에이전트가 있는 도구에서는 필요할 때만** 독립 작업으로 분리합니다. 도구가 없으면 제공 가능한 결과를 직접 만들고 실행하지 못한 검사는 명확히 표시합니다.
 
-## 포함된 기늩
+## 포함된 기능
 
 | 영역 | 프롬프트의 행동 지침 |
 | --- | --- |
@@ -52,7 +52,7 @@ CLI·외부 모델 호출·서브에이전트가 없어도 지침 자체는 작�
 | Orchestration | 의존성·파일 소유권 관리, 필요할 경우에만 병렬 실행 |
 | Delivery | 변경 파일·검증 내용·한계·승인 단계 정리 |
 
-**300개 원문 SHA 검증 완료:** 디자인 100개·모델/출력 100개·웹 100개의 Git blob 원문을 다운로드해 해시를 검증하고, 29개 주제별 기법으로 자동 분류했습니다. [검증 보고서](docs/SOURCE-AUDIT.md)와 [항목별 감사 데이터](research/source-audit.json)를 확인할 수 있습니다. 이는 키워드·구조 기반 자동 분석이며, 300개 모두를 심층 평가하거나 라이선스·안전성을 인증한 것은 아닙니다. 중요한 대표 10개 스킬의 [심화 통합 가이드](skills/mungtange/references/DEEP-INTEGRATION.md)도 별도로 작성했습니다. 외부 스킬을 자동 실행하거나 설치하지는 않습니다.
+**노하우의 출처:** 핵심 방법론은 [대표 원문 10개를 직접 살펴보고 정리한 심화 가이드](skills/mungtange/references/DEEP-INTEGRATION.md)에 있어요. 별도로 공개된 300개 링크는 [출처·해시를 자동 검사한 연구 기록](docs/SOURCE-AUDIT.md)으로, 그 자체가 심층 분석이나 품질 인증은 아닙니다.
 
 ## 추가 설치는 완전히 선택 사항
 
@@ -62,9 +62,9 @@ CLI·외부 모델 호출·서브에이전트가 없어도 지침 자체는 작�
 npx skills add Duioolllll/MungTangE --skill mungtange
 ~~~
 
-표준 설치기는 `skills/mungtange/SKILL.md`를 읽습니다. 이 파일은 루트 `SKILLS.md`에서 `npm run sync:skill`로 생성되며 **설치 경로에 맞게 링크가 변환**됩니다. 핵심 프롬프트는 단독으로 동작하지만, 설치된 `references/`에는 300개 원문 분석을 압축한 선택형 가이드가 포함됩니다. CLI는 필요 없습니다.
+표준 설치기는 `skills/mungtange/SKILL.md`를 읽습니다. 이 파일은 루트 `SKILLS.md`에서 `npm run sync:skill`로 생성되며 **설치 경로에 맞게 링크가 변환**됩니다. 핵심 프롬프트는 단독으로 동작하며, 필요할 때만 `references/DEEP-INTEGRATION.md` 등 소수의 선택형 실전 가이드를 참고합니다. 일반적인 작업에는 추가 로딩이 필요 없습니다. CLI는 필요 없습니다.
 
-기존 `mungtange` Node CLI는 호환성을 위해 저장소에 남겨두었지만, **프롬프트를 사용하거나 AI 작업을 수행하는 데 필수가 아닙니다**. CLI는 AI를 직접 실행하는 엔진이 아닙니다.
+기존 `mungtange` Node CLI와 300개 카탈로그는 **호환성·연구 기록을 위한 부수 기능**입니다. 스킬 사용에 필요하지 않으며, [선택 기능 안내](docs/LEGACY.md)에 분리해 두었습니다.
 
 ## 한계
 
@@ -72,4 +72,4 @@ npx skills add Duioolllll/MungTangE --skill mungtange
 
 ## 개발 및 기여
 
-기존 CLI·카탈로그·GitHub Pages 기능은 유지됩니다. 프롬프트 수정은 루트 `SKILLS.md`만 편집한 뒤 `npm run sync:skill`로 설치용 사본을 생성합니다. `npm run verify`는 생성 결과·기존 코드·300개 감사 데이터의 무결성을 검증합니다. `npm run analyze:sources`로 GitHub 접근 환경에서 원문 분석을 재생성할 수 있습니다. 외부 SKILL.md의 라이선스는 해당 프로젝트에 남아 있으며 MungTangE에 자동 귀속되지 않습니다. [기여 가이드](CONTRIBUTING.md) · [보안 정책](SECURITY.md) · [라이선스](LICENSE).
+기존 CLI·카탈로그·GitHub Pages 기능은 유지됩니다. 프롬프트 수정은 루트 `SKILLS.md`만 편집한 뒤 `npm run sync:skill`로 설치용 사본을 생성합니다. `npm run verify`는 생성 결과·기존 코드·출처 검증 기록을 확인합니다. 원문 재검증은 별도 수동 작업이며, **어휘 매칭 결과를 실전 노하우나 품질 점수로 쓰지 않습니다.** 외부 SKILL.md의 라이선스는 해당 프로젝트에 남아 있으며 MungTangE에 자동 귀속되지 않습니다. [기여 가이드](CONTRIBUTING.md) · [보안 정책](SECURITY.md) · [라이선스](LICENSE).
