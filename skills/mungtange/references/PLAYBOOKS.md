@@ -1,52 +1,55 @@
-# Task-specific playbooks
+# Task playbooks — read only the matching subsection
 
-## Landing page (persuade)
+These are practical details, not separate execution engines. For
+quality thresholds use `QUALITY.md`; for art direction use `DESIGN.md`.
+Follow the core skill's six lightweight gates.
 
-- Gather target audience, offer, evidence, desired conversion, truthful copy.
-- Two design directions; choose a coherent editorial metaphor.
-- Hero should communicate real value; CTA labels answer "what happens?"
-- Avoid fake testimonials, logos, growth numbers and placeholder proof.
-- Validate mobile CTA, LCP, focus, text contrast and form completion.
-- Relevant references: Anthropic frontend-design, Impeccable, Owl design-qa.
+## Landing page: persuade without invented proof
 
-## Application dashboard (operate)
+- Establish the real audience, offer and conversion event.
+- Use a distinct visual thesis and useful page rhythm.
+- Lead with clear value and a meaningful primary CTA.
+- Claims, testimonials, logos and metrics require real evidence.
+- Verify mobile navigation, CTA behavior, keyboard focus, contrast,
+  page weight and form completion where tools exist.
 
-- Map core workflow, information density, permissions, error/freshness state.
-- Prefer efficient repeated use over decorative novelty.
-- Design real empty/loading/error/offline and date/number formatting.
-- Test table scrolling, keyboard, search, filters and actual data ranges.
-- React stack: inspect relevant Vercel react-best-practices guidance.
+## Application dashboard: enable repeated work
 
-## Design system (system)
+- Map user jobs, data ownership and permission boundaries.
+- Prioritize information density, clarity, freshness and real units
+  over decorative charts.
+- Include empty, loading, error and stale-data cases.
+- Ensure filters, sorting, tables and controls genuinely work.
+- Check keyboard navigation, narrow tables and realistic large data.
 
-- Separate global primitives, semantic aliases, component tokens.
-- Define component variants, interaction contract and theming.
-- Decide token ownership and migration; never hardcode raw values everywhere.
-- Ship docs that engineers can follow, not just token JSON.
-- Validate 2–3 representative components across light/dark and breakpoints.
+## Design system: keep components coherent
 
-## Figma to code (reference-to-code)
+- Separate primitives, semantic aliases and component-level tokens.
+- Define ownership, typography, spacing, variants and interactive states.
+- Demonstrate representative components with code and usage examples.
+- Avoid raw-value drift and undocumented breaking changes.
+- Validate accessibility and representative responsive screens.
 
-- Confirm access to exact design node/context (never fabricate Figma IDs).
-- Extract layout, colors, components, typographic metrics and assets.
-- Preserve semantics and runtime behavior even if Figma lacks that detail.
-- Compare screenshots, then document measured deltas and remaining gaps.
-- If Figma tools unavailable, ask for supplied exports/screenshots or
-  label the implementation "approximation", not pixel-perfect.
+## Reference screenshot or Figma: work from real source
 
-## Existing interface audit
+- Inspect supplied source only if accessible; do not invent design nodes.
+- Record original viewport, assets, typography and interaction assumptions.
+- Preserve user goals and semantics while matching hierarchy and geometry.
+- Compare source and render when real screenshots can be captured.
+- State fidelity gaps and asset substitutions explicitly.
 
-- Read source code and product context; capture baseline if available.
-- Identify severity, impact, precise file/line and reproducible fix.
-- Use keyboard, contrast, overflow, responsive and reduced-motion tests.
-- Do not change files in an audit-only task unless explicitly requested.
-- Distinguish "suggested" from "verified" fixes.
+## Existing interface review: diagnose before modifying
 
-## Multi-agent implementation
+- Audit only; do not edit files unless asked.
+- Identify affected user journey and rank severity by impact.
+- Report exact file:line when inspected, otherwise precise UI location.
+- Distinguish observed behavior, plausible risk and subjective preference.
+- For each finding give actionable reproduction and a concrete fix.
 
-- Brief -> spec -> task DAG -> worktree ownership -> integration -> independent QA.
-- Maximum concurrent code writers determined by independent file ownership.
-- Every task: objective, files owned, boundary/interface, dependencies, tests,
-  evidence and stop conditions. No reviewer should silently approve own work.
-- A critical path determines sequence; separate research work can parallelize.
-- Integrator alone creates the final release candidate, after all gates.
+## UI redesign: preserve the product
+
+- Identify existing workflows and constraints before touching layout.
+- Separate visual changes from business logic and API behavior.
+- Define one new direction plus one rejected alternative and why.
+- Incrementally update tokens and shared components.
+- Verify behavioral regressions, long content and non-happy states.
