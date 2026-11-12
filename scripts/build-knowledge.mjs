@@ -2,15 +2,15 @@ import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 const groups=[
  ['design-systems','Design tokens and component systems',/design.system|design.token|component.spec|component.canvas|design.governance/i],
- ['ux-research','UX research, journeys and interaction design',/journey|research|persona|survey|interview|ux.writing|user.flow|heuristic|search.ux/i],
+ ['ux-research','UX research, journeys and interaction design',/journey|research|persona|survey|interview|ux.writing|user.flow|heuristic|search.ux|affinity|critique|prototype|analytics|card.sort|error.handling|competitive|ux|interaction|design.brief/i],
  ['motion-webgl','GSAP, animations, scroll and WebGL',/gsap|motion|animat|scroll|threejs|webgl|particle|video/i],
  ['web-react','React and modern frontend',/react|nextjs|next.js|frontend|tailwind|vue|component|state.management/i],
- ['web-qa','Browser testing, WCAG and accessibility',/playwright|e2e|browser|test|accessib|wcag|a11y|audit|qa/i],
+ ['web-qa','Browser testing, WCAG and accessibility',/playwright|e2e|browser|test|accessib|wcag|a11y|audit|qa|web.design.guideline|security.guidance/i],
  ['web-performance','Performance, assets, rendering and loading',/performance|optimi|bundle|waterfall|cache|responsive|speed/i],
- ['web-product','Landing pages, dashboards and web experience',/landing|dashboard|website|web.design|marketing|seo|conversion|form|chart/i],
+ ['web-product','Landing pages, dashboards and web experience',/landing|dashboard|website|web.design|marketing|seo|conversion|form|chart|web.artifacts|writing.guideline|ui.design|web.design/i],
  ['agent-context','LLM context, memory and prompts',/context|memory|retriev|prompt|token|skill|compression|handoff/i],
- ['agent-evals','AI evaluation, output quality and safety',/evaluat|benchmark|rubric|judge|review|security|safety|failure|debug|output/i],
- ['agent-workflow','Multi-agent orchestration and planning',/orchestrat|harness|workflow|delegat|parallel|spec.driven|task|planning|agent/i],
+ ['agent-evals','AI evaluation, output quality and safety',/evaluat|benchmark|rubric|judge|review|security|safety|failure|debug|output|governance|hardening|threat.model|code.review|diagnosing.bugs/i],
+ ['agent-workflow','Multi-agent orchestration and planning',/orchestrat|harness|workflow|delegat|parallel|spec.driven|task|planning|agent|implement|spec|architect|codebase|retro|research|pull.request|^pr$|mcp|cli|autoresearch|documentation|project/i],
  ['visual-craft','Brand, composition, typography, color',/brand|color|typograph|font|visual|aesthetic|layout|palette|illustrat|image|wireframe|glass|slop|design/i],
  ['other-specialist','Explicit niche domains only',/.*/]
 ];
@@ -38,18 +38,27 @@ function readStructure(text){
   const bullet=line.match(/^(?:[-*+]\s+|\d+[.)]\s+)(.+)/);
   if(!bullet||bullet[1].length<18||bullet[1].length>500)continue;
   const sig={line:i+1,terms:keywords(bullet[1]).slice(0,9)};
+  // One short evidence snippet per source, never more than 18 source words.
+  if(steps.length===0 && checks.length===0 && warnings.length===0){sig.excerpt=trim(bullet[1]).split(/\s+/).slice(0,18).join(' ');}
   if(/never|avoid|do not|don't|pitfall|anti-pattern/i.test(bullet[1]))warnings.push(sig);
   else if(/verify|check|test|assert|validate|inspect|measure/i.test(bullet[1]))checks.push(sig);
   else if(/define|write|create|build|analy[sz]e|implement|map|compare|add|run|apply|extract|review|ensure|provide|identify|specify|document|collect|refactor|optimi|select|plan|choose|start/i.test(bullet[1]))steps.push(sig);
  }
- return {description:description.slice(0,400),headings:headings.slice(0,9),steps:steps.slice(0,3),checks:checks.slice(0,2),warnings:warnings.slice(0,2)};
+ const selected=[...steps,...checks,...warnings].find(x=>x.excerpt);
+ return {description:description.slice(0,400),headings:headings.slice(0,9),steps:steps.slice(0,3).map(({excerpt,...x})=>x),checks:checks.slice(0,2).map(({excerpt,...x})=>x),warnings:warnings.slice(0,2).map(({excerpt,...x})=>x),evidence_excerpt:selected?{line:selected.line,text:selected.excerpt}:null};
 }
-function pickLane(item,desc,headings){
+function pickLane(item,desc,headings,category,path){
  const header=headings.map(x=>x.title).join(' ');
  const values=groups.map(([id,,regex],index)=>({id,index,score:(regex.test(item.name)?10:0)+(regex.test(item.source_path)?2:0)+(regex.test(desc)?2:0)+(regex.test(header)?1:0)}));
  values.sort((a,b)=>b.score-a.score||a.index-b.index);
  if(/^(google-mobile-ads|helm-chart|terraform|gke-|azure-|arduino-|iot-|dbt-|bazel-|checkpoint-|web3-|mobile-android|file-conversion|power-platform|procurement|iso27001|arquiteto)/i.test(item.name))return 'other-specialist';
- return values[0]?.score>0?values[0].id:'other-specialist';
+ if(values[0]?.score>0 && values[0].id!=='other-specialist')return values[0].id;
+ // When source-specific signals are weak, retain the original catalog lane,
+ // rather than hiding useful design/agent/frontend sources under 'other'.
+ if(category==='design')return /research|prototyp|interaction|ux-strategy/.test(path)?'ux-research':'visual-craft';
+ if(category==='model-output')return 'agent-workflow';
+ if(category==='web')return 'web-product';
+ return 'other-specialist';
 }
 const headers={'Accept':'application/vnd.github+json','User-Agent':'MungTangE-knowledge'};
 if(process.env.GITHUB_TOKEN)headers.Authorization='Bearer '+process.env.GITHUB_TOKEN;
@@ -69,13 +78,13 @@ async function read(item){
    return {id:item.id,name:item.name,category:item.category,repo:item.source_repo,path:item.source_path,sha:item.blob_sha,
       pinned_url:'https://github.com/'+item.source_repo+'/blob/'+item.blob_sha+'/'+item.source_path,
       status:'sha_verified',review:'automated-source-structure',license:'not_checked',
-      lane:pickLane(item,s.description,s.headings),activation:[...new Set([...keywords(item.name),...keywords(s.description).slice(0,20)])].slice(0,22),
-      headings:s.headings,steps:s.steps,checks:s.checks,warnings:s.warnings};
+      lane:pickLane(item,s.description,s.headings,item.category,item.source_path),activation:[...new Set([...keywords(item.name),...keywords(s.description).slice(0,20)])].slice(0,22),
+      headings:s.headings,steps:s.steps,checks:s.checks,warnings:s.warnings,evidence_excerpt:s.evidence_excerpt};
   }catch(e){error=String(e.message||e);await pause(600*(tryNo+1)*(tryNo+1));}
  }
  return {id:item.id,name:item.name,category:item.category,repo:item.source_repo,path:item.source_path,sha:item.blob_sha,
  pinned_url:'https://github.com/'+item.source_repo+'/blob/'+item.blob_sha+'/'+item.source_path,
- status:'fetch_failed',error,review:'not_reviewed',license:'not_checked',lane:'other-specialist',activation:[],headings:[],steps:[],checks:[],warnings:[]};
+ status:'fetch_failed',error,review:'not_reviewed',license:'not_checked',lane:'other-specialist',activation:[],headings:[],steps:[],checks:[],warnings:[],evidence_excerpt:null};
 }
 const cards=new Array(300);let cursor=0;
 await Promise.all(Array.from({length:6},async()=>{
@@ -103,6 +112,7 @@ for(const [id,label] of groups){
    '- **Source sections:** '+(c.headings.slice(0,6).map(x=>x.title).join(' → ')||'unavailable'),
    '- **Action anchors (keyword signatures):** '+actions,
    '- **Validation/caution anchors:** '+checks,
+   '- **Source excerpt (untrusted, max 18 words):** '+(c.evidence_excerpt?('L'+c.evidence_excerpt.line+': '+c.evidence_excerpt.text):'no procedural quote selected'),
    '- **Status:** '+c.review+'; license '+c.license+'.','');
   }
   save(root+file,lines.join('\n')+'\n');
