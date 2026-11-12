@@ -48,7 +48,8 @@ export function validateModelReview(obj,card,sourceText){
  if(obj.sha!==card.sha)errors.push('Review SHA mismatch');
  if(!good(obj.trigger))errors.push('Missing context-specific activation guidance');
  if(!good(obj.objective))errors.push('Missing objective');
- if(!Array.isArray(obj.practices)||obj.practices.length<2||obj.practices.length>7)errors.push('Need 2–7 source-specific practices');
+ if(!Array.isArray(obj.practices)||obj.practices.length>7)errors.push('Need 0–7 source-specific practices');
+ if(Array.isArray(obj.practices)&&obj.practices.length===0&&(!Array.isArray(obj.caveats)||!obj.caveats.some(x=>/insufficient|no actionable|no concrete/i.test(x))))errors.push('No practices requires explicit insufficient-source-detail caveat');
  const lines=sourceText.split(/\r?\n/);
  for(const [i,p] of (Array.isArray(obj.practices)?obj.practices:[]).entries()){
   if(!good(p.action))errors.push('Practice '+i+' lacks concrete action');
@@ -60,6 +61,10 @@ export function validateModelReview(obj,card,sourceText){
   }else{
     const excerpts=p.evidence_lines.map(n=>normal(lines[n-1])).join(' ');
     if(excerpts.replace(/[^a-z가-힣0-9]/gi,'').length<6)errors.push('Practice '+i+' cites empty/non-substantive lines');
+    const stop=new Set('about above after again along also another around because before below could should would there their these those then this when where which while with without from into through using uses used have been being will must need your user users make made check checks more less than what that into only each such does them over under'.split(' '));
+    const meaningful=s=>normal(s).replace(/[^a-z가-힣0-9]+/gi,' ').split(/\s+/).filter(w=>w.length>=5&&!stop.has(w));
+    const cited=new Set(meaningful(excerpts));
+    if(!meaningful(p.action).some(w=>cited.has(w)))errors.push('Practice '+i+' has no meaningful word overlap with cited lines');
   }
  }
  if(!Array.isArray(obj.caveats)||obj.caveats.length>8)errors.push('Invalid caveats');
@@ -78,12 +83,12 @@ function prompt(card,full){
  '{ "id": exact id, "sha": exact SHA, "objective": string, "trigger": string,',
  ' "practices": [ { "when": string, "action": string, "check": string, "evidence_lines": [1-based source line numbers] } ],',
  ' "caveats": string[], "related_tags": string[] }',
- 'Produce 2–7 NON-GENERIC practices explicitly derived from the source.',
+ 'Produce up to 7 NON-GENERIC practices explicitly derived from the source.',
  'Each action must be an independently worded instruction, not a quote or copied paragraph.',
  'Each when must explain applicability/exclusion; each check is an observable test if feasible, NOT a claim it was run.',
  'Each evidence line must actually support the described practice; avoid citing generic frontmatter or the title.',
  'If source is outside web/UI, accurately describe its niche instead of forcing it into frontend.',
- 'If the source lacks concrete procedures, return a specific limitation in caveats and as few supported practices as possible.',
+ 'If the source lacks ANY concrete procedure, return practices: [] and a caveat containing insufficient source detail. Do NOT invent actions to meet a quota.',
  'Never invent steps, metrics, tools, citations, licenses or a completed audit.',
  '',
  'SOURCE_ID '+card.id,'SOURCE_SHA '+card.sha,
@@ -130,11 +135,11 @@ const progress=()=>{
  for(const card of cards){
   if(existsSync(join(folder,card.id+'.json'))){try{
    const obj=JSON.parse(readFileSync(join(folder,card.id+'.json'),'utf8'));
-   if(obj.status==='model_reviewed_evidence_checked'&&obj.sha===card.sha)valid++;
+   if(obj.status==='model_line_evidence_checked'&&obj.sha===card.sha)valid++;
    else failed++;
   }catch{failed++;}}
  }
- return {catalog:300,source_verified:cards.filter(x=>x.status==='sha_verified').length,model_reviewed_evidence_checked:valid,unvalidated_or_failed:failed,remaining:300-valid};
+ return {catalog:300,source_verified:cards.filter(x=>x.status==='sha_verified').length,model_line_evidence_checked:valid,unvalidated_or_failed:failed,remaining:300-valid};
 };
 async function main(){
  const sub=args[0]||'status';
@@ -161,7 +166,7 @@ async function main(){
    const obj=parseStrictJson(response);
    const validation=validateModelReview(obj,card,original);
    if(!validation.ok)throw Error('Evidence validation rejected review: '+validation.errors.join('; '));
-   const record={...obj,status:'model_reviewed_evidence_checked',model:conf.model,source_url:card.pinned_url,checked_at:new Date().toISOString(),independent_human_review:false};
+   const record={...obj,status:'model_line_evidence_checked',model:conf.model,source_url:card.pinned_url,checked_at:new Date().toISOString(),independent_human_review:false};
    writeFileSync(dest,JSON.stringify(record,null,2)+'\n');
    complete++;console.log('Curated '+complete+' / '+max+': '+card.name);
   }catch(e){fail++;console.error('Not accepted: '+card.name+': '+String(e.message||e));}

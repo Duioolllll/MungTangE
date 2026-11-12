@@ -22,3 +22,12 @@ test('rejects wrong SHA or missing action',()=>{
  const out=structuredClone(ok);out.sha='b'.repeat(40);out.practices[0].action='';
  assert.equal(validateModelReview(out,card,src).ok,false);
 });
+
+test('allows no procedure only with explicit insufficient-source caveat',()=>{
+ const out=structuredClone(ok);out.practices=[];out.caveats=['insufficient source detail: no actionable procedure'];
+ assert.equal(validateModelReview(out,card,src).ok,true);
+});
+test('rejects unsupported action from a wrong but in-range line',()=>{
+ const out=structuredClone(ok);out.practices[0].evidence_lines=[4];
+ assert.equal(validateModelReview(out,card,src).ok,false);
+});
