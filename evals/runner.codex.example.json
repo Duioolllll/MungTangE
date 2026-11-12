@@ -1,0 +1,15 @@
+{
+  "model": "REPLACE_WITH_YOUR_ACTUAL_MODEL",
+  "command": "codex",
+  "args": [
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "workspace-write",
+    "-"
+  ],
+  "stdin_prompt": true,
+  "timeout_seconds": 900,
+  "env": {}
+}

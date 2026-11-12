@@ -31,7 +31,12 @@
     "analyze:sources": "npm run audit:sources",
     "check:synthesis": "npm run check:source-audit",
     "audit:sources": "node scripts/audit-upstream-sources.mjs",
-    "check:source-audit": "node scripts/verify-source-audit.mjs"
+    "check:source-audit": "node scripts/verify-source-audit.mjs",
+    "eval:prepare": "node evals/cli.mjs prepare",
+    "eval:run": "node evals/cli.mjs run",
+    "eval:score": "node evals/cli.mjs score",
+    "eval:smoke": "node evals/smoke.mjs",
+    "eval:contract": "node --test tests/evals-contract.test.mjs"
   },
   "engines": {
     "node": ">=20"
@@ -45,5 +50,11 @@
     "npx",
     "harness",
     "pipeline"
-  ]
+  ],
+  "devDependencies": {
+    "axe-core": "4.14.0",
+    "pixelmatch": "8.0.0",
+    "playwright": "1.65.0",
+    "pngjs": "7.0.0"
+  }
 }

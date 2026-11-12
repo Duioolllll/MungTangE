@@ -1,0 +1,39 @@
+name: Browser evaluator smoke
+on:
+  pull_request:
+    paths:
+      - "evals/**"
+      - "src/install.js"
+      - "tests/install.test.mjs"
+      - "tests/evals-contract.test.mjs"
+      - "package.json"
+      - ".github/workflows/eval-smoke.yml"
+  push:
+    branches: [main]
+    paths:
+      - "evals/**"
+      - "src/install.js"
+      - "tests/install.test.mjs"
+      - "tests/evals-contract.test.mjs"
+      - "package.json"
+      - ".github/workflows/eval-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install pinned evaluation dependencies
+        run: npm install --ignore-scripts --no-audit --no-fund
+      - name: Install Chromium and system dependencies
+        run: npx playwright install --with-deps chromium
+      - name: Verify contract and browser evaluator
+        run: npm run eval:contract && npm run eval:smoke

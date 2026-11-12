@@ -7,3 +7,5 @@ coverage/
 .env.*
 !.env.example
 site/catalog.json
+evals/.runs/
+evals/.runner.local.json

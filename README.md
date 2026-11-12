@@ -70,6 +70,22 @@ npx skills add Duioolllll/MungTangE --skill mungtange
 
 프롬프트는 AI의 작업 절차를 강화하지만, 도구 권한을 새로 만들어주지는 않습니다. 브라우저가 없는 AI는 실제 화면을 검증할 수 없고, GitHub 쓰기 권한이 없으면 PR을 만들 수 없습니다. MungTangE는 **하지 않은 검사를 통과했다고 말하지 않도록** 설계되어 있습니다.
 
+## MungTangE Benchmark v1 — 실제 효과 비교
+
+프롬프트의 문구 검사만으로는 AI 성능 향상을 입증할 수 없습니다.
+별도 [evals/](evals/README.md)에서 **웹 UI 과제 10개**, **기본 AI/MungTangE 동일 모델 2개 그룹**, **Playwright + axe-core 브라우저 검증**, **5가지 객관적 지표**, **스크린샷 차이와 자동 비교 보고서**를 제공합니다.
+
+~~~bash
+npm install
+npx playwright install chromium
+npm run eval:smoke                               # 테스트 프레임워크 동작 검증만
+npm run eval:prepare -- --run trial01            # 10×2 작업공간 생성
+npm run eval:run -- --run trial01 --config evals/.runner.local.json  # 실제 AI CLI 필요
+npm run eval:score -- --run trial01              # 실제 산출물 비교 보고서
+~~~
+
+**주의:** 일반 CI는 실제 유료 AI를 호출하지 않습니다. smoke는 알려진 정상/비정상 UI 샘플로 검사기를 테스트할 뿐, MungTangE 성능 향상 결과가 아닙니다. 사용자가 실제 모델 실행을 연결하기 전에는 **NOT RUN**입니다. 자세한 방법과 편향·비용 설명은 [Benchmark 문서](evals/README.md)에 있습니다.
+
 ## 개발 및 기여
 
 기존 CLI·카탈로그·GitHub Pages 기능은 유지됩니다. 프롬프트 수정은 루트 `SKILLS.md`만 편집한 뒤 `npm run sync:skill`로 설치용 사본을 생성합니다. `npm run verify`는 생성 결과·기존 코드·출처 검증 기록을 확인합니다. 원문 재검증은 별도 수동 작업이며, **어휘 매칭 결과를 실전 노하우나 품질 점수로 쓰지 않습니다.** 외부 SKILL.md의 라이선스는 해당 프로젝트에 남아 있으며 MungTangE에 자동 귀속되지 않습니다. [기여 가이드](CONTRIBUTING.md) · [보안 정책](SECURITY.md) · [라이선스](LICENSE).
