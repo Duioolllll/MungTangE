@@ -25,7 +25,9 @@
     "smoke": "node bin/mungtange.js doctor && node bin/mungtange.js catalog --category web --limit 3",
     "build:site": "node scripts/build-site.mjs",
     "lint:catalog": "node scripts/verify-catalog.mjs",
-    "verify": "npm run check && npm run build:site && npm run lint:catalog"
+    "verify": "npm run check:skill && npm run check && npm run build:site && npm run lint:catalog",
+    "sync:skill": "node scripts/sync-skill.mjs",
+    "check:skill": "node scripts/sync-skill.mjs --check"
   },
   "engines": {
     "node": ">=20"

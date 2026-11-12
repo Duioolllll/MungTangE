@@ -1,5 +1,8 @@
 # Safety, license and agent governance
 
+> **Optional deep reference.** The main SKILL.md is self-contained. This file is not required for ordinary prompt-only operation.
+
+
 ## Untrusted upstream SKILL.md
 
 The 300-entry catalog contains Git metadata, not embedded script payloads.
@@ -33,7 +36,7 @@ does not grant redistribution or reuse rights.
 - CLI by default is offline and performs local reads/writes only.
 - It does not invoke a model, deploy, merge, upload project files,
   download binaries, or call external skill scripts.
-- The user should review §npx§ package provenance before installation.
+- The user should review `npx` package provenance before installation.
 - No secrets, credentials or paid tool calls without consent.
 - No Git writes from agent workers without scoped ownership and review.
 - Prefer isolated worktrees for concurrent code changes.
