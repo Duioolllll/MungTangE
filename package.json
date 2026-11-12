@@ -3,15 +3,41 @@
   "version": "0.1.0",
   "description": "Evidence-linked 300-skill design and frontend pipeline harness",
   "type": "module",
-  "bin": { "mungtange": "./bin/mungtange.js" },
-  "exports": { ".": "./src/catalog.js" },
-  "files": ["bin", "src", "catalog", "skills", "SKILLS.md", "README.md", "docs", "LICENSE"],
+  "bin": {
+    "mungtange": "./bin/mungtange.js"
+  },
+  "exports": {
+    ".": "./src/catalog.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "catalog",
+    "skills",
+    "SKILLS.md",
+    "README.md",
+    "docs",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "node --test",
     "check": "node --check bin/mungtange.js && node --check src/catalog.js && node --check src/project.js && node --check src/pipeline.js && node --check src/install.js && npm test",
-    "smoke": "node bin/mungtange.js doctor && node bin/mungtange.js catalog --category web --limit 3"
+    "smoke": "node bin/mungtange.js doctor && node bin/mungtange.js catalog --category web --limit 3",
+    "build:site": "node scripts/build-site.mjs",
+    "lint:catalog": "node scripts/verify-catalog.mjs",
+    "verify": "npm run check && npm run build:site && npm run lint:catalog"
   },
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "license": "MIT",
-  "keywords": ["agent-skills", "skill-md", "design", "web", "npx", "harness", "pipeline"]
+  "keywords": [
+    "agent-skills",
+    "skill-md",
+    "design",
+    "web",
+    "npx",
+    "harness",
+    "pipeline"
+  ]
 }
