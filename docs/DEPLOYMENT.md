@@ -24,6 +24,10 @@ python3 -m http.server 8080 --directory site
 - Only the deployment job has `pages:write` and `id-token:write` and the `github-pages` environment. A PR cannot deploy via this workflow.
 - A rejected check must block merger through branch protection, configured by the maintainer.
 
+## PR review preview
+
+The CI run uploads a downloadable `mungtange-site-preview` artifact. Reviewers can download it from the Actions run and serve its extracted directory with `python3 -m http.server 8080` to inspect the site before merging. This is a build artifact, **not a public preview deployment**. Check real mobile/keyboard behavior separately.
+
 ## First deploy
 
 1. Merge a reviewed PR after checks succeed.
