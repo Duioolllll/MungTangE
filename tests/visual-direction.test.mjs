@@ -28,18 +28,18 @@ test('brand strategy separates framework, SaaS and other archetypes',()=>{
  assert.match(brand,/Builder's Field Notes/);
 });
 test('visual loop never invents a score or an observed defect',()=>{
- assert.match(loop,/does not certify visual quality|not a magical visual-quality grader/i);
+ assert.match(loop,/not\*\* aesthetic quality|not aesthetic quality|not a visual quality/i);
  assert.match(loop,/NOT RUN/);
- assert.match(loop,/actual PNG|viewed screenshots|viewing images/i);
- assert.match(loop,/never invent|do not.*invent|not an invented/i);
- assert.match(loop,/375.*768.*1440/);
+ assert.match(loop,/viewing the PNGs|viewed screenshot|screenshot/i);
+ assert.match(loop,/no invented defects|do not invent|never invent/i);
+ assert.match(loop,/1440.*768.*390/);
 });
 test('capture flag grammar and comparison environment mismatch detection',()=>{
  assert.deepEqual(parseFlags(['--url','http://localhost:3000/','--out','.visual-review/before']),
   {url:'http://localhost:3000/',out:'.visual-review/before'});
  assert.throws(()=>parseFlags(['--url']),/Invalid or duplicate/);
  assert.throws(()=>parseFlags(['--out','x','--out','y']),/Invalid or duplicate/);
- const a={url:'http://localhost:3000/',height:900,widths:[375,768,1440],colorScheme:'light'};
+ const a={url:'http://localhost:3000/',height:900,widths:[1440,768,390],colorScheme:'light'};
  assert.deepEqual(checkComparable(a,{...a}),[]);
  assert.ok(checkComparable(a,{...a,height:600}).length>0);
  assert.ok(checkComparable(a,{...a,colorScheme:'dark'}).length>0);

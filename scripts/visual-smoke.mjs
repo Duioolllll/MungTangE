@@ -34,23 +34,23 @@ try{
  const before=await captureSite({url,out:join(folder,'before'),waitMs:0});
  assert.equal(before.status,'CAPTURED');
  assert.equal(before.screens.length,3);
- assert.equal(before.screens[0].horizontalOverflow,true);
- assert.ok(existsSync(join(folder,'before','375.png')));
- assert.ok(existsSync(join(folder,'before','375-full.png')));
+ assert.equal(before.screens.find(s=>s.width===390).horizontalOverflow,true);
+ assert.ok(existsSync(join(folder,'before','390.png')));
+ assert.ok(existsSync(join(folder,'before','390-full.png')));
  assert.match(readFileSync(join(folder,'before','review-template.md'),'utf8'),/NOT RUN/);
  after=true;
  const next=await captureSite({url,out:join(folder,'after'),waitMs:0});
  assert.equal(next.status,'CAPTURED');
- assert.equal(next.screens[0].horizontalOverflow,false);
+ assert.equal(next.screens.find(s=>s.width===390).horizontalOverflow,false);
  const comparison=await compareCaptures({
   before:join(folder,'before'),after:join(folder,'after'),out:join(folder,'diff')
  });
  assert.equal(comparison.entries.length,3);
  assert.ok(comparison.entries.every(e=>e.status==='COMPARED'));
  assert.ok(comparison.entries.some(e=>e.changedPixels>0));
- assert.ok(existsSync(join(folder,'diff','diff-375.png')));
+ assert.ok(existsSync(join(folder,'diff','diff-390.png')));
  assert.match(readFileSync(join(folder,'diff','comparison.md'),'utf8'),/NOT RUN/);
- console.log('VISUAL SMOKE PASSED: Chromium captures 3 widths, detects overflow change, and produces pixel diff without quality claims.');
+ console.log('VISUAL SMOKE PASSED: Chromium captures 1440/768/390, detects overflow change, and produces pixel diff without quality claims.');
 }finally{
  await new Promise(ok=>server.close(ok));
  rmSync(folder,{recursive:true,force:true});

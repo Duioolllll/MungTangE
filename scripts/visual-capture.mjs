@@ -12,7 +12,7 @@ import {readFileSync,writeFileSync,mkdirSync,existsSync} from 'node:fs';
 import {resolve,join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 
-const widths=[375,768,1440],height=900;
+const widths=[1440,768,390],height=900;
 const scriptPath=fileURLToPath(import.meta.url);
 export function parseFlags(argv){
  const flags={};
@@ -44,7 +44,10 @@ export function checkComparable(before,after){
  if(before.url!==after.url)issues.push('URLs differ (even if visual content looks similar)');
  if(before.height!==after.height)issues.push('Viewport heights differ');
  if(before.colorScheme!==after.colorScheme)issues.push('Color schemes differ');
+ if(before.reducedMotion!==after.reducedMotion)issues.push('Motion preferences differ');
  if(JSON.stringify(before.widths)!==JSON.stringify(after.widths))issues.push('Captured widths differ');
+ if(before.browserVersion!==after.browserVersion)issues.push('Browser versions differ');
+ if(before.waitMs!==after.waitMs)issues.push('Capture stabilization delays differ');
  return issues;
 }
 const fmt=n=>Math.round(n*10000)/100;
@@ -60,7 +63,7 @@ export async function captureSite({url,out,colorScheme='light',allowRemote=false
  mkdirSync(dest,{recursive:true});
  const browser=await chromium.launch({headless:true});
  const manifest={schema:1,url:safeURL,capturedAt:new Date().toISOString(),browser:'chromium',browserVersion:browser.version(),
-  colorScheme,widths,height,waitMs,screens:[]};
+  colorScheme,widths,height,waitMs,reducedMotion:'reduce',screens:[]};
  try{
   for(const width of widths){
    const context=await browser.newContext({viewport:{width,height},colorScheme,reducedMotion:'reduce'});
