@@ -1,0 +1,1504 @@
+{
+  "category": "design",
+  "count": 100,
+  "curated_at": "2026-11-12",
+  "selection": "Topic-based sampled discovery across upstream repositories; fit_score is a heuristic, NOT popularity or quality score. Verify upstream content and license before installation.",
+  "items": [
+    {
+      "id": "Owl-Listener--designer-skills--design-critique",
+      "name": "design-critique",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "design-ops/skills/design-critique/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/design-ops/skills/design-critique/SKILL.md",
+      "blob_sha": "c16cac6a68ffbda4f02fa81d2f51acaf04453059",
+      "fit_score": 79,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--journey-map",
+      "name": "journey-map",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "design-research/skills/journey-map/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/design-research/skills/journey-map/SKILL.md",
+      "blob_sha": "ba44be331d54a1fb5ff8ddc99b0a709bb11792a4",
+      "fit_score": 85,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--accessibility-audit",
+      "name": "accessibility-audit",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "design-systems/skills/accessibility-audit/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/design-systems/skills/accessibility-audit/SKILL.md",
+      "blob_sha": "8bbd6c39fe5234768b5b69f6207cd9e60b530a93",
+      "fit_score": 85,
+      "tags": [
+        "accessibility"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--design-token-audit",
+      "name": "design-token-audit",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "designer-toolkit/skills/design-token-audit/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/designer-toolkit/skills/design-token-audit/SKILL.md",
+      "blob_sha": "b61fd295433c1191436ddff6d06b84de19a0f62a",
+      "fit_score": 85,
+      "tags": [
+        "design",
+        "token"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--animation-principles",
+      "name": "animation-principles",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "interaction-design/skills/animation-principles/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/interaction-design/skills/animation-principles/SKILL.md",
+      "blob_sha": "19f40e313464c9d1452ed997cd6c20d97765a078",
+      "fit_score": 85,
+      "tags": [
+        "animation"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--a-b-test-design",
+      "name": "a-b-test-design",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "prototyping-testing/skills/a-b-test-design/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/prototyping-testing/skills/a-b-test-design/SKILL.md",
+      "blob_sha": "877924bd129c4876b16d3285b6d892d75c1231e6",
+      "fit_score": 79,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--color-system",
+      "name": "color-system",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "ui-design/skills/color-system/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/ui-design/skills/color-system/SKILL.md",
+      "blob_sha": "dd08f858af80ff4b566c5289f2954cbfe82f6df5",
+      "fit_score": 91,
+      "tags": [
+        "color"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--business-design",
+      "name": "business-design",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "ux-strategy/skills/business-design/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/ux-strategy/skills/business-design/SKILL.md",
+      "blob_sha": "60c7d1440d1acf5891ee5a73025214ed26bd22ed",
+      "fit_score": 85,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--critique-brand-consistency",
+      "name": "critique-brand-consistency",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "visual-critique/skills/critique-brand-consistency/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/visual-critique/skills/critique-brand-consistency/SKILL.md",
+      "blob_sha": "a19a8c3cd5ff0e9aed9fa3f461da0887626756cb",
+      "fit_score": 85,
+      "tags": [
+        "brand"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--design-debt-audit",
+      "name": "design-debt-audit",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "design-ops/skills/design-debt-audit/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/design-ops/skills/design-debt-audit/SKILL.md",
+      "blob_sha": "a1326a770fcc019ccc0d8bd4f661498ad64449b3",
+      "fit_score": 79,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--survey-design",
+      "name": "survey-design",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "design-research/skills/survey-design/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/design-research/skills/survey-design/SKILL.md",
+      "blob_sha": "38bd86a9def20516bd848adc1ccb42ef5ec4f06e",
+      "fit_score": 85,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--component-spec",
+      "name": "component-spec",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "design-systems/skills/component-spec/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/design-systems/skills/component-spec/SKILL.md",
+      "blob_sha": "c1a77172bb39751712ac6c280df7836d82f3cb9b",
+      "fit_score": 85,
+      "tags": [
+        "component"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--ux-writing",
+      "name": "ux-writing",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "designer-toolkit/skills/ux-writing/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/designer-toolkit/skills/ux-writing/SKILL.md",
+      "blob_sha": "433517a418568d2880f7711d7d709aeea027d715",
+      "fit_score": 85,
+      "tags": [
+        "ux"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--conversational-ux",
+      "name": "conversational-ux",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "interaction-design/skills/conversational-ux/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/interaction-design/skills/conversational-ux/SKILL.md",
+      "blob_sha": "17b91a3bccc6b3ff4447e7345c0915fb7f94c2a9",
+      "fit_score": 85,
+      "tags": [
+        "ux"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--accessibility-test-plan",
+      "name": "accessibility-test-plan",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "prototyping-testing/skills/accessibility-test-plan/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/prototyping-testing/skills/accessibility-test-plan/SKILL.md",
+      "blob_sha": "2a81064b72ccb7cde42bb1f91e2fa808f0d0f639",
+      "fit_score": 79,
+      "tags": [
+        "accessibility"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--data-visualization",
+      "name": "data-visualization",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "ui-design/skills/data-visualization/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/ui-design/skills/data-visualization/SKILL.md",
+      "blob_sha": "4cb7248222900ae94896bccfc9186060d8f73722",
+      "fit_score": 91,
+      "tags": [
+        "visual"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--design-brief",
+      "name": "design-brief",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "ux-strategy/skills/design-brief/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/ux-strategy/skills/design-brief/SKILL.md",
+      "blob_sha": "bb78824cffd2c6d1e40970ca8586ea91a86ba730",
+      "fit_score": 85,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--critique-color",
+      "name": "critique-color",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "visual-critique/skills/critique-color/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/visual-critique/skills/critique-color/SKILL.md",
+      "blob_sha": "6dee60c26cb7147280d109cafb4f1aeefb51bd75",
+      "fit_score": 85,
+      "tags": [
+        "color"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--design-impact-reporting",
+      "name": "design-impact-reporting",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "design-ops/skills/design-impact-reporting/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/design-ops/skills/design-impact-reporting/SKILL.md",
+      "blob_sha": "89c82298cc818e626e272a6ed1164305eeb4e69f",
+      "fit_score": 79,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--affinity-diagram",
+      "name": "affinity-diagram",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "design-research/skills/affinity-diagram/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/design-research/skills/affinity-diagram/SKILL.md",
+      "blob_sha": "8e6d4270ae2bc5d045574e5519db6dbe5c1d9c47",
+      "fit_score": 70,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--design-token",
+      "name": "design-token",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "design-systems/skills/design-token/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/design-systems/skills/design-token/SKILL.md",
+      "blob_sha": "80779a817580923fb076f79b7ae695c0cf33a85d",
+      "fit_score": 85,
+      "tags": [
+        "design",
+        "token"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--design-negotiation",
+      "name": "design-negotiation",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "designer-toolkit/skills/design-negotiation/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/designer-toolkit/skills/design-negotiation/SKILL.md",
+      "blob_sha": "17af93f0f02a70d76098ec9c463ad4ea73242ebc",
+      "fit_score": 79,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--error-handling-ux",
+      "name": "error-handling-ux",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "interaction-design/skills/error-handling-ux/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/interaction-design/skills/error-handling-ux/SKILL.md",
+      "blob_sha": "ed88017380523be994ab5aaed6030a2ec38bf4e6",
+      "fit_score": 85,
+      "tags": [
+        "ux"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--prototype-strategy",
+      "name": "prototype-strategy",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "prototyping-testing/skills/prototype-strategy/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/prototyping-testing/skills/prototype-strategy/SKILL.md",
+      "blob_sha": "669bd7b0724f578af649e15abf59160bedf2c4f7",
+      "fit_score": 79,
+      "tags": [
+        "prototype"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--layout-grid",
+      "name": "layout-grid",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "ui-design/skills/layout-grid/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/ui-design/skills/layout-grid/SKILL.md",
+      "blob_sha": "13d1a0f3b6e7c9f62ec1e771513d702f58c7069b",
+      "fit_score": 91,
+      "tags": [
+        "layout"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--design-principles",
+      "name": "design-principles",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "ux-strategy/skills/design-principles/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/ux-strategy/skills/design-principles/SKILL.md",
+      "blob_sha": "80a51a4f58d7dfc340f103752a5e99e22084dc41",
+      "fit_score": 85,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--critique-typography",
+      "name": "critique-typography",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "visual-critique/skills/critique-typography/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/visual-critique/skills/critique-typography/SKILL.md",
+      "blob_sha": "5b59f2c1b0fe5c281c72cc52fcd7084a15045acb",
+      "fit_score": 85,
+      "tags": [
+        "typography"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--design-qa-checklist",
+      "name": "design-qa-checklist",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "design-ops/skills/design-qa-checklist/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/design-ops/skills/design-qa-checklist/SKILL.md",
+      "blob_sha": "b445fca9ed3a520ccd7dc27d8a503e425e1fcd29",
+      "fit_score": 79,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--behavioural-analytics",
+      "name": "behavioural-analytics",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "design-research/skills/behavioural-analytics/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/design-research/skills/behavioural-analytics/SKILL.md",
+      "blob_sha": "baad350760feb9f775eb10aa1a4f41250338d1b2",
+      "fit_score": 70,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--motion-system",
+      "name": "motion-system",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "design-systems/skills/motion-system/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/design-systems/skills/motion-system/SKILL.md",
+      "blob_sha": "93b767da3bf1735c18605a623601d08cefd611a6",
+      "fit_score": 85,
+      "tags": [
+        "motion"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--design-rationale",
+      "name": "design-rationale",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "designer-toolkit/skills/design-rationale/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/designer-toolkit/skills/design-rationale/SKILL.md",
+      "blob_sha": "0d1d67ee48d50d8123a86f2f3bbd0a27a2649cba",
+      "fit_score": 79,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--search-ux",
+      "name": "search-ux",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "interaction-design/skills/search-ux/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/interaction-design/skills/search-ux/SKILL.md",
+      "blob_sha": "d154ee63e407063c74fd8e8a6a386c70ee305ddb",
+      "fit_score": 85,
+      "tags": [
+        "ux"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--click-test-plan",
+      "name": "click-test-plan",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "prototyping-testing/skills/click-test-plan/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/prototyping-testing/skills/click-test-plan/SKILL.md",
+      "blob_sha": "d2d276152bb7376efe88bf85223130607e372526",
+      "fit_score": 58,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--typography-scale",
+      "name": "typography-scale",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "ui-design/skills/typography-scale/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/ui-design/skills/typography-scale/SKILL.md",
+      "blob_sha": "5f65c64b2b565ecad589f6fc7e56a25957e0a9d6",
+      "fit_score": 91,
+      "tags": [
+        "typography"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--competitive-analysis",
+      "name": "competitive-analysis",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "ux-strategy/skills/competitive-analysis/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/ux-strategy/skills/competitive-analysis/SKILL.md",
+      "blob_sha": "c1fa8a898126b2931d23344fb5a154f3834a9034",
+      "fit_score": 64,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--critique-visual-hierarchy",
+      "name": "critique-visual-hierarchy",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "visual-critique/skills/critique-visual-hierarchy/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/visual-critique/skills/critique-visual-hierarchy/SKILL.md",
+      "blob_sha": "dd82a355d90cc9c85ed2a8f8aaecd6aa8e7c7cfc",
+      "fit_score": 79,
+      "tags": [
+        "visual"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--design-review-process",
+      "name": "design-review-process",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "design-ops/skills/design-review-process/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/design-ops/skills/design-review-process/SKILL.md",
+      "blob_sha": "d6375641efed9b9bbaafa19766abcd7cdc7c7a7c",
+      "fit_score": 79,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--card-sort-analysis",
+      "name": "card-sort-analysis",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "design-research/skills/card-sort-analysis/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/design-research/skills/card-sort-analysis/SKILL.md",
+      "blob_sha": "4d20b06f1fd85008c23924f3c9cf96fd49e2c583",
+      "fit_score": 70,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--design-system-governance",
+      "name": "design-system-governance",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "design-systems/skills/design-system-governance/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/design-systems/skills/design-system-governance/SKILL.md",
+      "blob_sha": "8036d59e0d10cdc318f80d64034b7a41063dc068",
+      "fit_score": 79,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "Owl-Listener--designer-skills--design-system-adoption",
+      "name": "design-system-adoption",
+      "category": "design",
+      "source_repo": "Owl-Listener/designer-skills",
+      "source_path": "designer-toolkit/skills/design-system-adoption/SKILL.md",
+      "source_url": "https://github.com/Owl-Listener/designer-skills/blob/HEAD/designer-toolkit/skills/design-system-adoption/SKILL.md",
+      "blob_sha": "035bb93f11ef1ac22bbdec211e73ba2a55f00e2d",
+      "fit_score": 79,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--build-interactive-particle-trail",
+      "name": "build-interactive-particle-trail",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/build-interactive-particle-trail/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/build-interactive-particle-trail/SKILL.md",
+      "blob_sha": "429e5c683dc7e169ac327e89f9195f77562a1663",
+      "fit_score": 94,
+      "tags": [
+        "ui",
+        "art"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--image-first-grid-layout",
+      "name": "image-first-grid-layout",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/image-first-grid-layout/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/image-first-grid-layout/SKILL.md",
+      "blob_sha": "0db1d1e9a06c9967cebfafbc3885d7e71123300f",
+      "fit_score": 94,
+      "tags": [
+        "image",
+        "layout"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--agency-grid-layout-minimal",
+      "name": "agency-grid-layout-minimal",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/agency-grid-layout-minimal/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/agency-grid-layout-minimal/SKILL.md",
+      "blob_sha": "2731b7a5aec6177e4162f2ab1e54c0793434c96b",
+      "fit_score": 88,
+      "tags": [
+        "layout"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--ambient-section-particles",
+      "name": "ambient-section-particles",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/ambient-section-particles/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/ambient-section-particles/SKILL.md",
+      "blob_sha": "4beca95ab7da396a3aeb8cbe0a1dc192751bd48d",
+      "fit_score": 88,
+      "tags": [
+        "art"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--animation-on-scroll",
+      "name": "animation-on-scroll",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/animation-on-scroll/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/animation-on-scroll/SKILL.md",
+      "blob_sha": "86cdba41dee9eeb27ae7b7dcced46ade232f1b0e",
+      "fit_score": 88,
+      "tags": [
+        "animation"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--animation-systems",
+      "name": "animation-systems",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/animation-systems/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/animation-systems/SKILL.md",
+      "blob_sha": "bfba54e968cc09d063e8d60765b24022d998cf31",
+      "fit_score": 88,
+      "tags": [
+        "animation"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--blue-laser-clean-glass-layout",
+      "name": "blue-laser-clean-glass-layout",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/blue-laser-clean-glass-layout/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/blue-laser-clean-glass-layout/SKILL.md",
+      "blob_sha": "0720e0f192220d4d96379530e43e81caf39851fa",
+      "fit_score": 88,
+      "tags": [
+        "layout"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--build-awwwards-quality-sites",
+      "name": "build-awwwards-quality-sites",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/build-awwwards-quality-sites/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/build-awwwards-quality-sites/SKILL.md",
+      "blob_sha": "cdf06063574a31b9f7b1b39673a5eff866d931dc",
+      "fit_score": 88,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--build-threejs-scroll-worlds",
+      "name": "build-threejs-scroll-worlds",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/build-threejs-scroll-worlds/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/build-threejs-scroll-worlds/SKILL.md",
+      "blob_sha": "8996aca04d8d0df3311e0b1e2d1208176a18ede9",
+      "fit_score": 88,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--build-wireframe-scan-reveal",
+      "name": "build-wireframe-scan-reveal",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/build-wireframe-scan-reveal/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/build-wireframe-scan-reveal/SKILL.md",
+      "blob_sha": "a89ba27aafc449f3da1c65fdfd24a733dfd07af8",
+      "fit_score": 88,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--cinematic-gsap-lenis-motion-system",
+      "name": "cinematic-gsap-lenis-motion-system",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/cinematic-gsap-lenis-motion-system/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/cinematic-gsap-lenis-motion-system/SKILL.md",
+      "blob_sha": "1aa69da8460ce0db325765de5ff14c1d6b92960f",
+      "fit_score": 88,
+      "tags": [
+        "motion"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--dark-glass-clean-layout",
+      "name": "dark-glass-clean-layout",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/dark-glass-clean-layout/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/dark-glass-clean-layout/SKILL.md",
+      "blob_sha": "756e9e4012f3353f3176dc7307dc1da2d0986f8c",
+      "fit_score": 88,
+      "tags": [
+        "layout"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--framed-grid-layout",
+      "name": "framed-grid-layout",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/framed-grid-layout/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/framed-grid-layout/SKILL.md",
+      "blob_sha": "3604314f873d744d097bb78a3e2d35f65763c562",
+      "fit_score": 88,
+      "tags": [
+        "layout"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--glass-dark-ui",
+      "name": "glass-dark-ui",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/glass-dark-ui/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/glass-dark-ui/SKILL.md",
+      "blob_sha": "8ce6f95e14d0a8e1f92bda2588c34172a3962843",
+      "fit_score": 88,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--globe-particles",
+      "name": "globe-particles",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/globe-particles/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/globe-particles/SKILL.md",
+      "blob_sha": "b55295f3f06354e1173761fb94fc53d766280663",
+      "fit_score": 88,
+      "tags": [
+        "art"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--liquid-metal-border",
+      "name": "liquid-metal-border",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/liquid-metal-border/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/liquid-metal-border/SKILL.md",
+      "blob_sha": "a8b6c95092172b3fcfdad0cf68107ddb08bfd097",
+      "fit_score": 88,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--scroll-scrubbed-visual-sequence",
+      "name": "scroll-scrubbed-visual-sequence",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/scroll-scrubbed-visual-sequence/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/scroll-scrubbed-visual-sequence/SKILL.md",
+      "blob_sha": "ef5f0e104961a78d712eea0b96f44e0a5802bd36",
+      "fit_score": 88,
+      "tags": [
+        "visual"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--skeuomorphic-ui",
+      "name": "skeuomorphic-ui",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/skeuomorphic-ui/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/skeuomorphic-ui/SKILL.md",
+      "blob_sha": "c13194f30f4503b332124a532b03849e45fdd4d9",
+      "fit_score": 88,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--split-layout-technical",
+      "name": "split-layout-technical",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/split-layout-technical/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/split-layout-technical/SKILL.md",
+      "blob_sha": "406722079067f9f8d45069f727bdf28f9e582f71",
+      "fit_score": 88,
+      "tags": [
+        "layout"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--technical-wireframe-info-layout",
+      "name": "technical-wireframe-info-layout",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/technical-wireframe-info-layout/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/technical-wireframe-info-layout/SKILL.md",
+      "blob_sha": "d47a87edb1576d2a79b84989bcf8abbc30539f9d",
+      "fit_score": 88,
+      "tags": [
+        "layout"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--audit-ai-design-slop",
+      "name": "audit-ai-design-slop",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/ui/audit-ai-design-slop/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/ui/audit-ai-design-slop/SKILL.md",
+      "blob_sha": "3870f37844456b5b091c6369d7ccebd253598879",
+      "fit_score": 82,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--design-first-ui-prompting",
+      "name": "design-first-ui-prompting",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/ui/design-first-ui-prompting/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/ui/design-first-ui-prompting/SKILL.md",
+      "blob_sha": "e5a1a2a23d824dc9bd91aa238565becf05e6d2cf",
+      "fit_score": 82,
+      "tags": [
+        "design",
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--illustration-outlined-cartoon",
+      "name": "illustration-outlined-cartoon",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/illustration/illustration-outlined-cartoon/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/illustration/illustration-outlined-cartoon/SKILL.md",
+      "blob_sha": "2a49c5a9f06f6af282195aca874072ac5ddd1244",
+      "fit_score": 82,
+      "tags": [
+        "art"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--no-ai-design-slop",
+      "name": "no-ai-design-slop",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/ui/no-ai-design-slop/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/ui/no-ai-design-slop/SKILL.md",
+      "blob_sha": "1562176afd7130e4568409203f459074cea09bdf",
+      "fit_score": 82,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--optimize-web-animations",
+      "name": "optimize-web-animations",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/codex/optimize-web-animations/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/codex/optimize-web-animations/SKILL.md",
+      "blob_sha": "76f05a8827e51be0042a51633b767f75f2a78734",
+      "fit_score": 82,
+      "tags": [
+        "web",
+        "animation"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--url-to-motion-design",
+      "name": "url-to-motion-design",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/media/url-to-motion-design/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/media/url-to-motion-design/SKILL.md",
+      "blob_sha": "e89f34e63abd21af539aa176530c89f741799473",
+      "fit_score": 82,
+      "tags": [
+        "motion",
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--article-prompts-to-skills",
+      "name": "article-prompts-to-skills",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/codex/article-prompts-to-skills/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/codex/article-prompts-to-skills/SKILL.md",
+      "blob_sha": "68182c688d58e8422af2f262c78dd56d669f1c96",
+      "fit_score": 76,
+      "tags": [
+        "art"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--aura-asset-images",
+      "name": "aura-asset-images",
+      "category": "design",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/media/aura-asset-images/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/media/aura-asset-images/SKILL.md",
+      "blob_sha": "125bb0e8a91844478b10a2c96d74e377019526ef",
+      "fit_score": 76,
+      "tags": [
+        "image"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "emilkowalski--skills--animation-performance",
+      "name": "animation-performance",
+      "category": "design",
+      "source_repo": "emilkowalski/skills",
+      "source_path": "skills/animation-performance/SKILL.md",
+      "source_url": "https://github.com/emilkowalski/skills/blob/HEAD/skills/animation-performance/SKILL.md",
+      "blob_sha": "74c421e4e673cab84490f8b17b89735c30b0f555",
+      "fit_score": 76,
+      "tags": [
+        "animation"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "emilkowalski--skills--animation-vocabulary",
+      "name": "animation-vocabulary",
+      "category": "design",
+      "source_repo": "emilkowalski/skills",
+      "source_path": "skills/animation-vocabulary/SKILL.md",
+      "source_url": "https://github.com/emilkowalski/skills/blob/HEAD/skills/animation-vocabulary/SKILL.md",
+      "blob_sha": "5ab2976514c74a194ebf069506d95ff3a5a0084f",
+      "fit_score": 76,
+      "tags": [
+        "animation"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "emilkowalski--skills--apple-design",
+      "name": "apple-design",
+      "category": "design",
+      "source_repo": "emilkowalski/skills",
+      "source_path": "skills/apple-design/SKILL.md",
+      "source_url": "https://github.com/emilkowalski/skills/blob/HEAD/skills/apple-design/SKILL.md",
+      "blob_sha": "adf68c517f2d7d2781587d619de07f4de286da57",
+      "fit_score": 76,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "emilkowalski--skills--break-ui",
+      "name": "break-ui",
+      "category": "design",
+      "source_repo": "emilkowalski/skills",
+      "source_path": "skills/break-ui/SKILL.md",
+      "source_url": "https://github.com/emilkowalski/skills/blob/HEAD/skills/break-ui/SKILL.md",
+      "blob_sha": "091a28d488662d2451131f1aaa60a6dcd2391932",
+      "fit_score": 76,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "emilkowalski--skills--emil-design-eng",
+      "name": "emil-design-eng",
+      "category": "design",
+      "source_repo": "emilkowalski/skills",
+      "source_path": "skills/emil-design-eng/SKILL.md",
+      "source_url": "https://github.com/emilkowalski/skills/blob/HEAD/skills/emil-design-eng/SKILL.md",
+      "blob_sha": "dc063c2a861922c1c9f2412b824b0862746304f5",
+      "fit_score": 76,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "emilkowalski--skills--find-animation-opportunities",
+      "name": "find-animation-opportunities",
+      "category": "design",
+      "source_repo": "emilkowalski/skills",
+      "source_path": "skills/find-animation-opportunities/SKILL.md",
+      "source_url": "https://github.com/emilkowalski/skills/blob/HEAD/skills/find-animation-opportunities/SKILL.md",
+      "blob_sha": "d3b030fbca9abad9220a032f72d425c6b7fa2de8",
+      "fit_score": 76,
+      "tags": [
+        "animation"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "emilkowalski--skills--improve-animations",
+      "name": "improve-animations",
+      "category": "design",
+      "source_repo": "emilkowalski/skills",
+      "source_path": "skills/improve-animations/SKILL.md",
+      "source_url": "https://github.com/emilkowalski/skills/blob/HEAD/skills/improve-animations/SKILL.md",
+      "blob_sha": "d6e77f37272329af0cc36f9eeedbe5226e86ce63",
+      "fit_score": 76,
+      "tags": [
+        "animation"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "emilkowalski--skills--pick-ui-library",
+      "name": "pick-ui-library",
+      "category": "design",
+      "source_repo": "emilkowalski/skills",
+      "source_path": "skills/pick-ui-library/SKILL.md",
+      "source_url": "https://github.com/emilkowalski/skills/blob/HEAD/skills/pick-ui-library/SKILL.md",
+      "blob_sha": "5e0028e988b88d2a88a019fdc978b4732243e467",
+      "fit_score": 76,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "emilkowalski--skills--prototype",
+      "name": "prototype",
+      "category": "design",
+      "source_repo": "emilkowalski/skills",
+      "source_path": "skills/prototype/SKILL.md",
+      "source_url": "https://github.com/emilkowalski/skills/blob/HEAD/skills/prototype/SKILL.md",
+      "blob_sha": "dbcc1a23c66933f7372c0aacbce2b0d7cc6100b6",
+      "fit_score": 76,
+      "tags": [
+        "prototype"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "jakubkrehel--skills--build-design",
+      "name": "build-design",
+      "category": "design",
+      "source_repo": "jakubkrehel/skills",
+      "source_path": "skills/build-design/SKILL.md",
+      "source_url": "https://github.com/jakubkrehel/skills/blob/HEAD/skills/build-design/SKILL.md",
+      "blob_sha": "f598b6e37c9e58e2e4913250df317a9dfd0bd517",
+      "fit_score": 82,
+      "tags": [
+        "ui",
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "jakubkrehel--skills--better-accessibility",
+      "name": "better-accessibility",
+      "category": "design",
+      "source_repo": "jakubkrehel/skills",
+      "source_path": "skills/better-accessibility/SKILL.md",
+      "source_url": "https://github.com/jakubkrehel/skills/blob/HEAD/skills/better-accessibility/SKILL.md",
+      "blob_sha": "5e9ab11b4c109d56c435731198ed23ba0267e529",
+      "fit_score": 76,
+      "tags": [
+        "accessibility"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "jakubkrehel--skills--better-colors",
+      "name": "better-colors",
+      "category": "design",
+      "source_repo": "jakubkrehel/skills",
+      "source_path": "skills/better-colors/SKILL.md",
+      "source_url": "https://github.com/jakubkrehel/skills/blob/HEAD/skills/better-colors/SKILL.md",
+      "blob_sha": "e0b3049b65a4e369217ca5f67b89ad3adf311fa0",
+      "fit_score": 76,
+      "tags": [
+        "color"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "jakubkrehel--skills--better-layout",
+      "name": "better-layout",
+      "category": "design",
+      "source_repo": "jakubkrehel/skills",
+      "source_path": "skills/better-layout/SKILL.md",
+      "source_url": "https://github.com/jakubkrehel/skills/blob/HEAD/skills/better-layout/SKILL.md",
+      "blob_sha": "d2a6a8226dc12d0cbb8f5c193fbf4c8329325085",
+      "fit_score": 76,
+      "tags": [
+        "layout"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "jakubkrehel--skills--better-typography",
+      "name": "better-typography",
+      "category": "design",
+      "source_repo": "jakubkrehel/skills",
+      "source_path": "skills/better-typography/SKILL.md",
+      "source_url": "https://github.com/jakubkrehel/skills/blob/HEAD/skills/better-typography/SKILL.md",
+      "blob_sha": "843e22d6c32b930d8aa225d7150201bf6f6c80b6",
+      "fit_score": 76,
+      "tags": [
+        "typography"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "jakubkrehel--skills--better-ui",
+      "name": "better-ui",
+      "category": "design",
+      "source_repo": "jakubkrehel/skills",
+      "source_path": "skills/better-ui/SKILL.md",
+      "source_url": "https://github.com/jakubkrehel/skills/blob/HEAD/skills/better-ui/SKILL.md",
+      "blob_sha": "b8abea328cfc49549423adce6674af7f50cce044",
+      "fit_score": 76,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "jakubkrehel--skills--better-interface",
+      "name": "better-interface",
+      "category": "design",
+      "source_repo": "jakubkrehel/skills",
+      "source_path": "skills/better-interface/SKILL.md",
+      "source_url": "https://github.com/jakubkrehel/skills/blob/HEAD/skills/better-interface/SKILL.md",
+      "blob_sha": "11a75671a0cca1d24aeb6d70007aff6079c85696",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "jakubkrehel--skills--explain-interface",
+      "name": "explain-interface",
+      "category": "design",
+      "source_repo": "jakubkrehel/skills",
+      "source_path": "skills/explain-interface/SKILL.md",
+      "source_url": "https://github.com/jakubkrehel/skills/blob/HEAD/skills/explain-interface/SKILL.md",
+      "blob_sha": "c40dacde86b60bd698a0313287731257ed581fb1",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "jakubkrehel--skills--interface-review",
+      "name": "interface-review",
+      "category": "design",
+      "source_repo": "jakubkrehel/skills",
+      "source_path": "skills/interface-review/SKILL.md",
+      "source_url": "https://github.com/jakubkrehel/skills/blob/HEAD/skills/interface-review/SKILL.md",
+      "blob_sha": "3b14135fedc6ba71738070312024a0931d50cff1",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "nextlevelbuilder--ui-ux-pro-max-skill--ui-ux-pro-max",
+      "name": "ui-ux-pro-max",
+      "category": "design",
+      "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "source_path": ".claude/skills/ui-ux-pro-max/SKILL.md",
+      "source_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/HEAD/.claude/skills/ui-ux-pro-max/SKILL.md",
+      "blob_sha": "2cacc8756e816a1eb6bfa44307372f2aeb445902",
+      "fit_score": 85,
+      "tags": [
+        "ui",
+        "ux"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "nextlevelbuilder--ui-ux-pro-max-skill--banner-design",
+      "name": "banner-design",
+      "category": "design",
+      "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "source_path": ".claude/skills/banner-design/SKILL.md",
+      "source_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/HEAD/.claude/skills/banner-design/SKILL.md",
+      "blob_sha": "79fa5ee1884ce1b9f76627a1bea073d3dd67ee7b",
+      "fit_score": 79,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "nextlevelbuilder--ui-ux-pro-max-skill--brand",
+      "name": "brand",
+      "category": "design",
+      "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "source_path": ".claude/skills/brand/SKILL.md",
+      "source_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/HEAD/.claude/skills/brand/SKILL.md",
+      "blob_sha": "3eddf309084e6c4493fa19a6b31e755703ba5e86",
+      "fit_score": 79,
+      "tags": [
+        "brand"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "nextlevelbuilder--ui-ux-pro-max-skill--design",
+      "name": "design",
+      "category": "design",
+      "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "source_path": ".claude/skills/design/SKILL.md",
+      "source_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/HEAD/.claude/skills/design/SKILL.md",
+      "blob_sha": "0dda90057cd5aa19b127c51ac1227fbf8a1465c2",
+      "fit_score": 79,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "nextlevelbuilder--ui-ux-pro-max-skill--design-system",
+      "name": "design-system",
+      "category": "design",
+      "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "source_path": ".claude/skills/design-system/SKILL.md",
+      "source_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/HEAD/.claude/skills/design-system/SKILL.md",
+      "blob_sha": "804e553325fedc49dd7e75c30c6cffeebaa6650b",
+      "fit_score": 79,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "ibelick--ui-skills--component-canvas",
+      "name": "component-canvas",
+      "category": "design",
+      "source_repo": "ibelick/ui-skills",
+      "source_path": "skills/component-canvas/SKILL.md",
+      "source_url": "https://github.com/ibelick/ui-skills/blob/HEAD/skills/component-canvas/SKILL.md",
+      "blob_sha": "b692a37cc106fb1c42c1377faf405bd7c34a0f17",
+      "fit_score": 82,
+      "tags": [
+        "component",
+        "canvas"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "ibelick--ui-skills--baseline-ui",
+      "name": "baseline-ui",
+      "category": "design",
+      "source_repo": "ibelick/ui-skills",
+      "source_path": "skills/baseline-ui/SKILL.md",
+      "source_url": "https://github.com/ibelick/ui-skills/blob/HEAD/skills/baseline-ui/SKILL.md",
+      "blob_sha": "98477ee0f2e9cc7506453ee5aa9f88d1d033ab2f",
+      "fit_score": 76,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "ibelick--ui-skills--create-design-md",
+      "name": "create-design-md",
+      "category": "design",
+      "source_repo": "ibelick/ui-skills",
+      "source_path": "skills/create-design-md/SKILL.md",
+      "source_url": "https://github.com/ibelick/ui-skills/blob/HEAD/skills/create-design-md/SKILL.md",
+      "blob_sha": "1aa15726985929fe8d95624767cdc9a524418925",
+      "fit_score": 76,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "ibelick--ui-skills--fixing-accessibility",
+      "name": "fixing-accessibility",
+      "category": "design",
+      "source_repo": "ibelick/ui-skills",
+      "source_path": "skills/fixing-accessibility/SKILL.md",
+      "source_url": "https://github.com/ibelick/ui-skills/blob/HEAD/skills/fixing-accessibility/SKILL.md",
+      "blob_sha": "e2dcd7004645277488a142be152878b7310437e1",
+      "fit_score": 76,
+      "tags": [
+        "accessibility"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "ibelick--ui-skills--fixing-motion-performance",
+      "name": "fixing-motion-performance",
+      "category": "design",
+      "source_repo": "ibelick/ui-skills",
+      "source_path": "skills/fixing-motion-performance/SKILL.md",
+      "source_url": "https://github.com/ibelick/ui-skills/blob/HEAD/skills/fixing-motion-performance/SKILL.md",
+      "blob_sha": "7d22f2ecdd3305f73cf202cb9b5a0e4c1d3700e5",
+      "fit_score": 76,
+      "tags": [
+        "motion"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "anthropics--skills--web-artifacts-builder",
+      "name": "web-artifacts-builder",
+      "category": "design",
+      "source_repo": "anthropics/skills",
+      "source_path": "skills/web-artifacts-builder/SKILL.md",
+      "source_url": "https://github.com/anthropics/skills/blob/HEAD/skills/web-artifacts-builder/SKILL.md",
+      "blob_sha": "8b39b19f259b4216ecb07574741dd8eaa9863a07",
+      "fit_score": 88,
+      "tags": [
+        "web",
+        "art",
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "anthropics--skills--brand-guidelines",
+      "name": "brand-guidelines",
+      "category": "design",
+      "source_repo": "anthropics/skills",
+      "source_path": "skills/brand-guidelines/SKILL.md",
+      "source_url": "https://github.com/anthropics/skills/blob/HEAD/skills/brand-guidelines/SKILL.md",
+      "blob_sha": "47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59",
+      "fit_score": 82,
+      "tags": [
+        "brand",
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "anthropics--skills--canvas-design",
+      "name": "canvas-design",
+      "category": "design",
+      "source_repo": "anthropics/skills",
+      "source_path": "skills/canvas-design/SKILL.md",
+      "source_url": "https://github.com/anthropics/skills/blob/HEAD/skills/canvas-design/SKILL.md",
+      "blob_sha": "9f63fee82de84cd4230e1d0e322247b61eb4c94c",
+      "fit_score": 82,
+      "tags": [
+        "canvas",
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "anthropics--skills--academy-guide",
+      "name": "academy-guide",
+      "category": "design",
+      "source_repo": "anthropics/skills",
+      "source_path": "skills/academy-guide/SKILL.md",
+      "source_url": "https://github.com/anthropics/skills/blob/HEAD/skills/academy-guide/SKILL.md",
+      "blob_sha": "cefeaeb20cc29a803af0335d7c7155b066d8770f",
+      "fit_score": 76,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    }
+  ]
+}
