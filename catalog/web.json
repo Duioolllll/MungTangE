@@ -1,0 +1,1531 @@
+{
+  "category": "web",
+  "count": 100,
+  "curated_at": "2026-11-12",
+  "selection": "Topic-based source catalog for UI implementation, browser QA, animation, SEO and performance; scores are heuristic fit, not popularity. Upstream content is not auto-executed.",
+  "items": [
+    {
+      "id": "vercel-labs--agent-skills--web-design-guidelines",
+      "name": "web-design-guidelines",
+      "category": "web",
+      "source_repo": "vercel-labs/agent-skills",
+      "source_path": "skills/web-design-guidelines/SKILL.md",
+      "source_url": "https://github.com/vercel-labs/agent-skills/blob/HEAD/skills/web-design-guidelines/SKILL.md",
+      "blob_sha": "ceae92ab319216a68274168fba9b63b998b65997",
+      "fit_score": 77,
+      "tags": [
+        "web",
+        "design",
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "vercel-labs--agent-skills--react-best-practices",
+      "name": "react-best-practices",
+      "category": "web",
+      "source_repo": "vercel-labs/agent-skills",
+      "source_path": "skills/react-best-practices/SKILL.md",
+      "source_url": "https://github.com/vercel-labs/agent-skills/blob/HEAD/skills/react-best-practices/SKILL.md",
+      "blob_sha": "237988de4a66dd8a71d30a2c24ebe1a86b58d04e",
+      "fit_score": 69,
+      "tags": [
+        "react"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "vercel-labs--agent-skills--react-native-skills",
+      "name": "react-native-skills",
+      "category": "web",
+      "source_repo": "vercel-labs/agent-skills",
+      "source_path": "skills/react-native-skills/SKILL.md",
+      "source_url": "https://github.com/vercel-labs/agent-skills/blob/HEAD/skills/react-native-skills/SKILL.md",
+      "blob_sha": "73401865dd7440a43c5243b107a3763e0d2f4aae",
+      "fit_score": 69,
+      "tags": [
+        "react"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "vercel-labs--agent-skills--react-view-transitions",
+      "name": "react-view-transitions",
+      "category": "web",
+      "source_repo": "vercel-labs/agent-skills",
+      "source_path": "skills/react-view-transitions/SKILL.md",
+      "source_url": "https://github.com/vercel-labs/agent-skills/blob/HEAD/skills/react-view-transitions/SKILL.md",
+      "blob_sha": "665db73fe55b2504d1123857f14606472cdefd0a",
+      "fit_score": 69,
+      "tags": [
+        "react"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "vercel-labs--agent-skills--writing-guidelines",
+      "name": "writing-guidelines",
+      "category": "web",
+      "source_repo": "vercel-labs/agent-skills",
+      "source_path": "skills/writing-guidelines/SKILL.md",
+      "source_url": "https://github.com/vercel-labs/agent-skills/blob/HEAD/skills/writing-guidelines/SKILL.md",
+      "blob_sha": "63facf310252a990d154bed12b3dcdd295ba771a",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "vercel-labs--agent-skills--vercel-optimize",
+      "name": "vercel-optimize",
+      "category": "web",
+      "source_repo": "vercel-labs/agent-skills",
+      "source_path": "skills/vercel-optimize/SKILL.md",
+      "source_url": "https://github.com/vercel-labs/agent-skills/blob/HEAD/skills/vercel-optimize/SKILL.md",
+      "blob_sha": "c8a6d6d7075b2cc3f7921da89de86e6926f78985",
+      "fit_score": 54,
+      "tags": [
+        "optimiz"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "vercel-labs--agent-skills--composition-patterns",
+      "name": "composition-patterns",
+      "category": "web",
+      "source_repo": "vercel-labs/agent-skills",
+      "source_path": "skills/composition-patterns/SKILL.md",
+      "source_url": "https://github.com/vercel-labs/agent-skills/blob/HEAD/skills/composition-patterns/SKILL.md",
+      "blob_sha": "d07025bf943345bc1cf15eb923594f889ff881f0",
+      "fit_score": 50,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "greensock--gsap-skills--gsap-performance",
+      "name": "gsap-performance",
+      "category": "web",
+      "source_repo": "greensock/gsap-skills",
+      "source_path": "skills/gsap-performance/SKILL.md",
+      "source_url": "https://github.com/greensock/gsap-skills/blob/HEAD/skills/gsap-performance/SKILL.md",
+      "blob_sha": "05792acf5b0ea7fd30042cdc5e91282e8e047898",
+      "fit_score": 73,
+      "tags": [
+        "gsap",
+        "performance"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "greensock--gsap-skills--gsap-react",
+      "name": "gsap-react",
+      "category": "web",
+      "source_repo": "greensock/gsap-skills",
+      "source_path": "skills/gsap-react/SKILL.md",
+      "source_url": "https://github.com/greensock/gsap-skills/blob/HEAD/skills/gsap-react/SKILL.md",
+      "blob_sha": "e2e51805457943cd4982fe792b858c14fa2c3c8f",
+      "fit_score": 73,
+      "tags": [
+        "gsap",
+        "react"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "greensock--gsap-skills--gsap-core",
+      "name": "gsap-core",
+      "category": "web",
+      "source_repo": "greensock/gsap-skills",
+      "source_path": "skills/gsap-core/SKILL.md",
+      "source_url": "https://github.com/greensock/gsap-skills/blob/HEAD/skills/gsap-core/SKILL.md",
+      "blob_sha": "98639432f4112b664aa5e53cf5d8ea1a4697eff9",
+      "fit_score": 69,
+      "tags": [
+        "gsap"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "greensock--gsap-skills--gsap-frameworks",
+      "name": "gsap-frameworks",
+      "category": "web",
+      "source_repo": "greensock/gsap-skills",
+      "source_path": "skills/gsap-frameworks/SKILL.md",
+      "source_url": "https://github.com/greensock/gsap-skills/blob/HEAD/skills/gsap-frameworks/SKILL.md",
+      "blob_sha": "3c2df8611b61d0c97abb8d32ed922ce8207424e5",
+      "fit_score": 69,
+      "tags": [
+        "gsap"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "greensock--gsap-skills--gsap-plugins",
+      "name": "gsap-plugins",
+      "category": "web",
+      "source_repo": "greensock/gsap-skills",
+      "source_path": "skills/gsap-plugins/SKILL.md",
+      "source_url": "https://github.com/greensock/gsap-skills/blob/HEAD/skills/gsap-plugins/SKILL.md",
+      "blob_sha": "bb5f7483038adf26a889c8b2b85e3ef2cf0141dc",
+      "fit_score": 69,
+      "tags": [
+        "gsap"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "greensock--gsap-skills--gsap-scrolltrigger",
+      "name": "gsap-scrolltrigger",
+      "category": "web",
+      "source_repo": "greensock/gsap-skills",
+      "source_path": "skills/gsap-scrolltrigger/SKILL.md",
+      "source_url": "https://github.com/greensock/gsap-skills/blob/HEAD/skills/gsap-scrolltrigger/SKILL.md",
+      "blob_sha": "6d8c09f2136c108595c9e0db859c4a39460e99cf",
+      "fit_score": 69,
+      "tags": [
+        "gsap"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "greensock--gsap-skills--gsap-timeline",
+      "name": "gsap-timeline",
+      "category": "web",
+      "source_repo": "greensock/gsap-skills",
+      "source_path": "skills/gsap-timeline/SKILL.md",
+      "source_url": "https://github.com/greensock/gsap-skills/blob/HEAD/skills/gsap-timeline/SKILL.md",
+      "blob_sha": "1fed372b0e5276b2a207d80bc23f81180a0dff55",
+      "fit_score": 69,
+      "tags": [
+        "gsap"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "greensock--gsap-skills--gsap-utils",
+      "name": "gsap-utils",
+      "category": "web",
+      "source_repo": "greensock/gsap-skills",
+      "source_path": "skills/gsap-utils/SKILL.md",
+      "source_url": "https://github.com/greensock/gsap-skills/blob/HEAD/skills/gsap-utils/SKILL.md",
+      "blob_sha": "367e405e027936ce6b5fb85ec996beb135715194",
+      "fit_score": 69,
+      "tags": [
+        "gsap"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--lightweight-charts-react-components",
+      "name": "lightweight-charts-react-components",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/lightweight-charts-react-components/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/lightweight-charts-react-components/SKILL.md",
+      "blob_sha": "f0afcc07d15584907697d38bcf2172f7974b01aa",
+      "fit_score": 77,
+      "tags": [
+        "chart",
+        "react",
+        "component"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--playwright-explore-website",
+      "name": "playwright-explore-website",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/playwright-explore-website/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/playwright-explore-website/SKILL.md",
+      "blob_sha": "626c378e118bb81ad83fe08b5d17f2cc5a759ba1",
+      "fit_score": 77,
+      "tags": [
+        "playwright",
+        "web",
+        "site"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--gsap-framer-scroll-animation",
+      "name": "gsap-framer-scroll-animation",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/gsap-framer-scroll-animation/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/gsap-framer-scroll-animation/SKILL.md",
+      "blob_sha": "dfb3a84fde584080ce17938d014aaa049eae4c5f",
+      "fit_score": 73,
+      "tags": [
+        "gsap",
+        "animat"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--landing-page-conversion-audit",
+      "name": "landing-page-conversion-audit",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/landing-page-conversion-audit/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/landing-page-conversion-audit/SKILL.md",
+      "blob_sha": "e1d627d2bdb38cac223c87eb046a4b520d429a26",
+      "fit_score": 73,
+      "tags": [
+        "landing",
+        "page"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--penpot-uiux-design",
+      "name": "penpot-uiux-design",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/penpot-uiux-design/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/penpot-uiux-design/SKILL.md",
+      "blob_sha": "b8f589e44af0169c002ea4fa56805354ca767ca2",
+      "fit_score": 73,
+      "tags": [
+        "ui",
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--playwright-automation-fill-in-form",
+      "name": "playwright-automation-fill-in-form",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/playwright-automation-fill-in-form/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/playwright-automation-fill-in-form/SKILL.md",
+      "blob_sha": "b67d3aab56775c495e47c66c5c06351fb5374534",
+      "fit_score": 73,
+      "tags": [
+        "playwright",
+        "form"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--playwright-generate-test",
+      "name": "playwright-generate-test",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/playwright-generate-test/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/playwright-generate-test/SKILL.md",
+      "blob_sha": "5d80435fe1697ca3d572bc653df877e503643b85",
+      "fit_score": 73,
+      "tags": [
+        "playwright",
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--power-platform-mcp-connector-suite",
+      "name": "power-platform-mcp-connector-suite",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/power-platform-mcp-connector-suite/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/power-platform-mcp-connector-suite/SKILL.md",
+      "blob_sha": "2c73a9d49feb25202afbdada08f572cb5a49595d",
+      "fit_score": 73,
+      "tags": [
+        "form",
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--premium-frontend-ui",
+      "name": "premium-frontend-ui",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/premium-frontend-ui/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/premium-frontend-ui/SKILL.md",
+      "blob_sha": "35922e088cd4f02a4171ebd8534bbb3ec3f9101e",
+      "fit_score": 73,
+      "tags": [
+        "frontend",
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--react-container-presentation-component",
+      "name": "react-container-presentation-component",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/react-container-presentation-component/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/react-container-presentation-component/SKILL.md",
+      "blob_sha": "12e040c78eb224e39b07af8bb2ac3b8ad285a41a",
+      "fit_score": 73,
+      "tags": [
+        "react",
+        "component"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--react19-test-patterns",
+      "name": "react19-test-patterns",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/react19-test-patterns/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/react19-test-patterns/SKILL.md",
+      "blob_sha": "b586d70527faf9ad59436335cc1c8b8373482f9c",
+      "fit_score": 73,
+      "tags": [
+        "react",
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--unit-test-vue-pinia",
+      "name": "unit-test-vue-pinia",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/unit-test-vue-pinia/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/unit-test-vue-pinia/SKILL.md",
+      "blob_sha": "05ed68728295d4b6c16676300ab3b925ffc6bd9c",
+      "fit_score": 73,
+      "tags": [
+        "test",
+        "vue"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--web-design-reviewer",
+      "name": "web-design-reviewer",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/web-design-reviewer/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/web-design-reviewer/SKILL.md",
+      "blob_sha": "21764d37e99e24b2f4f0df3ea9fbbe099f0b739b",
+      "fit_score": 73,
+      "tags": [
+        "web",
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--webapp-testing",
+      "name": "webapp-testing",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/webapp-testing/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/webapp-testing/SKILL.md",
+      "blob_sha": "281fff4e9d0b10cccb695f283ea6d8136a75ba56",
+      "fit_score": 73,
+      "tags": [
+        "web",
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--acquire-codebase-knowledge",
+      "name": "acquire-codebase-knowledge",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/acquire-codebase-knowledge/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/acquire-codebase-knowledge/SKILL.md",
+      "blob_sha": "0ef102e7a65fecd906998e2b03f86cc435870a46",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--anti-ui-slop",
+      "name": "anti-ui-slop",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/anti-ui-slop/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/anti-ui-slop/SKILL.md",
+      "blob_sha": "63c9375fb01068f57d2a07f3e33be6e584cbed84",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--arduino-azure-iot-edge-integration",
+      "name": "arduino-azure-iot-edge-integration",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/arduino-azure-iot-edge-integration/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/arduino-azure-iot-edge-integration/SKILL.md",
+      "blob_sha": "39ccfc9e7dc02cd9d6dc27f5847cbf6f3425a65b",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--azure-smart-city-iot-solution-builder",
+      "name": "azure-smart-city-iot-solution-builder",
+      "category": "web",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/azure-smart-city-iot-solution-builder/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/azure-smart-city-iot-solution-builder/SKILL.md",
+      "blob_sha": "437845a89ae52590b4be6cf9e12620de82a5ae1e",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--web-component-design",
+      "name": "web-component-design",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/ui-design/skills/web-component-design/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/ui-design/skills/web-component-design/SKILL.md",
+      "blob_sha": "f118d3e536640a9e1caeff14f9cefe0d37d5c3c7",
+      "fit_score": 77,
+      "tags": [
+        "web",
+        "component",
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--bazel-build-optimization",
+      "name": "bazel-build-optimization",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/developer-essentials/skills/bazel-build-optimization/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/developer-essentials/skills/bazel-build-optimization/SKILL.md",
+      "blob_sha": "5cf85ac52d725f813f863efea4af869aa3dca45a",
+      "fit_score": 73,
+      "tags": [
+        "ui",
+        "optimiz"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--brand-landingpage",
+      "name": "brand-landingpage",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/brand-landingpage/skills/brand-landingpage/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/brand-landingpage/skills/brand-landingpage/SKILL.md",
+      "blob_sha": "213b315dd7833ac1206566c494c6e846db535c22",
+      "fit_score": 73,
+      "tags": [
+        "landing",
+        "page"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--tailwind-design-system",
+      "name": "tailwind-design-system",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/frontend-mobile-development/skills/tailwind-design-system/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/frontend-mobile-development/skills/tailwind-design-system/SKILL.md",
+      "blob_sha": "17c4fd0ec99c26254e58288b7219dfe44d0a20ba",
+      "fit_score": 73,
+      "tags": [
+        "tailwind",
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--web3-testing",
+      "name": "web3-testing",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/blockchain-web3/skills/web3-testing/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/blockchain-web3/skills/web3-testing/SKILL.md",
+      "blob_sha": "3f4bee6470847de524f8f4bf042de772b3bd0306",
+      "fit_score": 73,
+      "tags": [
+        "web",
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--before-you-build",
+      "name": "before-you-build",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/before-you-build/skills/before-you-build/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/before-you-build/skills/before-you-build/SKILL.md",
+      "blob_sha": "6a2aac015556218e8c3c3ec4e775c1d42eea192e",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--kpi-dashboard-design",
+      "name": "kpi-dashboard-design",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/business-analytics/skills/kpi-dashboard-design/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/business-analytics/skills/kpi-dashboard-design/SKILL.md",
+      "blob_sha": "a7cbffcb06c4202ddba028946ab6cade3f662e71",
+      "fit_score": 69,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--react-modernization",
+      "name": "react-modernization",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/framework-migration/skills/react-modernization/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/framework-migration/skills/react-modernization/SKILL.md",
+      "blob_sha": "bf9a545b589b4ad0fb9fb0a4440f965023fe0c88",
+      "fit_score": 69,
+      "tags": [
+        "react"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--security-requirement-extraction",
+      "name": "security-requirement-extraction",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/security-scanning/skills/security-requirement-extraction/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/security-scanning/skills/security-requirement-extraction/SKILL.md",
+      "blob_sha": "a56194330bf9f70cc78a24539d1ce6c5fea8845d",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--wcag-audit-patterns",
+      "name": "wcag-audit-patterns",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md",
+      "blob_sha": "c071acee41a2a2c7d4df04da7281d193215dfca7",
+      "fit_score": 65,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--python-performance-optimization",
+      "name": "python-performance-optimization",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/python-development/skills/python-performance-optimization/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/python-development/skills/python-performance-optimization/SKILL.md",
+      "blob_sha": "32d8363f3d69f19f77368724690269e79b604f88",
+      "fit_score": 58,
+      "tags": [
+        "performance",
+        "optimiz"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--checkpoint-promotion",
+      "name": "checkpoint-promotion",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/llm-finetuning/skills/checkpoint-promotion/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/llm-finetuning/skills/checkpoint-promotion/SKILL.md",
+      "blob_sha": "22566d5595f2ed5574d16aec6b971924b57ee49d",
+      "fit_score": 54,
+      "tags": [
+        "motion"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--cost-optimization",
+      "name": "cost-optimization",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/cloud-infrastructure/skills/cost-optimization/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/cloud-infrastructure/skills/cost-optimization/SKILL.md",
+      "blob_sha": "f1ecb0335932f5770b4c17acacf2604f53acde06",
+      "fit_score": 54,
+      "tags": [
+        "optimiz"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--dbt-transformation-patterns",
+      "name": "dbt-transformation-patterns",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/data-engineering/skills/dbt-transformation-patterns/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/data-engineering/skills/dbt-transformation-patterns/SKILL.md",
+      "blob_sha": "a893b4dff7521a5935c926825bd952ed04753e72",
+      "fit_score": 54,
+      "tags": [
+        "form"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--helm-chart-scaffolding",
+      "name": "helm-chart-scaffolding",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/kubernetes-operations/skills/helm-chart-scaffolding/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/kubernetes-operations/skills/helm-chart-scaffolding/SKILL.md",
+      "blob_sha": "34880d40ee13f819a21e28558c5c3171a2048a41",
+      "fit_score": 54,
+      "tags": [
+        "chart"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--temporal-python-testing",
+      "name": "temporal-python-testing",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/backend-development/skills/temporal-python-testing/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/backend-development/skills/temporal-python-testing/SKILL.md",
+      "blob_sha": "7be1f999c64e184a5786c50b8c2a643003e0fde3",
+      "fit_score": 54,
+      "tags": [
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--block-no-verify-hook",
+      "name": "block-no-verify-hook",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/block-no-verify/skills/block-no-verify-hook/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/block-no-verify/skills/block-no-verify-hook/SKILL.md",
+      "blob_sha": "b3f592cd7468526e6cadc29246e274837880fd34",
+      "fit_score": 50,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--file-conversion",
+      "name": "file-conversion",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/file-conversion/skills/file-conversion/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/file-conversion/skills/file-conversion/SKILL.md",
+      "blob_sha": "a9233089c55f33c51c921abb470d6077960df73c",
+      "fit_score": 50,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--grafana-dashboards",
+      "name": "grafana-dashboards",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/observability-monitoring/skills/grafana-dashboards/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/observability-monitoring/skills/grafana-dashboards/SKILL.md",
+      "blob_sha": "0d67ccf0e7e28208378831cf38f969621b48c62d",
+      "fit_score": 50,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--typescript-advanced-types",
+      "name": "typescript-advanced-types",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/javascript-typescript/skills/typescript-advanced-types/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/javascript-typescript/skills/typescript-advanced-types/SKILL.md",
+      "blob_sha": "5057af799047bbae1a066ffead0b6e298f0ef7ff",
+      "fit_score": 50,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--mobile-android-design",
+      "name": "mobile-android-design",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/ui-design/skills/mobile-android-design/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/ui-design/skills/mobile-android-design/SKILL.md",
+      "blob_sha": "daf78dddb4716cecfd80b1046fe8c279c74aa298",
+      "fit_score": 73,
+      "tags": [
+        "mobile",
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--e2e-testing-patterns",
+      "name": "e2e-testing-patterns",
+      "category": "web",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/developer-essentials/skills/e2e-testing-patterns/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/developer-essentials/skills/e2e-testing-patterns/SKILL.md",
+      "blob_sha": "b3f258d2afc635866a7d264d6f817b467c037e2b",
+      "fit_score": 54,
+      "tags": [
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--api-test-suite-builder",
+      "name": "api-test-suite-builder",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering/skills/api-test-suite-builder/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering/skills/api-test-suite-builder/SKILL.md",
+      "blob_sha": "31d315a3b033137bd1cf1f7c0181c318af4d3fd9",
+      "fit_score": 73,
+      "tags": [
+        "test",
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--helm-chart-builder",
+      "name": "helm-chart-builder",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering/helm-chart-builder/skills/helm-chart-builder/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering/helm-chart-builder/skills/helm-chart-builder/SKILL.md",
+      "blob_sha": "a23bcea9d39d82df05283db6f42ecd30a5439a5c",
+      "fit_score": 73,
+      "tags": [
+        "chart",
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--landing-page-generator",
+      "name": "landing-page-generator",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "product-team/skills/landing-page-generator/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/product-team/skills/landing-page-generator/SKILL.md",
+      "blob_sha": "556a5c5478782b7cbf2618999d4b0866a28a27e4",
+      "fit_score": 73,
+      "tags": [
+        "landing",
+        "page"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--arquiteto-de-empresa",
+      "name": "arquiteto-de-empresa",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "c-level-advisor/arquiteto-de-empresa/skills/arquiteto-de-empresa/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/c-level-advisor/arquiteto-de-empresa/skills/arquiteto-de-empresa/SKILL.md",
+      "blob_sha": "03d13dbeec10bbf3e9d1b81c0827bc737c6e34f9",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--board-deck-builder",
+      "name": "board-deck-builder",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "c-level-advisor/skills/board-deck-builder/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/c-level-advisor/skills/board-deck-builder/SKILL.md",
+      "blob_sha": "4f07b50caaefdfdf58356568cb2196ae0c4f8f52",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--brand-guidelines",
+      "name": "brand-guidelines",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "marketing-skill/skills/brand-guidelines/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/marketing-skill/skills/brand-guidelines/SKILL.md",
+      "blob_sha": "daa66f58ddd97071a34f69c83e19c3f60741f232",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--browserstack",
+      "name": "browserstack",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering-team/playwright-pro/skills/browserstack/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering-team/playwright-pro/skills/browserstack/SKILL.md",
+      "blob_sha": "fc8a970bd1ea51f60835dbc8884cab84dd71704d",
+      "fit_score": 69,
+      "tags": [
+        "browser"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--design-system",
+      "name": "design-system",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "markdown-html/skills/design-system/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/markdown-html/skills/design-system/SKILL.md",
+      "blob_sha": "4b429ee21525b315b45558170fce5f588eaffceb",
+      "fit_score": 69,
+      "tags": [
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--email-template-builder",
+      "name": "email-template-builder",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering-team/skills/email-template-builder/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering-team/skills/email-template-builder/SKILL.md",
+      "blob_sha": "e6e1e16ec1c960c954469e38ad44d675b57dd29c",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--landing",
+      "name": "landing",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "marketing/landing/skills/landing/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/marketing/landing/skills/landing/SKILL.md",
+      "blob_sha": "e0ae4733a5e670204ee95aaf8bddc01f02817348",
+      "fit_score": 69,
+      "tags": [
+        "landing"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--security-guidance",
+      "name": "security-guidance",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering/security-guidance/skills/security-guidance/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering/security-guidance/skills/security-guidance/SKILL.md",
+      "blob_sha": "dcc1f29ed3438cabac9506182e51fad6fabd8db6",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--workflow-builder",
+      "name": "workflow-builder",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering/workflow-builder/skills/workflow-builder/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering/workflow-builder/skills/workflow-builder/SKILL.md",
+      "blob_sha": "a6c17ba45f4e0afcf78e84ef31a910ffc3f8201b",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--a11y-audit",
+      "name": "a11y-audit",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering-team/a11y-audit/skills/a11y-audit/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering-team/a11y-audit/skills/a11y-audit/SKILL.md",
+      "blob_sha": "ba6afc3b40a3be4087ed69ce3a4d52ef59c49d83",
+      "fit_score": 65,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--information-security-manager-iso27001",
+      "name": "information-security-manager-iso27001",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "ra-qm-team/skills/information-security-manager-iso27001/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/ra-qm-team/skills/information-security-manager-iso27001/SKILL.md",
+      "blob_sha": "481c1bf2be0899e9f1dbac2da6aa823a661672af",
+      "fit_score": 54,
+      "tags": [
+        "form"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--llm-cost-optimizer",
+      "name": "llm-cost-optimizer",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering/llm-cost-optimizer/skills/llm-cost-optimizer/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering/llm-cost-optimizer/skills/llm-cost-optimizer/SKILL.md",
+      "blob_sha": "acc8b050a486897bcde7025153fc48e98c17cae0",
+      "fit_score": 54,
+      "tags": [
+        "optimiz"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--procurement-optimizer",
+      "name": "procurement-optimizer",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "business-operations/skills/procurement-optimizer/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/business-operations/skills/procurement-optimizer/SKILL.md",
+      "blob_sha": "ee19016d60fa40b3f80ef435f98f625abdc2e1a4",
+      "fit_score": 54,
+      "tags": [
+        "optimiz"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--stress-test",
+      "name": "stress-test",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "c-level-advisor/executive-mentor/skills/stress-test/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/c-level-advisor/executive-mentor/skills/stress-test/SKILL.md",
+      "blob_sha": "2bc171c6c8dcb11be2062279cf5c8ed36f5a1a8d",
+      "fit_score": 54,
+      "tags": [
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--terraform-patterns",
+      "name": "terraform-patterns",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering/terraform-patterns/skills/terraform-patterns/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering/terraform-patterns/skills/terraform-patterns/SKILL.md",
+      "blob_sha": "527962989f35b17b13b0d44af489ed693e9c3bef",
+      "fit_score": 54,
+      "tags": [
+        "form"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--browser-automation",
+      "name": "browser-automation",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering/skills/browser-automation/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering/skills/browser-automation/SKILL.md",
+      "blob_sha": "b7ce7d0f6d7c2ec9aa428808acdc06d0f81182d0",
+      "fit_score": 69,
+      "tags": [
+        "browser"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--ui-design-system",
+      "name": "ui-design-system",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "product-team/skills/ui-design-system/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/product-team/skills/ui-design-system/SKILL.md",
+      "blob_sha": "5794dab19ea98823383f2bd65c31bafcd4ebbe47",
+      "fit_score": 73,
+      "tags": [
+        "ui",
+        "design"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--local-seo-manager",
+      "name": "local-seo-manager",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "marketing-skill/skills/local-seo-manager/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/marketing-skill/skills/local-seo-manager/SKILL.md",
+      "blob_sha": "6b66003efb14c99201154468478e9783cd758467",
+      "fit_score": 69,
+      "tags": [
+        "seo"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--testrail",
+      "name": "testrail",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering-team/playwright-pro/skills/testrail/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering-team/playwright-pro/skills/testrail/SKILL.md",
+      "blob_sha": "820ecc0813ebad1b57c7e50da43a0a7efaeb7c8c",
+      "fit_score": 54,
+      "tags": [
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--markdown-html-orchestrator",
+      "name": "markdown-html-orchestrator",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "markdown-html/skills/markdown-html-orchestrator/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/markdown-html/skills/markdown-html-orchestrator/SKILL.md",
+      "blob_sha": "abc807e073cf23c21c2439a82e5ca533f9a12f21",
+      "fit_score": 69,
+      "tags": [
+        "html"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--senior-frontend",
+      "name": "senior-frontend",
+      "category": "web",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering-team/skills/senior-frontend/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering-team/skills/senior-frontend/SKILL.md",
+      "blob_sha": "09c354d4d4e546596ec1ee09a2b4b5904751d38c",
+      "fit_score": 69,
+      "tags": [
+        "frontend"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--build-daily-inspiration-sites",
+      "name": "build-daily-inspiration-sites",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/codex/build-daily-inspiration-sites/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/codex/build-daily-inspiration-sites/SKILL.md",
+      "blob_sha": "29c622cc1e68d6b3fa56314ddefbf57b89f366ea",
+      "fit_score": 73,
+      "tags": [
+        "ui",
+        "site"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--build-mobile-threejs-games",
+      "name": "build-mobile-threejs-games",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/game-development/build-mobile-threejs-games/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/game-development/build-mobile-threejs-games/SKILL.md",
+      "blob_sha": "24375a237ed223ce82e1e32fcda438974904525f",
+      "fit_score": 73,
+      "tags": [
+        "ui",
+        "mobile"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--landing-page",
+      "name": "landing-page",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/landing-page/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/landing-page/SKILL.md",
+      "blob_sha": "ba43c9b98417818daf21bbeab7a460a49e416750",
+      "fit_score": 73,
+      "tags": [
+        "landing",
+        "page"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--game-dev-combat-animation",
+      "name": "game-dev-combat-animation",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/game-combat/game-dev-combat-animation/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/game-combat/game-dev-combat-animation/SKILL.md",
+      "blob_sha": "3176811d6a3d400224fd5275301491d0086802c0",
+      "fit_score": 69,
+      "tags": [
+        "animat"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--html-explainer-video",
+      "name": "html-explainer-video",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/media/html-explainer-video/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/media/html-explainer-video/SKILL.md",
+      "blob_sha": "5326cec466cbdc96d7d3a0b8cdca0d5b5b7f3668",
+      "fit_score": 69,
+      "tags": [
+        "html"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--browser-video-recording",
+      "name": "browser-video-recording",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/codex/browser-video-recording/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/codex/browser-video-recording/SKILL.md",
+      "blob_sha": "3e2a81ccf517e72bf5f2ef81ce242dca730ba506",
+      "fit_score": 69,
+      "tags": [
+        "browser"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--test-playable-web-games",
+      "name": "test-playable-web-games",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/game-development/test-playable-web-games/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/game-development/test-playable-web-games/SKILL.md",
+      "blob_sha": "49b7ac030d822ae4543e8f022882415119b4cc24",
+      "fit_score": 73,
+      "tags": [
+        "test",
+        "web"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--tailwindcss",
+      "name": "tailwindcss",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/tailwindcss/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/tailwindcss/SKILL.md",
+      "blob_sha": "fe522920fd8c8f534bf696dd3090d3d16dedbaf5",
+      "fit_score": 73,
+      "tags": [
+        "tailwind",
+        "css"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--html-reel",
+      "name": "html-reel",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/media/html-reel/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/media/html-reel/SKILL.md",
+      "blob_sha": "f98512fa2e3b28f93e5693654d1f0fdc8fd7389e",
+      "fit_score": 69,
+      "tags": [
+        "html"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--daily-ui-inspiration-capture",
+      "name": "daily-ui-inspiration-capture",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/codex/daily-ui-inspiration-capture/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/codex/daily-ui-inspiration-capture/SKILL.md",
+      "blob_sha": "a8bde424c370f2679fc4b82545f8f56034bb1a21",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--build-game-audio-feedback",
+      "name": "build-game-audio-feedback",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/game-development/build-game-audio-feedback/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/game-development/build-game-audio-feedback/SKILL.md",
+      "blob_sha": "4699a97a36a4c6be0f179cb3c30359b3abc3799a",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--webgl-landing-steering",
+      "name": "webgl-landing-steering",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/webgl-landing-steering/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/webgl-landing-steering/SKILL.md",
+      "blob_sha": "489aedbeb3dc6889395f15c919f341cc7d6894e5",
+      "fit_score": 73,
+      "tags": [
+        "web",
+        "landing"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--unsplash-asset-images",
+      "name": "unsplash-asset-images",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/media/unsplash-asset-images/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/media/unsplash-asset-images/SKILL.md",
+      "blob_sha": "cacf5a32616451ae8e14140c2b167558089ebf6e",
+      "fit_score": 50,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--html-to-interaction-prompts",
+      "name": "html-to-interaction-prompts",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/codex/html-to-interaction-prompts/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/codex/html-to-interaction-prompts/SKILL.md",
+      "blob_sha": "6689ce7abb55ea25597e5e3b2396a6287c65b0cc",
+      "fit_score": 69,
+      "tags": [
+        "html"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--build-game-camera-controls",
+      "name": "build-game-camera-controls",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/game-development/build-game-camera-controls/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/game-development/build-game-camera-controls/SKILL.md",
+      "blob_sha": "aef8aa5f5afa0b0200c6c7ff648da24cbca43908",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "MengTo--Skills--background-grid-webgl",
+      "name": "background-grid-webgl",
+      "category": "web",
+      "source_repo": "MengTo/Skills",
+      "source_path": "agent-skills/web-design/background-grid-webgl/SKILL.md",
+      "source_url": "https://github.com/MengTo/Skills/blob/HEAD/agent-skills/web-design/background-grid-webgl/SKILL.md",
+      "blob_sha": "8bd40421adcbaf7600550d252e1c7618dd272be0",
+      "fit_score": 69,
+      "tags": [
+        "web"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "google--skills--google-mobile-ads-android-migrate-to-next-gen",
+      "name": "google-mobile-ads-android-migrate-to-next-gen",
+      "category": "web",
+      "source_repo": "google/skills",
+      "source_path": "skills/ads/google-mobile-ads-android-migrate-to-next-gen/SKILL.md",
+      "source_url": "https://github.com/google/skills/blob/HEAD/skills/ads/google-mobile-ads-android-migrate-to-next-gen/SKILL.md",
+      "blob_sha": "5fc8bf4af4d0c89f784d84314680bc03989886d5",
+      "fit_score": 73,
+      "tags": [
+        "mobile",
+        "next"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "google--skills--cloud-build-basics",
+      "name": "cloud-build-basics",
+      "category": "web",
+      "source_repo": "google/skills",
+      "source_path": "skills/cloud/cloud-build-basics/SKILL.md",
+      "source_url": "https://github.com/google/skills/blob/HEAD/skills/cloud/cloud-build-basics/SKILL.md",
+      "blob_sha": "0f1672618d609be7f85803cc37c337cd1faf2770",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "google--skills--sign-in-with-google-web",
+      "name": "sign-in-with-google-web",
+      "category": "web",
+      "source_repo": "google/skills",
+      "source_path": "skills/identity/sign-in-with-google-web/SKILL.md",
+      "source_url": "https://github.com/google/skills/blob/HEAD/skills/identity/sign-in-with-google-web/SKILL.md",
+      "blob_sha": "b4ef40e8a6f70be0ce95392e14a00a3b683c1bdf",
+      "fit_score": 69,
+      "tags": [
+        "web"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "google--skills--google-ads-api-quickstart",
+      "name": "google-ads-api-quickstart",
+      "category": "web",
+      "source_repo": "google/skills",
+      "source_path": "skills/ads/google-ads-api-quickstart/SKILL.md",
+      "source_url": "https://github.com/google/skills/blob/HEAD/skills/ads/google-ads-api-quickstart/SKILL.md",
+      "blob_sha": "962d305a154afac23e80fbe3534e5137c6ab6120",
+      "fit_score": 69,
+      "tags": [
+        "ui"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "google--skills--gke-ai-troubleshooting-node-unresponsive-timeout",
+      "name": "gke-ai-troubleshooting-node-unresponsive-timeout",
+      "category": "web",
+      "source_repo": "google/skills",
+      "source_path": "skills/cloud/gke-ai-troubleshooting-node-unresponsive-timeout/SKILL.md",
+      "source_url": "https://github.com/google/skills/blob/HEAD/skills/cloud/gke-ai-troubleshooting-node-unresponsive-timeout/SKILL.md",
+      "blob_sha": "d35b2544a91974bad7d64b12ac2df56279030b89",
+      "fit_score": 69,
+      "tags": [
+        "responsive"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    }
+  ]
+}
