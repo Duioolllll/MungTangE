@@ -28,7 +28,7 @@ test('brand strategy separates framework, SaaS and other archetypes',()=>{
  assert.match(brand,/Builder's Field Notes/);
 });
 test('visual loop never invents a score or an observed defect',()=>{
- assert.match(loop,/not a visual quality|NOT a visual quality/i);
+ assert.match(loop,/does not certify visual quality|not a magical visual-quality grader/i);
  assert.match(loop,/NOT RUN/);
  assert.match(loop,/actual PNG|viewed screenshots|viewing images/i);
  assert.match(loop,/never invent|do not.*invent|not an invented/i);
