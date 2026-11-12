@@ -1,72 +1,67 @@
-# Architecture: MungTangE pipeline
+# Architecture — prompt-first, CLI optional
 
-## Responsibilities and trust boundaries
+## Two intentionally separate modes
 
-~~~text
-                 local user goal + project snapshot
-                                 │
-          ┌──────────────────────▼─────────────────────┐
-          │ first-party CLI / skill: task classifier   │
-          │ scanProject → loadCatalog → selectSkills   │
-          └──────────────────────┬─────────────────────┘
-                                 │
-                      metadata only (no imports)
-                                 ▼
-             100 design | 100 model output | 100 web
-                     provenance + SHA + heuristic
-                                 │
-                                 ▼
-       brief ─gate─ research ─gate─ system ─gate─ build
-          └───────── run manifest + decisions ─────────┘
-                                 │
-                          independent audit
-                                 │
-                       human release approval
-                                 ▼
-                          ship / handoff
+### 1. Default: prompt-only Agent Skill
 
-  main → CI/Node tests → deterministic static build → Pages
-  PR   → CI/Node tests → preview artifact NOT deployed
-~~~
+```text
+User request + available project/source
+       ↓
+SKILL.md (short core router + principles)
+       ↓ (only relevant topics)
+references/{DESIGN,PLAYBOOKS,PIPELINE,QUALITY,...}.md
+       ↓
+BRIEF → EXPLORE → DESIGN → BUILD → VERIFY → DELIVER
+       ↓
+Actual files/results + truthful PASS/FAIL/NOT RUN/BLOCKED
+```
 
-The upstream 300 are **candidates for discovery**, not runnable plugins. The only installable first-party skill is `skills/mungtange/SKILL.md` with local references. The app/site does not ingest or render remote Markdown.
+No Node.js CLI, `.mungtange/` directory, run ID, JSON report, catalog
+download, paid API or subagent platform is required. The AI can only
+edit code, take screenshots, execute tests or publish changes through
+the tools and permissions actually available.
 
-## Source-of-truth files
+Canonical source: `skills/mungtange/SKILL.md` (under 500 lines).
+Supporting documents: `skills/mungtange/references/*.md`.
+The root `SKILLS.md` is a **generated view**, linked for easy copying.
+Generate with `npm run build:skill` and enforce consistency with
+`npm run check:skill`. The relative link paths are rewritten for
+root-level readers.
 
-| Layer | Source of truth | Output |
-| --- | --- | --- |
-| Skills catalog | `catalog/{design,model-output,web}.json` | metadata loaded by `src/catalog.js` |
-| Ranking | `src/catalog.js` | context-specific selections |
-| Project profile | `src/project.js` | framework/language detection |
-| Lifecycle | `src/pipeline.js` | `.mungtange/manifest.json` and six report templates |
-| Installation | `src/install.js` | first-party skill copied to Codex/Claude/OpenCode paths |
-| CLI | `bin/mungtange.js` | commands and nonzero exit on failed gates |
-| Web catalog | `scripts/build-site.mjs` | generated `site/catalog.json` |
-| UX | `site/index.html` + CSS/JS | filterable, static GitHub Pages front end |
-| QA/CI | `scripts/verify-catalog.mjs` + tests | schema, link allowlist, build integrity |
+### 2. Compatibility: optional Node CLI
 
-## Data contract
+The legacy `bin/mungtange.js` CLI remains available for the users who
+want local stack detection, 300-entry catalog selection, task packet
+generation and structural stage report checks. That workflow can
+create `.mungtange/` and JSON reports, which are **not requirements
+of the prompt-first skill**. See [CLI details](LEGACY-CLI.md).
 
-An upstream item has `id`, `name`, `category`, `source_repo`, `source_path`, `source_url`, `blob_sha`, `fit_score`, `tags`, `reviewed`. A file recorded in Git's tree is **not** necessarily safe or compatible.
+The catalog's three categories of 100 are links and metadata, not
+300 audited, installed, runnable or licensed-to-copy skills. They
+are not packaged as required context with the standalone skill.
 
-Selection uses task words, stack detection, source diversity, and a heuristic score. Do not describe `fit_score` as star count, empirical effectiveness, or security confidence.
+## Website and CI
 
-Stage reports require the correct run ID, a reviewer name, all required boolean checks and existing local evidence paths. This is structural validation, not a claim that artifacts were independently inspected. `ship` additionally requires recorded human approval.
+```text
+catalog/*.json (source metadata)
+       ↓ scripts/build-site.mjs
+site/catalog.json + static HTML/CSS/JS
+       ↓
+GitHub Actions CI checks → GitHub Pages on main
+```
 
-## Multi-agent scheduler policy
+`src/catalog.js` selects metadata for the optional CLI; it does not
+control the prompt. GitHub Pages renders sources using safe DOM
+`textContent` without running remote skill code.
 
-Use a directed acyclic graph with one coordinator and bounded workers. Each task contract must include `id`, `depends_on`, `owner`, `owned_paths`, `inputs`, `outputs`, `verify_commands`, `risk` and `rollback`. Schedule only tasks whose dependencies passed and whose owned paths are disjoint. A critic cannot mark its own generated output independently verified.
+## Trust and release boundaries
 
-### Fail-closed state changes
+External instructions are untrusted reference data. Repo/tool scopes,
+human approval and licensing requirements remain in force. Evidence
+from tests and real browser sessions must be distinguished from
+model self-report; an unrun test is `NOT RUN`, not success.
 
-- `pending → running`: owner assigned and prerequisites passed
-- `running → evidence-ready`: files and test logs exist
-- `evidence-ready → verified`: independent reviewer reproduced checks
-- `verified → approved`: relevant human approval received
-- `any → blocked`: license uncertainty, unsafe request, failed test, conflict or stale report
-
-A failed step returns to its owner with a reproduction path, not to a blind regeneration loop. Bounded retries (default two), explicit review, no silent overrides.
-
-## Release boundaries
-
-Pages is a read-only display of repository data. No page can authorize a merge. The CI workflow uses read permission. The Pages workflow obtains only the additional GitHub Pages/OIDC permissions needed for GitHub deployment. Branch protection and Pages source selection are manual repository-admin controls.
+No default prompt path performs npm publishing, PR merging, paid
+model calls or irreversible deployment. For real multi-agent tools,
+use the optional bounded file ownership rules in
+[ORCHESTRATION.md](../skills/mungtange/references/ORCHESTRATION.md).

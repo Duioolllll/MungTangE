@@ -1,49 +1,66 @@
-# Quality evaluation — verification rubric
+# Verification depth — read when testing, auditing or shipping
 
-This is an evaluation **contract**, not a promise that a human or browser
-evaluation actually happened. A reviewer must attach real evidence.
+This is a **quality rubric**, not evidence that any test was run.
+The core skill decides the relevant checks and remains responsible
+for an honest handoff.
 
-## Weighting (100 points)
+## Risk-ordered verification matrix
 
-| Dimension | Points | Required evidence |
-|---|---:|---|
-| User task / information architecture | 20 | Journey completed with realistic content and measurable outcome |
-| Visual craft / product-specific identity | 15 | Compared visual directions, typography, hierarchy, screens |
-| Accessibility | 20 | Contrast readings, keyboard/focus, semantics, reduced motion |
-| Responsive behavior | 15 | Captures at 375, 768, 1440 widths and overflow checks |
-| Interaction completeness | 10 | Default/hover/active/disabled/loading/empty/error/success |
-| Performance | 10 | Actual measurements of relevant pages, bundle/asset review |
-| Maintainability | 5 | Reuse, consistent tokens, tests, no unnecessary dependencies |
-| Evidence integrity | 5 | Reproducibility, citations, real files, no invented checks |
+| Dimension | Inspect | Evidence when available |
+| --- | --- | --- |
+| Main task | Entry → action → result → recovery/navigation | Actual walkthrough or test |
+| Interaction | Loading, disabled, empty, invalid, duplicate and error cases | Test output or browser session |
+| Accessibility | Names, semantics, keyboard, visible focus, contrast, zoom and reduced motion | Manual inspection or axe-like tools |
+| Responsive | 375px, 768px and 1440px, long copy, overflow, touch targets | Real screenshots, viewport details |
+| Visual | Information hierarchy, type, content accuracy, consistency and art direction | Rendered comparison or reviewed UI |
+| Performance | LCP/CLS/INP when applicable; bundle, assets, waterfalls, cache | Measured baseline and follow-up |
+| Security | Sensitive data, XSS, permissions, untrusted content, dependency risk | Code review and security tests |
+| Maintenance | Minimal scope, existing conventions, test coverage and clear ownership | Diff, lint/build/tests |
 
-### Classification
+### Accessibility baseline
 
-- 90–100: ship candidate **only when no hard blockers**
-- 75–89: needs polish before release
-- 60–74: revise and rerun verification
-- Below 60: design approach or implementation needs rework
-- No measurement: **unscored**, never award default points.
+Target applicable WCAG AA practices: around **4.5:1** for normal
+text, **3:1** for large text, with applicable exceptions. Check
+keyboard operability, logical focus order and semantic names.
+Respect `prefers-reduced-motion` and design error recovery for
+forms. These are targets, **not a claim of certification**.
 
-### Non-negotiable blockers
+## Hard blockers
 
-- Core user journey fails.
-- Critical contrast or keyboard trap/accessibility barrier.
-- Known exposed secrets, unauthorized external network or unlicensed assets.
-- Unreviewed destructive action or production deploy.
-- Missing screenshot/test evidence when claiming visual/functional verification.
-- Human owner hasn't approved release.
+- Broken primary journey or nonfunctional main CTA.
+- Known credential exposure or critical security flaw.
+- Keyboard trap or inaccessible essential action.
+- Unauthorized destructive action, deployment, purchase or merge.
+- Required asset with unacceptable license or provenance.
+- Claim of empirical verification without real evidence.
 
-A 99-point score cannot override a blocker.
+A high aesthetic score cannot override a blocker. If a tool is not
+available, mark that check `NOT RUN` and describe what remains
+unverified.
 
-## Evidence files
+## Optional scoring — only after observation
 
-Preferred:
-- Source code paths and actual commits/patches.
-- Test logs and exact commands/exit codes.
-- Screenshot artifacts at three widths, annotated changes/diffs.
-- axe-core or manually inspected accessibility results.
-- Lighthouse/Performance insights with time/date and build context.
-- Reviewer findings referencing exact components and user journeys.
+| Category | Max |
+| --- | ---: |
+| User task and clarity | 20 |
+| Visual appropriateness | 15 |
+| Accessibility | 20 |
+| Responsive behavior | 15 |
+| Interaction completeness | 10 |
+| Performance | 10 |
+| Maintainability | 5 |
+| Evidence integrity | 5 |
 
-Avoid unverifiable phrases like "beautiful", "perfect", "fully accessible".
-Instead describe *what was checked* and *what remains uncertain*.
+Do not assign points to unmeasured categories. Report `unscored`
+instead of invented precision. Check the task's acceptance criteria
+before using generic scoring.
+
+## Independent critique
+
+An actual separate reviewer is useful for substantial work if the
+environment allows it. A single agent may re-evaluate critically,
+but must not represent self-review as independent validation.
+
+When a test fails: capture evidence, locate root cause, repair the
+smallest responsible change and rerun. Distinguish predictions from
+measurements, and do not report unperformed checks as passing.

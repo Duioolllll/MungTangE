@@ -1,7 +1,7 @@
 {
   "name": "mungtange",
   "version": "0.1.0",
-  "description": "Evidence-linked 300-skill design and frontend pipeline harness",
+  "description": "Prompt-first design-to-code Agent Skill with optional reference depth and legacy CLI",
   "type": "module",
   "bin": {
     "mungtange": "./bin/mungtange.js"
@@ -21,11 +21,13 @@
   ],
   "scripts": {
     "test": "node --test",
-    "check": "node --check bin/mungtange.js && node --check src/catalog.js && node --check src/project.js && node --check src/pipeline.js && node --check src/install.js && npm test",
+    "check": "npm run check:skill && node --check bin/mungtange.js && node --check src/catalog.js && node --check src/project.js && node --check src/pipeline.js && node --check src/install.js && npm test",
     "smoke": "node bin/mungtange.js doctor && node bin/mungtange.js catalog --category web --limit 3",
     "build:site": "node scripts/build-site.mjs",
     "lint:catalog": "node scripts/verify-catalog.mjs",
-    "verify": "npm run check && npm run build:site && npm run lint:catalog"
+    "verify": "npm run check && npm run build:site && npm run lint:catalog",
+    "build:skill": "node scripts/sync-skill.mjs",
+    "check:skill": "node scripts/sync-skill.mjs --check"
   },
   "engines": {
     "node": ">=20"

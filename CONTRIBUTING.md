@@ -21,3 +21,7 @@ Thank you for helping improve MungTangE. This is a **quality-first** reference l
 - [ ] Scope and rollback plan are clear
 
 A PR should target `main`; do not bypass checks or merge on a self-declared pass.
+
+## Canonical skill editing
+
+Edit `skills/mungtange/SKILL.md`, not the generated root `SKILLS.md`. Keep the entrypoint under 500 lines and link task-specific depth from `skills/mungtange/references/`. Run `npm run build:skill` to refresh the root view, then `npm run verify` to ensure links, source/derived consistency and CLI backward compatibility. Prompt mode must never require the optional legacy CLI or `.mungtange/` reports.
