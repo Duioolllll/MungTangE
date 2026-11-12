@@ -10,7 +10,7 @@
 | **Open-source library** | It fits my stack, is inspectable | Real import/use example, compatibility and license | Docs/repository | Fake usage metrics |
 | **Developer operations tool** | It improves control and diagnosis | Real commands, output and workflow | Docs/CLI | Decorative fake logs |
 | **B2B SaaS** | It solves a concrete business task | Real workflow and permissioned evidence | Demo/trial | Architecture as the only value proposition |
-| **Consumer product** | It fits my context | Real usage and trustworthy benefit | Start/download | Developer syntax replacing the actual experience |
+| **Consumer app** | It fits my context | Real usage and trustworthy benefit | Start/download | Developer syntax replacing the actual experience |
 
 Before aesthetic work, identify target user, category, promise, source-backed proof, intended conversion, supported constraints and prohibited claims.
 
