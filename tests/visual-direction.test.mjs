@@ -31,7 +31,7 @@ test('visual loop never invents a score or an observed defect',()=>{
  assert.match(loop,/not a visual quality|NOT a visual quality/i);
  assert.match(loop,/NOT RUN/);
  assert.match(loop,/actual PNG|viewed screenshots|viewing images/i);
- assert.match(loop,/do not.*invent|not an invented/i);
+ assert.match(loop,/never invent|do not.*invent|not an invented/i);
  assert.match(loop,/375.*768.*1440/);
 });
 test('capture flag grammar and comparison environment mismatch detection',()=>{
