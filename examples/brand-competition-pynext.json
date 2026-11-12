@@ -1,0 +1,135 @@
+{
+  "project": {
+    "name": "PyNext experimental Python + Rust framework",
+    "audience": "Python developers evaluating an experimental framework",
+    "goal": "Understand current supported routing, read a genuine example, reach docs or source"
+  },
+  "directions": [
+    {
+      "id": "runtime-blueprint",
+      "name": "Runtime Blueprint",
+      "thesis": "Show Python authoring and Rust routing as one legible, documented architectural story",
+      "narrative": "First: Python-facing pages and Rust routing. Then: a verified route example and a source-backed request path.",
+      "heroLayout": "Asymmetric two-column hero: Python route snippet left, carefully labeled runtime path right, CTA below the thesis",
+      "motif": "Functional route-path strokes connect valid handler and architecture details across hero and docs sections",
+      "proof": "Actual Python @page example and a diagram whose labels must be verified against repository docs",
+      "risk": "Diagram may crowd the hero or imply unsupported stability at mobile sizes",
+      "responsive390": "Stack thesis and CTA first, then scrollable selectable Python snippet, followed by diagram with text labels",
+      "typography": {
+        "display": "Humanist system sans with compact medium-weight technical editorial headings",
+        "body": "Highly readable sans text optimized for precise architecture explanations",
+        "code": "System monospace code with distinct syntax, valid indentation and a readable gutter"
+      },
+      "cta": {
+        "primary": "Open the actual current PyNext quickstart documentation",
+        "secondary": "View the upstream PyNext source repository"
+      },
+      "evidence": {
+        "reference": "PyNext GitHub README describes Python pages and Rust Axum routing with experimental limitations",
+        "claim": "Python pages and API handlers are supported by the experimental framework described in README"
+      }
+    },
+    {
+      "id": "python-surface",
+      "name": "The Python Surface",
+      "thesis": "Make the minimal Python page the hero so the authoring experience is instantly understandable",
+      "narrative": "Begin with a readable editorial promise and minimal page example, then walk through build and documented capabilities.",
+      "heroLayout": "Single-column broad editorial headline followed by a large full-width, readable Python implementation block",
+      "motif": "Syntax-line markers and typographic spacing make the real API page the defining visual signature",
+      "proof": "Runnable-looking minimal Python page derived from current docs, with constraints clearly stated",
+      "risk": "Documentation-like presentation may feel familiar rather than uniquely branded",
+      "responsive390": "One-column editorial headline then horizontally scrollable code with readable font sizes and quickstart CTA",
+      "typography": {
+        "display": "High-contrast light editorial sans emphasizing the promise over mechanical decoration",
+        "body": "Wide-measure readable documentation font with generous paragraph spacing",
+        "code": "Large highly legible mono with simple code-highlight discipline"
+      },
+      "cta": {
+        "primary": "Read the real minimal quickstart example",
+        "secondary": "Browse the project source and architecture files"
+      },
+      "evidence": {
+        "reference": "PyNext README app example demonstrates the Python h and page API",
+        "claim": "Actual supported Python page syntax is an appropriate visual proof of the framework"
+      }
+    },
+    {
+      "id": "builder-notes",
+      "name": "Builder's Field Notes",
+      "thesis": "Earn trust through transparent engineering notes about what the framework currently does and does not support",
+      "narrative": "Lead with the honest experimental motivation, then show working capabilities and limitations before the example.",
+      "heroLayout": "Editorial notebook column with annotated side-notes and a concise capability status rail beside the introduction",
+      "motif": "Source-backed annotation margin and version notes recur as a structured engineering journal pattern",
+      "proof": "Supported feature list and real limitations linked to project docs rather than made-up metrics",
+      "risk": "Dense content and marginal notes can obscure the quickstart action",
+      "responsive390": "Convert annotated margin into ordered in-flow footnotes and keep links discoverable",
+      "typography": {
+        "display": "Characterful humanist display style with modest hierarchy and visible section numbering",
+        "body": "Comfortable print-inspired reading font with careful line length and source footnotes",
+        "code": "Secondary mono accent only for exact source citations and documented commands"
+      },
+      "cta": {
+        "primary": "Review the current capabilities and limitations",
+        "secondary": "Open source repository and working examples"
+      },
+      "evidence": {
+        "reference": "PyNext README explicitly warns about experimental and production limitations",
+        "claim": "This is an experimental framework with documented security and operating boundaries"
+      }
+    }
+  ],
+  "decision": {
+    "winner": "runtime-blueprint",
+    "why": "It gives PyNext a defensible visual metaphor rooted in real Python and Rust architecture while proving the actual page-writing API immediately. This is a design hypothesis, not a tested screenshot winner.",
+    "comparison": {
+      "productFit": {
+        "runtime-blueprint": "High because the two runtime layers are central to the product identity",
+        "python-surface": "High for the Python-first authoring experience but omits the engine distinction",
+        "builder-notes": "Medium because transparency matters but can distract from the framework concept"
+      },
+      "proofCredibility": {
+        "runtime-blueprint": "High if every Python and Rust label is checked against actual docs",
+        "python-surface": "High because the first screen is a real minimal Python source example",
+        "builder-notes": "High for true limitations and public source references instead of metrics"
+      },
+      "distinctiveness": {
+        "runtime-blueprint": "High because the routing-path motif derives from PyNext's engineering architecture",
+        "python-surface": "Medium because a code-heavy editorial hero is common in documentation sites",
+        "builder-notes": "High because a source-backed engineering notebook has an uncommon structure"
+      },
+      "readability": {
+        "runtime-blueprint": "Medium given the diagram must be legible and simplified at 390px",
+        "python-surface": "High because the single-column syntax showcase is easy to scan",
+        "builder-notes": "Medium given annotation and supporting footnote density"
+      },
+      "implementationCost": {
+        "runtime-blueprint": "Medium because a correct architecture figure and responsive layout require validation",
+        "python-surface": "Low because editorial layout and code module are straightforward",
+        "builder-notes": "Medium because true notes, citations and editorial hierarchy require content curation"
+      }
+    },
+    "losingStrengths": {
+      "python-surface": "Its full-width runnable example is clearer on mobile and cheaper to build",
+      "builder-notes": "Its honest capabilities and limitations can establish unusual developer trust"
+    }
+  },
+  "brandDNA": {
+    "positioning": "Experimental Python developer ergonomics supported by a Rust Axum routing engine, with documented current limitations",
+    "typography": "Humanist system sans headlines and body text paired with system monospace for actual Python code and API fragments",
+    "colors": "Named ink, muted surface, accessible route-blue signal, focus and error roles; contrast requires real measurement",
+    "signatureMotif": "A source-grounded file-route path connecting URL and documented Python handler to the Rust routing stage",
+    "layoutGrammar": "Asymmetric readable code-and-path hero; connected route anatomy and docs modules; 390px stacks text then proof",
+    "proofStyle": "Real examples from the current PyNext README and docs, never invented popularity or performance statistics",
+    "interaction": "Route-path highlighting only where it illustrates verified flow, with reduced motion and keyboard behavior",
+    "responsive390": "Headlines wrap into stacked thesis and CTA; code remains selectable and scrollable, diagram becomes labeled sequence",
+    "motifApplications": [
+      "Use factual path geometry beside the hero code pane",
+      "Repeat the same route-path lines in a real quickstart and architecture section"
+    ],
+    "antiTemplates": [
+      "Reject a generic gradient behind empty SaaS dashboard cards",
+      "Reject fabricated GitHub stars and benchmarks",
+      "Reject decorative fake terminal outputs or compatibility badges"
+    ]
+  }
+}
