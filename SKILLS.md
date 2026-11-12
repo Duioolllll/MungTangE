@@ -134,25 +134,53 @@ For audit: **severity | location | impact | evidence | fix**.
 Do not invent metrics, sources, screenshots, tool calls, commits or
 independent reviewers.
 
-## 8. Optional deep references — progressive disclosure
+## 8. Apply the verified-source synthesis (selectively)
+
+For **STANDARD/DEEP web UI work**, first read
+[KNOWLEDGE-ROUTER.md](skills/mungtange/references/KNOWLEDGE-ROUTER.md)
+when it is available, then load **only one or two relevant playbooks**:
+
+- [DESIGN-DNA.md](skills/mungtange/references/DESIGN-DNA.md) — visual
+  identity, hierarchy, tokens, typography, interaction and critique.
+- [WEB-ENGINEERING.md](skills/mungtange/references/WEB-ENGINEERING.md) —
+  rendering, async, performance, accessibility and browser verification.
+- [AGENT-HARNESS.md](skills/mungtange/references/AGENT-HARNESS.md) —
+  context economy, output evaluation and bounded delegation.
+- [DEEP-INTEGRATION.md](skills/mungtange/references/DEEP-INTEGRATION.md) —
+  expert-level adapted procedures from a smaller directly reviewed sample.
+
+For every selected reference, **apply at least one concrete technique and
+its proof condition** to the current task. Listing skill names without
+changing the work does not count. For QUICK tasks, consult a reference
+only if it would actually improve the result.
+
+Upstream corpus: 300 original texts were fetched and SHA-verified during
+offline preprocessing. The broad classification is **automated lexical
+analysis**, not 300 individually expert-reviewed skills. The optional
+[SOURCE-INDEX.md](skills/mungtange/references/SOURCE-INDEX.md) records
+source outlines and attribution. Do not load it by default or invent
+findings for sources without detailed inspection.
+
+## 9. Optional deep references — progressive disclosure
 
 This file is fully usable alone. **Only if the referenced files are
 actually accessible and the task needs more detail**, read the matching
 reference; do not fetch everything or treat references as mandatory:
 
-- [PLAYBOOKS.md](references/PLAYBOOKS.md) — landing pages, dashboards,
+- [PLAYBOOKS.md](skills/mungtange/references/PLAYBOOKS.md) — landing pages, dashboards,
   design systems, Figma-to-code, audits and bounded multi-agent work.
-- [QUALITY.md](references/QUALITY.md) — scoring, accessibility and
+- [QUALITY.md](skills/mungtange/references/QUALITY.md) — scoring, accessibility and
   responsive evidence; use for substantive review.
-- [SECURITY.md](references/SECURITY.md) — untrusted skill sources,
+- [SECURITY.md](skills/mungtange/references/SECURITY.md) — untrusted skill sources,
   licenses, credentials and agent permissions.
-- [PIPELINE.md](references/PIPELINE.md) — research provenance and
+- [PIPELINE.md](skills/mungtange/references/PIPELINE.md) — research provenance and
   extended workflow rationale; **legacy CLI sections are optional**.
-- [OUTPUT.md](references/OUTPUT.md) — **legacy CLI-only** JSON report
+- [OUTPUT.md](skills/mungtange/references/OUTPUT.md) — **legacy CLI-only** JSON report
   schema; never required by this prompt.
 
-The repository's separate 300-item source catalog is not installed
-with this skill and is **not needed**. Do not attempt to load it.
+The original 300-item catalog is not installed with this skill; the
+**generated knowledge references above are installed**. Do not download
+upstream skills unless the user specifically needs source verification.
 
 **Bottom line:** One small instruction file, one accountable workflow,
 working UI when tools allow, and evidence without theater.
