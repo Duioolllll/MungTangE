@@ -97,7 +97,7 @@ Or use another CLI/adapter with the same interface:
 ~~~
 
 The command runs with cwd={workspace}, not the MungTangE repository root.
-Template args available: {promptFile}, {workspace}, {taskId}, {group}, {runId}.
+Template args available: {promptFile}, {workspace}, {taskId}, {group}, {runId}, {model}. A declared model name is metadata unless the configured agent actually receives a model-selecting flag.
 Set stdin_prompt=true for CLI tools accepting the entire prompt on stdin.
 All groups receive the same declared command/model/timeout/environment.
 Only the mungtange group has SKILL.md embedded in its prompt and the four

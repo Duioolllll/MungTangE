@@ -2,7 +2,7 @@
 import {
   existsSync,readFileSync,writeFileSync,mkdirSync,cpSync,createWriteStream
 } from 'node:fs';
-import {resolve,join,dirname} from 'node:path';
+import {resolve,join,dirname,basename} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {spawn} from 'node:child_process';
 import {performance} from 'node:perf_hooks';
@@ -106,12 +106,12 @@ function prepare(name){
 }
 
 function interpolate(str,ctx){
- return String(str).replace(/\{(promptFile|workspace|taskId|group|runId)\}/g,(m,key)=>ctx[key]);
+ return String(str).replace(/\{(promptFile|workspace|taskId|group|runId|model)\}/g,(m,key)=>ctx[key]);
 }
 function runChild(config,job,root){
  const timeoutSec=Math.min(Math.max(Number(config.timeout_seconds)||600,10),3600);
  const promptFile=join(job,'prompt.md'),workspace=join(job,'workspace');
- const ctx={promptFile,workspace,taskId:job.split('/').at(-2),group:job.split('/').at(-1),runId:root.split('/').at(-1)};
+ const ctx={promptFile,workspace,taskId:basename(dirname(job)),group:basename(job),runId:basename(root),model:config.model};
  const args=config.args.map(a=>interpolate(a,ctx));
  const env={};
  for(const key of ['PATH','HOME','USER','USERPROFILE','TMP','TEMP','TMPDIR','LANG','TERM','SYSTEMROOT','COMSPEC']){
@@ -166,6 +166,7 @@ async function invoke(name,configFile){
  if(typeof config.model!=='string'||!config.model.trim())throw Error('Runner config must identify the actual model');
  if(config.env && (typeof config.env!=='object'||Array.isArray(config.env)))throw Error('Runner env must be an object');
  if(data.model && data.model!==config.model)throw Error('Cannot mix models within one paired run');
+ if(!config.stdin_prompt && !config.args.some(arg=>arg.includes('{promptFile}')))throw Error('Runner must receive its prompt via stdin_prompt or {promptFile}');
  data.model=config.model;
  writeRun(root,data);
  let failures=0;

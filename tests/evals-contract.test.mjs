@@ -16,7 +16,7 @@ test('benchmark has ten distinct UI tasks with functional contracts',()=>{
 });
 test('fixtures do not masquerade as actual AI generations',()=>{
  const docs=readFileSync(new URL('../evals/README.md',import.meta.url),'utf8');
- assert.match(docs,/smoke fixture/i);
+ assert.match(docs,/smoke.*fixtures/i);
  assert.match(docs,/NOT RUN/);
  assert.match(docs,/baseline/);
  assert.match(docs,/MungTangE/);
