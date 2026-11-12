@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "title": "MungTangE Benchmark v1",
+  "description": "Ten deterministic frontend tasks; two paired prompts, held-out browser assertions and identical tool/model settings.",
+  "output_contract": "A self-contained index.html plus optional relative CSS/JS/assets in the provided clean workspace. No CDN, network, external APIs, server or authentication. Data-testid hooks are only test selectors; both groups get identical specifications.",
+  "tasks": [
+    {
+      "id": "contact-form",
+      "title": "Accessible contact form",
+      "goal": "Build a working contact form with name, email, message and submit, inline validation, and a local-only success confirmation.",
+      "contract": [
+        "All fields have visible labels; email type=email; do not send network requests.",
+        "Use data-testid=name,email,message,submit,status; status has data-state=error/success.",
+        "Invalid email must show status error, valid values must show success after submit."
+      ],
+      "tags": [
+        "form",
+        "validation",
+        "accessible"
+      ]
+    },
+    {
+      "id": "todo-list",
+      "title": "Todo task list",
+      "goal": "Build a working list where users can add, complete and delete tasks.",
+      "contract": [
+        "Use data-testid=todo-input,add-todo,todo-item; each todo-item contains data-testid=toggle-todo and delete-todo.",
+        "Completed item has data-state=done and can be removed.",
+        "Never use noninteractive spans for action buttons."
+      ],
+      "tags": [
+        "state",
+        "interactions",
+        "list"
+      ]
+    },
+    {
+      "id": "faq-accordion",
+      "title": "FAQ disclosure accordion",
+      "goal": "Build a responsive FAQ with three accessible expandable question panels.",
+      "contract": [
+        "Provide 3 elements data-testid=faq-toggle and corresponding data-testid=faq-panel.",
+        "Buttons have aria-expanded reflecting state; panels are hidden when collapsed.",
+        "Opening and closing by click and keyboard must work."
+      ],
+      "tags": [
+        "accessibility",
+        "disclosure",
+        "components"
+      ]
+    },
+    {
+      "id": "mobile-navigation",
+      "title": "Responsive mobile navigation",
+      "goal": "Build a responsive site header with mobile toggle, visible nav links, escape to dismiss and accessible keyboard focus.",
+      "contract": [
+        "At 375px, use data-testid=menu-toggle,nav-menu,nav-link.",
+        "Menu toggle has correct aria-expanded; opening reveals links, Escape closes it.",
+        "At desktop width navigation should remain usable; no horizontal overflow."
+      ],
+      "tags": [
+        "responsive",
+        "navigation",
+        "keyboard"
+      ]
+    },
+    {
+      "id": "product-filter",
+      "title": "Catalog category filter",
+      "goal": "Build a product collection with at least six cards across books and clothing categories, category filter and text search.",
+      "contract": [
+        "Use data-testid=category-filter (select with all/books/clothes), search-input, product-card.",
+        "Product cards include data-category=books or clothes; filter and search update visible cards.",
+        "Reset to all and empty search shows all cards."
+      ],
+      "tags": [
+        "filters",
+        "data",
+        "product"
+      ]
+    },
+    {
+      "id": "signup-validation",
+      "title": "Signup validation UX",
+      "goal": "Build a local-only signup form with email, password, confirm password and clear error/success states.",
+      "contract": [
+        "Use data-testid=signup-email,password,confirm-password,signup-submit,signup-status.",
+        "Mismatched confirmation sets signup-status data-state=error.",
+        "Matching password and valid email set signup-status data-state=success; do not store credentials."
+      ],
+      "tags": [
+        "forms",
+        "accessibility",
+        "privacy"
+      ]
+    },
+    {
+      "id": "sortable-table",
+      "title": "Sortable data table",
+      "goal": "Build a table containing at least five named rows with numeric amounts, sortable ascending/descending and searchable.",
+      "contract": [
+        "Use data-testid=sort-amount,table-row,table-search,empty-state.",
+        "Each table-row has data-amount numeric attribute; click sort-amount toggles ascending/descending.",
+        "A search with zero matches shows empty-state; actual <table> markup is preferred."
+      ],
+      "tags": [
+        "dashboard",
+        "table",
+        "data"
+      ]
+    },
+    {
+      "id": "modal-dialog",
+      "title": "Accessible dialog",
+      "goal": "Build a modal dialog opened by button, closed by close button or Escape, with focus return.",
+      "contract": [
+        "Use data-testid=open-dialog,close-dialog; dialog has role=dialog or native <dialog>.",
+        "Escape closes it; after close focus returns to open-dialog.",
+        "While open the dialog is visible and has an accessible name."
+      ],
+      "tags": [
+        "dialog",
+        "focus",
+        "keyboard"
+      ]
+    },
+    {
+      "id": "price-calculator",
+      "title": "Live price calculator",
+      "goal": "Build a price calculator with quantity, unit price, and computed currency total.",
+      "contract": [
+        "Use data-testid=quantity,unit-price,total.",
+        "Values update the total automatically, including quantity change.",
+        "Total numeric value must equal quantity * unit price; label controls accessibly."
+      ],
+      "tags": [
+        "calculator",
+        "forms",
+        "data"
+      ]
+    },
+    {
+      "id": "keyboard-tabs",
+      "title": "Keyboard accessible tabs",
+      "goal": "Build three tabs and panels for Overview, Details, Settings with keyboard navigation.",
+      "contract": [
+        "Use role=tablist, three role=tab; data-testid=tab-overview,tab-details,tab-settings.",
+        "Each tab uses aria-selected and controls one role=tabpanel; only selected panel visible.",
+        "Click and ArrowRight/ArrowLeft activation or focus behavior should follow accessible tab conventions."
+      ],
+      "tags": [
+        "tabs",
+        "keyboard",
+        "components"
+      ]
+    }
+  ]
+}
