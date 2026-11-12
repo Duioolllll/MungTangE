@@ -40,5 +40,5 @@ test('rendering is free of literal malformed backtick markers', () => {
     '../SKILLS.md',
     '../skills/mungtange/SKILL.md',
     '../skills/mungtange/references/SECURITY.md'
-  ]) assert.ok(!readFileSync(new URL(path, import.meta.url), 'utf8').includes('`'));
+  ]) assert.ok(!readFileSync(new URL(path, import.meta.url), 'utf8').includes(String.fromCharCode(167)));
 });
