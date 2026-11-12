@@ -11,6 +11,8 @@
 
 ## Lanes
 
+[Exact 300-name index](NAME-INDEX.md) — use when you know a source name but not its lane.
+
 | Lane | Scope | Source cards |
 | --- | --- | --- |
 | design-systems | Design tokens and component systems | [design-systems-01.md](design-systems-01.md) (7) |
