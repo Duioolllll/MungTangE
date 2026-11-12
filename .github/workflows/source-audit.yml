@@ -1,0 +1,29 @@
+name: Audit upstream Git blob integrity (manual)
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch exact source blobs, no execution or synthesis
+        run: npm run audit:sources
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload research result for maintainer review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: manual-source-audit
+          path: research/source-audit.json
+          if-no-files-found: warn
+      - name: Check completeness
+        run: npm run check:source-audit

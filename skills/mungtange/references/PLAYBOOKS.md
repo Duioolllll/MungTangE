@@ -1,5 +1,7 @@
 # Task-specific playbooks
 
+> **Optional**: Read only for the matching task. Examples below are suggestions, not mandatory outputs. Do not add fictitious states, test runs, design options or issue counts merely to satisfy a list. Detailed, directly examined source techniques live in [DEEP-INTEGRATION.md](DEEP-INTEGRATION.md).
+
 ## Landing page (persuade)
 
 - Gather target audience, offer, evidence, desired conversion, truthful copy.
