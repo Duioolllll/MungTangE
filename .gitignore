@@ -7,3 +7,7 @@ coverage/
 .env.*
 !.env.example
 site/catalog.json
+
+# Unreviewed model outputs; never auto-publish
+research/semantic-curation/
+research/curator.local.json

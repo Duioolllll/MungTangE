@@ -13,3 +13,5 @@ References are **optional**: read no more than two targeted sections when the co
 - Keep Pages keyboard-accessible and use textContent for external metadata.
 - Run `npm run verify` and `npm run smoke` when tools are available.
 - Do not publish packages, merge PRs or change remote deployments without authorization.
+
+The source-specific 300-card router is structural source indexing, NOT 300 semantic expert reviews. The optional semantic curator requires an explicit --execute with a supplied external model runner; never run it automatically as CI or call it an independent human review.

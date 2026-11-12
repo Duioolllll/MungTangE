@@ -33,7 +33,8 @@
     "audit:sources": "node scripts/audit-upstream-sources.mjs",
     "check:source-audit": "node scripts/verify-source-audit.mjs",
     "knowledge:build": "node scripts/build-knowledge.mjs",
-    "knowledge:verify": "node scripts/check-knowledge.mjs"
+    "knowledge:verify": "node scripts/check-knowledge.mjs",
+    "knowledge:curate": "node scripts/curate-knowledge.mjs"
   },
   "engines": {
     "node": ">=20"
