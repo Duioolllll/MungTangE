@@ -1,70 +1,56 @@
-# Output and report contract
+# Truthful output and evidence — optional handoff reference
 
-MungTangE generates files in project-relative `.mungtange/`.
+This describes **human-readable results** for the prompt-only
+workflow. No file, JSON schema, run ID or CLI is required.
 
-## Strict stage report example
+## Delivery for implemented UI work
 
-Use the generated template `reports/<stage>.example.json`. Copy to
-`reports/<stage>.json` and update **all** check keys. Example only:
-
-```json
-{
-  "stage": "brief",
-  "run_id": "actual UUID from manifest.json",
-  "status": "passed",
-  "checks": {
-    "audience": true,
-    "outcome": true,
-    "constraints": true,
-    "success_criteria": true
-  },
-  "evidence": ["docs/real-audience-interviews.md"],
-  "reviewer": "name of a person/agent who reviewed this",
-  "notes": "Decision, unresolved caveats and direct references.",
-  "approved_by_human": false
-}
+```text
+RESULT: What the user can now do.
+CHANGED: Actual edited paths, generated artifacts, or supplied code.
+DESIGN: Only meaningful visual/product decisions.
+CHECKED: Commands/tests/manual flows performed, with results.
+NOT RUN: Checks that could not be performed and why.
+OPEN: Highest-risk remaining defects or unknowns.
+NEXT: Only required user approval or follow-up action.
 ```
 
-### Invariants enforced by the CLI
+For small changes, this can be two sentences. Do not force a table
+or format when a concise response works better.
 
-- Stage matches requested stage; run_id matches current manifest.
-- Status is exactly `passed`; all required check values are literal booleans `true`.
-- Non-placeholder reviewer name.
-- At least one evidence path; every path must exist within project root
-  and not be a direct symlink.
-- All previous stage reports must also pass.
-- `ship` requires `approved_by_human: true`.
+## Findings for audit-only requests
 
-### What the CLI cannot prove yet
+| Field | Expectation |
+| --- | --- |
+| Severity | critical / major / minor / polish |
+| Location | Exact file:line if inspected, otherwise actual UI location |
+| Impact | Which user or task is affected |
+| Evidence | What was truly observed, not inferred |
+| Fix | Concrete remedy, not "improve UX" |
+| Confidence | Optional; label assumptions and untested concerns |
 
-The CLI **cannot** determine whether interview evidence is genuine,
-the reviewer is independent, screenshot shows correct UI, or a test
-log came from a genuine command. Flag this limitation before calling
-anything "verified".
+Report higher-severity issues first. Separate observed defects from
+suggestions or hypotheses.
 
-## Review finding format
+## Evidence vocabulary
 
-```json
-{
-  "id": "UI-001",
-  "severity": "critical|major|minor|nit",
-  "category": "a11y|visual|interaction|responsive|performance|content|security",
-  "location": "src/components/Form.tsx:45",
-  "impact": "Keyboard user cannot submit form",
-  "evidence": "artifacts/a11y/form-keyboard.mp4",
-  "suggested_fix": "Use semantic button with keyboard activation",
-  "status": "open",
-  "confidence": "high"
-}
-```
+- **PASS:** actually performed and met stated criterion, with method.
+- **FAIL:** actually performed and failed, with reproduction.
+- **NOT RUN:** tooling, time or source unavailable.
+- **BLOCKED:** external approval, security constraint or missing
+  essential prerequisite prevented completion.
 
-## The human handoff
+A successful linter is not proof of a good mobile layout; an existing
+screenshot does not prove current browser behavior; JSON booleans do
+not prove the reviewer inspected the result.
 
-1. **Done:** file paths and summary.
-2. **Evidence:** output generated from actual execution, including failures.
-3. **Still open:** severity, owner, next action and risk.
-4. **Source and license:** external material added or used.
-5. **Approval:** who authorized production release.
+## External actions
 
-No fabricated metrics, citations, screenshots, browser visits or
-"tests passed" claims. When evidence is absent, keep `status: pending`.
+Do not report a PR, deployment, production release or paid tool action
+as complete unless the tool confirms it. Link actual artifacts when
+available. Record human authorization for high-risk release steps.
+
+**Legacy, opt-in mode:** The repository has a separate Node CLI that
+creates a `.mungtange/` directory and validates structured stage
+reports. That contract is documented in `docs/LEGACY-CLI.md` at the
+repository root, and **does not apply to this skill by default**.

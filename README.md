@@ -1,75 +1,68 @@
-# MungTangE 뭉탱이 2.0
+# MungTangE — 작은 진입점, 필요한 만큼의 전문성
 
-**복잡한 스킬 실행기 대신, 프롬프트 하나로 디자인 → 개발 → 검증까지.**
+**웹 디자인 → 실제 구현 → 근거 기반 검증을 위한 프롬프트 중심 Agent Skill.**
 
-**[SKILLS.md 전체 프롬프트 열기](SKILLS.md)** · [Agent Skills 설치용 SKILL.md](skills/mungtange/SKILL.md) · [300개 스킬 출처 카탈로그](https://duioolllll.github.io/MungTangE/)
+[메인 SKILL.md](skills/mungtange/SKILL.md) · [루트 SKILLS.md (자동 생성)](SKILLS.md) · [GitHub Pages 카탈로그](https://duioolllll.github.io/MungTangE/)
 
-MungTangE는 웹디자인·프론트엔드·UX·디자인 시스템·성능 검토·AI 에이전트 협업에 특화된 **독립형 프롬프트 운영체제**입니다. AI가 작업을 이해하고 필요한 전문가 관점을 골라서 실제 구현과 검증을 한 흐름으로 수행하도록 설계했습니다.
+MungTangE는 별도 모델 실행기나 CLI가 아닌 **AI의 디자인·프론트엔드 작업 방식을 안내하는 프롬프트**야. 짧은 메인 `SKILL.md`가 요청을 분류하고 핵심 원칙과 6단계 흐름을 적용해. 더 깊은 디자인·품질·보안·작업 분배 규칙은 **필요할 때만** `references/`에서 읽도록 설계했어.
 
-> **필수 설치 없음. 필수 API 없음. 필수 CLI 없음. 추가 JSON 보고서 없음.**  
-> 오직 [SKILLS.md](SKILLS.md)를 AI의 프로젝트 지침이나 대화에 전달하면 됩니다. 실제 파일 수정·브라우저 검사·코드 실행은 사용 중인 AI의 도구 권한에 따라 달라집니다.
+## 한 번만 읽고 시작
 
-## 이렇게 쓰세요
+메인 프롬프트만 복사하거나 AI에게 `SKILLS.md`를 읽어 달라고 지시해. 핵심 흐름은 **그 파일만으로도** 적용할 수 있어. 전문 문서는 설치된 스킬 폴더 안에 함께 있으며 관련 작업에서만 참고해.
 
-**1. [SKILLS.md](SKILLS.md)의 전체 내용을 열어 AI 에이전트의 지침으로 전달하세요.**
-
-Codex, Claude Code, OpenCode, Copilot, Gemini, ChatGPT 등에서 프롬프트 지침으로 사용할 수 있습니다. 각 도구가 `SKILLS.md`를 자동 인식한다고 가정하지 마세요. 프로젝트 지침 파일에 내용을 붙여넣거나 읽을 파일로 명시하세요. 이 저장소의 [AGENTS.md](AGENTS.md)는 루트 SKILLS.md를 명시적으로 가리킵니다.
-
-**2. 평범하게 작업을 요청하세요.**
-
-~~~text
-내 기존 Next.js 프로젝트를 분석해서 학교 커뮤니티 대시보드를
-새롭게 디자인하고 실제 코드로 구현해줘.
-모바일·키보드·로딩·에러 상태까지 검증하고 문제가 있으면 수정해줘.
-~~~
-
-**3. MungTangE가 프롬프트만으로 실행 절차를 결정합니다.**
-
-~~~text
-요청 분석
-    ↓
-전문가 관점 선택 (UX · 디자인 · 프론트엔드 · QA 등)
-    ↓
-BRIEF → EXPLORE → DESIGN → BUILD → VERIFY → DELIVER
-    ↓
-실패 시 원인 분석 → 수정 → 재검증
-    ↓
-실제 결과물 + 검증 증거 + 남은 문제
-~~~
-
-CLI·외부 모델 호출·서브에이전트가 없어도 지침 자체는 작동합니다. **실제 하위 에이전트가 있는 도구에서는 필요할 때만** 독립 작업으로 분리합니다. 도구가 없으면 제공 가능한 결과를 직접 만들고 실행하지 못한 검사는 명확히 표시합니다.
-
-## 포함된 능력
-
-| 영역 | 프롬프트의 행동 지침 |
-| --- | --- |
-| Design | 제품에 맞는 스타일, 타이포·컬러·레이아웃·반응형 설계 |
-| UX | 사용자 여정, 접근성, 입력·로딩·오류·완료 상태 |
-| Frontend | 기존 프로젝트 분석, 작은 수직 기능 단위 구현, 회귀 방지 |
-| Web QA | 키보드·반응형·스크린샷·성능·보안 검증 **(도구가 있을 때 실제 실행)** |
-| Skills | 과제에 맞는 참조 방법 선택, 출처·라이선스·보안 확인 |
-| Model Output | 증거 기반 완료 보고, 거짓 통과 방지, 실패 시 원인 분석 |
-| Orchestration | 의존성·파일 소유권 관리, 필요할 경우에만 병렬 실행 |
-| Delivery | 변경 파일·검증 내용·한계·승인 단계 정리 |
-
-기존 카탈로그에 수록된 디자인 100개, 모델·출력 100개, 웹 100개는 **참고 메타데이터**입니다. 300개를 자동 설치하거나 실행하는 기능은 아닙니다. 프롬프트는 카탈로그가 전혀 없어도 독립 실행되도록 작성했습니다.
-
-## 추가 설치는 완전히 선택 사항
-
-기존 Agent Skills 형식의 설치가 편하면 아래 명령어를 사용해도 됩니다.
+선택적으로 표준 Agent Skills 설치기를 사용할 수 있어.
 
 ~~~bash
 npx skills add Duioolllll/MungTangE --skill mungtange
 ~~~
 
-표준 설치기는 `skills/mungtange/SKILL.md`를 읽습니다. 이 파일은 루트 `SKILLS.md`와 **동일한 독립형 프롬프트**이므로 별도 references 파일이나 CLI가 필요 없습니다.
+**이것은 선택 사항이야.** 설치된 `skills/mungtange/` 폴더에는 메인 `SKILL.md`와 `references/`가 포함돼. Node.js, JSON 보고서, 별도 모델 API, 외부 스킬 카탈로그는 프롬프트 실행에 필요하지 않아.
 
-기존 `mungtange` Node CLI는 호환성을 위해 저장소에 남겨두었지만, **프롬프트를 사용하거나 AI 작업을 수행하는 데 필수가 아닙니다**. CLI는 AI를 직접 실행하는 엔진이 아닙니다.
+### 실제 사용 요청 예시
 
-## 정직한 한계
+~~~text
+내 React 대시보드를 분석하고, 모바일에서도 잘 작동하도록 리디자인해줘.
+필요한 컴포넌트를 구현하고, 키보드·로딩·오류 상태를 검증해.
+검사하지 못한 항목은 NOT RUN이라고 표시해.
+~~~
 
-프롬프트는 AI의 작업 절차를 강화하지만, 도구 권한을 새로 만들어주지는 않습니다. 브라우저가 없는 AI는 실제 화면을 검증할 수 없고, GitHub 쓰기 권한이 없으면 PR을 만들 수 없습니다. MungTangE는 **하지 않은 검사를 통과했다고 말하지 않도록** 설계되어 있습니다.
+AI는 다음과 같이 진행하도록 안내받아.
 
-## 개발 및 기여
+~~~text
+BRIEF → EXPLORE → DESIGN → BUILD → VERIFY → DELIVER
+                ↖ 원인 분석 및 재검증 ↗
+~~~
 
-기존 CLI·카탈로그·GitHub Pages 기능은 유지됩니다. 저장소 개발 시 `npm run verify`로 기존 코드와 프롬프트 동기화를 검증합니다. 외부 SKILL.md의 라이선스는 해당 프로젝트에 남아 있으며 MungTangE에 자동 귀속되지 않습니다. [기여 가이드](CONTRIBUTING.md) · [보안 정책](SECURITY.md) · [라이선스](LICENSE).
+UI 생성·리디자인·참조 화면 구현·UI 감사를 중심으로 설계됐어. **백엔드 전용 요청이나 일반 코드 리뷰에 무차별로 트리거하지 않도록** description을 제한했어.
+
+## Progressive disclosure: 필요할 때만 읽는 자료
+
+| 작업 | 문서 |
+| --- | --- |
+| 디자인 방향, 토큰, 인터랙션 | [DESIGN.md](skills/mungtange/references/DESIGN.md) |
+| 랜딩 페이지, 대시보드, 디자인 시스템, Figma, UI 감사 | [PLAYBOOKS.md](skills/mungtange/references/PLAYBOOKS.md) |
+| 큰 작업의 단계·의존성 | [PIPELINE.md](skills/mungtange/references/PIPELINE.md) |
+| 접근성, 테스트, 성능, 릴리스 차단 기준 | [QUALITY.md](skills/mungtange/references/QUALITY.md) |
+| 실제 서브에이전트 도구가 있을 때만 | [ORCHESTRATION.md](skills/mungtange/references/ORCHESTRATION.md) |
+| 위험한 소스·외부 작업·라이선스 | [SECURITY.md](skills/mungtange/references/SECURITY.md) |
+| 변경·증거·한계 보고 | [OUTPUT.md](skills/mungtange/references/OUTPUT.md) |
+
+AI가 실제로 코드를 수정하거나 브라우저에서 테스트하려면 **사용 중인 도구의 기능과 권한**이 필요해. 프롬프트가 그 능력을 새로 만들어주는 것은 아니야. 미실행 검사는 완료했다고 주장하지 않도록 해.
+
+## 루트 SKILLS.md는 생성된 산출물
+
+**수정해야 하는 유일한 원본은 `skills/mungtange/SKILL.md`야.** 루트 `SKILLS.md`는 관련 문서 링크만 저장소 상대 경로로 바꿔서 자동 생성해. 따라서 두 파일을 수동으로 따로 관리하지 않아.
+
+~~~bash
+npm run build:skill   # 원본에서 루트 파일 갱신
+npm run check:skill   # CI에서 원본/산출물 불일치 검사
+npm run verify        # 기존 Node 테스트 + 카탈로그 + 스킬 검증
+~~~
+
+## 기존 기능과의 관계
+
+깃허브 카탈로그에는 디자인 100개, 모델·출력 100개, 웹 100개의 **외부 출처 메타데이터**가 있어. 이 목록은 선택적 탐색 자료이며, 설치된 `SKILL.md`가 자동으로 불러오거나 실행하지 않아. 각 원본의 안전성·품질·라이선스가 검수됐다는 주장도 아니야.
+
+과거 버전의 `mungtange` Node CLI는 호환성을 위해 남아 있지만 **프롬프트에는 필요하지 않아**. CLI를 의도적으로 쓰는 경우에만 [기존 CLI 전용 문서](docs/LEGACY-CLI.md)를 참고해. 이 모드의 `.mungtange/` 파일과 JSON 보고서 요구 사항을 프롬프트 모드에 적용하면 안 돼.
+
+[기여 가이드](CONTRIBUTING.md) · [보안 정책](SECURITY.md) · [설계 개요](docs/ARCHITECTURE.md) · [라이선스](LICENSE)

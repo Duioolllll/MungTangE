@@ -30,3 +30,7 @@ Open a GitHub security advisory or privately contact the repository maintainer. 
 ## Limits
 
 Actions references currently use major-version tags, not immutable commit pins. The maintainer should pin audited SHAs before a security-sensitive production rollout. GitHub Pages source configuration and repository branch protection require maintainer configuration outside this PR.
+
+## Prompt-first boundary
+
+`skills/mungtange/SKILL.md` runs as instructions only, with on-demand local `references/`. It does not need the CLI or generated `.mungtange/` reports. The old CLI is documented separately in [LEGACY-CLI.md](docs/LEGACY-CLI.md), and prompt-only work must not claim its structural checks were executed.

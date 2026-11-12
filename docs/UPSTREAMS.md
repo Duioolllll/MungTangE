@@ -13,7 +13,7 @@ This is a **specific comparison of reviewed examples**, not a claim that every o
 | [VoltAgent awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | Broad curated discovery across organizations, with source links | Keep discovery separate from trusted execution; preserve upstream credit |
 | [Agent Skills standard](https://agentskills.io/specification) | Name/description frontmatter and progressive disclosure | A small entrypoint with richer local reference files |
 
-See [the existing deeper adaptation table](../skills/mungtange/references/PIPELINE.md) for further projects and source-specific workflow details.
+For task execution, read only the relevant [design](../skills/mungtange/references/DESIGN.md), [pipeline](../skills/mungtange/references/PIPELINE.md), or [orchestration](../skills/mungtange/references/ORCHESTRATION.md) reference. The installed Agent Skill does not require or bundle the 300-item source catalog.
 
 ## What is actually verified
 
