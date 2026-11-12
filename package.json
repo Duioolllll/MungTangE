@@ -37,7 +37,9 @@
     "knowledge:curate": "node scripts/curate-knowledge.mjs",
     "knowledge:index": "node scripts/compile-knowledge-index.mjs",
     "visual:smoke": "node scripts/visual-smoke.mjs",
-    "visual:contract": "node --test tests/visual-direction.test.mjs"
+    "visual:contract": "node --test tests/visual-direction.test.mjs",
+    "brand:validate": "node scripts/brand-competition.mjs validate --file examples/brand-competition-pynext.json",
+    "visual:critic": "node scripts/visual-critic.mjs"
   },
   "engines": {
     "node": ">=20"

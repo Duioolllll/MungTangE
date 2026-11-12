@@ -4,6 +4,7 @@ import {mkdtempSync,rmSync,existsSync,readFileSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {captureSite,compareCaptures} from './visual-capture.mjs';
+import {compareCritic} from './visual-critic.mjs';
 
 const folder=mkdtempSync(join(tmpdir(),'mungtange-visual-'));
 let after=false;
@@ -50,7 +51,13 @@ try{
  assert.ok(comparison.entries.some(e=>e.changedPixels>0));
  assert.ok(existsSync(join(folder,'diff','diff-390.png')));
  assert.match(readFileSync(join(folder,'diff','comparison.md'),'utf8'),/NOT RUN/);
- console.log('VISUAL SMOKE PASSED: Chromium captures 1440/768/390, detects overflow change, and produces pixel diff without quality claims.');
+ const review=compareCritic(before,next);
+ assert.equal(review.status,'PASS');
+ assert.equal(review.visualArtDirectionReview,'NOT RUN');
+ assert.equal(review.baselineIssues.some(x=>x.kind==='HORIZONTAL_OVERFLOW'&&x.width===390),true);
+ assert.equal(review.resolved.some(x=>x.kind==='HORIZONTAL_OVERFLOW'&&x.width===390),true);
+ assert.equal(review.regressions.length,0);
+ console.log('VISUAL CRITIC SMOKE PASSED: Chromium captures 1440/768/390, detects overflow change, and produces pixel diff without quality claims.');
 }finally{
  await new Promise(ok=>server.close(ok));
  rmSync(folder,{recursive:true,force:true});
