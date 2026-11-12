@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: "22"
       - name: Fetch all 300 original SKILL.md Git blobs (SHA-pinned)
-        run: npm run knowledge:build
+        run: npm run knowledge:build && npm run knowledge:index
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Validate source coverage, IDs and shard integrity

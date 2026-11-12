@@ -33,6 +33,11 @@ for(const chunk of manifest.buckets){
  const content=readFileSync(dir+chunk.file,'utf8');
  for(const id of chunk.ids)assert.ok(content.includes(data.cards.find(x=>x.id===id).name),id);
 }
+assert.ok(existsSync(dir+'NAME-INDEX.md'),'Missing indexed lookup for all 300');
+const names=readFileSync(dir+'NAME-INDEX.md','utf8');
+for(const card of data.cards)assert.ok(names.includes(card.pinned_url),card.id);
+const overlap=JSON.parse(readFileSync('research/knowledge-overlaps.json','utf8'));
+assert.equal(overlap.source_count,300);
 const router=readFileSync(dir+'ROUTER.md','utf8');
 assert.match(router,/300/);
 assert.match(router,/NOT 300 deep semantic reviews|NOT expert semantic reviews|not 300 deep semantic reviews/i);

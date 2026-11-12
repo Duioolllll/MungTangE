@@ -34,7 +34,8 @@
     "check:source-audit": "node scripts/verify-source-audit.mjs",
     "knowledge:build": "node scripts/build-knowledge.mjs",
     "knowledge:verify": "node scripts/check-knowledge.mjs",
-    "knowledge:curate": "node scripts/curate-knowledge.mjs"
+    "knowledge:curate": "node scripts/curate-knowledge.mjs",
+    "knowledge:index": "node scripts/compile-knowledge-index.mjs"
   },
   "engines": {
     "node": ">=20"
