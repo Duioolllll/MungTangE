@@ -52,7 +52,7 @@ CLI·외부 모델 호출·서브에이전트가 없어도 지침 자체는 작�
 | Orchestration | 의존성·파일 소유권 관리, 필요할 경우에만 병렬 실행 |
 | Delivery | 변경 파일·검증 내용·한계·승인 단계 정리 |
 
-**노하우의 출처:** 핵심 방법론은 [대표 원문 10개를 직접 살펴보고 정리한 심화 가이드](skills/mungtange/references/DEEP-INTEGRATION.md)에 있어요. 별도로 공개된 300개 링크는 [출처·해시를 자동 검사한 연구 기록](docs/SOURCE-AUDIT.md)으로, 그 자체가 심층 분석이나 품질 인증은 아닙니다.
+**300개 전부에 대한 실제 참조 경로:** 300개 각각의 SHA가 고정된 원본을 읽고, 항목별 활성화 단서·목차·원문 절차의 행 번호를 가진 [선택형 지식 라우터](skills/mungtange/references/knowledge/ROUTER.md)를 생성했습니다. 작업에 맞는 작은 묶음을 고른 뒤 필요한 원본만 확인합니다. **다만 이건 300개 전문가 심층 분석이 아니라 자동 구조 추출**입니다. 직접 해석한 실전 방법론은 [대표 10개 출처의 심화 가이드](skills/mungtange/references/DEEP-INTEGRATION.md)에 있고, [전체 출처 검증 기록](docs/SOURCE-AUDIT.md)은 별도 보관합니다.
 
 ## 추가 설치는 완전히 선택 사항
 
@@ -62,7 +62,7 @@ CLI·외부 모델 호출·서브에이전트가 없어도 지침 자체는 작�
 npx skills add Duioolllll/MungTangE --skill mungtange
 ~~~
 
-표준 설치기는 `skills/mungtange/SKILL.md`를 읽습니다. 이 파일은 루트 `SKILLS.md`에서 `npm run sync:skill`로 생성되며 **설치 경로에 맞게 링크가 변환**됩니다. 핵심 프롬프트는 단독으로 동작하며, 필요할 때만 `references/DEEP-INTEGRATION.md` 등 소수의 선택형 실전 가이드를 참고합니다. 일반적인 작업에는 추가 로딩이 필요 없습니다. CLI는 필요 없습니다.
+표준 설치기는 `skills/mungtange/SKILL.md`를 읽습니다. 이 파일은 루트 `SKILLS.md`에서 `npm run sync:skill`로 생성되며 **설치 경로에 맞게 링크가 변환**됩니다. 핵심 프롬프트는 단독으로 동작합니다. 필요할 때만 `references/DEEP-INTEGRATION.md` 또는 `references/knowledge/ROUTER.md`에서 특정 분야의 실제 원문 출처를 찾아 적용합니다. 300개를 매번 컨텍스트에 넣지 않습니다. 일반적인 작업에는 추가 로딩이 필요 없습니다. CLI는 필요 없습니다.
 
 기존 `mungtange` Node CLI와 300개 카탈로그는 **호환성·연구 기록을 위한 부수 기능**입니다. 스킬 사용에 필요하지 않으며, [선택 기능 안내](docs/LEGACY.md)에 분리해 두었습니다.
 
@@ -72,4 +72,4 @@ npx skills add Duioolllll/MungTangE --skill mungtange
 
 ## 개발 및 기여
 
-기존 CLI·카탈로그·GitHub Pages 기능은 유지됩니다. 프롬프트 수정은 루트 `SKILLS.md`만 편집한 뒤 `npm run sync:skill`로 설치용 사본을 생성합니다. `npm run verify`는 생성 결과·기존 코드·출처 검증 기록을 확인합니다. 원문 재검증은 별도 수동 작업이며, **어휘 매칭 결과를 실전 노하우나 품질 점수로 쓰지 않습니다.** 외부 SKILL.md의 라이선스는 해당 프로젝트에 남아 있으며 MungTangE에 자동 귀속되지 않습니다. [기여 가이드](CONTRIBUTING.md) · [보안 정책](SECURITY.md) · [라이선스](LICENSE).
+기존 CLI·카탈로그·GitHub Pages 기능은 유지됩니다. 프롬프트 수정은 루트 `SKILLS.md`만 편집한 뒤 `npm run sync:skill`로 설치용 사본을 생성합니다. `npm run verify`는 생성 결과·기존 코드·출처 검증 기록을 확인합니다. 원문 재검증은 별도 수동 작업이며, **자동으로 추출한 원문 구조/키워드를 완성된 심층 리뷰나 효과의 증거로 부풀리지 않습니다.** 외부 SKILL.md의 라이선스는 해당 프로젝트에 남아 있으며 MungTangE에 자동 귀속되지 않습니다. [기여 가이드](CONTRIBUTING.md) · [보안 정책](SECURITY.md) · [라이선스](LICENSE).
