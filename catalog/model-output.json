@@ -1,0 +1,1493 @@
+{
+  "category": "model-output",
+  "count": 100,
+  "curated_at": "2026-11-12",
+  "selection": "Topic-based skill-file, prompt, output, eval and agent orchestration catalog. Fit is heuristic; not a measured popularity or benchmark rank. Never auto-execute upstream content.",
+  "items": [
+    {
+      "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--context-compression",
+      "name": "context-compression",
+      "category": "model-output",
+      "source_repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source_path": "skills/context-compression/SKILL.md",
+      "source_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/HEAD/skills/context-compression/SKILL.md",
+      "blob_sha": "44b78abf987b07ee5c63bc325a5ced366ffd7d15",
+      "fit_score": 73,
+      "tags": [
+        "context",
+        "compress"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--advanced-evaluation",
+      "name": "advanced-evaluation",
+      "category": "model-output",
+      "source_repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source_path": "skills/advanced-evaluation/SKILL.md",
+      "source_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/HEAD/skills/advanced-evaluation/SKILL.md",
+      "blob_sha": "b11dd770ab961fba2d817a56e1d3f68f82c5e58d",
+      "fit_score": 69,
+      "tags": [
+        "eval"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--context-degradation",
+      "name": "context-degradation",
+      "category": "model-output",
+      "source_repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source_path": "skills/context-degradation/SKILL.md",
+      "source_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/HEAD/skills/context-degradation/SKILL.md",
+      "blob_sha": "1a6d079940045d5ff6d0058f50d3cc11a6f9610b",
+      "fit_score": 69,
+      "tags": [
+        "context"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--context-fundamentals",
+      "name": "context-fundamentals",
+      "category": "model-output",
+      "source_repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source_path": "skills/context-fundamentals/SKILL.md",
+      "source_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/HEAD/skills/context-fundamentals/SKILL.md",
+      "blob_sha": "f61443be6e233572cede0a111a4287518742d02e",
+      "fit_score": 69,
+      "tags": [
+        "context"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--context-optimization",
+      "name": "context-optimization",
+      "category": "model-output",
+      "source_repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source_path": "skills/context-optimization/SKILL.md",
+      "source_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/HEAD/skills/context-optimization/SKILL.md",
+      "blob_sha": "6b63196315aeab99c37c37d2cfea4891ecb2b23f",
+      "fit_score": 69,
+      "tags": [
+        "context"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--evaluation",
+      "name": "evaluation",
+      "category": "model-output",
+      "source_repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source_path": "skills/evaluation/SKILL.md",
+      "source_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/HEAD/skills/evaluation/SKILL.md",
+      "blob_sha": "4ad49d771c9ea97162ce3a1fa9a75e415ebcb63b",
+      "fit_score": 69,
+      "tags": [
+        "eval"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--filesystem-context",
+      "name": "filesystem-context",
+      "category": "model-output",
+      "source_repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source_path": "skills/filesystem-context/SKILL.md",
+      "source_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/HEAD/skills/filesystem-context/SKILL.md",
+      "blob_sha": "d80eec51832f6d7fb784839251a211ca84522239",
+      "fit_score": 69,
+      "tags": [
+        "context"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--hosted-agents",
+      "name": "hosted-agents",
+      "category": "model-output",
+      "source_repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source_path": "skills/hosted-agents/SKILL.md",
+      "source_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/HEAD/skills/hosted-agents/SKILL.md",
+      "blob_sha": "2a9ba99904859432dcd11f01d15368f74282f2c8",
+      "fit_score": 69,
+      "tags": [
+        "agent"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--long-horizon-prompting",
+      "name": "long-horizon-prompting",
+      "category": "model-output",
+      "source_repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source_path": "skills/long-horizon-prompting/SKILL.md",
+      "source_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/HEAD/skills/long-horizon-prompting/SKILL.md",
+      "blob_sha": "a36ec67d53a00fbefc78d82650f0e5af37ffdc71",
+      "fit_score": 69,
+      "tags": [
+        "prompt"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--memory-systems",
+      "name": "memory-systems",
+      "category": "model-output",
+      "source_repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source_path": "skills/memory-systems/SKILL.md",
+      "source_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/HEAD/skills/memory-systems/SKILL.md",
+      "blob_sha": "5c42112555148f9dd3913e093eb4a8427c1a974a",
+      "fit_score": 69,
+      "tags": [
+        "memory"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--multi-agent-patterns",
+      "name": "multi-agent-patterns",
+      "category": "model-output",
+      "source_repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source_path": "skills/multi-agent-patterns/SKILL.md",
+      "source_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/HEAD/skills/multi-agent-patterns/SKILL.md",
+      "blob_sha": "4503f154de049d92e2ec5f169c67fd6094c50892",
+      "fit_score": 69,
+      "tags": [
+        "agent"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--self-managed-context",
+      "name": "self-managed-context",
+      "category": "model-output",
+      "source_repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source_path": "skills/self-managed-context/SKILL.md",
+      "source_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/HEAD/skills/self-managed-context/SKILL.md",
+      "blob_sha": "fcb93bf54346e76e682dbf873c5875f72844e06f",
+      "fit_score": 69,
+      "tags": [
+        "context"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--tool-design",
+      "name": "tool-design",
+      "category": "model-output",
+      "source_repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source_path": "skills/tool-design/SKILL.md",
+      "source_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/HEAD/skills/tool-design/SKILL.md",
+      "blob_sha": "31487b24f183038fecddf468b9d28c1ca4c26538",
+      "fit_score": 66,
+      "tags": [
+        "tool"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--bdi-mental-states",
+      "name": "bdi-mental-states",
+      "category": "model-output",
+      "source_repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source_path": "skills/bdi-mental-states/SKILL.md",
+      "source_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/HEAD/skills/bdi-mental-states/SKILL.md",
+      "blob_sha": "30853f09bd2093d474af37cacb9ff2941e657e10",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--harness-engineering",
+      "name": "harness-engineering",
+      "category": "model-output",
+      "source_repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source_path": "skills/harness-engineering/SKILL.md",
+      "source_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/HEAD/skills/harness-engineering/SKILL.md",
+      "blob_sha": "05c84e7c87fb68e8e4ec154f2f7fdfd8a453205c",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "mattpocock--skills--code-review",
+      "name": "code-review",
+      "category": "model-output",
+      "source_repo": "mattpocock/skills",
+      "source_path": "skills/engineering/code-review/SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/code-review/SKILL.md",
+      "blob_sha": "83183e0ad36fd0eef25d37c7e483284b7e34c1f0",
+      "fit_score": 69,
+      "tags": [
+        "review"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "mattpocock--skills--implement-spec",
+      "name": "implement-spec",
+      "category": "model-output",
+      "source_repo": "mattpocock/skills",
+      "source_path": "skills/engineering/implement-spec/SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/implement-spec/SKILL.md",
+      "blob_sha": "73d36c23958bd04423ba3ded1c90ff0d0b858b72",
+      "fit_score": 69,
+      "tags": [
+        "spec"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "mattpocock--skills--research",
+      "name": "research",
+      "category": "model-output",
+      "source_repo": "mattpocock/skills",
+      "source_path": "skills/engineering/research/SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/research/SKILL.md",
+      "blob_sha": "ffc9eb89849cc4cf74962ce93d786ffd17c6a5dc",
+      "fit_score": 69,
+      "tags": [
+        "research"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "mattpocock--skills--setup-matt-pocock-skills",
+      "name": "setup-matt-pocock-skills",
+      "category": "model-output",
+      "source_repo": "mattpocock/skills",
+      "source_path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "blob_sha": "2df0b07981718fa5d9a51526dfbcaee87e3a543d",
+      "fit_score": 69,
+      "tags": [
+        "skill"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "mattpocock--skills--to-spec",
+      "name": "to-spec",
+      "category": "model-output",
+      "source_repo": "mattpocock/skills",
+      "source_path": "skills/engineering/to-spec/SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/to-spec/SKILL.md",
+      "blob_sha": "3f52599ae2a4347aee5a07432c2707518e691a7f",
+      "fit_score": 69,
+      "tags": [
+        "spec"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "mattpocock--skills--domain-modeling",
+      "name": "domain-modeling",
+      "category": "model-output",
+      "source_repo": "mattpocock/skills",
+      "source_path": "skills/engineering/domain-modeling/SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/domain-modeling/SKILL.md",
+      "blob_sha": "a4438c6879c517d1a08e2b5fbca049b632688dfe",
+      "fit_score": 59,
+      "tags": [
+        "model"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "mattpocock--skills--ask-matt",
+      "name": "ask-matt",
+      "category": "model-output",
+      "source_repo": "mattpocock/skills",
+      "source_path": "skills/engineering/ask-matt/SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/ask-matt/SKILL.md",
+      "blob_sha": "4bfeeb61dae548b8b7754c4fba7bd40ab3926099",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "mattpocock--skills--diagnosing-bugs",
+      "name": "diagnosing-bugs",
+      "category": "model-output",
+      "source_repo": "mattpocock/skills",
+      "source_path": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/diagnosing-bugs/SKILL.md",
+      "blob_sha": "d039541ddd1c46e6ddbd662fe99d49b686fc5e12",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "mattpocock--skills--grill-with-docs",
+      "name": "grill-with-docs",
+      "category": "model-output",
+      "source_repo": "mattpocock/skills",
+      "source_path": "skills/engineering/grill-with-docs/SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/grill-with-docs/SKILL.md",
+      "blob_sha": "62b9efb6f991d1b229adee7506962f13ced0c499",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "mattpocock--skills--implement",
+      "name": "implement",
+      "category": "model-output",
+      "source_repo": "mattpocock/skills",
+      "source_path": "skills/engineering/implement/SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/implement/SKILL.md",
+      "blob_sha": "bd49e472984c7b99aac40286fdae749bb955a842",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "mattpocock--skills--improve-codebase-architecture",
+      "name": "improve-codebase-architecture",
+      "category": "model-output",
+      "source_repo": "mattpocock/skills",
+      "source_path": "skills/engineering/improve-codebase-architecture/SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/improve-codebase-architecture/SKILL.md",
+      "blob_sha": "f1eabb568464f03ae79a3346fc1918fdde6d8285",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "mattpocock--skills--pr",
+      "name": "pr",
+      "category": "model-output",
+      "source_repo": "mattpocock/skills",
+      "source_path": "skills/engineering/pr/SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/pr/SKILL.md",
+      "blob_sha": "84dd4fb2f068e9f6282690235d20dd505b418119",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "mattpocock--skills--prototype",
+      "name": "prototype",
+      "category": "model-output",
+      "source_repo": "mattpocock/skills",
+      "source_path": "skills/engineering/prototype/SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/prototype/SKILL.md",
+      "blob_sha": "a0044501fe0d385b4d8575b610188ede9b236ccf",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "mattpocock--skills--retro",
+      "name": "retro",
+      "category": "model-output",
+      "source_repo": "mattpocock/skills",
+      "source_path": "skills/engineering/retro/SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/retro/SKILL.md",
+      "blob_sha": "12149acf2dd23b4514dec57b04a6293eaa1352fa",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "addyosmani--agent-skills--browser-testing-with-devtools",
+      "name": "browser-testing-with-devtools",
+      "category": "model-output",
+      "source_repo": "addyosmani/agent-skills",
+      "source_path": "skills/browser-testing-with-devtools/SKILL.md",
+      "source_url": "https://github.com/addyosmani/agent-skills/blob/HEAD/skills/browser-testing-with-devtools/SKILL.md",
+      "blob_sha": "ca0044e859e5637c33250dbba1fc1a24540b7ad3",
+      "fit_score": 73,
+      "tags": [
+        "test",
+        "tool"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "addyosmani--agent-skills--using-agent-skills",
+      "name": "using-agent-skills",
+      "category": "model-output",
+      "source_repo": "addyosmani/agent-skills",
+      "source_path": "skills/using-agent-skills/SKILL.md",
+      "source_url": "https://github.com/addyosmani/agent-skills/blob/HEAD/skills/using-agent-skills/SKILL.md",
+      "blob_sha": "d56ac03ab057036c1bdcc9127c88952758ee2f0d",
+      "fit_score": 73,
+      "tags": [
+        "agent",
+        "skill"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "addyosmani--agent-skills--code-review-and-quality",
+      "name": "code-review-and-quality",
+      "category": "model-output",
+      "source_repo": "addyosmani/agent-skills",
+      "source_path": "skills/code-review-and-quality/SKILL.md",
+      "source_url": "https://github.com/addyosmani/agent-skills/blob/HEAD/skills/code-review-and-quality/SKILL.md",
+      "blob_sha": "15ea44c93c61dcec705720342c1fd78755702f85",
+      "fit_score": 69,
+      "tags": [
+        "review"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "addyosmani--agent-skills--context-engineering",
+      "name": "context-engineering",
+      "category": "model-output",
+      "source_repo": "addyosmani/agent-skills",
+      "source_path": "skills/context-engineering/SKILL.md",
+      "source_url": "https://github.com/addyosmani/agent-skills/blob/HEAD/skills/context-engineering/SKILL.md",
+      "blob_sha": "abdfe2732255de944db13d0312a1634a425c7c5d",
+      "fit_score": 69,
+      "tags": [
+        "context"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "addyosmani--agent-skills--planning-and-task-breakdown",
+      "name": "planning-and-task-breakdown",
+      "category": "model-output",
+      "source_repo": "addyosmani/agent-skills",
+      "source_path": "skills/planning-and-task-breakdown/SKILL.md",
+      "source_url": "https://github.com/addyosmani/agent-skills/blob/HEAD/skills/planning-and-task-breakdown/SKILL.md",
+      "blob_sha": "296249b64334bcfd1aeaefd27b9e3e5494e38ec0",
+      "fit_score": 69,
+      "tags": [
+        "plan"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "addyosmani--agent-skills--spec-driven-development",
+      "name": "spec-driven-development",
+      "category": "model-output",
+      "source_repo": "addyosmani/agent-skills",
+      "source_path": "skills/spec-driven-development/SKILL.md",
+      "source_url": "https://github.com/addyosmani/agent-skills/blob/HEAD/skills/spec-driven-development/SKILL.md",
+      "blob_sha": "3fcc536f14f261dab1a785ef906ddf6f12074389",
+      "fit_score": 69,
+      "tags": [
+        "spec"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "addyosmani--agent-skills--test-driven-development",
+      "name": "test-driven-development",
+      "category": "model-output",
+      "source_repo": "addyosmani/agent-skills",
+      "source_path": "skills/test-driven-development/SKILL.md",
+      "source_url": "https://github.com/addyosmani/agent-skills/blob/HEAD/skills/test-driven-development/SKILL.md",
+      "blob_sha": "1937b9b9798d8986f4d979355565311bbaa7244f",
+      "fit_score": 69,
+      "tags": [
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "addyosmani--agent-skills--documentation-and-adrs",
+      "name": "documentation-and-adrs",
+      "category": "model-output",
+      "source_repo": "addyosmani/agent-skills",
+      "source_path": "skills/documentation-and-adrs/SKILL.md",
+      "source_url": "https://github.com/addyosmani/agent-skills/blob/HEAD/skills/documentation-and-adrs/SKILL.md",
+      "blob_sha": "eff8fddc25d972bc0e3b367d23afa0705b7a87b5",
+      "fit_score": 59,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "addyosmani--agent-skills--security-and-hardening",
+      "name": "security-and-hardening",
+      "category": "model-output",
+      "source_repo": "addyosmani/agent-skills",
+      "source_path": "skills/security-and-hardening/SKILL.md",
+      "source_url": "https://github.com/addyosmani/agent-skills/blob/HEAD/skills/security-and-hardening/SKILL.md",
+      "blob_sha": "fc85325b50e72b935f2916dd74af12c650e9c7f4",
+      "fit_score": 59,
+      "tags": [
+        "security"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "addyosmani--agent-skills--code-simplification",
+      "name": "code-simplification",
+      "category": "model-output",
+      "source_repo": "addyosmani/agent-skills",
+      "source_path": "skills/code-simplification/SKILL.md",
+      "source_url": "https://github.com/addyosmani/agent-skills/blob/HEAD/skills/code-simplification/SKILL.md",
+      "blob_sha": "c4f794aa3fc63ea041989b30be7a3887c79c53ed",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "addyosmani--agent-skills--debugging-and-error-recovery",
+      "name": "debugging-and-error-recovery",
+      "category": "model-output",
+      "source_repo": "addyosmani/agent-skills",
+      "source_path": "skills/debugging-and-error-recovery/SKILL.md",
+      "source_url": "https://github.com/addyosmani/agent-skills/blob/HEAD/skills/debugging-and-error-recovery/SKILL.md",
+      "blob_sha": "13c1a431626c23270542c7b570d7193ba79c3a96",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "addyosmani--agent-skills--git-workflow-and-versioning",
+      "name": "git-workflow-and-versioning",
+      "category": "model-output",
+      "source_repo": "addyosmani/agent-skills",
+      "source_path": "skills/git-workflow-and-versioning/SKILL.md",
+      "source_url": "https://github.com/addyosmani/agent-skills/blob/HEAD/skills/git-workflow-and-versioning/SKILL.md",
+      "blob_sha": "0cf257bcc172a0b508f5696352c8b4fa516c65b6",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "addyosmani--agent-skills--incremental-implementation",
+      "name": "incremental-implementation",
+      "category": "model-output",
+      "source_repo": "addyosmani/agent-skills",
+      "source_path": "skills/incremental-implementation/SKILL.md",
+      "source_url": "https://github.com/addyosmani/agent-skills/blob/HEAD/skills/incremental-implementation/SKILL.md",
+      "blob_sha": "9c4f49bc841adb3c0f98baaa9eabd435a5b64ef9",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--mcp-implementation-security-review",
+      "name": "mcp-implementation-security-review",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/mcp-implementation-security-review/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/mcp-implementation-security-review/SKILL.md",
+      "blob_sha": "5bf9d01b7be7e2661c78ab75afac232caecb2c05",
+      "fit_score": 77,
+      "tags": [
+        "mcp",
+        "security",
+        "review"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--agent-skill-stack",
+      "name": "agent-skill-stack",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/agent-skill-stack/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/agent-skill-stack/SKILL.md",
+      "blob_sha": "e89c861c51f249247ec923e0e8fa69251d3c169e",
+      "fit_score": 73,
+      "tags": [
+        "agent",
+        "skill"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--agentic-eval",
+      "name": "agentic-eval",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/agentic-eval/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/agentic-eval/SKILL.md",
+      "blob_sha": "3cb14203efaf62af98065bd599600ba808f0ef31",
+      "fit_score": 73,
+      "tags": [
+        "agent",
+        "eval"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--ai-prompt-engineering-safety-review",
+      "name": "ai-prompt-engineering-safety-review",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/ai-prompt-engineering-safety-review/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/ai-prompt-engineering-safety-review/SKILL.md",
+      "blob_sha": "86d8622d384e77056c4065cd616cb9285131d946",
+      "fit_score": 73,
+      "tags": [
+        "prompt",
+        "review"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--codebase-memory-mcp",
+      "name": "codebase-memory-mcp",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/codebase-memory-mcp/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/codebase-memory-mcp/SKILL.md",
+      "blob_sha": "d33e0bf9c31b644a023e6faef67d6515de715b5c",
+      "fit_score": 73,
+      "tags": [
+        "memory",
+        "mcp"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--finalize-agent-prompt",
+      "name": "finalize-agent-prompt",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/finalize-agent-prompt/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/finalize-agent-prompt/SKILL.md",
+      "blob_sha": "54b8647e242acf25ee90fece5716bf53fd84d832",
+      "fit_score": 73,
+      "tags": [
+        "agent",
+        "prompt"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--mcp-create-declarative-agent",
+      "name": "mcp-create-declarative-agent",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/mcp-create-declarative-agent/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/mcp-create-declarative-agent/SKILL.md",
+      "blob_sha": "8a5273ce96fb64006db16859857724af5eb70571",
+      "fit_score": 73,
+      "tags": [
+        "mcp",
+        "agent"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--mcp-deploy-manage-agents",
+      "name": "mcp-deploy-manage-agents",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/mcp-deploy-manage-agents/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/mcp-deploy-manage-agents/SKILL.md",
+      "blob_sha": "e3c7b252768bbd0ffebd0f2128b3bd0efd8793af",
+      "fit_score": 73,
+      "tags": [
+        "mcp",
+        "agent"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--mcp-security-audit",
+      "name": "mcp-security-audit",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/mcp-security-audit/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/mcp-security-audit/SKILL.md",
+      "blob_sha": "0b0bcdfba5879a72fda4cf418b86d297ad8a95f1",
+      "fit_score": 73,
+      "tags": [
+        "mcp",
+        "security"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--planning-oracle-to-postgres-migration-integration-testing",
+      "name": "planning-oracle-to-postgres-migration-integration-testing",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/planning-oracle-to-postgres-migration-integration-testing/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/planning-oracle-to-postgres-migration-integration-testing/SKILL.md",
+      "blob_sha": "8d99d9510ff46ccd172be503504f3a36ff597170",
+      "fit_score": 73,
+      "tags": [
+        "plan",
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--pytest-coverage",
+      "name": "pytest-coverage",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/pytest-coverage/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/pytest-coverage/SKILL.md",
+      "blob_sha": "38a8ed6f46942e861341e16b396e110d024d243c",
+      "fit_score": 73,
+      "tags": [
+        "test",
+        "rag"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--security-review",
+      "name": "security-review",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/security-review/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/security-review/SKILL.md",
+      "blob_sha": "5281fa2f537eadca9e078a770ae129e81b759179",
+      "fit_score": 73,
+      "tags": [
+        "security",
+        "review"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--typespec-create-agent",
+      "name": "typespec-create-agent",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/typespec-create-agent/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/typespec-create-agent/SKILL.md",
+      "blob_sha": "dd691ea774938a80b6d1d07c7962db772a5f051f",
+      "fit_score": 73,
+      "tags": [
+        "spec",
+        "agent"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--power-bi-model-design-review",
+      "name": "power-bi-model-design-review",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/power-bi-model-design-review/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/power-bi-model-design-review/SKILL.md",
+      "blob_sha": "5447d29f3f01b8ba7694f76474fef28cb39439d6",
+      "fit_score": 70,
+      "tags": [
+        "model",
+        "review"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--agent-architecture",
+      "name": "agent-architecture",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/agent-architecture/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/agent-architecture/SKILL.md",
+      "blob_sha": "dbe4798c8fb0dec57208491c26ef95d35cfd7eb2",
+      "fit_score": 69,
+      "tags": [
+        "agent"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--agent-governance",
+      "name": "agent-governance",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/agent-governance/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/agent-governance/SKILL.md",
+      "blob_sha": "a3c2501676c11fd8433c802b7f1c21d174ff6721",
+      "fit_score": 69,
+      "tags": [
+        "agent"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--agent-owasp-compliance",
+      "name": "agent-owasp-compliance",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/agent-owasp-compliance/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/agent-owasp-compliance/SKILL.md",
+      "blob_sha": "3c4032dc5e2f69709fbfc040caf5c77dee756136",
+      "fit_score": 69,
+      "tags": [
+        "agent"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--agent-supply-chain",
+      "name": "agent-supply-chain",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/agent-supply-chain/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/agent-supply-chain/SKILL.md",
+      "blob_sha": "995c87835577fc396d31ff4447cea9d91ca61484",
+      "fit_score": 69,
+      "tags": [
+        "agent"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--ai-team-orchestration",
+      "name": "ai-team-orchestration",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/ai-team-orchestration/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/ai-team-orchestration/SKILL.md",
+      "blob_sha": "bdbf711aece38d17671a190abbbc7d0ba924ad85",
+      "fit_score": 69,
+      "tags": [
+        "orchestrat"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--apple-appstore-reviewer",
+      "name": "apple-appstore-reviewer",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/apple-appstore-reviewer/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/apple-appstore-reviewer/SKILL.md",
+      "blob_sha": "10f7d5de653fb4bfe424411372f575e35bc3ee0e",
+      "fit_score": 69,
+      "tags": [
+        "review"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "github--awesome-copilot--arize-evaluator",
+      "name": "arize-evaluator",
+      "category": "model-output",
+      "source_repo": "github/awesome-copilot",
+      "source_path": "skills/arize-evaluator/SKILL.md",
+      "source_url": "https://github.com/github/awesome-copilot/blob/HEAD/skills/arize-evaluator/SKILL.md",
+      "blob_sha": "1336030d8fcb38d0f861bf85d348993b79a2d32f",
+      "fit_score": 69,
+      "tags": [
+        "eval"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "openai--skills--notion-research-documentation",
+      "name": "notion-research-documentation",
+      "category": "model-output",
+      "source_repo": "openai/skills",
+      "source_path": "skills/.curated/notion-research-documentation/SKILL.md",
+      "source_url": "https://github.com/openai/skills/blob/HEAD/skills/.curated/notion-research-documentation/SKILL.md",
+      "blob_sha": "4bd40dbe0eb8d9d8920e3a4d705b38b4887623c7",
+      "fit_score": 73,
+      "tags": [
+        "research"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "openai--skills--notion-spec-to-implementation",
+      "name": "notion-spec-to-implementation",
+      "category": "model-output",
+      "source_repo": "openai/skills",
+      "source_path": "skills/.curated/notion-spec-to-implementation/SKILL.md",
+      "source_url": "https://github.com/openai/skills/blob/HEAD/skills/.curated/notion-spec-to-implementation/SKILL.md",
+      "blob_sha": "d6a0a0e0fb358f56e1d4893c54a25c6c2e04fc65",
+      "fit_score": 69,
+      "tags": [
+        "spec"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "openai--skills--security-threat-model",
+      "name": "security-threat-model",
+      "category": "model-output",
+      "source_repo": "openai/skills",
+      "source_path": "skills/.curated/security-threat-model/SKILL.md",
+      "source_url": "https://github.com/openai/skills/blob/HEAD/skills/.curated/security-threat-model/SKILL.md",
+      "blob_sha": "abd3c1c95d49c4e0e0664f198f4bf168c6291aec",
+      "fit_score": 63,
+      "tags": [
+        "security",
+        "model"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "openai--skills--security-best-practices",
+      "name": "security-best-practices",
+      "category": "model-output",
+      "source_repo": "openai/skills",
+      "source_path": "skills/.curated/security-best-practices/SKILL.md",
+      "source_url": "https://github.com/openai/skills/blob/HEAD/skills/.curated/security-best-practices/SKILL.md",
+      "blob_sha": "45ccbd8d671c4c4cc3e7e0645a16a3f80ec50de7",
+      "fit_score": 59,
+      "tags": [
+        "security"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "openai--skills--security-ownership-map",
+      "name": "security-ownership-map",
+      "category": "model-output",
+      "source_repo": "openai/skills",
+      "source_path": "skills/.curated/security-ownership-map/SKILL.md",
+      "source_url": "https://github.com/openai/skills/blob/HEAD/skills/.curated/security-ownership-map/SKILL.md",
+      "blob_sha": "0164d0d8809825dc5bccc99e87cafb8345a6be72",
+      "fit_score": 59,
+      "tags": [
+        "security"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "openai--skills--aspnet-core",
+      "name": "aspnet-core",
+      "category": "model-output",
+      "source_repo": "openai/skills",
+      "source_path": "skills/.curated/aspnet-core/SKILL.md",
+      "source_url": "https://github.com/openai/skills/blob/HEAD/skills/.curated/aspnet-core/SKILL.md",
+      "blob_sha": "c71ed6e705c44038fbcd2e37a3e12c3a81683fdf",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "openai--skills--chatgpt-apps",
+      "name": "chatgpt-apps",
+      "category": "model-output",
+      "source_repo": "openai/skills",
+      "source_path": "skills/.curated/chatgpt-apps/SKILL.md",
+      "source_url": "https://github.com/openai/skills/blob/HEAD/skills/.curated/chatgpt-apps/SKILL.md",
+      "blob_sha": "6280a08c57db44ab622dcccbd853e01005edfcbd",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "openai--skills--cli-creator",
+      "name": "cli-creator",
+      "category": "model-output",
+      "source_repo": "openai/skills",
+      "source_path": "skills/.curated/cli-creator/SKILL.md",
+      "source_url": "https://github.com/openai/skills/blob/HEAD/skills/.curated/cli-creator/SKILL.md",
+      "blob_sha": "60e5a9a03f89cf66a60aa798bfc6f3c3fa5ed8c4",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "openai--skills--cloudflare-deploy",
+      "name": "cloudflare-deploy",
+      "category": "model-output",
+      "source_repo": "openai/skills",
+      "source_path": "skills/.curated/cloudflare-deploy/SKILL.md",
+      "source_url": "https://github.com/openai/skills/blob/HEAD/skills/.curated/cloudflare-deploy/SKILL.md",
+      "blob_sha": "e2d73abb7e5a550af3d9e40797a28259bddba97d",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "openai--skills--define-goal",
+      "name": "define-goal",
+      "category": "model-output",
+      "source_repo": "openai/skills",
+      "source_path": "skills/.curated/define-goal/SKILL.md",
+      "source_url": "https://github.com/openai/skills/blob/HEAD/skills/.curated/define-goal/SKILL.md",
+      "blob_sha": "87f111bd700e0d993465f7ac741847b5daee57d6",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "openai--skills--figma",
+      "name": "figma",
+      "category": "model-output",
+      "source_repo": "openai/skills",
+      "source_path": "skills/.curated/figma/SKILL.md",
+      "source_url": "https://github.com/openai/skills/blob/HEAD/skills/.curated/figma/SKILL.md",
+      "blob_sha": "b4f18d2969fe827778b13b5a0fb08a158ec091b1",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "openai--skills--figma-code-connect-components",
+      "name": "figma-code-connect-components",
+      "category": "model-output",
+      "source_repo": "openai/skills",
+      "source_path": "skills/.curated/figma-code-connect-components/SKILL.md",
+      "source_url": "https://github.com/openai/skills/blob/HEAD/skills/.curated/figma-code-connect-components/SKILL.md",
+      "blob_sha": "d417e16baf15bad3f1dd147d562c8b2578e4b4bd",
+      "fit_score": 55,
+      "tags": [],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--llm-evaluation",
+      "name": "llm-evaluation",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/llm-application-dev/skills/llm-evaluation/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/llm-application-dev/skills/llm-evaluation/SKILL.md",
+      "blob_sha": "cecc8609fae6fe0ba2d4f1b31e8f59d2cb15e725",
+      "fit_score": 73,
+      "tags": [
+        "llm",
+        "eval"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--review-agent-setup",
+      "name": "review-agent-setup",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/review-agent-governance/skills/review-agent-setup/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/review-agent-governance/skills/review-agent-setup/SKILL.md",
+      "blob_sha": "28b782508a70c4d0d66f7371b740fefa1efd974d",
+      "fit_score": 73,
+      "tags": [
+        "review",
+        "agent"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--backtesting-frameworks",
+      "name": "backtesting-frameworks",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/quantitative-trading/skills/backtesting-frameworks/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/quantitative-trading/skills/backtesting-frameworks/SKILL.md",
+      "blob_sha": "1da42f3ba2ff366b33467ec0feec86c86668c174",
+      "fit_score": 69,
+      "tags": [
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--bats-testing-patterns",
+      "name": "bats-testing-patterns",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/shell-scripting/skills/bats-testing-patterns/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/shell-scripting/skills/bats-testing-patterns/SKILL.md",
+      "blob_sha": "d28cb6e3a1cc1fe5118fc676041cc29198be3fab",
+      "fit_score": 69,
+      "tags": [
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--code-review-excellence",
+      "name": "code-review-excellence",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/developer-essentials/skills/code-review-excellence/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/developer-essentials/skills/code-review-excellence/SKILL.md",
+      "blob_sha": "7ffef3d96996eaaa6ee7e1d17dd5ed7681969bb1",
+      "fit_score": 69,
+      "tags": [
+        "review"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--context-driven-development",
+      "name": "context-driven-development",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/conductor/skills/context-driven-development/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/conductor/skills/context-driven-development/SKILL.md",
+      "blob_sha": "2dd17d71fb70669259e1514ab84a7a89e5784718",
+      "fit_score": 69,
+      "tags": [
+        "context"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--eval-harness-first",
+      "name": "eval-harness-first",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/llm-finetuning/skills/eval-harness-first/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/llm-finetuning/skills/eval-harness-first/SKILL.md",
+      "blob_sha": "4ac652f9c70a3ba42dd6394376e6f54db20ab553",
+      "fit_score": 69,
+      "tags": [
+        "eval"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--evaluation-methodology",
+      "name": "evaluation-methodology",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/plugin-eval/skills/evaluation-methodology/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/plugin-eval/skills/evaluation-methodology/SKILL.md",
+      "blob_sha": "a7678a1b6f990aeba3dfd0aa697949e6bb92591d",
+      "fit_score": 69,
+      "tags": [
+        "eval"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--javascript-testing-patterns",
+      "name": "javascript-testing-patterns",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/javascript-typescript/skills/javascript-testing-patterns/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/javascript-typescript/skills/javascript-testing-patterns/SKILL.md",
+      "blob_sha": "9102d72c46491ba9b36886fc10603e4583e524d9",
+      "fit_score": 69,
+      "tags": [
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--memory-forensics",
+      "name": "memory-forensics",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/reverse-engineering/skills/memory-forensics/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/reverse-engineering/skills/memory-forensics/SKILL.md",
+      "blob_sha": "b13be6cc1452cd1b63e96ff7435c11ac6735d3f5",
+      "fit_score": 69,
+      "tags": [
+        "memory"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--memory-safety-patterns",
+      "name": "memory-safety-patterns",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/systems-programming/skills/memory-safety-patterns/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/systems-programming/skills/memory-safety-patterns/SKILL.md",
+      "blob_sha": "74f2e5bd812f9c6f2e330dde80ba2f795395963b",
+      "fit_score": 69,
+      "tags": [
+        "memory"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--multi-reviewer-patterns",
+      "name": "multi-reviewer-patterns",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/agent-teams/skills/multi-reviewer-patterns/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/agent-teams/skills/multi-reviewer-patterns/SKILL.md",
+      "blob_sha": "282bd5d9fe81d801346c461ce262a4b407944c2f",
+      "fit_score": 69,
+      "tags": [
+        "review"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--on-call-handoff-patterns",
+      "name": "on-call-handoff-patterns",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/incident-response/skills/on-call-handoff-patterns/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/incident-response/skills/on-call-handoff-patterns/SKILL.md",
+      "blob_sha": "fac98d35f10b3e6b1b1fdca485c7fe6613b3cc29",
+      "fit_score": 69,
+      "tags": [
+        "handoff"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--openapi-spec-generation",
+      "name": "openapi-spec-generation",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/documentation-generation/skills/openapi-spec-generation/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/documentation-generation/skills/openapi-spec-generation/SKILL.md",
+      "blob_sha": "6f86431cdd092ff5edfc8b70b2a0d30481428da8",
+      "fit_score": 69,
+      "tags": [
+        "spec"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--pptx-deck-context",
+      "name": "pptx-deck-context",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/pptx-deck-creation/skills/pptx-deck-context/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/pptx-deck-creation/skills/pptx-deck-context/SKILL.md",
+      "blob_sha": "926c9ca2cbe2bda01f0dcf51b8cc2d3266c74732",
+      "fit_score": 69,
+      "tags": [
+        "context"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--protect-mcp-setup",
+      "name": "protect-mcp-setup",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/protect-mcp/skills/protect-mcp-setup/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/protect-mcp/skills/protect-mcp-setup/SKILL.md",
+      "blob_sha": "ba138e7691a47ea0bdf12ba91ebf8ad04f54e163",
+      "fit_score": 69,
+      "tags": [
+        "mcp"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "wshobson--agents--python-testing-patterns",
+      "name": "python-testing-patterns",
+      "category": "model-output",
+      "source_repo": "wshobson/agents",
+      "source_path": "plugins/python-development/skills/python-testing-patterns/SKILL.md",
+      "source_url": "https://github.com/wshobson/agents/blob/HEAD/plugins/python-development/skills/python-testing-patterns/SKILL.md",
+      "blob_sha": "4fe8a4245c55e9e79e70b5f75ab387e2349f91dc",
+      "fit_score": 69,
+      "tags": [
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--agent-memory",
+      "name": "agent-memory",
+      "category": "model-output",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering/agent-memory/skills/agent-memory/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering/agent-memory/skills/agent-memory/SKILL.md",
+      "blob_sha": "0f584a55e13a14b2c1381054f0110f6405eee30f",
+      "fit_score": 73,
+      "tags": [
+        "agent",
+        "memory"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--agent-regression-evals",
+      "name": "agent-regression-evals",
+      "category": "model-output",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering/agent-regression-evals/skills/agent-regression-evals/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering/agent-regression-evals/skills/agent-regression-evals/SKILL.md",
+      "blob_sha": "1da147fb98b18260446a8fd2bf97fbe0b61a26f7",
+      "fit_score": 73,
+      "tags": [
+        "agent",
+        "eval"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--autoresearch-agent",
+      "name": "autoresearch-agent",
+      "category": "model-output",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering/autoresearch-agent/skills/autoresearch-agent/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering/autoresearch-agent/skills/autoresearch-agent/SKILL.md",
+      "blob_sha": "3bc1104ef05526c5ba43db0323fe8d2890921f58",
+      "fit_score": 73,
+      "tags": [
+        "research",
+        "agent"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--memory-review",
+      "name": "memory-review",
+      "category": "model-output",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering-team/self-improving-agent/skills/memory-review/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering-team/self-improving-agent/skills/memory-review/SKILL.md",
+      "blob_sha": "7efcdb15c9a570573a891f0ad7bc5a617c6e25f1",
+      "fit_score": 73,
+      "tags": [
+        "memory",
+        "review"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--research-ops-skills",
+      "name": "research-ops-skills",
+      "category": "model-output",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "research-ops/skills/research-ops-skills/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/research-ops/skills/research-ops-skills/SKILL.md",
+      "blob_sha": "8b1391aa9912df5b3d1c08118a933600a0819201",
+      "fit_score": 73,
+      "tags": [
+        "research",
+        "skill"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--security-pen-testing",
+      "name": "security-pen-testing",
+      "category": "model-output",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering-team/skills/security-pen-testing/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering-team/skills/security-pen-testing/SKILL.md",
+      "blob_sha": "43ee9811f60258d035b7c0a91e46c2b669f0bab3",
+      "fit_score": 73,
+      "tags": [
+        "security",
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--skill-security-auditor",
+      "name": "skill-security-auditor",
+      "category": "model-output",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering/skills/skill-security-auditor/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering/skills/skill-security-auditor/SKILL.md",
+      "blob_sha": "3ab4759833197cda905ee4b4b023d61b75004582",
+      "fit_score": 73,
+      "tags": [
+        "skill",
+        "security"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    },
+    {
+      "id": "alirezarezvani--claude-skills--skill-tester",
+      "name": "skill-tester",
+      "category": "model-output",
+      "source_repo": "alirezarezvani/claude-skills",
+      "source_path": "engineering/skills/skill-tester/SKILL.md",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/HEAD/engineering/skills/skill-tester/SKILL.md",
+      "blob_sha": "57190a5190ed5d5a1e525403a7414547acf5e475",
+      "fit_score": 73,
+      "tags": [
+        "skill",
+        "test"
+      ],
+      "verification": "Git tree contains SKILL.md; content not audited",
+      "reviewed": false
+    }
+  ]
+}
