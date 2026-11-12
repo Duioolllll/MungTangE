@@ -4,10 +4,12 @@
 
 ## Landing page (persuade)
 
+- Identify archetype: developer framework/library landing is **not** the same as B2B SaaS. For framework sites, lead with actual syntax and architecture; for SaaS, lead with real workflow and customer outcome. See [BRAND-DIRECTION.md](BRAND-DIRECTION.md) only when brand-sensitive.
 - Gather target audience, offer, evidence, desired conversion, truthful copy.
-- Two design directions; choose a coherent editorial metaphor.
+- Explore different content composition/proof metaphors, not just palettes, and select with trade-offs.
 - Hero should communicate real value; CTA labels answer "what happens?"
 - Avoid fake testimonials, logos, growth numbers and placeholder proof.
+- When screenshot/browser tools exist, inspect the real hero and next section at mobile/tablet/desktop. Apply [VISUAL-LOOP.md](VISUAL-LOOP.md) only for meaningful observed gaps; don't fabricate a quality score.
 - Validate mobile CTA, LCP, focus, text contrast and form completion.
 - Relevant references: Anthropic frontend-design, Impeccable, Owl design-qa.
 
