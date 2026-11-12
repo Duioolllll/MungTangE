@@ -2,69 +2,6 @@
 
 > SHA-pinned machine-generated source outlines, NOT expert semantic reviews. Fetch exact upstream source for full procedure; never execute untrusted code.
 
-## academy-guide
-
-- **Exact SHA source:** [anthropics/skills](https://github.com/anthropics/skills/blob/cefeaeb20cc29a803af0335d7c7155b066d8770f/skills/academy-guide/SKILL.md)
-- **Use signals:** academy, guide
-- **Source sections:** Claude Academy guide → Purpose → Rules → The catalog
-- **Action anchors (keyword signatures):** L36: cases worked examples applying claude concrete task / L80: keep brief natural after answer add short line like
-- **Validation/caution anchors:** L72: never hallucinate content only academy links may share / L96: don pushy phrasing like might find interesting
-- **Status:** automated-source-structure; license not_checked.
-
-## acquire-codebase-knowledge
-
-- **Exact SHA source:** [github/awesome-copilot](https://github.com/github/awesome-copilot/blob/0ef102e7a65fecd906998e2b03f86cc435870a46/skills/acquire-codebase-knowledge/SKILL.md)
-- **Use signals:** acquire, codebase, knowledge, user, explicitly, asks, map, document, onboard, existing, trigger, prompts
-- **Source sections:** Acquire Codebase Knowledge → Output Contract (Required) → Workflow → Focus Area Mode → Phase 1: Scan and Read Intent → Phase 2: Investigate
-- **Action anchors (keyword signatures):** L29: every document includes short evidence list concrete file paths / L47: always run phase full / L48: fully complete focus area documents first
-- **Validation/caution anchors:** L14: performance testing markers / L26: exactly these files exist docs codebase stack structure architecture
-- **Status:** automated-source-structure; license not_checked.
-
-## affinity-diagram
-
-- **Exact SHA source:** [Owl-Listener/designer-skills](https://github.com/Owl-Listener/designer-skills/blob/8e6d4270ae2bc5d045574e5519db6dbe5c1d9c47/design-research/skills/affinity-diagram/SKILL.md)
-- **Use signals:** affinity, diagram, cluster, many, qualitative, data, points, themes, insight, statements, synthesising, across
-- **Source sections:** Affinity Diagram → Context → Instructions → Cross-Interview Sampling Principle
-- **Action anchors (keyword signatures):** L16: extract data points pull individual observations quotes notes raw / L18: name each cluster descriptive theme labels capture essence each / L19: hierarchy organize clusters higher level themes typically top level
-- **Validation/caution anchors:** L31: after clustering check each participant appears least once output / L17: bottom clustering group related data points natural clusters start
-- **Status:** automated-source-structure; license not_checked.
-
-## agent-governance
-
-- **Exact SHA source:** [github/awesome-copilot](https://github.com/github/awesome-copilot/blob/a3c2501676c11fd8433c802b7f1c21d174ff6721/skills/agent-governance/SKILL.md)
-- **Use signals:** governance
-- **Source sections:** Agent Governance Patterns → Overview → When to Use → Pattern 1: Governance Policy → Policy Composition → Policy as YAML
-- **Action anchors (keyword signatures):** L5: building call external tools apis databases file systems / L6: implementing policy based access controls tool usage / L7: adding semantic intent classification detect dangerous prompts
-- **Validation/caution anchors:** not detected
-- **Status:** automated-source-structure; license not_checked.
-
-## agent-owasp-compliance
-
-- **Exact SHA source:** [github/awesome-copilot](https://github.com/github/awesome-copilot/blob/3c4032dc5e2f69709fbfc040caf5c77dee756136/skills/agent-owasp-compliance/SKILL.md)
-- **Use signals:** owasp, compliance
-- **Source sections:** Agent OWASP ASI Compliance Check → Overview → The 10 Risks → Check ASI-01: Prompt Injection Protection → Check ASI-02: Insecure Tool Use → Check ASI-03: Excessive Agency
-- **Action anchors (keyword signatures):** L8: mapping existing security controls agentic risks / L9: generating compliance report security review audit / L125: subprocess run shell true user controlled input
-- **Validation/caution anchors:** L7: running compliance check against owasp asi 2026 standards / L11: any request like owasp compliant check asi compliance agentic
-- **Status:** automated-source-structure; license not_checked.
-
-## agent-supply-chain
-
-- **Exact SHA source:** [github/awesome-copilot](https://github.com/github/awesome-copilot/blob/995c87835577fc396d31ff4447cea9d91ca61484/skills/agent-supply-chain/SKILL.md)
-- **Use signals:** supply, chain
-- **Source sections:** Agent Supply Chain Integrity → Overview → When to Use → Pattern 1: Generate Integrity Manifest → Pattern 2: Verify Integrity → Pattern 3: Dependency Version Audit
-- **Action anchors (keyword signatures):** L9: building provenance chains plugin promotion dev staging production / L32: during code review plugin prs / L35: building plugin marketplace integrity requirements
-- **Validation/caution anchors:** L6: verifying installed plugins match their published manifests / L10: any request like verify plugin integrity generate manifest check
-- **Status:** automated-source-structure; license not_checked.
-
-## agentic-eval
-
-- **Exact SHA source:** [github/awesome-copilot](https://github.com/github/awesome-copilot/blob/3cb14203efaf62af98065bd599600ba808f0ef31/skills/agentic-eval/SKILL.md)
-- **Use signals:** agentic, eval
-- **Source sections:** Agentic Evaluation Patterns → Overview → When to Use → Pattern 1: Basic Reflection → Pattern 2: Evaluator-Optimizer → Pattern 3: Code-Specific Reflection
-- **Action anchors (keyword signatures):** L5: implementing self critique reflection loops / L6: building evaluator optimizer pipelines quality critical generation / L9: adding iterative improvement outputs code reports analysis
-- **Validation/caution anchors:** L7: creating test driven code refinement workflows
-- **Status:** automated-source-structure; license not_checked.
-
 ## arduino-azure-iot-edge-integration
 
 - **Exact SHA source:** [github/awesome-copilot](https://github.com/github/awesome-copilot/blob/39ccfc9e7dc02cd9d6dc27f5847cbf6f3425a65b/skills/arduino-azure-iot-edge-integration/SKILL.md)
@@ -72,6 +9,7 @@
 - **Source sections:** Arduino Azure IoT Edge Integration → When to use it → Mandatory documentation review → Official Arduino references and best practices (required) → Objectives → Integration patterns
 - **Action anchors (keyword signatures):** L42: define actionable device cloud backlog / L59: gateway publishes upstream through iot edge runtime routes data / L71: desired reported device twin properties control runtime behavior
 - **Validation/caution anchors:** L125: security checklist identity credentials updates / L135: deployment plan validation tests / L139: propose production deployments shared credentials across devices / L140: assume always connectivity field deployments
+- **Source excerpt (untrusted, max 18 words):** L42: Define an actionable device and cloud backlog.
 - **Status:** automated-source-structure; license not_checked.
 
 ## arquiteto-de-empresa
@@ -81,32 +19,106 @@
 - **Source sections:** Company Architect → What you produce: a conformant OKF bundle → Operating principles (unbreakable) → 12-phase script → Tools (they make the work deterministic) → How to start (do this when invoked)
 - **Action anchors (keyword signatures):** L32: everything readable human machine plain markdown runtime sdk / L40: confirm before generating end phase show files type will / L45: actually write files disk access write files without disk
 - **Validation/caution anchors:** L37: one phase time complete validate before advancing / L36: interview before building never generate concept without having asked / L43: graph silos whenever concepts relate markdown link
+- **Source excerpt (untrusted, max 18 words):** L32: **Everything readable by human and machine** — plain markdown, no runtime, no SDK.
 - **Status:** automated-source-structure; license not_checked.
 
-## ask-matt
+## azure-smart-city-iot-solution-builder
 
-- **Exact SHA source:** [mattpocock/skills](https://github.com/mattpocock/skills/blob/4bfeeb61dae548b8b7754c4fba7bd40ab3926099/skills/engineering/ask-matt/SKILL.md)
-- **Use signals:** ask, matt, which, flow, fits, situation, router, over, repo
-- **Source sections:** Ask Matt → The main flow: idea → ship → Context hygiene → On-ramps → Codebase health → Vocabulary underneath
-- **Action anchors (keyword signatures):** L20: branch can settle every question conversation question needs runnable / L24: branch multi session / L26: implement per ticket clear ing context between each one
-- **Validation/caution anchors:** L34: retro closes loop after especially one went sideways looks / L19: grill docs sharpens idea interview start here whenever working / L60: improve codebase architecture runs whenever have spare moment keep
+- **Exact SHA source:** [github/awesome-copilot](https://github.com/github/awesome-copilot/blob/437845a89ae52590b4be6cf9e12620de82a5ae1e/skills/azure-smart-city-iot-solution-builder/SKILL.md)
+- **Use signals:** azure, smart, city, iot, solution, builder, plan, end, solutions, requirements, architecture, security
+- **Source sections:** Azure Smart City IoT Solution Builder → When to use it → Objectives → Workflow → 0) Mandatory documentation review (before any architecture) → 1) Scope and constraints
+- **Action anchors (keyword signatures):** L14: want iot solution azure / L17: roadmap backlog urban platform / L23: produce concrete artifacts team can implement
+- **Validation/caution anchors:** L125: azure deployment preflight pre deployment checks / L136: security governance checklist / L22: reuse existing azure focused whenever possible / L153: jump deployment before validating prerequisites
+- **Source excerpt (untrusted, max 18 words):** L14: "I want to build an IoT solution on Azure"
 - **Status:** automated-source-structure; license not_checked.
 
-## aspnet-core
+## bazel-build-optimization
 
-- **Exact SHA source:** [openai/skills](https://github.com/openai/skills/blob/c71ed6e705c44038fbcd2e37a3e12c3a81683fdf/skills/.curated/aspnet-core/SKILL.md)
-- **Use signals:** aspnet, core, review, refactor, architect, asp, net, applications, current, official, guidance, working
-- **Source sections:** ASP.NET Core → Overview → Workflow → Default Operating Assumptions → Reference Guide → Execution Notes
-- **Action anchors (keyword signatures):** L17: open references stack selection references stack selection first new / L24: add cross cutting references only needed / L30: references source map references source map microsoft learn section
-- **Validation/caution anchors:** L28: references testing performance operations references testing performance operations / L34: prefer latest stable asp net core net unless repository / L36: prefer webapplicationbuilder webapplication avoid older startup webhost patterns unless / L39: respect existing app model rewrite razor pages mvc controllers
+- **Exact SHA source:** [wshobson/agents](https://github.com/wshobson/agents/blob/5cf85ac52d725f813f863efea4af869aa3dca45a/plugins/developer-essentials/skills/bazel-build-optimization/SKILL.md)
+- **Use signals:** bazel, optimization, optimize, builds, large, scale, monorepos, configuring, implementing, remote, execution, optimizing
+- **Source sections:** Bazel Build Optimization → When to Use This Skill → Core Concepts → 1. Bazel Architecture → 2. Key Concepts → Templates and detailed worked examples
+- **Action anchors (keyword signatures):** L14: optimizing times / L16: debugging issues / L59: pin dependencies reproducible builds
+- **Validation/caution anchors:** L66: don glob deps explicit better / L67: don commit bazel dirs add gitignore
+- **Source excerpt (untrusted, max 18 words):** L14: Optimizing build times
 - **Status:** automated-source-structure; license not_checked.
 
-## autoresearch-agent
+## checkpoint-promotion
 
-- **Exact SHA source:** [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills/blob/3bc1104ef05526c5ba43db0323fe8d2890921f58/engineering/autoresearch-agent/skills/autoresearch-agent/SKILL.md)
-- **Use signals:** autoresearch, make, file, measurably, better, trial, faster, code, smaller, bundle, higher, pass
-- **Source sections:** Autoresearch Agent → Slash Commands → When This Skill Activates → Setup → First Time — Create the Experiment → What Setup Creates
-- **Action anchors (keyword signatures):** L39: optimize file metric / L41: run experiments overnight / L43: any request involving optimize benchmark improve experiment loop autoresearch
-- **Validation/caution anchors:** L126: evaluate cmd command measures changes / L132: checkout experiment branch git checkout autoresearch domain name / L180: one change per experiment don change things once won / L182: never modify evaluator evaluate ground truth modifying invalidates all
+- **Exact SHA source:** [wshobson/agents](https://github.com/wshobson/agents/blob/22566d5595f2ed5574d16aec6b971924b57ee49d/plugins/llm-finetuning/skills/checkpoint-promotion/SKILL.md)
+- **Use signals:** checkpoint, promotion, gate, fine, tuned, checkpoints, drift, budgets, paired, comparison, forgetting, checks
+- **Source sections:** Checkpoint Promotion → The Four-Stage Gate → Drift Budget → Catastrophic Forgetting → The Verdict → Related Skills
+- **Action anchors (keyword signatures):** L277: preference optimization
+- **Validation/caution anchors:** not detected
+- **Source excerpt (untrusted, max 18 words):** L277: `preference-optimization` and
+- **Status:** automated-source-structure; license not_checked.
+
+## dbt-transformation-patterns
+
+- **Exact SHA source:** [wshobson/agents](https://github.com/wshobson/agents/blob/a893b4dff7521a5935c926825bd952ed04753e72/plugins/data-engineering/skills/dbt-transformation-patterns/SKILL.md)
+- **Use signals:** dbt, transformation, patterns, master, data, tool, analytics, engineering, model, organization, testing, documentation
+- **Source sections:** dbt Transformation Patterns → When to Use This Skill → Core Concepts → 1. Model Layers (Medallion Architecture) → 2. Naming Conventions → Quick Start
+- **Action anchors (keyword signatures):** L12: building data transformation pipelines dbt / L16: documenting data models lineage / L104: document everything column descriptions model descriptions
+- **Validation/caution anchors:** L14: implementing data quality tests / L103: test aggressively null unique relationships / L110: don skip staging raw mart tech debt / L111: don hardcode dates var start date
+- **Source excerpt (untrusted, max 18 words):** L12: Building data transformation pipelines with dbt
+- **Status:** automated-source-structure; license not_checked.
+
+## file-conversion
+
+- **Exact SHA source:** [wshobson/agents](https://github.com/wshobson/agents/blob/a9233089c55f33c51c921abb470d6077960df73c/plugins/file-conversion/skills/file-conversion/SKILL.md)
+- **Use signals:** file, conversion, user, needs, local, converted, between, common, image, audio, video, document
+- **Source sections:** Local file conversion → Inspect and choose → Preserve originals → Example routes → Verify and deliver
+- **Action anchors (keyword signatures):** L26: choose smallest suitable route / L147: data parse output compare row counts field names representative
+- **Validation/caution anchors:** L23: check local assets fonts inspection cannot rule out external / L138: check exit status diagnostics then require nonempty output created
+- **Source excerpt (untrusted, max 18 words):** L23: Check local assets and fonts. If inspection cannot rule out external links or
+- **Status:** automated-source-structure; license not_checked.
+
+## gke-ai-troubleshooting-node-unresponsive-timeout
+
+- **Exact SHA source:** [google/skills](https://github.com/google/skills/blob/d35b2544a91974bad7d64b12ac2df56279030b89/skills/cloud/gke-ai-troubleshooting-node-unresponsive-timeout/SKILL.md)
+- **Use signals:** gke, troubleshooting, node, unresponsive, timeout
+- **Source sections:** Troubleshoot unresponsive GKE TPU and GPU nodes (`NodeStatusUnknown`) → Attribution → Prerequisites → Diagnostic workflow → Step 0: Collect context and set the investigation window `[Low Risk]` → Step 1: Verify the `NodeStatusUnknown` heartbeat timeout `[Low Risk]`
+- **Action anchors (keyword signatures):** L52: documentation / L94: start time issue time 30m / L155: running follow
+- **Validation/caution anchors:** L39: cloud billing configuration verify active billing account / L101: check kubernetes node conditions inspect node status verify
+- **Source excerpt (untrusted, max 18 words):** L39: **Cloud Billing & Project Configuration**: Verify an active billing account is
+- **Status:** automated-source-structure; license not_checked.
+
+## google-mobile-ads-android-migrate-to-next-gen
+
+- **Exact SHA source:** [google/skills](https://github.com/google/skills/blob/5fc8bf4af4d0c89f784d84314680bc03989886d5/skills/ads/google-mobile-ads-android-migrate-to-next-gen/SKILL.md)
+- **Use signals:** google, mobile, ads, android, migrate, next, gen, migrates, applications, old, legacy
+- **Source sections:** AI Migration Agent Instructions for the Google Mobile Ads SDK → Migration Workflow → Core Migration Rules → Format Specifics → Banner Ads → Native Ads
+- **Action anchors (keyword signatures):** L37: refactor codebase following api mapping method mapping / L53: ensure initialize called before any other sdk methods / L62: mediation classes implementing
+- **Validation/caution anchors:** L20: replace com google android gms play services ads latest / L40: verify
+- **Source excerpt (untrusted, max 18 words):** L20: [ ] Replace `com.google.android.gms:play-services-ads` with the latest
+- **Status:** automated-source-structure; license not_checked.
+
+## helm-chart-builder
+
+- **Exact SHA source:** [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills/blob/a23bcea9d39d82df05283db6f42ecd30a5439a5c/engineering/helm-chart-builder/skills/helm-chart-builder/SKILL.md)
+- **Use signals:** helm, chart, builder, any, review, harden, values, yaml, templates, subcharts, rbac, pod
+- **Source sections:** Helm Chart Builder → Slash Commands → When This Skill Activates → Workflow → `/helm-chart-builder create` — Chart Scaffolding → `/helm-chart-builder review` — Chart Analysis
+- **Action anchors (keyword signatures):** L36: helm chart service / L37: review helm chart / L40: add subchart dependency
+- **Validation/caution anchors:** L41: set helm tests / L43: any request involving helm chart values yaml chart yaml / L215: template anti pattern detection hardcoded values missing labels resource
+- **Source excerpt (untrusted, max 18 words):** L36: "Create a Helm chart for this service"
+- **Status:** automated-source-structure; license not_checked.
+
+## helm-chart-scaffolding
+
+- **Exact SHA source:** [wshobson/agents](https://github.com/wshobson/agents/blob/34880d40ee13f819a21e28558c5c3171a2048a41/plugins/kubernetes-operations/skills/helm-chart-scaffolding/SKILL.md)
+- **Use signals:** helm, chart, scaffolding, organize, manage, charts, templating, packaging, kubernetes, applications, reusable, configurations
+- **Source sections:** Helm Chart Scaffolding → Purpose → When to Use This Skill → Detailed patterns and worked examples → Best Practices → Troubleshooting
+- **Action anchors (keyword signatures):** L18: new helm charts scratch / L21: implement templating reusable kubernetes manifests / L32: document all values values yaml comments
+- **Validation/caution anchors:** L34: validate charts before packaging / L40: test installations all environments
+- **Source excerpt (untrusted, max 18 words):** L18: Create new Helm charts from scratch
+- **Status:** automated-source-structure; license not_checked.
+
+## mobile-android-design
+
+- **Exact SHA source:** [wshobson/agents](https://github.com/wshobson/agents/blob/daf78dddb4716cecfd80b1046fe8c279c74aa298/plugins/ui-design/skills/mobile-android-design/SKILL.md)
+- **Use signals:** mobile, android, master, material, jetpack, compose, patterns, building, native, apps, designing, interfaces
+- **Source sections:** Android Mobile Design → When to Use This Skill → Detailed section: Core Concepts → Quick Start Component → Best Practices → Common Issues
+- **Action anchors (keyword signatures):** L13: building jetpack compose layouts / L14: implementing android navigation patterns navigation compose / L17: building accessible android interfaces
+- **Validation/caution anchors:** L90: state hoisting hoist state make components reusable testable / L96: recomposition issues avoid passing unstable lambdas remember
+- **Source excerpt (untrusted, max 18 words):** L13: Building Jetpack Compose UI and layouts
 - **Status:** automated-source-structure; license not_checked.
 

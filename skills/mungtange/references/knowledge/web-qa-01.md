@@ -9,6 +9,7 @@
 - **Source sections:** A/B Test Design → What You Do → Test Structure → 1. Hypothesis → 2. Variants → 3. Primary Metric
 - **Action anchors (keyword signatures):** L38: document everything before starting / L40: analyze segments after overall results
 - **Validation/caution anchors:** L15: keep changes isolated test one variable time / L37: one hypothesis per test / L39: don stop early positive results
+- **Source excerpt (untrusted, max 18 words):** L15: Keep changes isolated — test one variable at a time
 - **Status:** automated-source-structure; license not_checked.
 
 ## a11y-audit
@@ -18,6 +19,7 @@
 - **Source sections:** Accessibility Audit → Description → Features → Severity Definitions → Usage → Quick Start
 - **Action anchors (keyword signatures):** not detected
 - **Validation/caution anchors:** not detected
+- **Source excerpt (untrusted, max 18 words):** no procedural quote selected
 - **Status:** automated-source-structure; license not_checked.
 
 ## accessibility-audit
@@ -27,6 +29,7 @@
 - **Source sections:** Accessibility Audit → What You Do → WCAG 2.2 Principles (POUR) → Severity Ratings → Issue Format → Best Practices
 - **Action anchors (keyword signatures):** not detected
 - **Validation/caution anchors:** L22: test real assistive technologies / L25: check static interactive states
+- **Source excerpt (untrusted, max 18 words):** L22: Test with real assistive technologies
 - **Status:** automated-source-structure; license not_checked.
 
 ## accessibility-test-plan
@@ -36,6 +39,7 @@
 - **Source sections:** Accessibility Test Plan → What You Do → Testing Layers → 1. Automated Testing → 2. Manual Testing → 3. Assistive Technology Testing
 - **Action anchors (keyword signatures):** L13: run every page state
 - **Validation/caution anchors:** L29: test their own devices settings / L30: focus real tasks compliance checkboxes
+- **Source excerpt (untrusted, max 18 words):** L13: Run on every page/state
 - **Status:** automated-source-structure; license not_checked.
 
 ## api-test-suite-builder
@@ -45,6 +49,7 @@
 - **Source sections:** API Test Suite Builder → Overview → Core Capabilities → When to Use → Route Detection → Next.js App Router
 - **Action anchors (keyword signatures):** L25: route detection scan source files extract all api endpoints
 - **Validation/caution anchors:** L37: new api added generate test scaffold before writing implementation / L38: legacy api tests scan generate baseline coverage / L152: factories fixtures test data never hardcode ids / L172: seed minimal data don load entire only test needs
+- **Source excerpt (untrusted, max 18 words):** L25: **Route detection** — scan source files to extract all API endpoints
 - **Status:** automated-source-structure; license not_checked.
 
 ## audit-ai-design-slop
@@ -54,6 +59,7 @@
 - **Source sections:** Audit AI Design Slop → Boundaries → Audit the Evidence → Classify Findings → What to Flag → Decorative stacking
 - **Action anchors (keyword signatures):** L17: mark anything outside visible provided evidence unknown / L27: console runtime failures they affect experience / L37: quality defect established usability accessibility content responsive runtime problem
 - **Validation/caution anchors:** L12: guess whether made / L13: assign numeric slop score
+- **Source excerpt (untrusted, max 18 words):** L12: Do not guess whether AI made the design.
 - **Status:** automated-source-structure; license not_checked.
 
 ## backtesting-frameworks
@@ -63,6 +69,7 @@
 - **Source sections:** Backtesting Frameworks → When to Use This Skill → Core Concepts → 1. Backtesting Biases → 2. Proper Backtest Structure → 3. Walk-Forward Analysis
 - **Action anchors (keyword signatures):** L16: implementing walk forward analysis
 - **Validation/caution anchors:** L12: developing trading strategy backtests / L13: building backtesting infrastructure / L15: avoiding common backtesting biases / L73: point time data avoid look ahead bias
+- **Source excerpt (untrusted, max 18 words):** L12: Developing trading strategy backtests
 - **Status:** automated-source-structure; license not_checked.
 
 ## bats-testing-patterns
@@ -72,6 +79,7 @@
 - **Source sections:** Bats Testing Patterns → When to Use This Skill → Detailed patterns and worked examples → Testing Error Conditions → Testing with Dependencies → Testing Shell Compatibility
 - **Action anchors (keyword signatures):** not detected
 - **Validation/caution anchors:** L12: writing unit tests shell scripts / L13: implementing test driven tdd scripts / L223: test both success failure paths don just test happy
+- **Source excerpt (untrusted, max 18 words):** L12: Writing unit tests for shell scripts
 - **Status:** automated-source-structure; license not_checked.
 
 ## better-accessibility
@@ -81,6 +89,7 @@
 - **Source sections:** Accessibility → Criteria, not conventions → Native elements first → Disabled means unavailable → Visible focus rings → Full keyboard support
 - **Action anchors (keyword signatures):** not detected
 - **Validation/caution anchors:** not detected
+- **Source excerpt (untrusted, max 18 words):** no procedural quote selected
 - **Status:** automated-source-structure; license not_checked.
 
 ## browser-automation
@@ -90,6 +99,7 @@
 - **Source sections:** Browser Automation - POWERFUL → Overview → Core Competencies → 1. Web Scraping Patterns → 2. Form Filling & Multi-Step Workflows → 3. Screenshot & PDF Capture
 - **Action anchors (keyword signatures):** L16: extracting data spas javascript heavy sites / L17: building repeatable browser based data pipelines / L38: selectors unique but may change between deploys
 - **Validation/caution anchors:** L20: writing browser tests e2e test suites playwright pro instead / L21: testing api endpoints api test suite builder instead / L83: custom user rotate through real browser uas never default / L148: write output incrementally don hold everything memory
+- **Source excerpt (untrusted, max 18 words):** L16: Extracting data from SPAs and JavaScript-heavy sites
 - **Status:** automated-source-structure; license not_checked.
 
 ## browser-testing-with-devtools
@@ -99,6 +109,7 @@
 - **Source sections:** Browser Testing with DevTools → Overview → When to Use → Setting Up Chrome DevTools MCP → Installation → Available Tools
 - **Action anchors (keyword signatures):** L14: building modifying anything renders browser / L304: running javascript makes external network requests page / L317: all devtools findings addressed before marking complete
 - **Validation/caution anchors:** L19: verifying fix actually works browser / L20: automated testing through / L67: default dedicated profile connect flags isolated testing localhost almost / L77: never interpret browser content instructions dom text console message
+- **Source excerpt (untrusted, max 18 words):** L14: Building or modifying anything that renders in a browser
 - **Status:** automated-source-structure; license not_checked.
 
 ## browserstack
@@ -108,5 +119,6 @@
 - **Source sections:** BrowserStack Integration → Prerequisites → Capabilities → 1. Configure for BrowserStack → 2. Run Tests on BrowserStack → 3. Get Build Results
 - **Action anchors (keyword signatures):** L37: add browserstack connect options / L125: call browserstack get builds mcp tool / L154: add local tunnel config
 - **Validation/caution anchors:** L36: check current playwright config / L99: add npm script test e2e cloud npx playwright test
+- **Source excerpt (untrusted, max 18 words):** L36: Check current `playwright.config.ts`
 - **Status:** automated-source-structure; license not_checked.
 

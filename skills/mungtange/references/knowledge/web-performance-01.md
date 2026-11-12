@@ -9,6 +9,7 @@
 - **Source sections:** Context Optimization Techniques → When to Activate → Core Concepts → Detailed Topics → Compaction Strategies → Observation Masking
 - **Action anchors (keyword signatures):** L24: storing large outputs plans logs files filesystem context / L25: model initiated rewrites its own context their prefill cost / L31: cache optimization reorder stabilize prompt structure inference engine reuses
 - **Validation/caution anchors:** L160: measure before optimizing know current state / L166: test optimization production scale / L59: never mask observations critical current task observations most recent / L70: system prompt most stable never changes within session
+- **Source excerpt (untrusted, max 18 words):** L24: Storing large outputs, plans, or logs as files: `filesystem-context`.
 - **Status:** automated-source-structure; license not_checked.
 
 ## cost-optimization
@@ -18,6 +19,7 @@
 - **Source sections:** Cloud Cost Optimization → Purpose → When to Use → Cost Optimization Framework → 1. Visibility → 2. Right-Sizing
 - **Action anchors (keyword signatures):** L18: implement cost governance / L19: optimize multi cloud costs / L26: implement cost allocation tags
 - **Validation/caution anchors:** not detected
+- **Source excerpt (untrusted, max 18 words):** L18: Implement cost governance
 - **Status:** automated-source-structure; license not_checked.
 
 ## python-performance-optimization
@@ -27,6 +29,7 @@
 - **Source sections:** Python Performance Optimization → When to Use This Skill → Core Concepts → 1. Profiling Types → 2. Performance Metrics → 3. Optimization Strategies
 - **Action anchors (keyword signatures):** L12: identifying performance bottlenecks python applications / L14: optimizing cpu intensive operations / L17: optimizing operations
 - **Validation/caution anchors:** L80: profile before optimizing measure find real bottlenecks / L43: caching avoid redundant computation / L83: avoid premature optimization clarity first then optimize
+- **Source excerpt (untrusted, max 18 words):** L12: Identifying performance bottlenecks in Python applications
 - **Status:** automated-source-structure; license not_checked.
 
 ## vercel-optimize
@@ -36,5 +39,6 @@
 - **Source sections:** Vercel Optimize → Prerequisites → Framework Support → Run Directory → Pipeline → 1. Collect, scan, and merge signals
 - **Action anchors (keyword signatures):** L14: metrics first recommendations start vercel production signals repo wide / L24: linked app directory vercel link vercel can help resolve / L100: scope unresolved scope unresolved scope mismatch stop ask which
 - **Validation/caution anchors:** L113: forbidden found fix auth team scope pitch observability plus / L158: print exactchatmessage body exactly returned summarize truncate reorder rewrite
+- **Source excerpt (untrusted, max 18 words):** L14: Metrics first. Recommendations start from Vercel production signals, not repo-wide grep.
 - **Status:** automated-source-structure; license not_checked.
 

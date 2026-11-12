@@ -9,6 +9,7 @@
 - **Source sections:** Security Penetration Testing → Table of Contents → Overview → What This Skill Does → Distinction from Other Security Skills → Prerequisites
 - **Action anchors (keyword signatures):** L103: collect run ecosystem audit tools aggregate findings / L142: mass assignment add privileged fields role admin update requests / L173: port scanning nmap target com flag dangerous open ports
 - **Validation/caution anchors:** L19: api security testing api security testing / L20: vulnerability testing vulnerability testing / L25: anti patterns anti patterns
+- **Source excerpt (untrusted, max 18 words):** L19: [API Security Testing](#api-security-testing)
 - **Status:** automated-source-structure; license not_checked.
 
 ## skill-security-auditor
@@ -18,6 +19,7 @@
 - **Source sections:** Skill Security Auditor → Quick Start → What Gets Scanned → 1. Code Execution Risks (Python/Bash Scripts) → 2. Prompt Injection in SKILL.md → 3. Dependency Supply Chain
 - **Action anchors (keyword signatures):** L82: run scanner directory repo url / L83: review report findings grouped severity / L86: warn high medium findings detected review manually before installing
 - **Validation/caution anchors:** L162: network destination reputation checks require internet access / L164: dependency vulnerability checks local pattern matching live cve databases / L87: fail critical findings install without remediation
+- **Source excerpt (untrusted, max 18 words):** L82: **Run the scanner** on the skill directory or repo URL
 - **Status:** automated-source-structure; license not_checked.
 
 ## skill-tester
@@ -27,6 +29,7 @@
 - **Source sections:** Skill Tester → Quick Start (exact, runnable from repo root) → What Each Tool Checks → skill_validator.py → script_tester.py → quality_scorer.py
 - **Action anchors (keyword signatures):** L12: scripts validator structure documentation compliance / L46: help functionality verification sample data runs compared against expected
 - **Validation/caution anchors:** L13: scripts script tester python script syntax imports runtime output / L81: script tester reports all scripts passing
+- **Source excerpt (untrusted, max 18 words):** L12: **`scripts/skill_validator.py`** — structure + documentation compliance
 - **Status:** automated-source-structure; license not_checked.
 
 ## stress-test
@@ -36,6 +39,7 @@
 - **Source sections:** /executive-mentor:stress-test — Business Assumption Stress Testing → Why Most Assumptions Are Wrong → The Stress-Test Methodology → Step 1: Isolate the Assumption → Step 2: Find the Counter-Evidence → Step 3: Model the Downside
 - **Action anchors (keyword signatures):** L88: cac doubles does change runway / L99: contingency hedge wrong plan / L156: key hire dependency plan only works specific person hired
 - **Validation/caution anchors:** L98: validation hedge test before betting pilot customer conversation small / L111: new channel assumed work before tested scale / L141: data advantage requires scale don have
+- **Source excerpt (untrusted, max 18 words):** L88: If CAC doubles, how does that change runway?
 - **Status:** automated-source-structure; license not_checked.
 
 ## temporal-python-testing
@@ -45,6 +49,7 @@
 - **Source sections:** Temporal Python Testing Strategies → When to Use This Skill → Testing Philosophy → Available Resources → Unit Testing Resources → Integration Testing Resources
 - **Action anchors (keyword signatures):** L47: fast execution long running workflows
 - **Validation/caution anchors:** L12: unit testing workflows fast tests time skipping / L13: integration testing workflows mocked activities
+- **Source excerpt (untrusted, max 18 words):** L12: **Unit testing workflows** - Fast tests with time-skipping
 - **Status:** automated-source-structure; license not_checked.
 
 ## test-driven-development
@@ -54,6 +59,7 @@
 - **Source sections:** Test-Driven Development → Overview → When to Use → Discover the Stack First → The TDD Cycle → Step 1: RED — Write a Failing Test
 - **Action anchors (keyword signatures):** L14: implementing any new logic behavior / L17: adding edge case handling / L28: language system package json pom xml gradle pyproject toml
 - **Validation/caution anchors:** L29: checked wrappers prefer gradlew mvnw make test repo script / L30: test framework configuration runs single focused test full suite / L385: test names don describe expected behavior
+- **Source excerpt (untrusted, max 18 words):** L14: Implementing any new logic or behavior
 - **Status:** automated-source-structure; license not_checked.
 
 ## test-playable-web-games
@@ -63,6 +69,7 @@
 - **Source sections:** Test Playable Web Games → Start with a test matrix → Prefer deterministic review states → Verify the player experience → Report actionable evidence
 - **Action anchors (keyword signatures):** not detected
 - **Validation/caution anchors:** not detected
+- **Source excerpt (untrusted, max 18 words):** no procedural quote selected
 - **Status:** automated-source-structure; license not_checked.
 
 ## testrail
@@ -72,6 +79,7 @@
 - **Source sections:** TestRail Integration → Prerequisites → Capabilities → 1. Import Test Cases → Generate Playwright Tests → 2. Push Test Results → TestRail → 3. Create Test Run
 - **Action anchors (keyword signatures):** L71: return run result pushing
 - **Validation/caution anchors:** L13: testrail url https instance testrail / L14: testrail user email
+- **Source excerpt (untrusted, max 18 words):** L13: `TESTRAIL_URL` — e.g., `https://your-instance.testrail.io`
 - **Status:** automated-source-structure; license not_checked.
 
 ## wcag-audit-patterns
@@ -81,6 +89,7 @@
 - **Source sections:** WCAG Audit Patterns → When to Use This Skill → Core Concepts → 1. WCAG Conformance Levels → 2. POUR Principles → 3. Common Violations by Impact
 - **Action anchors (keyword signatures):** L14: implementing accessible components / L68: start early accessibility phase / L72: document patterns accessible component library
 - **Validation/caution anchors:** L69: test real users disabled users provide feedback / L76: don rely only automated testing manual testing required / L77: don aria first solution native html first
+- **Source excerpt (untrusted, max 18 words):** L14: Implementing accessible components
 - **Status:** automated-source-structure; license not_checked.
 
 ## webapp-testing
@@ -90,5 +99,6 @@
 - **Source sections:** Web Application Testing → When to Use This Skill → Prerequisites → Core Capabilities → 1. Browser Automation → 2. Verification
 - **Action anchors (keyword signatures):** L19: capture screenshots documentation debugging / L27: locally running application accessible url
 - **Validation/caution anchors:** L16: test frontend functionality real browser / L17: verify behavior interactions
+- **Source excerpt (untrusted, max 18 words):** L16: Test frontend functionality in a real browser
 - **Status:** automated-source-structure; license not_checked.
 

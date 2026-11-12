@@ -9,6 +9,7 @@
 - **Source sections:** Component canvas → Ground rules → Before building → Build order → Layout → Variants
 - **Action anchors (keyword signatures):** L14: show only components user asked adding components installing dependencies / L27: add minimal canvas route entry point one group one / L28: add remaining groups sample data
 - **Validation/caution anchors:** L54: keep component own state styling disabled opacity checked color / L55: test hover focus pressed states through real pointer keyboard / L12: modify component source exports styles hooks behavior make canvas / L13: patch libraries browser apis rendered component dom portal roots
+- **Source excerpt (untrusted, max 18 words):** L12: Do not modify component source, exports, styles, hooks, or behavior to make the canvas work. Components must not
 - **Status:** automated-source-structure; license not_checked.
 
 ## component-spec
@@ -18,6 +19,7 @@
 - **Source sections:** Component Spec → What You Do → Specification Structure → Best Practices
 - **Action anchors (keyword signatures):** L19: write both designers developers / L21: specify behavior just appearance / L23: document edge cases explicitly
 - **Validation/caution anchors:** L17: usage guidelines don examples content rules related components
+- **Source excerpt (untrusted, max 18 words):** L17: **Usage Guidelines** — Do/don't examples, content rules, related components
 - **Status:** automated-source-structure; license not_checked.
 
 ## figma-code-connect-components
@@ -27,6 +29,7 @@
 - **Source sections:** Code Connect Components → Overview → Skill Boundaries → Prerequisites → Required Workflow → Step 1: Get Code Connect Suggestions
 - **Action anchors (keyword signatures):** L14: get code connect suggestions send code connect mappings workflows / L16: task building updating full page screen figma code description / L17: task implementing product code figma switch figma implement figma
 - **Validation/caution anchors:** L39: checks existing code connect mappings filters out already connected / L75: thumbnail image component visual inspection
+- **Source excerpt (untrusted, max 18 words):** L14: Use this skill for `get_code_connect_suggestions` + `send_code_connect_mappings` workflows.
 - **Status:** automated-source-structure; license not_checked.
 
 ## lightweight-charts-react-components
@@ -36,6 +39,7 @@
 - **Source sections:** lightweight-charts-react-components guide → Quick Start → Installation → Minimal chart → Examples and snippets (reference files) → Skill compatibility
 - **Action anchors (keyword signatures):** L26: basic static chart start minimal chart below otherwise read / L29: choose one data owner pass complete dataset through data
 - **Validation/caution anchors:** L19: check versions against compatibility table below read declared ranges
+- **Source excerpt (untrusted, max 18 words):** L19: Check versions against the compatibility table below. Read declared ranges
 - **Status:** automated-source-structure; license not_checked.
 
 ## react-best-practices
@@ -45,6 +49,7 @@
 - **Source sections:** Vercel React Best Practices → When to Apply → Rule Categories by Priority → Quick Reference → 1. Eliminating Waterfalls (CRITICAL) → 2. Bundle Size Optimization (CRITICAL)
 - **Action anchors (keyword signatures):** L18: implementing data fetching client server side / L19: reviewing code performance issues / L20: refactoring existing react next code
 - **Validation/caution anchors:** L40: async cheap condition before await check cheap sync conditions / L116: length check first check array length before expensive comparison / L49: bundle barrel imports import directly avoid barrel files / L50: bundle analyzable paths prefer statically analyzable import file system
+- **Source excerpt (untrusted, max 18 words):** L18: Implementing data fetching (client or server-side)
 - **Status:** automated-source-structure; license not_checked.
 
 ## react-container-presentation-component
@@ -54,6 +59,7 @@
 - **Source sections:** Container/Presentation Component → When To Use → Required Questions → Procedure → Output Contract
 - **Action anchors (keyword signatures):** L21: user runs react container presentation component / L23: user wants help deciding implementing features classification within container / L35: provide type options features
 - **Validation/caution anchors:** L41: check existing components / L43: check whether src components componentname src components features componentname / L44: exists overwrite confirm preferred approach user / L55: result closer features proceed ask user confirm one following
+- **Source excerpt (untrusted, max 18 words):** L21: When the user runs `/react-container-presentation-component`
 - **Status:** automated-source-structure; license not_checked.
 
 ## react-modernization
@@ -63,6 +69,7 @@
 - **Source sections:** React Modernization → When to Use This Skill → Version Upgrade Path → React 16 → 17 → 18 → Class to Hooks Migration → State Management
 - **Action anchors (keyword signatures):** L15: applying codemods automated refactoring
 - **Validation/caution anchors:** L12: upgrading react applications latest versions
+- **Source excerpt (untrusted, max 18 words):** L12: Upgrading React applications to latest versions
 - **Status:** automated-source-structure; license not_checked.
 
 ## react-native-skills
@@ -72,6 +79,7 @@
 - **Source sections:** React Native Skills → When to Apply → Rule Categories by Priority → Quick Reference → 1. List Performance (CRITICAL) → 2. Animation (HIGH)
 - **Action anchors (keyword signatures):** L24: building react native expo apps / L25: optimizing list scroll performance / L26: implementing animations reanimated
 - **Validation/caution anchors:** L76: measure views onlayout measure / L51: list performance inline objects avoid inline style objects / L90: rendering falsy avoid falsy conditional rendering
+- **Source excerpt (untrusted, max 18 words):** L24: Building React Native or Expo apps
 - **Status:** automated-source-structure; license not_checked.
 
 ## react-view-transitions
@@ -81,6 +89,7 @@
 - **Source sections:** React View Transitions → When to Animate → Choosing Animation Style → Availability → Implementation Workflow → Core Concepts
 - **Action anchors (keyword signatures):** L47: browser support chromium 125 react needs object form startviewtransition / L324: references implementation references implementation step step implementation workflow / L326: references troubleshooting references troubleshooting symptom driven debugging runtime limitations
 - **Validation/caution anchors:** L46: without next stable react react dom newer viewtransition addtransitiontype / L209: two ways wired morph silently never fires default none
+- **Source excerpt (untrusted, max 18 words):** L46: **Without Next.js:** Use stable `react` and `react-dom` 19.3 or newer (`ViewTransition` and `addTransitionType` became stable in React 19.3).
 - **Status:** automated-source-structure; license not_checked.
 
 ## react19-test-patterns
@@ -90,6 +99,7 @@
 - **Source sections:** React 19 Test Migration Patterns → Priority Order → 1. act() Import Fix → 2. Simulate → fireEvent → 3. react-dom/test-utils Full API Map → 4. StrictMode Call Count Fixes
 - **Action anchors (keyword signatures):** not detected
 - **Validation/caution anchors:** L16: full react dom test utils cleanup remove remaining imports / L19: custom render helper verify once per codebase per test / L17: strictmode call counts measure actual don guess
+- **Source excerpt (untrusted, max 18 words):** L16: **Full react-dom/test-utils cleanup** remove remaining imports
 - **Status:** automated-source-structure; license not_checked.
 
 ## senior-frontend
@@ -99,6 +109,7 @@
 - **Source sections:** Senior Frontend → Table of Contents → Project Scaffolding → Workflow: Create New Frontend Project → Scaffolder Options → Generated outputs
 - **Action anchors (keyword signatures):** L16: next optimization nextjs optimization / L27: run scaffolder name template / L42: start server
 - **Validation/caution anchors:** L17: accessibility testing accessibility testing / L32: add optional features auth api forms testing storybook
+- **Source excerpt (untrusted, max 18 words):** L16: [Next.js Optimization](#nextjs-optimization)
 - **Status:** automated-source-structure; license not_checked.
 
 ## tailwindcss
@@ -108,5 +119,6 @@
 - **Source sections:** Tailwind CSS — Utility-first Styling Skill → When to use → Key concepts & patterns → Common pitfalls → Quick recipes → 1) A clean CTA button
 - **Action anchors (keyword signatures):** L9: rapid building consistent spacing typography scales / L19: extracting repeated patterns / L23: tailwind scans content files class names generates css zero
 - **Validation/caution anchors:** L16: state variants hover focus active disabled group hover peer / L21: then apply small reusable patterns avoid overuse / L28: avoid building class names dynamically text color unless safelisted
+- **Source excerpt (untrusted, max 18 words):** L9: Rapid UI building with consistent spacing/typography scales
 - **Status:** automated-source-structure; license not_checked.
 

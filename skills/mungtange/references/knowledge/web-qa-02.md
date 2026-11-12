@@ -9,6 +9,7 @@
 - **Source sections:** Click Test Plan → What You Do → Test Types → Test Plan Structure → 1. Objective → 2. Stimuli
 - **Action anchors (keyword signatures):** L22: correct first click target area defined / L25: click distribution heat map / L38: compare alternative designs same tasks
 - **Validation/caution anchors:** L10: first click test users click first given task / L11: click path test full sequence clicks complete task / L37: don give hints task wording
+- **Source excerpt (untrusted, max 18 words):** L10: **First-click test**: Where do users click first for a given task?
 - **Status:** automated-source-structure; license not_checked.
 
 ## design-debt-audit
@@ -18,6 +19,7 @@
 - **Source sections:** Design Debt Audit → What You Do → What Counts as Design Debt → Visual Inconsistency Debt → Structural Debt → Accessibility Debt
 - **Action anchors (keyword signatures):** L18: features were added without holistic creating isolated islands product / L28: designs were implemented hardcoded values instead tokens / L29: components were built differently across platforms ios android without
 - **Validation/caution anchors:** L72: prevent accumulation include does debt question review checklists / L16: patterns were designed earlier version product don scale current / L25: specs don match implementation
+- **Source excerpt (untrusted, max 18 words):** L16: Patterns that were designed for an earlier version of the product and don't scale to current complexity
 - **Status:** automated-source-structure; license not_checked.
 
 ## design-qa-checklist
@@ -27,6 +29,7 @@
 - **Source sections:** Design QA Checklist → What You Do → QA Categories → Visual Accuracy → Layout → Interaction
 - **Action anchors (keyword signatures):** L31: truncation works specified / L49: file bugs screenshots comparing implementation / L57: document recurring issues prevention
 - **Validation/caution anchors:** L47: self review developer against checklist / L54: test real content data
+- **Source excerpt (untrusted, max 18 words):** L31: Truncation works as specified
 - **Status:** automated-source-structure; license not_checked.
 
 ## e2e-testing-patterns
@@ -36,6 +39,7 @@
 - **Source sections:** E2E Testing Patterns → When to Use This Skill → Core Concepts → 1. E2E Testing Fundamentals → 2. Test Philosophy → Detailed patterns and worked examples
 - **Action anchors (keyword signatures):** L38: internal implementation details / L59: optimize speed / L75: optimize speed mock possible parallel execution
 - **Validation/caution anchors:** L12: implementing end end test automation / L13: debugging flaky unreliable tests / L69: avoid brittle selectors don rely css classes dom structure / L93: over testing don test every edge case e2e
+- **Source excerpt (untrusted, max 18 words):** L12: Implementing end-to-end test automation
 - **Status:** automated-source-structure; license not_checked.
 
 ## fixing-accessibility
@@ -45,6 +49,7 @@
 - **Source sections:** fixing-accessibility → how to use → when to apply → rule categories by priority → quick reference → 1. accessible names (critical)
 - **Action anchors (keyword signatures):** L26: adding changing buttons links inputs menus dialogs tabs dropdowns / L27: building forms validation error states helper text / L28: implementing keyboard shortcuts custom interactions
 - **Validation/caution anchors:** L59: div span buttons without full keyboard support / L62: tabindex greater than
+- **Source excerpt (untrusted, max 18 words):** L26: adding or changing buttons, links, inputs, menus, dialogs, tabs, dropdowns
 - **Status:** automated-source-structure; license not_checked.
 
 ## javascript-testing-patterns
@@ -54,6 +59,7 @@
 - **Source sections:** JavaScript Testing Patterns → When to Use This Skill → Testing Frameworks → Jest - Full-Featured Testing Framework → Vitest - Fast, Vite-Native Testing → Unit Testing Patterns
 - **Action anchors (keyword signatures):** not detected
 - **Validation/caution anchors:** L12: setting test infrastructure new projects / L13: writing unit tests functions classes / L529: avoid implementation details test behavior implementation
+- **Source excerpt (untrusted, max 18 words):** L12: Setting up test infrastructure for new projects
 - **Status:** automated-source-structure; license not_checked.
 
 ## landing-page-conversion-audit
@@ -63,6 +69,7 @@
 - **Source sections:** Landing Page Conversion Audit → When to use → When not to use → Procedure → 1. Gather what you are allowed to conclude from → 2. Run the checks
 - **Action anchors (keyword signatures):** L12: review landing page conversion rate low / L13: paid traffic running cpa above target / L58: count fields every field past minimum costs conversions ask
 - **Validation/caution anchors:** L15: checkout page high add cart purchase drop off / L59: checkout same page offer there extra click redirect / L14: before scaling spend page has never been audited / L98: never claim percentage lift specific fix say expected direction
+- **Source excerpt (untrusted, max 18 words):** L12: "Review my landing page" / "why is my conversion rate so low"
 - **Status:** automated-source-structure; license not_checked.
 
 ## planning-oracle-to-postgres-migration-integration-testing
@@ -72,6 +79,7 @@
 - **Source sections:** Planning Integration Testing for Oracle-to-PostgreSQL Migration → Workflow → Output → Key Constraints
 - **Action anchors (keyword signatures):** not detected
 - **Validation/caution anchors:** L30: list testable artifacts method signatures / L31: recommended test cases per artifact
+- **Source excerpt (untrusted, max 18 words):** L30: List of testable artifacts with method signatures
 - **Status:** automated-source-structure; license not_checked.
 
 ## playwright-automation-fill-in-form
@@ -81,6 +89,7 @@
 - **Source sections:** Automating Filling in a Form with Playwright MCP → Specific Instructions → Fill in the form with the following details:
 - **Action anchors (keyword signatures):** not detected
 - **Validation/caution anchors:** L22: topic playwright live latest updates playwright mcp live demo
+- **Source excerpt (untrusted, max 18 words):** L22: Topic: Playwright Live - Latest updates on Playwright MCP + Live Demo
 - **Status:** automated-source-structure; license not_checked.
 
 ## playwright-explore-website
@@ -90,6 +99,7 @@
 - **Source sections:** Website Exploration for Testing → Specific Instructions
 - **Action anchors (keyword signatures):** L12: navigate provided url playwright mcp server url provided ask / L13: identify interact core features user flows / L14: document user interactions relevant elements their locators expected outcomes
 - **Validation/caution anchors:** L17: propose generate test cases based exploration
+- **Source excerpt (untrusted, max 18 words):** L12: Navigate to the provided URL using the Playwright MCP Server. If no URL is provided, ask the user
 - **Status:** automated-source-structure; license not_checked.
 
 ## playwright-generate-test
@@ -99,6 +109,7 @@
 - **Source sections:** Test Generation with Playwright MCP → Specific Instructions
 - **Action anchors (keyword signatures):** L14: run steps one one tools provided playwright mcp
 - **Validation/caution anchors:** L12: given scenario generate playwright test user does provide scenario / L15: only after all steps completed emit playwright typescript test / L13: generate test code prematurely based solely scenario without completing
+- **Source excerpt (untrusted, max 18 words):** L12: You are given a scenario, and you need to generate a playwright test for it. If the user
 - **Status:** automated-source-structure; license not_checked.
 
 ## python-testing-patterns
@@ -108,5 +119,6 @@
 - **Source sections:** Python Testing Patterns → When to Use This Skill → Core Concepts → 1. Test Types → 2. Test Structure (AAA Pattern) → 3. Test Coverage
 - **Action anchors (keyword signatures):** not detected
 - **Validation/caution anchors:** L12: writing unit tests python code / L13: setting test suites test infrastructure
+- **Source excerpt (untrusted, max 18 words):** L12: Writing unit tests for Python code
 - **Status:** automated-source-structure; license not_checked.
 

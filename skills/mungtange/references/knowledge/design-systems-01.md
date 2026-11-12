@@ -9,6 +9,7 @@
 - **Source sections:** Design System → When to Use → Token Architecture → Three-Layer Structure → Script Paths → Quick Start
 - **Action anchors (keyword signatures):** L247: document every token purpose
 - **Validation/caution anchors:** L243: never raw hex components always reference tokens
+- **Source excerpt (untrusted, max 18 words):** L243: Never use raw hex in components - always reference tokens
 - **Status:** automated-source-structure; license not_checked.
 
 ## design-system-adoption
@@ -18,6 +19,7 @@
 - **Source sections:** Design System Adoption → What You Do → Adoption Strategy → Awareness → Education → Enablement
 - **Action anchors (keyword signatures):** L12: documentation site search examples / L16: getting started guides designers developers / L23: templates starter kits
 - **Validation/caution anchors:** not detected
+- **Source excerpt (untrusted, max 18 words):** L12: Documentation site with search and examples
 - **Status:** automated-source-structure; license not_checked.
 
 ## design-system-governance
@@ -27,6 +29,7 @@
 - **Source sections:** Design System Governance → What You Do → Core Governance Questions → Ownership Models → Centralized (Core Team) → Federated (Distributed)
 - **Action anchors (keyword signatures):** L17: quality maintained review process before merging new components / L27: requires strong review standards maintain quality / L39: review critique accessibility review engineering feasibility
 - **Validation/caution anchors:** L40: test implementation documentation accessibility testing / L68: accessibility review wcag minimum keyboard navigation screen reader tested
+- **Source excerpt (untrusted, max 18 words):** L17: **How is quality maintained?** Review process before merging new components?
 - **Status:** automated-source-structure; license not_checked.
 
 ## design-token
@@ -36,6 +39,7 @@
 - **Source sections:** Design Token → What You Do → Token Categories → Token Tiers → Naming Convention → Best Practices
 - **Action anchors (keyword signatures):** L23: start global tokens then semantic aliases / L25: document each token usage context
 - **Validation/caution anchors:** L24: never reference raw values components
+- **Source excerpt (untrusted, max 18 words):** L23: Start with global tokens, then create semantic aliases
 - **Status:** automated-source-structure; license not_checked.
 
 ## design-token-audit
@@ -45,6 +49,7 @@
 - **Source sections:** Design Token Audit → What You Do → Audit Scope → Token Coverage → Token Consistency → Token Gaps
 - **Action anchors (keyword signatures):** L23: inventory extract all visual values code files / L25: map match values existing tokens / L26: flag identify hard coded values mismatches gaps
 - **Validation/caution anchors:** not detected
+- **Source excerpt (untrusted, max 18 words):** L23: **Inventory** — Extract all visual values from code/design files
 - **Status:** automated-source-structure; license not_checked.
 
 ## tailwind-design-system
@@ -54,6 +59,7 @@
 - **Source sections:** Tailwind Design System (v4) → When to Use This Skill → Key v4 Changes → Quick Start → Core Concepts → 1. Design Token Hierarchy
 - **Action anchors (keyword signatures):** L15: implementing tokens theming css first configuration / L16: building responsive accessible components
 - **Validation/caution anchors:** not detected
+- **Source excerpt (untrusted, max 18 words):** L15: Implementing design tokens and theming with CSS-first configuration
 - **Status:** automated-source-structure; license not_checked.
 
 ## ui-design-system
@@ -63,5 +69,6 @@
 - **Source sections:** UI Design System → Table of Contents → Trigger Terms → Workflows → Workflow 1: Generate Design Tokens → Workflow 2: Create Component System
 - **Action anchors (keyword signatures):** L17: workflow component system workflow component system / L31: color palette / L32: typography scale
 - **Validation/caution anchors:** L42: check wcag contrast / L85: validate accessibility
+- **Source excerpt (untrusted, max 18 words):** L17: [Workflow 2: Create Component System](#workflow-2-create-component-system)
 - **Status:** automated-source-structure; license not_checked.
 

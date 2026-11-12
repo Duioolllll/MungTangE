@@ -16,7 +16,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "ux-research",
       "activation": [
         "critique",
         "facilitate",
@@ -110,7 +110,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Define what feedback is needed (layout? flow? copy? everything?)"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--journey-map",
@@ -207,7 +211,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "Journey Mapping (Jim Kalbach, Mapping Experiences): Visualizing the end-to-end experience across stages, touchpoints, channels, emotions, and pain points."
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--accessibility-audit",
@@ -291,7 +299,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 22,
+        "text": "Test with real assistive technologies"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--design-token-audit",
@@ -401,7 +413,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 23,
+        "text": "**Inventory** — Extract all visual values from code/design files"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--animation-principles",
@@ -493,7 +509,11 @@
             "sake"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 39,
+        "text": "Don't animate for the sake of it"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--a-b-test-design",
@@ -619,7 +639,11 @@
             "results"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 15,
+        "text": "Keep changes isolated — test one variable at a time"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--color-system",
@@ -747,7 +771,11 @@
             "meaning"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 23,
+        "text": "Don't rely on color alone to convey meaning"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--business-design",
@@ -871,7 +899,11 @@
             "start"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 27,
+        "text": "Onboarding failure — users who don't activate cost acquisition spend with no return"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--critique-brand-consistency",
@@ -884,7 +916,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "visual-craft",
+      "lane": "ux-research",
       "activation": [
         "critique",
         "brand",
@@ -990,7 +1022,11 @@
             "vocabulary"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 11,
+        "text": "**mood.md** — Brand personality, aesthetic keywords, visual references, do/don't examples"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--design-debt-audit",
@@ -1145,7 +1181,11 @@
             "implementation"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "Patterns that were designed for an earlier version of the product and don't scale to current complexity"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--survey-design",
@@ -1307,7 +1347,11 @@
             "question"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "You need to validate or quantify findings from qualitative research (interviews, usability tests)"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--component-spec",
@@ -1405,7 +1449,11 @@
             "components"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "**Usage Guidelines** — Do/don't examples, content rules, related components"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--ux-writing",
@@ -1418,7 +1466,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "ux-research",
       "activation": [
         "writing",
         "write",
@@ -1525,7 +1573,11 @@
             "idioms"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Tooltips: brief explanations for complex features"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--conversational-ux",
@@ -1538,7 +1590,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "ux-research",
       "activation": [
         "conversational",
         "voice",
@@ -1687,7 +1739,11 @@
             "asked"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 72,
+        "text": "Avoid lists longer than three items — users cannot re-read; chunk or sequence instead"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--accessibility-test-plan",
@@ -1793,7 +1849,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Run on every page/state"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--data-visualization",
@@ -1933,7 +1993,11 @@
             "shapes"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 24,
+        "text": "Start y-axis at zero for bar charts"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--design-brief",
@@ -2013,7 +2077,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "**Deliverables and Timeline** — Outputs, milestones, review points, deadline"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--critique-color",
@@ -2026,7 +2094,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "visual-craft",
+      "lane": "ux-research",
       "activation": [
         "critique",
         "color",
@@ -2130,7 +2198,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Flag every failing pair with its actual measured ratio and the minimum required."
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--design-impact-reporting",
@@ -2283,7 +2355,11 @@
             "avoided"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Building a portfolio of evidence over time, not just one-off wins"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--affinity-diagram",
@@ -2296,7 +2372,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "ux-research",
       "activation": [
         "affinity",
         "diagram",
@@ -2414,7 +2490,11 @@
             "start"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "**Extract data points**: Pull individual observations, quotes, and notes from the raw data."
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--design-token",
@@ -2509,7 +2589,11 @@
             "components"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 23,
+        "text": "Start with global tokens, then create semantic aliases"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--design-negotiation",
@@ -2677,7 +2761,11 @@
             "outcome"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 18,
+        "text": "Name the debt: \"Shipping without testing creates this specific risk for users.\""
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--error-handling-ux",
@@ -2690,7 +2778,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "ux-research",
       "activation": [
         "error",
         "handling",
@@ -2803,7 +2891,11 @@
             "user"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 21,
+        "text": "Permission and authentication checks"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--prototype-strategy",
@@ -2816,7 +2908,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "ux-research",
       "activation": [
         "prototype",
         "strategy",
@@ -2907,7 +2999,11 @@
             "feedback"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 32,
+        "text": "Don't over-invest before testing"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--layout-grid",
@@ -2995,7 +3091,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 32,
+        "text": "Test at every breakpoint, not just the extremes"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--design-principles",
@@ -3083,7 +3183,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Testable — designs can be evaluated against it"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--critique-typography",
@@ -3096,7 +3200,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "visual-craft",
+      "lane": "ux-research",
       "activation": [
         "critique",
         "typography",
@@ -3208,7 +3312,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Are only defined scale steps used (e.g., display, h1–h4, body-lg, body-sm, caption)?"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--design-qa-checklist",
@@ -3320,7 +3428,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 31,
+        "text": "Truncation works as specified"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--behavioural-analytics",
@@ -3333,7 +3445,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "ux-research",
       "activation": [
         "behavioural",
         "analytics",
@@ -3443,7 +3555,11 @@
             "before"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 11,
+        "text": "**The event does not mean what its name says.** `checkout_completed` may fire on render, not on payment. Read"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--motion-system",
@@ -3614,7 +3730,11 @@
             "causes"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 42,
+        "text": "**Token approach**: define a `duration-instant` (0ms or 1ms) override for all duration tokens under reduced-motion, applied globally"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--design-rationale",
@@ -3713,7 +3833,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 37,
+        "text": "Write rationale during the decision, not after"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--search-ux",
@@ -3726,7 +3850,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "ux-research",
       "activation": [
         "search",
         "query",
@@ -3854,7 +3978,11 @@
             "moment"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Submit on Enter; provide a clear search icon/button for touch users"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--click-test-plan",
@@ -3997,7 +4125,11 @@
             "wording"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 10,
+        "text": "**First-click test**: Where do users click first for a given task?"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--typography-scale",
@@ -4104,7 +4236,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 41,
+        "text": "Ensure body text is minimum 16px"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--competitive-analysis",
@@ -4117,7 +4253,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "ux-research",
       "activation": [
         "competitive",
         "analysis",
@@ -4191,7 +4327,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 24,
+        "text": "Analyze full journeys, not isolated screens"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--critique-visual-hierarchy",
@@ -4204,7 +4344,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "visual-craft",
+      "lane": "ux-research",
       "activation": [
         "critique",
         "visual",
@@ -4280,7 +4420,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 24,
+        "text": "Do background fill, stroke weight, and iconography add or fight the hierarchy?"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--design-review-process",
@@ -4395,7 +4539,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 11,
+        "text": "Problem clearly defined"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--card-sort-analysis",
@@ -4408,7 +4556,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "ux-research",
       "activation": [
         "card",
         "sort",
@@ -4488,7 +4636,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "**Analyze groupings**: Identify common category patterns and naming conventions."
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--design-system-governance",
@@ -4625,7 +4777,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "**How is quality maintained?** Review process before merging new components?"
+      }
     },
     {
       "id": "Owl-Listener--designer-skills--design-system-adoption",
@@ -4725,7 +4881,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Documentation site with search and examples"
+      }
     },
     {
       "id": "MengTo--Skills--build-interactive-particle-trail",
@@ -4881,7 +5041,11 @@
             "avoid"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 94,
+        "text": "Under `prefers-reduced-motion: reduce`, do not advance particle age. Seed a designed curved trail and let the burst button"
+      }
     },
     {
       "id": "MengTo--Skills--image-first-grid-layout",
@@ -5027,7 +5191,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 9,
+        "text": "Create an image-led grid design system with full-bleed photography, structural guide lines, anchored content blocks, and restrained technical"
+      }
     },
     {
       "id": "MengTo--Skills--agency-grid-layout-minimal",
@@ -5145,7 +5313,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 9,
+        "text": "Create a minimal agency design system with a disciplined editorial grid, oversized typography, quiet uppercase utility labels, restrained"
+      }
     },
     {
       "id": "MengTo--Skills--ambient-section-particles",
@@ -5262,7 +5434,11 @@
             "threshold"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Use WebGL only for thousands of particles, depth, shaders, or real 3D behavior. Cap device pixel ratio and"
+      }
     },
     {
       "id": "MengTo--Skills--animation-on-scroll",
@@ -5374,7 +5550,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 9,
+        "text": "Confirm animation style, timing, and whether animations should run once or repeat."
+      }
     },
     {
       "id": "MengTo--Skills--animation-systems",
@@ -5524,7 +5704,11 @@
             "hero"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 20,
+        "text": "**Add polish** (craft signals)"
+      }
     },
     {
       "id": "MengTo--Skills--blue-laser-clean-glass-layout",
@@ -5653,7 +5837,11 @@
             "avoid"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 9,
+        "text": "Create a clean dark glass layout system with a thin blue laser atmosphere, frosted premium shells, and polished"
+      }
     },
     {
       "id": "MengTo--Skills--build-awwwards-quality-sites",
@@ -5666,7 +5854,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "visual-craft",
       "activation": [
         "awwwards",
         "quality",
@@ -5828,7 +6016,11 @@
             "relevant"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Inspect the user's reference evidence completely before implementation. Extract only high-level traits such as hierarchy, pacing, contrast, image"
+      }
     },
     {
       "id": "MengTo--Skills--build-threejs-scroll-worlds",
@@ -6004,7 +6196,11 @@
             "label"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 30,
+        "text": "[references/quality-and-qa.md](references/quality-and-qa.md) before optimization and final verification."
+      }
     },
     {
       "id": "MengTo--Skills--build-wireframe-scan-reveal",
@@ -6145,7 +6341,11 @@
             "still"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 83,
+        "text": "Under `prefers-reduced-motion: reduce`, render a designed diagnostic still at about 62% radius with both cage and solid visible."
+      }
     },
     {
       "id": "MengTo--Skills--cinematic-gsap-lenis-motion-system",
@@ -6298,7 +6498,11 @@
             "section"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "Layered movement should create depth without making the interface feel busy."
+      }
     },
     {
       "id": "MengTo--Skills--dark-glass-clean-layout",
@@ -6415,7 +6619,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 9,
+        "text": "Create a dark glass layout system with frosted premium shells, clean multi-column workspace structure, floating data cards, and"
+      }
     },
     {
       "id": "MengTo--Skills--framed-grid-layout",
@@ -6573,7 +6781,11 @@
             "frames"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Define the parent grid first; make every section snap to the same columns and rows."
+      }
     },
     {
       "id": "MengTo--Skills--glass-dark-ui",
@@ -6713,7 +6925,11 @@
             "charcoal"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 10,
+        "text": "Define dark UI tokens first (background, glass fill, border glow, primary text, muted text)."
+      }
     },
     {
       "id": "MengTo--Skills--globe-particles",
@@ -6840,7 +7056,11 @@
             "systems"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 9,
+        "text": "Apply only to a globe-like 3D particle visualization."
+      }
     },
     {
       "id": "MengTo--Skills--liquid-metal-border",
@@ -6853,7 +7073,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "visual-craft",
       "activation": [
         "liquid",
         "metal",
@@ -7015,7 +7235,11 @@
             "decoration"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Reserve the animated border for active, selected, focused, hovered, or primary surfaces. Do not put it around every"
+      }
     },
     {
       "id": "MengTo--Skills--scroll-scrubbed-visual-sequence",
@@ -7173,7 +7397,11 @@
             "frames"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 37,
+        "text": "Use video when the sequence is continuous, photographic, or expensive to render live. Encode frequent keyframes, preload metadata,"
+      }
     },
     {
       "id": "MengTo--Skills--skeuomorphic-ui",
@@ -7186,7 +7414,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "visual-craft",
       "activation": [
         "skeuomorphic",
         "surfaces",
@@ -7316,7 +7544,11 @@
             "component"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Start with a rounded shape and a soft vertical gradient: lighter top, darker bottom."
+      }
     },
     {
       "id": "MengTo--Skills--split-layout-technical",
@@ -7448,7 +7680,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 9,
+        "text": "Create a technical split-screen design system with dual panels, fine frame lines, mono metadata, quiet editorial typography, and"
+      }
     },
     {
       "id": "MengTo--Skills--technical-wireframe-info-layout",
@@ -7579,7 +7815,11 @@
             "avoid"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 9,
+        "text": "Create a monochrome technical wireframe design system with exploded 3D structure, connector annotations, sparse information labels, and precise"
+      }
     },
     {
       "id": "MengTo--Skills--audit-ai-design-slop",
@@ -7711,7 +7951,11 @@
             "score"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Do not guess whether AI made the design."
+      }
     },
     {
       "id": "MengTo--Skills--design-first-ui-prompting",
@@ -7808,7 +8052,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 82,
+        "text": "Add a small “Constraints” panel with explicit values."
+      }
     },
     {
       "id": "MengTo--Skills--illustration-outlined-cartoon",
@@ -7985,7 +8233,11 @@
             "colour"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 40,
+        "text": "Shade colours appear only as fold slivers or one small shadow band, never as big flat shadow shapes."
+      }
     },
     {
       "id": "MengTo--Skills--no-ai-design-slop",
@@ -8160,7 +8412,11 @@
             "copy"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 29,
+        "text": "Identify the product, audience, primary task, primary action, content hierarchy, and one visual thesis for the surface."
+      }
     },
     {
       "id": "MengTo--Skills--optimize-web-animations",
@@ -8308,7 +8564,11 @@
             "introducing"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "Inspect repo context."
+      }
     },
     {
       "id": "MengTo--Skills--url-to-motion-design",
@@ -8454,7 +8714,11 @@
             "all"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 29,
+        "text": "**5 to 10 seconds each**, bounded by real cuts. Shots under 5 s go. Soft transitions hide inside"
+      }
     },
     {
       "id": "MengTo--Skills--article-prompts-to-skills",
@@ -8611,7 +8875,11 @@
             "method"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Run `git status --short`; preserve unrelated work."
+      }
     },
     {
       "id": "MengTo--Skills--aura-asset-images",
@@ -8732,7 +9000,11 @@
             "forehead"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 9,
+        "text": "https://www.aura.build/assets"
+      }
     },
     {
       "id": "emilkowalski--skills--animation-performance",
@@ -8880,7 +9152,11 @@
             "whatever"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 34,
+        "text": "**Name the cause before changing code.** Every fix you propose names which of the causes below it addresses."
+      }
     },
     {
       "id": "emilkowalski--skills--animation-vocabulary",
@@ -9028,7 +9304,11 @@
             "feel"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 30,
+        "text": "**Read for intent, not keywords.** Users describe what they *see* or *feel* (\"springy\", \"slides off\", \"draws itself in\"),"
+      }
     },
     {
       "id": "emilkowalski--skills--apple-design",
@@ -9201,7 +9481,11 @@
             "transition"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 34,
+        "text": "**Feedback must be continuous *during* the interaction, not just at the end.** For a drag, slider, or drawer,"
+      }
     },
     {
       "id": "emilkowalski--skills--break-ui",
@@ -9214,7 +9498,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "visual-craft",
       "activation": [
         "break",
         "try",
@@ -9348,7 +9632,11 @@
             "value"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 26,
+        "text": "**Nonsense data.** `\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"` and 5,000-character names prove nothing. The designer will rightly say \"that never happens\" and stop"
+      }
     },
     {
       "id": "emilkowalski--skills--emil-design-eng",
@@ -9488,7 +9776,11 @@
             "hidden"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 89,
+        "text": "**Explanation**: a marketing animation that shows how a feature works"
+      }
     },
     {
       "id": "emilkowalski--skills--find-animation-opportunities",
@@ -9637,7 +9929,11 @@
             "content"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 26,
+        "text": "**Never modify source code.** This skill reports; it does not implement. If asked to build a suggestion, hand"
+      }
     },
     {
       "id": "emilkowalski--skills--improve-animations",
@@ -9786,7 +10082,11 @@
             "context"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 30,
+        "text": "**Never modify source code.** The only files you create or edit live under `plans/` (or `animation-plans/` if `plans/`"
+      }
     },
     {
       "id": "emilkowalski--skills--pick-ui-library",
@@ -9799,7 +10099,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "visual-craft",
       "activation": [
         "pick",
         "library",
@@ -9906,7 +10206,11 @@
             "part"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 21,
+        "text": "**Identify the task**, not the library the user named. \"I need to show a dropdown\" is a UI-primitives"
+      }
     },
     {
       "id": "emilkowalski--skills--prototype",
@@ -9919,7 +10223,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "ux-research",
       "activation": [
         "prototype",
         "multiple",
@@ -10027,7 +10331,11 @@
             "specified"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 27,
+        "text": "**Never touch production code during exploration.** Everything lives in an isolated prototype surface (see Phase 4). Integration happens"
+      }
     },
     {
       "id": "jakubkrehel--skills--build-design",
@@ -10083,7 +10391,8 @@
       ],
       "steps": [],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": null
     },
     {
       "id": "jakubkrehel--skills--better-accessibility",
@@ -10157,7 +10466,8 @@
       ],
       "steps": [],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": null
     },
     {
       "id": "jakubkrehel--skills--better-colors",
@@ -10229,7 +10539,8 @@
       ],
       "steps": [],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": null
     },
     {
       "id": "jakubkrehel--skills--better-layout",
@@ -10300,7 +10611,8 @@
       ],
       "steps": [],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": null
     },
     {
       "id": "jakubkrehel--skills--better-typography",
@@ -10385,7 +10697,11 @@
             "never"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 62,
+        "text": "`text-wrap: balance` evens out headings and short descriptions. Never on paragraphs, and Chromium ignores it past six lines."
+      }
     },
     {
       "id": "jakubkrehel--skills--better-ui",
@@ -10398,7 +10714,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "visual-craft",
       "activation": [
         "better",
         "polishes",
@@ -10456,7 +10772,8 @@
       ],
       "steps": [],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": null
     },
     {
       "id": "jakubkrehel--skills--better-interface",
@@ -10469,7 +10786,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "visual-craft",
       "activation": [
         "better",
         "interface",
@@ -10569,7 +10886,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 71,
+        "text": "`HIGH`: blocks a task, misleads the user, hides content or controls, causes data-loss risk or creates a repeated"
+      }
     },
     {
       "id": "jakubkrehel--skills--explain-interface",
@@ -10582,7 +10903,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "visual-craft",
       "activation": [
         "explain",
         "interface",
@@ -10650,7 +10971,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 36,
+        "text": "Styles arrive at runtime, through CSS-in-JS or a theme script."
+      }
     },
     {
       "id": "jakubkrehel--skills--interface-review",
@@ -10763,7 +11088,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 27,
+        "text": "`HEAD` is ahead of `git merge-base origin/<default-branch> HEAD`. Review that range **plus** any uncommitted changes, stating the commit"
+      }
     },
     {
       "id": "nextlevelbuilder--ui-ux-pro-max-skill--ui-ux-pro-max",
@@ -10776,7 +11105,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "ux-research",
       "activation": [
         "pro",
         "max",
@@ -10926,7 +11255,11 @@
             "performance"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 55,
+        "text": "**Known implementation stack** → use `--stack`; add a separate domain search only for a distinct design concern."
+      }
     },
     {
       "id": "nextlevelbuilder--ui-ux-pro-max-skill--banner-design",
@@ -11093,7 +11426,11 @@
             "prompts"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 43,
+        "text": "If browser research is available and permitted, collect 3–5 references for composition and art-direction inspiration. Otherwise, work from"
+      }
     },
     {
       "id": "nextlevelbuilder--ui-ux-pro-max-skill--brand",
@@ -11176,7 +11513,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 19,
+        "text": "Brand consistency review and audit"
+      }
     },
     {
       "id": "nextlevelbuilder--ui-ux-pro-max-skill--design",
@@ -11309,7 +11650,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 149,
+        "text": "**Research** — Read `references/banner-sizes-and-styles.md` and use the bundled `ui-ux-pro-max` skill for style and palette guidance; if browser research"
+      }
     },
     {
       "id": "nextlevelbuilder--ui-ux-pro-max-skill--design-system",
@@ -11407,7 +11752,11 @@
             "tokens"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 243,
+        "text": "Never use raw hex in components - always reference tokens"
+      }
     },
     {
       "id": "ibelick--ui-skills--component-canvas",
@@ -11572,7 +11921,11 @@
             "roots"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Do not modify component source, exports, styles, hooks, or behavior to make the canvas work. Components must not"
+      }
     },
     {
       "id": "ibelick--ui-skills--baseline-ui",
@@ -11585,7 +11938,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "visual-craft",
       "activation": [
         "baseline",
         "quickly",
@@ -11696,7 +12049,11 @@
             "requested"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 32,
+        "text": "NEVER mix primitive systems within the same interaction surface"
+      }
     },
     {
       "id": "ibelick--ui-skills--create-design-md",
@@ -11857,7 +12214,11 @@
             "schema"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Modify only `DESIGN.md`. Do not change product source, dependencies, configuration, or generated files."
+      }
     },
     {
       "id": "ibelick--ui-skills--fixing-accessibility",
@@ -11992,7 +12353,11 @@
             "than"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 26,
+        "text": "adding or changing buttons, links, inputs, menus, dialogs, tabs, dropdowns"
+      }
     },
     {
       "id": "ibelick--ui-skills--fixing-motion-performance",
@@ -12150,7 +12515,11 @@
             "surfaces"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 26,
+        "text": "adding or changing UI animations (CSS, WAAPI, Motion, rAF, GSAP)"
+      }
     },
     {
       "id": "anthropics--skills--web-artifacts-builder",
@@ -12163,7 +12532,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "visual-craft",
       "activation": [
         "artifacts",
         "builder",
@@ -12256,7 +12625,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "(Optional) Test the artifact"
+      }
     },
     {
       "id": "anthropics--skills--brand-guidelines",
@@ -12352,7 +12725,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 51,
+        "text": "Smart color selection based on background"
+      }
     },
     {
       "id": "anthropics--skills--canvas-design",
@@ -12488,7 +12865,11 @@
             "integrated"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 24,
+        "text": "What is created: A design philosophy/aesthetic movement."
+      }
     },
     {
       "id": "anthropics--skills--academy-guide",
@@ -12501,7 +12882,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "visual-craft",
       "activation": [
         "academy",
         "guide"
@@ -12579,7 +12960,11 @@
             "interesting"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 36,
+        "text": "**Use cases** — worked examples of applying Claude to a concrete task,"
+      }
     },
     {
       "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--context-compression",
@@ -12743,7 +13128,11 @@
             "existing"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "Building evaluation frameworks for compression quality"
+      }
     },
     {
       "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--advanced-evaluation",
@@ -12891,7 +13280,11 @@
             "level"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "Building LLM-as-judge systems for LLM outputs"
+      }
     },
     {
       "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--context-degradation",
@@ -13058,7 +13451,11 @@
             "fluctuates"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 22,
+        "text": "Applying token-efficiency tactics after the failure pattern is known: `context-optimization`."
+      }
     },
     {
       "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--context-fundamentals",
@@ -13215,7 +13612,11 @@
             "means"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 19,
+        "text": "Writing or reviewing documentation that needs to ground operational guidance in the underlying mechanics."
+      }
     },
     {
       "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--context-optimization",
@@ -13382,7 +13783,11 @@
             "session"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 24,
+        "text": "Storing large outputs, plans, or logs as files: `filesystem-context`."
+      }
     },
     {
       "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--evaluation",
@@ -13519,7 +13924,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Testing agent performance systematically"
+      }
     },
     {
       "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--filesystem-context",
@@ -13667,7 +14076,11 @@
             "optimization"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 19,
+        "text": "Building agents that learn and update their own instructions"
+      }
     },
     {
       "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--hosted-agents",
@@ -13826,7 +14239,11 @@
             "causes"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Building background coding agents that run independently of user devices"
+      }
     },
     {
       "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--long-horizon-prompting",
@@ -14005,7 +14422,11 @@
             "finds"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "Writing or reviewing the prompt for a long-running autonomous run before launching it"
+      }
     },
     {
       "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--memory-systems",
@@ -14171,7 +14592,11 @@
             "discard"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Building agents that must persist knowledge across sessions"
+      }
     },
     {
       "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--multi-agent-patterns",
@@ -14337,7 +14762,11 @@
             "downstream"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "Building systems that must handle multiple domains simultaneously"
+      }
     },
     {
       "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--self-managed-context",
@@ -14515,7 +14944,11 @@
             "still"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "Giving a model write access to its own live context instead of compacting on a fixed schedule"
+      }
     },
     {
       "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--tool-design",
@@ -14666,7 +15099,11 @@
             "language"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 21,
+        "text": "Evaluating a third-party tool against the consolidation principle before adding it."
+      }
     },
     {
       "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--bdi-mental-states",
@@ -14679,7 +15116,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "bdi",
         "mental",
@@ -14805,7 +15242,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "Implementing BDI frameworks (SEMAS, JADE, JADEX)"
+      }
     },
     {
       "id": "muratcankoylan--Agent-Skills-for-Context-Engineering--harness-engineering",
@@ -14964,7 +15405,11 @@
             "log"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Building autonomous research or experimentation loops"
+      }
     },
     {
       "id": "mattpocock--skills--code-review",
@@ -14977,7 +15422,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "code",
         "review",
@@ -15088,7 +15533,11 @@
             "feature"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 8,
+        "text": "**Standards**: does the code conform to this repo's documented coding standards?"
+      }
     },
     {
       "id": "mattpocock--skills--implement-spec",
@@ -15101,7 +15550,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "implement",
         "spec",
@@ -15160,7 +15609,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 25,
+        "text": "(optional) Use an **exploration subagent** to conduct any exploration required by the tickets - relevant codebase files or"
+      }
     },
     {
       "id": "mattpocock--skills--research",
@@ -15173,7 +15626,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "research",
         "investigate",
@@ -15229,7 +15682,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 10,
+        "text": "Investigate the question against **primary sources** (official docs, source code, specs, first-party APIs), not a secondary write-up of"
+      }
     },
     {
       "id": "mattpocock--skills--setup-matt-pocock-skills",
@@ -15356,7 +15813,11 @@
             "them"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 25,
+        "text": "`GLOSSARY.md` and `GLOSSARY-MAP.md` at the repo root, and the legacy `CONTEXT.md` / `CONTEXT-MAP.md`. If a legacy file exists,"
+      }
     },
     {
       "id": "mattpocock--skills--to-spec",
@@ -15369,7 +15830,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "spec",
         "turn",
@@ -15464,7 +15925,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 15,
+        "text": "Sketch out the seams at which you're going to test the feature. Existing seams should be preferred to"
+      }
     },
     {
       "id": "mattpocock--skills--domain-modeling",
@@ -15477,7 +15942,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "domain",
         "modeling",
@@ -15532,7 +15997,8 @@
       ],
       "steps": [],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": null
     },
     {
       "id": "mattpocock--skills--ask-matt",
@@ -15545,7 +16011,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "ask",
         "matt",
@@ -15678,7 +16144,11 @@
             "keep"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 19,
+        "text": "**`/grill-with-docs`** sharpens the idea by interview. Start here whenever you are **working in a working directory**: it's stateful,"
+      }
     },
     {
       "id": "mattpocock--skills--diagnosing-bugs",
@@ -15691,7 +16161,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-evals",
       "activation": [
         "diagnosing",
         "bugs",
@@ -15831,7 +16301,11 @@
             "grep"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 26,
+        "text": "**Failing test** at whatever seam reaches the bug: unit, integration, e2e."
+      }
     },
     {
       "id": "mattpocock--skills--grill-with-docs",
@@ -15844,7 +16318,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "grill",
         "docs",
@@ -15861,7 +16335,8 @@
       "headings": [],
       "steps": [],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": null
     },
     {
       "id": "mattpocock--skills--implement",
@@ -15874,7 +16349,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "implement",
         "piece",
@@ -15887,7 +16362,8 @@
       "headings": [],
       "steps": [],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": null
     },
     {
       "id": "mattpocock--skills--improve-codebase-architecture",
@@ -15900,7 +16376,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "improve",
         "codebase",
@@ -16028,7 +16504,11 @@
             "framed"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Call the Skill tool with \"codebase-design\" for the architecture vocabulary (**module**, **interface**, **depth**, **seam**, **adapter**, **leverage**, **locality**) and"
+      }
     },
     {
       "id": "mattpocock--skills--pr",
@@ -16041,7 +16521,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "writing",
         "body"
@@ -16095,7 +16575,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 53,
+        "text": "Show runtime control flow as a call tree:"
+      }
     },
     {
       "id": "mattpocock--skills--prototype",
@@ -16108,7 +16592,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "ux-research",
       "activation": [
         "prototype",
         "throwaway",
@@ -16218,7 +16702,11 @@
             "code"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "**\"Does this logic / state model feel right?\"** → [LOGIC.md](LOGIC.md). Build a single shareable HTML file (free-play buttons"
+      }
     },
     {
       "id": "mattpocock--skills--retro",
@@ -16231,7 +16719,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "retro",
         "conduct",
@@ -16318,7 +16806,11 @@
             "steering"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Read the primary sources for the session the user specifies. This may mean searching through session logs on"
+      }
     },
     {
       "id": "addyosmani--agent-skills--browser-testing-with-devtools",
@@ -16478,7 +16970,11 @@
             "message"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Building or modifying anything that renders in a browser"
+      }
     },
     {
       "id": "addyosmani--agent-skills--using-agent-skills",
@@ -16631,7 +17127,11 @@
             "understand"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 67,
+        "text": "**STOP.** Do not proceed with a guess."
+      }
     },
     {
       "id": "addyosmani--agent-skills--code-review-and-quality",
@@ -16794,7 +17294,11 @@
             "case"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "After completing a feature implementation"
+      }
     },
     {
       "id": "addyosmani--agent-skills--context-engineering",
@@ -16947,7 +17451,11 @@
             "exist"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Starting a new coding session"
+      }
     },
     {
       "id": "addyosmani--agent-skills--planning-and-task-breakdown",
@@ -17109,7 +17617,11 @@
             "another"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "You have a spec and need to break it into implementable units"
+      }
     },
     {
       "id": "addyosmani--agent-skills--spec-driven-development",
@@ -17122,7 +17634,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "spec",
         "driven",
@@ -17277,7 +17789,11 @@
             "tests"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Starting a new project or feature"
+      }
     },
     {
       "id": "addyosmani--agent-skills--test-driven-development",
@@ -17427,7 +17943,11 @@
             "behavior"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Implementing any new logic or behavior"
+      }
     },
     {
       "id": "addyosmani--agent-skills--documentation-and-adrs",
@@ -17440,7 +17960,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "documentation",
         "adrs",
@@ -17590,7 +18110,11 @@
             "context"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "Adding or changing a public API"
+      }
     },
     {
       "id": "addyosmani--agent-skills--security-and-hardening",
@@ -17603,7 +18127,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "security",
         "hardening",
@@ -17753,7 +18277,11 @@
             "bypass"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Building anything that accepts user input"
+      }
     },
     {
       "id": "addyosmani--agent-skills--code-simplification",
@@ -17766,7 +18294,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "code",
         "simplification",
@@ -17919,7 +18447,11 @@
             "simplify"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "After a feature is working and tests pass, but the implementation feels heavier than it needs to be"
+      }
     },
     {
       "id": "addyosmani--agent-skills--debugging-and-error-recovery",
@@ -18082,7 +18614,11 @@
             "services"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Tests fail after a code change"
+      }
     },
     {
       "id": "addyosmani--agent-skills--git-workflow-and-versioning",
@@ -18226,7 +18762,11 @@
             "ide"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 91,
+        "text": "`refactor` — Code change that neither fixes a bug nor adds a feature"
+      }
     },
     {
       "id": "addyosmani--agent-skills--incremental-implementation",
@@ -18239,7 +18779,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "incremental",
         "implementation",
@@ -18384,7 +18924,11 @@
             "understand"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Implementing any multi-file change"
+      }
     },
     {
       "id": "github--awesome-copilot--mcp-implementation-security-review",
@@ -18397,7 +18941,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "mcp",
         "implementation",
@@ -18543,7 +19087,11 @@
             "client"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 5,
+        "text": "Reviewing an MCP server implementation for security before release"
+      }
     },
     {
       "id": "github--awesome-copilot--agent-skill-stack",
@@ -18672,7 +19220,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 21,
+        "text": "whether it passed an installation safety check and a safe trial;"
+      }
     },
     {
       "id": "github--awesome-copilot--agentic-eval",
@@ -18685,7 +19237,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "agentic",
         "eval"
@@ -18777,7 +19329,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 5,
+        "text": "Implementing self-critique and reflection loops"
+      }
     },
     {
       "id": "github--awesome-copilot--ai-prompt-engineering-safety-review",
@@ -18916,7 +19472,11 @@
             "mistake"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 37,
+        "text": "**Context:** Is sufficient background information provided?"
+      }
     },
     {
       "id": "github--awesome-copilot--codebase-memory-mcp",
@@ -19087,7 +19647,11 @@
             "canonical"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "**Scout** — Provisional positive orientation only. Do not make absence, exhaustive, dead-code, or complete-impact claims."
+      }
     },
     {
       "id": "github--awesome-copilot--finalize-agent-prompt",
@@ -19158,7 +19722,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "A prompt file must be provided. If none accompanies the request, ask for the"
+      }
     },
     {
       "id": "github--awesome-copilot--mcp-create-declarative-agent",
@@ -19171,7 +19739,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "mcp",
         "declarative",
@@ -19181,7 +19749,8 @@
       "headings": [],
       "steps": [],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": null
     },
     {
       "id": "github--awesome-copilot--mcp-deploy-manage-agents",
@@ -19194,7 +19763,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "mcp",
         "deploy",
@@ -19205,7 +19774,8 @@
       "headings": [],
       "steps": [],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": null
     },
     {
       "id": "github--awesome-copilot--mcp-security-audit",
@@ -19218,7 +19788,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "mcp",
         "security",
@@ -19329,7 +19899,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 5,
+        "text": "Reviewing .mcp.json files for security risks"
+      }
     },
     {
       "id": "github--awesome-copilot--planning-oracle-to-postgres-migration-integration-testing",
@@ -19408,7 +19982,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 30,
+        "text": "List of testable artifacts with method signatures"
+      }
     },
     {
       "id": "github--awesome-copilot--pytest-coverage",
@@ -19421,7 +19999,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "pytest",
         "coverage",
@@ -19436,7 +20014,8 @@
       "headings": [],
       "steps": [],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": null
     },
     {
       "id": "github--awesome-copilot--security-review",
@@ -19589,7 +20168,11 @@
             "review"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "Running a security review or vulnerability check"
+      }
     },
     {
       "id": "github--awesome-copilot--typespec-create-agent",
@@ -19665,7 +20248,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 21,
+        "text": "Define the agent's role, expertise, and personality"
+      }
     },
     {
       "id": "github--awesome-copilot--power-bi-model-design-review",
@@ -19753,7 +20340,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 400,
+        "text": "Specific review focus areas or objectives"
+      }
     },
     {
       "id": "github--awesome-copilot--agent-architecture",
@@ -19900,7 +20491,11 @@
             "check"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 27,
+        "text": "First read the available specification, local instructions, architectural decisions, and relevant materials. Use code to reconstruct architecture, not"
+      }
     },
     {
       "id": "github--awesome-copilot--agent-governance",
@@ -19913,7 +20508,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "governance"
       ],
@@ -19995,7 +20590,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 5,
+        "text": "Building AI agents that call external tools (APIs, databases, file systems)"
+      }
     },
     {
       "id": "github--awesome-copilot--agent-owasp-compliance",
@@ -20008,7 +20607,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "owasp",
         "compliance"
@@ -20116,7 +20715,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 7,
+        "text": "Running a compliance check against OWASP ASI 2026 standards"
+      }
     },
     {
       "id": "github--awesome-copilot--agent-supply-chain",
@@ -20129,7 +20732,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "supply",
         "chain"
@@ -20235,7 +20838,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 6,
+        "text": "Verifying that installed plugins match their published manifests"
+      }
     },
     {
       "id": "github--awesome-copilot--ai-team-orchestration",
@@ -20388,7 +20995,11 @@
             "lessons"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 24,
+        "text": "Skip formal planning for small, obvious changes."
+      }
     },
     {
       "id": "github--awesome-copilot--apple-appstore-reviewer",
@@ -20549,7 +21160,11 @@
             "pass"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 15,
+        "text": "**Review the codebase and relevant project files** (e.g., Info.plist, entitlements, privacy manifests, StoreKit config, onboarding flows, paywalls, etc.)."
+      }
     },
     {
       "id": "github--awesome-copilot--arize-evaluator",
@@ -20711,7 +21326,11 @@
             "profiles"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 24,
+        "text": "`401 Unauthorized` / missing API key → run `ax profiles show` to inspect the current profile. If the"
+      }
     },
     {
       "id": "openai--skills--notion-research-documentation",
@@ -20840,7 +21459,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 15,
+        "text": "Choose output format (brief, summary, comparison, comprehensive report) using `reference/format-selection-guide.md`."
+      }
     },
     {
       "id": "openai--skills--notion-spec-to-implementation",
@@ -20853,7 +21476,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "notion",
         "spec",
@@ -20968,7 +21591,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 15,
+        "text": "Create a plan page with `Notion:notion-create-pages` (pick a template: quick vs. full)."
+      }
     },
     {
       "id": "openai--skills--security-threat-model",
@@ -20981,7 +21608,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-evals",
       "activation": [
         "security",
         "threat",
@@ -21132,7 +21759,11 @@
             "severity"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Collect (or infer) inputs:"
+      }
     },
     {
       "id": "openai--skills--security-best-practices",
@@ -21249,7 +21880,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 28,
+        "text": "The primary mode is to just use the information to write secure by default code from this point"
+      }
     },
     {
       "id": "openai--skills--security-ownership-map",
@@ -21365,7 +22000,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 26,
+        "text": "Decide sensitivity rules (use defaults or provide a CSV config)."
+      }
     },
     {
       "id": "openai--skills--aspnet-core",
@@ -21378,7 +22017,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "aspnet",
         "core",
@@ -21526,7 +22165,11 @@
             "controllers"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "Open [references/stack-selection.md](references/stack-selection.md) first for new apps or major refactors."
+      }
     },
     {
       "id": "openai--skills--chatgpt-apps",
@@ -21539,7 +22182,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "chatgpt",
         "apps",
@@ -21698,7 +22341,11 @@
             "transplant"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 15,
+        "text": "A tool plan (names, schemas, annotations, outputs)"
+      }
     },
     {
       "id": "openai--skills--cli-creator",
@@ -21711,7 +22358,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "cli",
         "creator",
@@ -21875,7 +22522,11 @@
             "upload"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "Jobs: literal reads/writes such as `list drafts`, `download failed job logs`, `search messages`, `upload media`, `read queue schedule`."
+      }
     },
     {
       "id": "openai--skills--cloudflare-deploy",
@@ -21888,7 +22539,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "cloudflare",
         "deploy",
@@ -21960,7 +22611,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "When sandboxing blocks the deployment network calls, rerun with `sandbox_permissions=require_escalated`."
+      }
     },
     {
       "id": "openai--skills--define-goal",
@@ -21973,7 +22628,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "define",
         "goal",
@@ -22107,7 +22762,11 @@
             "explicitly"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "Use this skill when the user asks for `$define-goal`, asks to create or set a goal, asks for"
+      }
     },
     {
       "id": "openai--skills--figma",
@@ -22120,7 +22779,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "figma",
         "mcp",
@@ -22267,7 +22926,11 @@
             "provided"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Run get_design_context first to fetch the structured representation for the exact node(s)."
+      }
     },
     {
       "id": "openai--skills--figma-code-connect-components",
@@ -22403,7 +23066,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Use this skill for `get_code_connect_suggestions` + `send_code_connect_mappings` workflows."
+      }
     },
     {
       "id": "wshobson--agents--llm-evaluation",
@@ -22502,7 +23169,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "Building confidence in production systems"
+      }
     },
     {
       "id": "wshobson--agents--review-agent-setup",
@@ -22600,7 +23271,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "Reviews, comments on, or merges pull requests (`gh pr review`, `gh pr merge`)"
+      }
     },
     {
       "id": "wshobson--agents--backtesting-frameworks",
@@ -22724,7 +23399,11 @@
             "bias"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Developing trading strategy backtests"
+      }
     },
     {
       "id": "wshobson--agents--bats-testing-patterns",
@@ -22834,7 +23513,11 @@
             "happy"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Writing unit tests for shell scripts"
+      }
     },
     {
       "id": "wshobson--agents--code-review-excellence",
@@ -22960,7 +23643,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Reviewing pull requests and code changes"
+      }
     },
     {
       "id": "wshobson--agents--context-driven-development",
@@ -22973,7 +23660,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "context",
         "driven"
@@ -23050,7 +23737,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 23,
+        "text": "Deciding when to update context documents"
+      }
     },
     {
       "id": "wshobson--agents--eval-harness-first",
@@ -23187,7 +23878,11 @@
             "yet"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 30,
+        "text": "**Collect traces** — production/agent spans, or"
+      }
     },
     {
       "id": "wshobson--agents--evaluation-methodology",
@@ -23331,7 +24026,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 59,
+        "text": "`triggering_accuracy`: Haiku reads the description and writes 10 test prompts, 5 that should"
+      }
     },
     {
       "id": "wshobson--agents--javascript-testing-patterns",
@@ -23438,7 +24137,11 @@
             "implementation"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Setting up test infrastructure for new projects"
+      }
     },
     {
       "id": "wshobson--agents--memory-forensics",
@@ -23577,7 +24280,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Extracting malware artifacts (processes, injected code, network connections) from a RAM capture"
+      }
     },
     {
       "id": "wshobson--agents--memory-safety-patterns",
@@ -23703,7 +24410,11 @@
             "interfacing"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 15,
+        "text": "Implementing RAII patterns"
+      }
     },
     {
       "id": "wshobson--agents--multi-reviewer-patterns",
@@ -23820,7 +24531,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Organizing a multi-dimensional code review"
+      }
     },
     {
       "id": "wshobson--agents--on-call-handoff-patterns",
@@ -23916,7 +24631,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Documenting ongoing investigations"
+      }
     },
     {
       "id": "wshobson--agents--openapi-spec-generation",
@@ -23929,7 +24648,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "openapi",
         "spec",
@@ -24041,7 +24760,11 @@
             "schemes"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Creating API documentation from scratch"
+      }
     },
     {
       "id": "wshobson--agents--pptx-deck-context",
@@ -24153,7 +24876,11 @@
             "licensing"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Use the user-selected narrative framework. If none is specified, offer `mckinsey`, `scqa`, `pyramid`, `mece`, `action-title`, `assertion-evidence`, `exec-summary-first`, or"
+      }
     },
     {
       "id": "wshobson--agents--protect-mcp-setup",
@@ -24166,7 +24893,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "protect",
         "mcp",
@@ -24258,7 +24985,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 22,
+        "text": "**Offline verification** via `npx @veritasacta/verify`. No server, no account,"
+      }
     },
     {
       "id": "wshobson--agents--python-testing-patterns",
@@ -24351,7 +25082,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Writing unit tests for Python code"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--agent-memory",
@@ -24506,7 +25241,11 @@
             "transcript"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 47,
+        "text": "**L2 → L3** — held in ≥ 2 distinct projects, aged ≥ 30 days, uncontested."
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--agent-regression-evals",
@@ -24656,7 +25395,11 @@
             "then"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 54,
+        "text": "A baseline case missing from the candidate run. Dropping a case is the cheapest fake fix."
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--autoresearch-agent",
@@ -24669,7 +25412,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "autoresearch",
         "make",
@@ -24817,7 +25560,11 @@
             "all"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 39,
+        "text": "\"Optimize [file] for [metric]\""
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--memory-review",
@@ -24966,7 +25713,11 @@
             "learn"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 49,
+        "text": "References files that no longer exist (`find` to verify)"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--research-ops-skills",
@@ -25112,7 +25863,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 70,
+        "text": "Highest-confidence lane first → run sub-skill in forked context → digest"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--security-pen-testing",
@@ -25261,7 +26016,11 @@
             "patterns"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 19,
+        "text": "[API Security Testing](#api-security-testing)"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--skill-security-auditor",
@@ -25409,7 +26168,11 @@
             "remediation"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 82,
+        "text": "**Run the scanner** on the skill directory or repo URL"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--skill-tester",
@@ -25533,7 +26296,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "**`scripts/skill_validator.py`** — structure + documentation compliance"
+      }
     },
     {
       "id": "vercel-labs--agent-skills--web-design-guidelines",
@@ -25546,7 +26313,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "guidelines",
         "review",
@@ -25614,7 +26381,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "Fetch the latest guidelines from the source URL below"
+      }
     },
     {
       "id": "vercel-labs--agent-skills--react-best-practices",
@@ -25775,7 +26546,11 @@
             "system"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 18,
+        "text": "Implementing data fetching (client or server-side)"
+      }
     },
     {
       "id": "vercel-labs--agent-skills--react-native-skills",
@@ -25901,7 +26676,11 @@
             "rendering"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 24,
+        "text": "Building React Native or Expo apps"
+      }
     },
     {
       "id": "vercel-labs--agent-skills--react-view-transitions",
@@ -26047,7 +26826,11 @@
             "none"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 46,
+        "text": "**Without Next.js:** Use stable `react` and `react-dom` 19.3 or newer (`ViewTransition` and `addTransitionType` became stable in React 19.3)."
+      }
     },
     {
       "id": "vercel-labs--agent-skills--writing-guidelines",
@@ -26060,7 +26843,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "writing",
         "guidelines",
@@ -26130,7 +26913,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "Fetch the latest guidelines from the source URL below"
+      }
     },
     {
       "id": "vercel-labs--agent-skills--vercel-optimize",
@@ -26278,7 +27065,11 @@
             "rewrite"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Metrics first. Recommendations start from Vercel production signals, not repo-wide grep."
+      }
     },
     {
       "id": "vercel-labs--agent-skills--composition-patterns",
@@ -26291,7 +27082,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "composition",
         "patterns",
@@ -26394,7 +27185,11 @@
             "usecontext"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 26,
+        "text": "Refactoring components with many boolean props"
+      }
     },
     {
       "id": "greensock--gsap-skills--gsap-performance",
@@ -26542,7 +27337,11 @@
             "avoid"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 20,
+        "text": "❌ Avoid when possible: **width**, **height**, **top**, **left**, **margin**, **padding** (they trigger layout and can cause jank)."
+      }
     },
     {
       "id": "greensock--gsap-skills--gsap-react",
@@ -26682,7 +27481,11 @@
             "scrolltrigger"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 41,
+        "text": "✅ Pass a **scope** (ref or element) so selectors like `.box` are scoped to that root."
+      }
     },
     {
       "id": "greensock--gsap-skills--gsap-core",
@@ -26837,7 +27640,11 @@
             "also"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 37,
+        "text": "✅ runtime control (pause, reverse, seek)"
+      }
     },
     {
       "id": "greensock--gsap-skills--gsap-frameworks",
@@ -26953,7 +27760,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "**Create** tweens and ScrollTriggers **after** the component’s DOM is available (e.g. onMounted, onMount)."
+      }
     },
     {
       "id": "greensock--gsap-skills--gsap-plugins",
@@ -27042,7 +27853,11 @@
             "usegsap"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 36,
+        "text": "✅ In React, register at top level or once in the app (e.g. before first useGSAP); do not"
+      }
     },
     {
       "id": "greensock--gsap-skills--gsap-scrolltrigger",
@@ -27201,7 +28016,11 @@
             "content"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 83,
+        "text": "**triggers**: selector text (e.g. `\".box\"`) or Array of elements."
+      }
     },
     {
       "id": "greensock--gsap-skills--gsap-timeline",
@@ -27307,7 +28126,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 30,
+        "text": "**Absolute**: `1` — start at 1 second."
+      }
     },
     {
       "id": "greensock--gsap-skills--gsap-utils",
@@ -27421,7 +28244,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 273,
+        "text": "✅ Omit the value argument to get a reusable function when the same range/config is used many times"
+      }
     },
     {
       "id": "github--awesome-copilot--lightweight-charts-react-components",
@@ -27534,7 +28361,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 19,
+        "text": "Check versions against the compatibility table below. Read declared ranges"
+      }
     },
     {
       "id": "github--awesome-copilot--playwright-explore-website",
@@ -27620,7 +28451,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Navigate to the provided URL using the Playwright MCP Server. If no URL is provided, ask the user"
+      }
     },
     {
       "id": "github--awesome-copilot--gsap-framer-scroll-animation",
@@ -27633,7 +28468,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "gsap",
         "framer",
@@ -27765,7 +28600,11 @@
             "auto"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 68,
+        "text": "Interpret the user's intent to identify if GSAP or Framer Motion is the best fit."
+      }
     },
     {
       "id": "github--awesome-copilot--landing-page-conversion-audit",
@@ -27927,7 +28766,11 @@
             "direction"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "\"Review my landing page\" / \"why is my conversion rate so low\""
+      }
     },
     {
       "id": "github--awesome-copilot--penpot-uiux-design",
@@ -27940,7 +28783,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "visual-craft",
+      "lane": "ux-research",
       "activation": [
         "penpot",
         "uiux",
@@ -28080,7 +28923,11 @@
             "color"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 27,
+        "text": "**Try calling a tool first**: Attempt `mcp__penpot__penpot_api_info` - if it succeeds, the server is running and connected. No"
+      }
     },
     {
       "id": "github--awesome-copilot--playwright-automation-fill-in-form",
@@ -28134,7 +28981,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 22,
+        "text": "Topic: Playwright Live - Latest updates on Playwright MCP + Live Demo"
+      }
     },
     {
       "id": "github--awesome-copilot--playwright-generate-test",
@@ -28226,7 +29077,11 @@
             "completing"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "You are given a scenario, and you need to generate a playwright test for it. If the user"
+      }
     },
     {
       "id": "github--awesome-copilot--power-platform-mcp-connector-suite",
@@ -28347,7 +29202,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 27,
+        "text": "`readme.md` with connector documentation"
+      }
     },
     {
       "id": "github--awesome-copilot--premium-frontend-ui",
@@ -28360,7 +29219,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "premium",
         "frontend",
@@ -28491,7 +29350,11 @@
             "transform"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 35,
+        "text": "**Implementation**: Generate a lightweight preloader component that handles asset resolution (fonts, initial images, 3D models)."
+      }
     },
     {
       "id": "github--awesome-copilot--react-container-presentation-component",
@@ -28634,7 +29497,11 @@
             "following"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 21,
+        "text": "When the user runs `/react-container-presentation-component`"
+      }
     },
     {
       "id": "github--awesome-copilot--react19-test-patterns",
@@ -28739,7 +29606,11 @@
             "guess"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "**Full react-dom/test-utils cleanup** remove remaining imports"
+      }
     },
     {
       "id": "github--awesome-copilot--unit-test-vue-pinia",
@@ -28901,7 +29772,11 @@
             "details"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Identify the behavior boundary first: component UI behavior, composable behavior, or store behavior."
+      }
     },
     {
       "id": "github--awesome-copilot--web-design-reviewer",
@@ -29044,7 +29919,11 @@
             "areas"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 22,
+        "text": "**Target website must be running**"
+      }
     },
     {
       "id": "github--awesome-copilot--webapp-testing",
@@ -29157,7 +30036,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "Test frontend functionality in a real browser"
+      }
     },
     {
       "id": "github--awesome-copilot--acquire-codebase-knowledge",
@@ -29170,7 +30053,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "agent-workflow",
       "activation": [
         "acquire",
         "codebase",
@@ -29287,7 +30170,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Performance testing markers"
+      }
     },
     {
       "id": "github--awesome-copilot--anti-ui-slop",
@@ -29404,7 +30291,11 @@
             "authentication"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 26,
+        "text": "A screen or component to build, redesign, or review — a file path or a short description."
+      }
     },
     {
       "id": "github--awesome-copilot--arduino-azure-iot-edge-integration",
@@ -29557,7 +30448,11 @@
             "deployments"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 42,
+        "text": "Define an actionable device and cloud backlog."
+      }
     },
     {
       "id": "github--awesome-copilot--azure-smart-city-iot-solution-builder",
@@ -29704,7 +30599,11 @@
             "prerequisites"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "\"I want to build an IoT solution on Azure\""
+      }
     },
     {
       "id": "wshobson--agents--web-component-design",
@@ -29819,7 +30718,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Implementing complex component composition patterns"
+      }
     },
     {
       "id": "wshobson--agents--bazel-build-optimization",
@@ -29936,7 +30839,11 @@
             "gitignore"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Optimizing build times"
+      }
     },
     {
       "id": "wshobson--agents--brand-landingpage",
@@ -29949,7 +30856,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "brand",
         "landingpage"
@@ -30077,7 +30984,11 @@
             "slow"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 31,
+        "text": "Consult the SDK documentation to verify the SDK is installed and is at its latest version. The Stitch"
+      }
     },
     {
       "id": "wshobson--agents--tailwind-design-system",
@@ -30163,7 +31074,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 15,
+        "text": "Implementing design tokens and theming with CSS-first configuration"
+      }
     },
     {
       "id": "wshobson--agents--web3-testing",
@@ -30257,7 +31172,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Writing unit tests for smart contracts"
+      }
     },
     {
       "id": "wshobson--agents--before-you-build",
@@ -30270,7 +31189,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "before",
         "pre",
@@ -30387,7 +31306,11 @@
             "idea"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 30,
+        "text": "**Feature adoption:** For feature work, will the feature change user behavior or just add surface area?"
+      }
     },
     {
       "id": "wshobson--agents--kpi-dashboard-design",
@@ -30505,7 +31428,11 @@
             "comprehension"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Selecting meaningful KPIs"
+      }
     },
     {
       "id": "wshobson--agents--react-modernization",
@@ -30599,7 +31526,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Upgrading React applications to latest versions"
+      }
     },
     {
       "id": "wshobson--agents--security-requirement-extraction",
@@ -30739,7 +31670,11 @@
             "matters"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Creating security test cases"
+      }
     },
     {
       "id": "wshobson--agents--wcag-audit-patterns",
@@ -30880,7 +31815,11 @@
             "first"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 14,
+        "text": "Implementing accessible components"
+      }
     },
     {
       "id": "wshobson--agents--python-performance-optimization",
@@ -31013,7 +31952,11 @@
             "optimize"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Identifying performance bottlenecks in Python applications"
+      }
     },
     {
       "id": "wshobson--agents--checkpoint-promotion",
@@ -31084,7 +32027,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 277,
+        "text": "`preference-optimization` and"
+      }
     },
     {
       "id": "wshobson--agents--cost-optimization",
@@ -31188,7 +32135,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 18,
+        "text": "Implement cost governance"
+      }
     },
     {
       "id": "wshobson--agents--dbt-transformation-patterns",
@@ -31338,7 +32289,11 @@
             "date"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Building data transformation pipelines with dbt"
+      }
     },
     {
       "id": "wshobson--agents--helm-chart-scaffolding",
@@ -31452,7 +32407,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 18,
+        "text": "Create new Helm charts from scratch"
+      }
     },
     {
       "id": "wshobson--agents--temporal-python-testing",
@@ -31560,7 +32519,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "**Unit testing workflows** - Fast tests with time-skipping"
+      }
     },
     {
       "id": "wshobson--agents--block-no-verify-hook",
@@ -31573,7 +32536,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "block",
         "verify",
@@ -31683,7 +32646,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 28,
+        "text": "Linting errors to bypass checks"
+      }
     },
     {
       "id": "wshobson--agents--file-conversion",
@@ -31797,7 +32764,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 23,
+        "text": "Check local assets and fonts. If inspection cannot rule out external links or"
+      }
     },
     {
       "id": "wshobson--agents--grafana-dashboards",
@@ -31906,7 +32877,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "Create custom dashboards"
+      }
     },
     {
       "id": "wshobson--agents--typescript-advanced-types",
@@ -31919,7 +32894,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "typescript",
         "advanced",
@@ -32053,7 +33028,11 @@
             "types"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Building type-safe libraries or frameworks"
+      }
     },
     {
       "id": "wshobson--agents--mobile-android-design",
@@ -32170,7 +33149,11 @@
             "remember"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "Building Jetpack Compose UI and layouts"
+      }
     },
     {
       "id": "wshobson--agents--e2e-testing-patterns",
@@ -32321,7 +33304,11 @@
             "e2e"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Implementing end-to-end test automation"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--api-test-suite-builder",
@@ -32468,7 +33455,11 @@
             "needs"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 25,
+        "text": "**Route detection** — scan source files to extract all API endpoints"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--helm-chart-builder",
@@ -32605,7 +33596,11 @@
             "resource"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 36,
+        "text": "\"Create a Helm chart for this service\""
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--landing-page-generator",
@@ -32757,7 +33752,11 @@
             "fix"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 21,
+        "text": "Testimonials (grid, carousel, single-quote)"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--arquiteto-de-empresa",
@@ -32911,7 +33910,11 @@
             "link"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 32,
+        "text": "**Everything readable by human and machine** — plain markdown, no runtime, no SDK."
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--board-deck-builder",
@@ -32924,7 +33927,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "board",
         "deck",
@@ -33052,7 +34055,11 @@
             "context"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 59,
+        "text": "Cash position and runway (months)"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--brand-guidelines",
@@ -33191,7 +34198,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 22,
+        "text": "Identify whether they need to *apply* existing guidelines or *create* new ones"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--browserstack",
@@ -33313,7 +34324,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 36,
+        "text": "Check current `playwright.config.ts`"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--design-system",
@@ -33477,7 +34492,11 @@
             "ephemeral"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 20,
+        "text": "**`brand_palette_validator.py`** — WCAG-AA contrast checker + HSL palette deriver."
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--email-template-builder",
@@ -33490,7 +34509,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "email",
         "template",
@@ -33606,7 +34625,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 24,
+        "text": "Multi-provider support with unified sending interface"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--landing",
@@ -33707,7 +34730,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 20,
+        "text": "\"create a landing page\""
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--security-guidance",
@@ -33860,7 +34887,11 @@
             "patterns"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "**The content being written** — substring matches against 11 anti-patterns"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--workflow-builder",
@@ -34001,7 +35032,11 @@
             "have"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 27,
+        "text": "**If the user is vague, do NOT stall.** Run the recommendation engine to turn whatever you have into"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--a11y-audit",
@@ -34076,7 +35111,8 @@
       ],
       "steps": [],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": null
     },
     {
       "id": "alirezarezvani--claude-skills--information-security-manager-iso27001",
@@ -34196,7 +35232,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 15,
+        "text": "[Quick Start](#quick-start)"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--llm-cost-optimizer",
@@ -34209,7 +35249,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "llm",
         "cost",
@@ -34309,7 +35349,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 31,
+        "text": "Which LLM providers and models are in use?"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--procurement-optimizer",
@@ -34442,7 +35486,11 @@
             "tier"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 28,
+        "text": "Annual SaaS audit and category-level spend review."
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--stress-test",
@@ -34585,7 +35633,11 @@
             "have"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 88,
+        "text": "If CAC doubles, how does that change runway?"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--terraform-patterns",
@@ -34708,7 +35760,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 36,
+        "text": "\"Review this Terraform code\""
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--browser-automation",
@@ -34873,7 +35929,11 @@
             "memory"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "Extracting data from SPAs and JavaScript-heavy sites"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--ui-design-system",
@@ -34983,7 +36043,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "[Workflow 2: Create Component System](#workflow-2-create-component-system)"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--local-seo-manager",
@@ -34996,7 +36060,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "local",
         "seo",
@@ -35150,7 +36214,11 @@
             "content"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 25,
+        "text": "**Business basics** — Name, address (or service-area-only?), phone, website URL"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--testrail",
@@ -35245,7 +36313,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 13,
+        "text": "`TESTRAIL_URL` — e.g., `https://your-instance.testrail.io`"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--markdown-html-orchestrator",
@@ -35258,7 +36330,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "markdown",
         "html",
@@ -35358,7 +36430,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 32,
+        "text": "**Design-system not onboarded.** If `~/.config/markdown-html/design-system.json` doesn't exist (or its `setup_completed_at` is null), refuse. Point the user at `python3"
+      }
     },
     {
       "id": "alirezarezvani--claude-skills--senior-frontend",
@@ -35485,7 +36561,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 16,
+        "text": "[Next.js Optimization](#nextjs-optimization)"
+      }
     },
     {
       "id": "MengTo--Skills--build-daily-inspiration-sites",
@@ -35498,7 +36578,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "daily",
         "inspiration",
@@ -35641,7 +36721,11 @@
             "asks"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Use the capture as evidence and art direction, never as a template to copy."
+      }
     },
     {
       "id": "MengTo--Skills--build-mobile-threejs-games",
@@ -35654,7 +36738,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "mobile",
         "threejs",
@@ -35698,7 +36782,8 @@
       ],
       "steps": [],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": null
     },
     {
       "id": "MengTo--Skills--landing-page",
@@ -35852,7 +36937,11 @@
             "submit"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 28,
+        "text": "Any proof points: logos, testimonials, numbers, case studies"
+      }
     },
     {
       "id": "MengTo--Skills--game-dev-combat-animation",
@@ -36012,7 +37101,11 @@
             "hanging"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "**Write the standard before touching keys.** Extend `docs/combat-animation-standard.md` (or the project's equivalent) with the move's own numbered rules:"
+      }
     },
     {
       "id": "MengTo--Skills--html-explainer-video",
@@ -36186,7 +37279,11 @@
             "timed"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 53,
+        "text": "**Write Explainer.md**: what it is, the one idea someone should leave believing, who it's for, every fact the"
+      }
     },
     {
       "id": "MengTo--Skills--browser-video-recording",
@@ -36320,7 +37417,11 @@
             "unrelated"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "**Browser control and source frames**: Use the Codex in-app browser through the Browser skill/MCP. Do not use Chrome"
+      }
     },
     {
       "id": "MengTo--Skills--test-playable-web-games",
@@ -36378,7 +37479,8 @@
       ],
       "steps": [],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": null
     },
     {
       "id": "MengTo--Skills--tailwindcss",
@@ -36527,7 +37629,11 @@
             "safelisted"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 9,
+        "text": "Rapid UI building with consistent spacing/typography scales"
+      }
     },
     {
       "id": "MengTo--Skills--html-reel",
@@ -36540,7 +37646,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "html",
         "reel",
@@ -36699,7 +37805,11 @@
             "creator"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 40,
+        "text": "**Read the source** (`scripts/read-source.mjs <tweet | page | YouTube | file> --out source --follow`, `references/source.md`). Finish `Source.md`: its"
+      }
     },
     {
       "id": "MengTo--Skills--daily-ui-inspiration-capture",
@@ -36712,7 +37822,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "daily",
         "inspiration",
@@ -36859,7 +37969,11 @@
             "must"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 20,
+        "text": "the latest one or two `articles/*-ui-inspiration-capture/content.md` and `manifest.json` files for current shape"
+      }
     },
     {
       "id": "MengTo--Skills--build-game-audio-feedback",
@@ -36872,7 +37986,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "game",
         "audio",
@@ -36914,7 +38028,8 @@
       ],
       "steps": [],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": null
     },
     {
       "id": "MengTo--Skills--webgl-landing-steering",
@@ -37064,7 +38179,11 @@
             "offer"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 28,
+        "text": "Visuals: soft gradient meshes, slow parallax planes, light bloom"
+      }
     },
     {
       "id": "MengTo--Skills--unsplash-asset-images",
@@ -37205,7 +38324,11 @@
             "backgrounds"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 18,
+        "text": "Unsplash images are generally free to use, but **avoid Unsplash+** images unless the user explicitly wants them."
+      }
     },
     {
       "id": "MengTo--Skills--html-to-interaction-prompts",
@@ -37218,7 +38341,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "agent-context",
+      "lane": "ux-research",
       "activation": [
         "html",
         "interaction",
@@ -37365,7 +38488,11 @@
             "page"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 17,
+        "text": "Do not ship a screenshot gallery or append 20 shallow prompts."
+      }
     },
     {
       "id": "MengTo--Skills--build-game-camera-controls",
@@ -37378,7 +38505,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "game",
         "camera",
@@ -37445,7 +38572,11 @@
             "directly"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 12,
+        "text": "Smooth position and look-at targets independently; never bind the camera directly to jittery render state."
+      }
     },
     {
       "id": "MengTo--Skills--background-grid-webgl",
@@ -37555,7 +38686,11 @@
         }
       ],
       "checks": [],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 9,
+        "text": "Create a perspective WebGL background grid with fading lines, subtle particle haze, slow forward drift, and gentle camera"
+      }
     },
     {
       "id": "google--skills--google-mobile-ads-android-migrate-to-next-gen",
@@ -37677,7 +38812,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 20,
+        "text": "[ ] Replace `com.google.android.gms:play-services-ads` with the latest"
+      }
     },
     {
       "id": "google--skills--cloud-build-basics",
@@ -37690,7 +38829,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "cloud",
         "basics"
@@ -37790,7 +38929,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 28,
+        "text": "**Google Cloud SDK**: Ensure the [Google Cloud SDK](https://cloud.google.com/sdk/docs/install) is installed and configured."
+      }
     },
     {
       "id": "google--skills--sign-in-with-google-web",
@@ -37803,7 +38946,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "sign",
         "google"
@@ -37930,7 +39073,11 @@
             "initialize"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 69,
+        "text": "**Backend Responsibilities**: The backend validates the JWT cryptographic"
+      }
     },
     {
       "id": "google--skills--google-ads-api-quickstart",
@@ -37943,7 +39090,7 @@
       "status": "sha_verified",
       "review": "automated-source-structure",
       "license": "not_checked",
-      "lane": "other-specialist",
+      "lane": "web-product",
       "activation": [
         "google",
         "ads",
@@ -38088,7 +39235,11 @@
             "very"
           ]
         }
-      ]
+      ],
+      "evidence_excerpt": {
+        "line": 7,
+        "text": "The user asks how to get started with the Google Ads API."
+      }
     },
     {
       "id": "google--skills--gke-ai-troubleshooting-node-unresponsive-timeout",
@@ -38199,7 +39350,11 @@
           ]
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "evidence_excerpt": {
+        "line": 39,
+        "text": "**Cloud Billing & Project Configuration**: Verify an active billing account is"
+      }
     }
   ]
 }

@@ -2,15 +2,6 @@
 
 > SHA-pinned machine-generated source outlines, NOT expert semantic reviews. Fetch exact upstream source for full procedure; never execute untrusted code.
 
-## html-to-interaction-prompts
-
-- **Exact SHA source:** [MengTo/Skills](https://github.com/MengTo/Skills/blob/6689ce7abb55ea25597e5e3b2396a6287c65b0cc/agent-skills/codex/html-to-interaction-prompts/SKILL.md)
-- **Use signals:** html, interaction, prompts, convert, supplied, page, generated, reference, screenshot, backed, article, containing
-- **Source sections:** HTML To Interaction Prompts → Goal → Daily UI Inspiration Capture Contract → Workflow → Prompt Style Rules → Library Guidance
-- **Action anchors (keyword signatures):** L18: each inspirations must include representative local still image embedded / L19: source framer template any other live website record actual / L26: extract multiple motion frames live website video frames should
-- **Validation/caution anchors:** L20: framer inspect marketplace detail page full live preview embedded / L29: each prompt must describe landing page section section cover / L17: ship screenshot gallery append shallow prompts / L22: section crops must contiguous pixel complete relative full page
-- **Status:** automated-source-structure; license not_checked.
-
 ## long-horizon-prompting
 
 - **Exact SHA source:** [muratcankoylan/Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/a36ec67d53a00fbefc78d82650f0e5af37ffdc71/skills/long-horizon-prompting/SKILL.md)
@@ -18,6 +9,7 @@
 - **Source sections:** Long-Horizon Prompting → When to Activate → Core Concepts → Pseudo-Formal Task Specification → Anatomy of a Long-Horizon Brief → Persistence Cuts Both Ways
 - **Action anchors (keyword signatures):** L16: writing reviewing prompt long running autonomous run before launching / L19: adding persistence instructions stop conditions effort floors return gates / L21: diagnosing failed long run whose failure traces brief premature
 - **Validation/caution anchors:** L20: writing output contract acceptance checks each delegated worker must / L43: enumerated failure modes auditor concrete checklist domain specific ways / L42: non counting outcomes enumerated list results count partial progress / L75: define which findings block fresh adversarial reviewer always finds
+- **Source excerpt (untrusted, max 18 words):** L16: Writing or reviewing the prompt for a long-running autonomous run before launching it
 - **Status:** automated-source-structure; license not_checked.
 
 ## memory-forensics
@@ -27,6 +19,7 @@
 - **Source sections:** Memory Forensics → When to Use This Skill → Memory Acquisition → Live Acquisition Tools → Windows → Linux
 - **Action anchors (keyword signatures):** L13: extracting malware artifacts processes injected code network connections ram / L329: document everything record time tool hash capture / L335: start broad get overview before deep diving
 - **Validation/caution anchors:** L330: verify integrity hash memory dump immediately after capture / L339: validate results verify findings through multiple methods
+- **Source excerpt (untrusted, max 18 words):** L13: Extracting malware artifacts (processes, injected code, network connections) from a RAM capture
 - **Status:** automated-source-structure; license not_checked.
 
 ## memory-review
@@ -36,6 +29,7 @@
 - **Source sections:** /si:memory-review — Analyze Auto-Memory → Usage → What It Does → Step 1: Locate memory directory → Step 2: Read and analyze MEMORY.md → Step 3: Read topic files
 - **Action anchors (keyword signatures):** L118: before starting new phase / L119: after onboarding new team member review claude learned / L123: run memory review quick frequently low overhead
 - **Validation/caution anchors:** L49: references files longer exist find verify / L54: multiple entries about same topic three lines about testing / L126: don hesitate delete stale entries auto memory will learn
+- **Source excerpt (untrusted, max 18 words):** L49: References files that no longer exist (`find` to verify)
 - **Status:** automated-source-structure; license not_checked.
 
 ## memory-safety-patterns
@@ -45,6 +39,7 @@
 - **Source sections:** Memory Safety Patterns → When to Use This Skill → Core Concepts → 1. Memory Bug Categories → 2. Safety Spectrum → Detailed patterns and worked examples
 - **Action anchors (keyword signatures):** L15: implementing raii patterns / L52: tools addresssanitizer valgrind miri
 - **Validation/caution anchors:** L51: check bounds safe access methods / L49: smart pointers avoid raw pointers / L56: don raw pointers unless interfacing
+- **Source excerpt (untrusted, max 18 words):** L15: Implementing RAII patterns
 - **Status:** automated-source-structure; license not_checked.
 
 ## memory-systems
@@ -54,6 +49,7 @@
 - **Source sections:** Memory System Design → When to Activate → Core Concepts → Detailed Topics → Production Framework Landscape → Memory Layers (Decision Points)
 - **Action anchors (keyword signatures):** L13: building must persist knowledge across sessions / L16: implementing reasoning over accumulated knowledge / L19: building dynamic memory automatic entity relationship extraction self improving
 - **Validation/caution anchors:** L99: prototype file system memory store facts structured json timestamps / L113: stale results check valid until timestamps most results expired / L115: storage failure queue writes retry never block response memory / L174: consolidate memories periodically invalidate but don discard
+- **Source excerpt (untrusted, max 18 words):** L13: Building agents that must persist knowledge across sessions
 - **Status:** automated-source-structure; license not_checked.
 
 ## on-call-handoff-patterns
@@ -63,6 +59,7 @@
 - **Source sections:** On-Call Handoff Patterns → When to Use This Skill → Core Concepts → 1. Handoff Components → 2. Handoff Timing → Templates and detailed worked examples
 - **Action anchors (keyword signatures):** L14: documenting ongoing investigations / L69: incident runbook templates incident runbook templates runbooks incidents handed
 - **Validation/caution anchors:** not detected
+- **Source excerpt (untrusted, max 18 words):** L14: Documenting ongoing investigations
 - **Status:** automated-source-structure; license not_checked.
 
 ## pptx-deck-context
@@ -72,6 +69,7 @@
 - **Source sections:** PPTX Deck Context → Decision sequence → Rules
 - **Action anchors (keyword signatures):** L14: assign stable source ids plan source ref every metric / L15: choose documented direction prefer user brand guide then read / L24: keep long source material concise ask summary decision relevant
 - **Validation/caution anchors:** L13: user selected narrative framework none specified offer mckinsey scqa / L22: copy external fonts images icons logos without recorded licensing
+- **Source excerpt (untrusted, max 18 words):** L13: Use the user-selected narrative framework. If none is specified, offer `mckinsey`, `scqa`, `pyramid`, `mece`, `action-title`, `assertion-evidence`, `exec-summary-first`, or
 - **Status:** automated-source-structure; license not_checked.
 
 ## self-managed-context
@@ -81,6 +79,7 @@
 - **Source sections:** Self-Managed Context → When to Activate → Core Concepts → The Control Spectrum → Context as an Editable File → The Harness Owns the Invariants
 - **Action anchors (keyword signatures):** L16: giving model write access its own live context instead / L27: cache stable layout observation masking under harness control context / L129: define pinned prefix system prompt task confirm excluded editable
 - **Validation/caution anchors:** L224: measure prefix reuse compute context length report beside accuracy / L257: evidence references evidence read citing benchmark numbers comparing baselines / L22: diagnosing self editing never edits wipes useful state livelocks / L76: mind tail compact small early region under long still
+- **Source excerpt (untrusted, max 18 words):** L16: Giving a model write access to its own live context instead of compacting on a fixed schedule
 - **Status:** automated-source-structure; license not_checked.
 
 ## setup-matt-pocock-skills
@@ -90,6 +89,7 @@
 - **Source sections:** Setup Matt Pocock's Skills → Process → 1. Explore → 2. Present findings and ask → 3. Confirm and edit → 4. Write
 - **Action anchors (keyword signatures):** L25: glossary glossary map repo root legacy context context map / L29: triage installed triage folder alongside one triage available decides / L69: block add whichever claude being edited see step selection
 - **Validation/caution anchors:** L80: neither exists ask user which one don pick them
+- **Source excerpt (untrusted, max 18 words):** L25: `GLOSSARY.md` and `GLOSSARY-MAP.md` at the repo root, and the legacy `CONTEXT.md` / `CONTEXT-MAP.md`. If a legacy file exists,
 - **Status:** automated-source-structure; license not_checked.
 
 ## using-agent-skills
@@ -99,5 +99,6 @@
 - **Source sections:** Using Agent Skills → Overview → Skill Discovery → Core Operating Behaviors → 1. Surface Assumptions → 2. Manage Confusion Actively
 - **Action anchors (keyword signatures):** L80: explain concrete downside quantify possible adds 200ms latency might / L104: refactor adjacent systems side effect / L106: add features spec because they seem useful
 - **Validation/caution anchors:** L120: making wrong assumptions without checking / L133: check applicable before starting work encode processes prevent common / L67: stop proceed guess / L102: remove comments don understand
+- **Source excerpt (untrusted, max 18 words):** L67: **STOP.** Do not proceed with a guess.
 - **Status:** automated-source-structure; license not_checked.
 

@@ -9,6 +9,7 @@
 - **Source sections:** Improving Animations → Initial Response → Operating Posture → Hard Rules → Workflow → Phase 1 — Recon (always first)
 - **Action anchors (keyword signatures):** L31: mutating operations installs builds side effects commits formatters read / L44: conventions existing easing tokens duration scales spring configs plans / L46: frequency map which animated elements hit 100 times day
 - **Validation/caution anchors:** L30: never modify source code only files edit live under / L32: plans must fully self contained executor has zero context
+- **Source excerpt (untrusted, max 18 words):** L30: **Never modify source code.** The only files you create or edit live under `plans/` (or `animation-plans/` if `plans/`
 - **Status:** automated-source-structure; license not_checked.
 
 ## motion-system
@@ -18,6 +19,7 @@
 - **Source sections:** Motion System → What You Do → Why a Motion System → Duration Tokens → Easing Tokens → Choreography Rules
 - **Action anchors (keyword signatures):** L42: token approach define duration instant 0ms 1ms override all / L44: define duration easing values css custom properties platform equivalent / L45: apply reduced motion overrides root level within prefers reduced
 - **Validation/caution anchors:** L56: test all motion low powered devices smooth tools can / L57: include motion checklists alongside color spacing / L51: example quick motion never slow respect users time / L53: example accessible all motion respects user preferences never causes
+- **Source excerpt (untrusted, max 18 words):** L42: **Token approach**: define a `duration-instant` (0ms or 1ms) override for all duration tokens under reduced-motion, applied globally
 - **Status:** automated-source-structure; license not_checked.
 
 ## optimize-web-animations
@@ -27,6 +29,7 @@
 - **Source sections:** Optimize Web Animations → Core Rule → Workflow → Good Fix Patterns → Avoid
 - **Action anchors (keyword signatures):** L18: run git status short early / L21: worktree dirty plan narrow staging start / L28: record which animation names running offscreen dom owners responsible
 - **Validation/caution anchors:** L16: inspect repo context / L27: inspect canvases webgl elements separately css profiling does prove / L30: keep stress tests bounded browser tab crash during profiling / L54: respect prefers reduced motion component already does avoid introducing
+- **Source excerpt (untrusted, max 18 words):** L16: Inspect repo context.
 - **Status:** automated-source-structure; license not_checked.
 
 ## scroll-scrubbed-visual-sequence
@@ -36,6 +39,7 @@
 - **Source sections:** Scroll-Scrubbed Visual Sequence → Define the sequence → Choose the renderer → Build the scroll stage → Handle media safely → Preserve access and control
 - **Action anchors (keyword signatures):** L37: video sequence continuous photographic expensive render live encode frequent / L41: webgl only depth lighting real camera materially strengthens idea / L45: keep section normal document flow set its height scrollvh
 - **Validation/caution anchors:** L49: refresh measurements after fonts intrinsic media sizes settle / L38: image sequence exact art directed frames matter preload current / L47: keep copy controls separate layer bake essential text frames
+- **Source excerpt (untrusted, max 18 words):** L37: Use video when the sequence is continuous, photographic, or expensive to render live. Encode frequent keyframes, preload metadata,
 - **Status:** automated-source-structure; license not_checked.
 
 ## url-to-motion-design
@@ -45,6 +49,7 @@
 - **Source sections:** URL to motion design → 1. Get the source → 2. Find every shot, pick the best 5 to 10 → 3. Set up the run → 4. Build with helpers → 5. Judge blind, fix, repeat
 - **Action anchors (keyword signatures):** L29: seconds each bounded real cuts shots under soft transitions / L47: folders run scenes run out run keep run judges
 - **Validation/caution anchors:** L45: start lab references lab launch json entry lab server / L42: write run brief references builder brief section name plain / L60: judge helper scenes soon they report don wait all
+- **Source excerpt (untrusted, max 18 words):** L29: **5 to 10 seconds each**, bounded by real cuts. Shots under 5 s go. Soft transitions hide inside
 - **Status:** automated-source-structure; license not_checked.
 
 ## webgl-landing-steering
@@ -54,5 +59,6 @@
 - **Source sections:** WebGL Landing Steering Skill → Use this skill to steer outcomes → 1) Define the page intent → 2) Choose the WebGL lane → Lane A: Subtle depth field (high conversion safety) → Lane B: Data/particle intelligence (technical credibility)
 - **Action anchors (keyword signatures):** L28: visuals soft gradient meshes slow parallax planes light bloom / L30: stack three plane shaders lightweight shader canvas / L52: rule provide static mobile fallback strict performance gates
 - **Validation/caution anchors:** L83: low risk fastest css canvas illusion minimal shaders / L114: performance accessibility checklist / L67: webgl never blocks understanding offer
+- **Source excerpt (untrusted, max 18 words):** L28: Visuals: soft gradient meshes, slow parallax planes, light bloom
 - **Status:** automated-source-structure; license not_checked.
 
