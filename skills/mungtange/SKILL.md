@@ -31,7 +31,7 @@ Choose **QUICK** for a small fix, **STANDARD** for a feature/page, or
 
 **Intake:** Identify user, primary task, existing stack, content,
 constraints, protected behavior, acceptance criteria and non-goals.
-Inspect provided code/design first. If a crucial detail blocks safe work,
+For personal or project brands, inspect authentic first-party signals (writing, projects, values, audience and existing visuals) before inventing a style. If identity evidence is absent, mark the direction PROVISIONAL rather than claiming it is uniquely personal. Inspect provided code/design first. If a crucial detail blocks safe work,
 ask; otherwise state a reversible assumption and proceed.
 
 **Do the work:** If editing tools exist, implement rather than merely
@@ -89,7 +89,9 @@ one with project-grounded trade-offs, then apply **Brand Identity Engine**:
 consistent type roles, semantic tokens, ownable motif, layout grammar,
 real proof and CTA. Don't mistake palette changes for distinct directions.
 See optional [BRAND-DIRECTION.md](references/BRAND-DIRECTION.md).
-Skip competition if the user already selected a direction.
+Skip competition if the user already selected a direction. For each of the three directions, compare **narrative, hero composition, content sequence, typography, proof, signature motif and mobile reflow**, not palette alone. A plan-only comparison is not a rendered three-design evaluation; label it accordingly. **If the user requests three rendered concepts, implement three separate actual previews and capture each at the requested widths before comparing.** Do not substitute three written concepts or claim three screenshots without creating them.
+
+**Identity-before-style contract:** Ground at least three specific signals in real project/owner material when available; map each to an observable design/content decision. For a personal site, preserve the author's actual voice, recurring themes and proof instead of writing interchangeable developer copy. Apply a **swap test**: if the author's name and avatar were replaced, which two meaningful parts of the site would become inaccurate or visually incoherent? If nothing breaks, identity differentiation failed; revise the content architecture or brand motif before polishing. Never invent personal details to pass this test.
 
 Implement the smallest end-to-end journey first. Use semantic HTML,
 accessible names, keyboard focus, clear hierarchy, realistic content,
@@ -106,7 +108,7 @@ cannot certify better design. See optional
 
 When possible, inspect **1440 / 768 / 390 px** layouts,
 keyboard navigation, contrast, zoom, overflow, errors and browser
-console. Measure performance before claiming improvement. Unavailable
+console. **At 390px inspect secondary text legibility, line-height, code labels and tap targets**; zero horizontal overflow does not mean readable. Treat machine-detected tiny text as review evidence, not an automatic WCAG violation. Only claim visual improvements after opening and comparing screenshots. Measure performance before claiming improvement. Unavailable
 tools mean NOT RUN, not invented results.
 
 ## 5. Specialist thinking without imaginary agents
@@ -140,6 +142,7 @@ report the diagnosis rather than repeatedly regenerating.
 
 ## 7. Deliver a truthful, compact handoff
 
+For identity-sensitive implementation, state **IDENTITY PROOF** (source-backed owner/project signals, choices manifested in the actual page, and the swap-test outcome). If signals or screenshots are missing, say PROVISIONAL / NOT RUN instead of certifying a unique brand.
 For implementation: **RESULT**, **CHANGED** (actual paths/artifacts),
 **PROOF** (actual commands, screenshots, tests and statuses),
 **OPEN** (remaining issues), **NEXT** (only necessary approval/action).

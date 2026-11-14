@@ -94,3 +94,20 @@ test('visual critic catches measured failures and successful repair without inve
  assert.equal(broken.regressions[0].kind,'JS_ERRORS');
  assert.throws(()=>compareCritic(before,{...after,waitMs:800}),/Different browser/);
 });
+
+// Evidence-rich brand identity contract (structure only; real authorship needs review).
+test('brand identity cannot be silently replaced by generic developer styling',()=>{
+ const sample=JSON.parse(readFileSync(new URL('../examples/brand-competition-pynext.json',import.meta.url),'utf8'));
+ assert.equal(evaluateCompetition(sample).status,'PASS');
+ sample.project.identitySignals=[];
+ assert.equal(evaluateCompetition(sample).status,'FAIL');
+ assert.match(evaluateCompetition(sample).errors.join(' '),/Identity evidence/);
+});
+test('rejects generic swap claims and identical content structures',()=>{
+ const sample=JSON.parse(readFileSync(new URL('../examples/brand-competition-pynext.json',import.meta.url),'utf8'));
+ sample.brandDNA.substitutionTest.fails=[];
+ assert.match(evaluateCompetition(sample).errors.join(' '),/Substitution test/);
+ sample.brandDNA.substitutionTest.fails=[{element:'Distinct Python hero',reason:'A different project lacks the documented routing details'},{element:'Exact source snippet',reason:'A different project does not expose the same page API'}];
+ sample.directions[1].contentOutline=[...sample.directions[0].contentOutline];
+ assert.match(evaluateCompetition(sample).errors.join(' '),/contentOutline/);
+});

@@ -26,7 +26,7 @@ const server=createServer((req,res)=>{
  '</h1><p>Experimental framework preview with real documented boundaries.</p>',
  '<code>from pynext import h, page</code>',
  '<a href="#docs">Read documentation</a>',
- '<section id="docs"><h2>Docs</h2></section></main></body></html>'
+ '<section id="docs"><h2>Docs</h2><small style="display:block;font-size:',after?'16':'11','px;line-height:1.2">Review the real current documentation and experimental limits</small></section></main></body></html>'
  ].join(''));
 });
 try{
@@ -36,6 +36,7 @@ try{
  assert.equal(before.status,'CAPTURED');
  assert.equal(before.screens.length,3);
  assert.equal(before.screens.find(s=>s.width===390).horizontalOverflow,true);
+ assert.ok(before.screens.find(s=>s.width===390).smallTextTotal>0,'tiny secondary text must be flagged for review');
  assert.ok(existsSync(join(folder,'before','390.png')));
  assert.ok(existsSync(join(folder,'before','390-full.png')));
  assert.match(readFileSync(join(folder,'before','review-template.md'),'utf8'),/NOT RUN/);
@@ -43,6 +44,7 @@ try{
  const next=await captureSite({url,out:join(folder,'after'),waitMs:0});
  assert.equal(next.status,'CAPTURED');
  assert.equal(next.screens.find(s=>s.width===390).horizontalOverflow,false);
+ assert.equal(next.screens.find(s=>s.width===390).smallTextTotal,0,'secondary text should be readable-size after fix');
  const comparison=await compareCaptures({
   before:join(folder,'before'),after:join(folder,'after'),out:join(folder,'diff')
  });
@@ -57,6 +59,9 @@ try{
  assert.equal(review.baselineIssues.some(x=>x.kind==='HORIZONTAL_OVERFLOW'&&x.width===390),true);
  assert.equal(review.resolved.some(x=>x.kind==='HORIZONTAL_OVERFLOW'&&x.width===390),true);
  assert.equal(review.regressions.length,0);
+ assert.ok(review.mobileReadability.beforeCandidateCount>0);
+ assert.equal(review.mobileReadability.afterCandidateCount,0);
+ assert.equal(review.mobileReadability.review,'NOT RUN');
  console.log('VISUAL CRITIC SMOKE PASSED: Chromium captures 1440/768/390, detects overflow change, and produces pixel diff without quality claims.');
 }finally{
  await new Promise(ok=>server.close(ok));

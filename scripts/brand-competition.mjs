@@ -13,11 +13,19 @@ const str=x=>typeof x==='string'&&x.trim().length>=12;
 const clean=x=>typeof x==='string'?x.toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim():'';
 const core=['narrative','heroLayout','motif','proof'];
 const criteria=['productFit','proofCredibility','distinctiveness','readability','implementationCost'];
+const outline=x=>Array.isArray(x)&&x.length>=3&&x.every(str);
+const identity=x=>own(x)&&str(x.signal)&&str(x.source)&&str(x.designDecision);
+const links=x=>own(x)&&str(x.signal)&&str(x.treatment)&&str(x.section);
 
 export function evaluateCompetition(data){
  const errors=[],pairwise=[];
  if(!own(data)||!own(data.project)||!str(data.project.name)||!str(data.project.audience)||!str(data.project.goal))
   errors.push('Project must name the product, intended audience and goal');
+ const signals=data?.project?.identitySignals;
+ if(!Array.isArray(signals)||signals.length<3||!signals.every(identity))
+  errors.push('Identity evidence: >=3 real signal/source/designDecision entries required');
+ else if(new Set(signals.map(x=>clean(x.signal))).size<3)
+  errors.push('Identity evidence must contain three distinct project/owner signals');
  const directions=Array.isArray(data?.directions)?data.directions:[];
  if(directions.length!==3)errors.push('Exactly three directions required for competition');
  const ids=directions.map(x=>x?.id);
@@ -28,6 +36,7 @@ export function evaluateCompetition(data){
   for(const k of ['name','thesis','narrative','heroLayout','motif','proof','risk','responsive390']){
    if(!str(d[k]))errors.push(d.id+': missing specific '+k);
   }
+  if(!outline(d.contentOutline))errors.push(d.id+': need a concrete ordered contentOutline with >=3 sections');
   if(!own(d.typography)||!['display','body','code'].every(k=>str(d.typography[k])))
    errors.push(d.id+': specify distinct typography display/body/code roles');
   if(!own(d.cta)||!str(d.cta.primary)||!str(d.cta.secondary))
@@ -41,13 +50,14 @@ export function evaluateCompetition(data){
   const dimensions=[
    ...core.map(k=>[k,clean(a[k])!==clean(b[k])]),
    ['typography',clean(a.typography?.display)!==clean(b.typography?.display)],
-   ['cta',clean(a.cta?.primary)!==clean(b.cta?.primary)]
+   ['cta',clean(a.cta?.primary)!==clean(b.cta?.primary)],
+   ['contentOutline',clean((a.contentOutline||[]).join(' | '))!==clean((b.contentOutline||[]).join(' | '))]
   ];
   const differing=dimensions.filter(([,different])=>different).map(([k])=>k);
   const mustChange=clean(a.narrative)!==clean(b.narrative)||clean(a.heroLayout)!==clean(b.heroLayout);
   pairwise.push({directions:[a.id,b.id],differentDimensions:differing});
-  if(differing.length<3||!mustChange)
-   errors.push(a.id+' vs '+b.id+': need >=3 distinct substantive dimensions, including narrative or hero layout');
+  if(differing.length<4||!mustChange||!differing.includes('contentOutline'))
+   errors.push(a.id+' vs '+b.id+': need >=4 distinct substantive dimensions, including narrative/hero and ordered contentOutline');
  }
  const decision=data?.decision;
  if(!own(decision)||!ids.includes(decision.winner)||!str(decision.why))
@@ -69,9 +79,18 @@ export function evaluateCompetition(data){
    errors.push('Brand motif must be used in at least two meaningful places');
   if(!Array.isArray(dna.antiTemplates)||dna.antiTemplates.length<2||!dna.antiTemplates.every(str))
    errors.push('Set concrete anti-template constraints');
+  if(!str(dna.contentVoice)||!str(dna.signatureContent))
+   errors.push('Brand DNA needs a project-grounded editorial voice and signature content');
+  if(!Array.isArray(dna.identityLinks)||dna.identityLinks.length<3||!dna.identityLinks.every(links)||
+     new Set(dna.identityLinks?.map(x=>clean(x.section))).size<2)
+   errors.push('Brand DNA requires >=3 grounded identity links across multiple page sections');
+  const swap=dna.substitutionTest;
+  if(!own(swap)||!str(swap.replacement)||!Array.isArray(swap.fails)||swap.fails.length<2||
+     !swap.fails.every(x=>own(x)&&str(x.element)&&str(x.reason)))
+   errors.push('Substitution test needs a different hypothetical owner/project and >=2 specific elements that fail the swap');
  }
  return {status:errors.length?'FAIL':'PASS',errors,pairwise,winner:decision?.winner||null,
-  notice:'Structural distinctness only. This does not establish true semantic diversity, visual quality or working CTAs.'};
+  notice:'Structural evidence only. Identity truth, meaningful authorship, semantic difference, actual renders, readability and working CTAs still require independent review.'};
 }
 
 async function main(){

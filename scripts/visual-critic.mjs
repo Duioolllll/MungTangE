@@ -33,6 +33,9 @@ export function compareCritic(before,after){
  if(mismatches.length)throw Error('Different browser capture conditions: '+mismatches.join('; '));
  if(JSON.stringify(before.widths)!==JSON.stringify(widths))throw Error('Expected 1440,768,390 browser captures');
  const earlier=captureIssues(before),later=captureIssues(after);
+ const beforeMobile=before.screens?.find(x=>x.width===390);
+ const afterMobile=after.screens?.find(x=>x.width===390);
+ const beforeSmall=beforeMobile?.smallText||[],afterSmall=afterMobile?.smallText||[];
  const key=x=>x.width+':'+x.kind;
  const start=new Map(earlier.map(x=>[key(x),x]));
  const end=new Map(later.map(x=>[key(x),x]));
@@ -44,6 +47,10 @@ export function compareCritic(before,after){
   schema:1,status:captureMissing?'NOT RUN':later.length?'FAIL':'PASS',
   reviewScope:'mechanical facts only',visualArtDirectionReview:'NOT RUN',
   viewports:widths,baselineIssues:earlier,afterIssues:later,
+  mobileReadability:{beforeCandidateCount:beforeMobile?.smallTextTotal??beforeSmall.length,
+   afterCandidateCount:afterMobile?.smallTextTotal??afterSmall.length,
+   afterCandidates:afterSmall,
+   review:'NOT RUN',note:'Small visible text (below 14px or compact line height at 390px) is a review warning, not a WCAG violation or proof of unreadability.'},
   resolved,unresolved,regressions,
   verdict:later.length===0?'No mechanical failure remains in measured captures; subjective design quality NOT RUN.':'Mechanical problems remain or regressions were observed.',
   warning:warn
@@ -61,7 +68,8 @@ async function main(){
  mkdirSync(dirname(path),{recursive:true});
  writeFileSync(path,JSON.stringify(result,null,2)+'\n');
  const markdown=['# Visual Critic — mechanical browser observations','','**Mechanical status:** '+result.status,
-  '**Subjective brand/visual review:** NOT RUN (requires viewing PNGs)', '',
+  '**Subjective brand/visual review:** NOT RUN (requires viewing PNGs)',
+  '**390px readability:** '+result.mobileReadability.beforeCandidateCount+' → '+result.mobileReadability.afterCandidateCount+' measured warning candidates; screenshot/zoom review NOT RUN', '',
   '| Viewport | Observed baseline issues | After issues |',
   '| ---: | --- | --- |',
   ...widths.map(width=>{const a=result.baselineIssues.filter(x=>x.width===width).map(x=>x.kind).join(', ')||'None observed';

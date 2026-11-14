@@ -70,3 +70,33 @@ Project context sourced from its repository README at the time of authoring: PyN
 ## 5. Handoff and critic loop
 
 Report winner + rejected strengths + actual Brand DNA + implemented paths. For screenshot-supported release review use [VISUAL-LOOP.md](VISUAL-LOOP.md) at **1440, 768, 390 px**; do not claim a design was reviewed unless its screenshots were actually viewed. A user-selected direction overrides this competition.
+
+## 6. Identity Evidence Engine — fix the interchangeable-portfolio failure
+
+**Problem:** A polished monochrome developer blog can look correct for any developer. A logo, gradient, or new avatar is not enough to establish an author's identity.
+
+### Evidence before aesthetics
+
+Build a small **Identity Evidence Ledger** from the actual repository, provided biography, writing samples, documented projects and public site artifacts (only when available and authorized). Record at least three `signal → verifiable source → design implication` mappings, ideally from two different types of source. Prioritize specifics: technical focus, a recurring argument, editorial voice, unusual constraints, a personally meaningful artifact or an authentic visual habit. Never infer personality, credentials, private history or demographics from a name, handle or technology stack. If credible identity signals are missing, label the concept **PROVISIONAL** and ask for concrete material only if essential.
+
+For a personal developer blog, favor: **author thesis** (the argument the person repeatedly makes), **signature work** (one or two real projects with demonstrable detail), **editorial rhythm** (how that author titles, annotates and explains), **artifact vocabulary** (real terminal, schematics, notebook, project diagrams), and **audience** (who will trust this person and why). These signals determine hierarchy and narrative before any color choice.
+
+### Three genuinely competing compositions
+
+For an open-ended landing design, propose precisely three directions with all of: (1) distinct first-screen narrative and spatial hierarchy, (2) distinct **content outline and ordering**, (3) genuinely different type roles / editorial voice, (4) an artifact-backed hero proof and recurring motif, (5) the 390px reading order. Present key trade-offs, not a beauty-score lottery. Where budget and tools allow, actually render the three proposals and compare screenshots before choosing. **Three JSON descriptions are not three completed designs.**
+
+### Brand DNA must be visible below the fold
+
+The chosen identity is a contract across **hero, navigation, proof/work section, article/index cards and footer**. For each of at least three real identity signals, specify which copy, typography, motif, information structure or interaction manifests it and exactly where it appears. Keep the visual treatment purposeful and reusable; if the motif disappears after the hero, the identity system is unfinished.
+
+### Substitution (swap) test — mandatory for personal brands
+
+Replace the author's name/photo with a *different hypothetical developer*. Ask: **What would need to be rewritten or redesigned to remain truthful?** At least two substantial elements (such as a specific editorial thesis, real proof module, diagram language, project chronology, distinctive writing voice, or unique typographic pattern) should become wrong. If only logo and about copy need changing, the design is visually polished but **brand-generic**. Revise the concept and try the test again. Document the two concrete mismatches; the test is a qualitative reviewer judgment, not validated by merely filling fields in JSON.
+
+### Readability cannot be inferred from lack of overflow
+
+On a 390px screenshot, inspect *body and secondary text* in their actual rendered context, not solely bounding boxes. In tooling, text under roughly **14 CSS px** can be flagged for review (not automatically declared WCAG noncompliant); also check line-height, contrast, density, Korean/English wrapping and text enlargement at 200% zoom. Verify that the user's primary purpose and project proof remain readable without zooming or horizontal panning. Design-only checks require a human or vision-capable reviewer actually viewing PNG files.
+
+### Validation contract
+
+Optional `scripts/brand-competition.mjs` validates that an identity ledger, content outlines, cross-section manifestations and substitution-test explanations **exist**, not that the descriptions are true or the visual identity succeeds. Run real-user or independent blind comparison to evaluate actual differentiation. For confidential projects, keep personal sources inside the user's permitted workspace; never print secrets or sensitive content in a report.

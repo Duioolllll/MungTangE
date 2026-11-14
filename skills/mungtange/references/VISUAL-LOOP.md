@@ -43,3 +43,17 @@ node scripts/visual-critic.mjs --before .visual-review/before --after .visual-re
 ~~~
 
 `visual-critic.mjs` compares **observed browser failures and regressions**; a clean browser report never implies someone visually reviewed the brand. Source screenshots stay local and are not automatically published. If tools are missing, record the visual loop as **NOT RUN** rather than inventing a comparison.
+
+## 5. Mobile readability and honest critic gates
+
+The browser helper now records candidate **small visible text** at 390px. A warning for text below 14px is a **manual reading review request**, not a proven accessibility defect. Review secondary labels, metadata, captions, dates, code annotations and navigation in screenshots. Inspect line height, contrast, sentence wrapping, zoom and tap target spacing. A page with no overflow can still be tiring or unreadable.
+
+When running the optional repository tools, separate three states:
+
+1. **Mechanical defects** — HTTP/page failures, overflow, broken images, JS or request failures. These can block a technical pass.
+2. **Readability candidates** — small 390px text and compressed line-height reported with element type, approximate position and measured CSS values. They are warnings until the screenshots are actually viewed.
+3. **Editorial brand criticism** — identity substitution, hierarchy, typography, visual consistency and individual authorship. Only mark reviewed when a person or vision reviewer really inspects the PNGs and records specific evidence.
+
+Do not consider capture and diff automation a full visual evaluation. After any targeted fix, capture the *same* viewport, browser, color scheme, loaded content, fonts and motion conditions. Confirm the original issue is resolved and that the fix did not introduce new mobile readability regressions.
+
+**Tooling location:** The scripts documented above are maintained at the **full MungTangE repository root** and are **not copied** by the standard `npx skills add` installation. Installed skill users should use their own authorized browser/capture tools; only run these `node scripts/*` commands when working from a full repository checkout.

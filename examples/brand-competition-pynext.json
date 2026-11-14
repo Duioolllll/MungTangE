@@ -2,7 +2,24 @@
   "project": {
     "name": "PyNext experimental Python + Rust framework",
     "audience": "Python developers evaluating an experimental framework",
-    "goal": "Understand current supported routing, read a genuine example, reach docs or source"
+    "goal": "Understand current supported routing, read a genuine example, reach docs or source",
+    "identitySignals": [
+      {
+        "signal": "PyNext combines a Python page-authoring surface with a Rust Axum routing engine",
+        "source": "Current PyNext README description of Python and Rust layers",
+        "designDecision": "Show a real Python route and labeled routing stages instead of a decorative SaaS screen"
+      },
+      {
+        "signal": "The project's primary proof is a minimal documented Python page example",
+        "source": "PyNext README examples and quickstart",
+        "designDecision": "Place actual supported Python syntax before features or marketing cards"
+      },
+      {
+        "signal": "PyNext clearly describes experimental limitations and operating boundaries",
+        "source": "PyNext README experimental and security caveats",
+        "designDecision": "Use an honest experimental status and limitation notes, not production-grade marketing claims"
+      }
+    ]
   },
   "directions": [
     {
@@ -27,7 +44,12 @@
       "evidence": {
         "reference": "PyNext GitHub README describes Python pages and Rust Axum routing with experimental limitations",
         "claim": "Python pages and API handlers are supported by the experimental framework described in README"
-      }
+      },
+      "contentOutline": [
+        "First screen: documented Python page alongside the labeled Rust routing flow",
+        "Second section: actual route anatomy and source-grounded handler mapping",
+        "Third section: quickstart steps, current capabilities and honest limitations"
+      ]
     },
     {
       "id": "python-surface",
@@ -51,7 +73,12 @@
       "evidence": {
         "reference": "PyNext README app example demonstrates the Python h and page API",
         "claim": "Actual supported Python page syntax is an appropriate visual proof of the framework"
-      }
+      },
+      "contentOutline": [
+        "First screen: editorial Python promise with a large selectable page source example",
+        "Second section: walkthrough of minimal authoring and supported page behavior",
+        "Third section: integration details, limits and documentation links"
+      ]
     },
     {
       "id": "builder-notes",
@@ -75,7 +102,12 @@
       "evidence": {
         "reference": "PyNext README explicitly warns about experimental and production limitations",
         "claim": "This is an experimental framework with documented security and operating boundaries"
-      }
+      },
+      "contentOutline": [
+        "First screen: experimental field note, verified scope and concise author motivation",
+        "Second section: supported and unsupported capabilities with source-referenced annotations",
+        "Third section: modest quickstart example, roadmap and changelog-style follow-up"
+      ]
     }
   ],
   "decision": {
@@ -130,6 +162,38 @@
       "Reject a generic gradient behind empty SaaS dashboard cards",
       "Reject fabricated GitHub stars and benchmarks",
       "Reject decorative fake terminal outputs or compatibility badges"
-    ]
+    ],
+    "contentVoice": "Documentation-like, experimentally honest and technically precise; avoid generic innovation slogans",
+    "signatureContent": "Real Python page syntax, source-verified route diagram and transparent experimental boundaries",
+    "identityLinks": [
+      {
+        "signal": "Python authoring plus Rust routing",
+        "treatment": "Use a verified route-path motif and legible diagram labels",
+        "section": "Hero and route anatomy"
+      },
+      {
+        "signal": "Runnable first-page evidence",
+        "treatment": "Show selectable current supported Python syntax with genuine quickstart link",
+        "section": "Hero proof and quickstart"
+      },
+      {
+        "signal": "Experimental transparent engineering",
+        "treatment": "State documented limits plainly and make unsupported claims visibly absent",
+        "section": "Capabilities and limitations"
+      }
+    ],
+    "substitutionTest": {
+      "replacement": "A typical React-only SaaS agency developer portfolio with no PyNext runtime",
+      "fails": [
+        {
+          "element": "Python route-to-Rust architecture hero",
+          "reason": "The substituted project has no equivalent documented Python/Axum stages to support the hero diagram"
+        },
+        {
+          "element": "Minimal PyNext page snippet and experimental boundary notes",
+          "reason": "The alternative owner would need different real API examples and different project-specific limitations"
+        }
+      ]
+    }
   }
 }
