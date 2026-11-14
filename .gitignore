@@ -1,5 +1,4 @@
 node_modules/
-.mungtange/
 coverage/
 .DS_Store
 *.log

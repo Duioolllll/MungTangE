@@ -5,15 +5,15 @@ This is a **specific comparison of reviewed examples**, not a claim that every o
 | Reference | Observed design pattern | MungTangE adaptation |
 | --- | --- | --- |
 | [Anthropic skills](https://github.com/anthropics/skills) | Self-contained directory with `SKILL.md` frontmatter; supporting scripts/references | First-party skill is portable; optional references colocated inside its folder |
-| [Vercel skills CLI](https://github.com/vercel-labs/skills) | `npx skills add owner/repo --skill name`, agent-specific install paths | Support the standard installer **and** a separate GitHub-run CLI |
+| [Vercel skills CLI](https://github.com/vercel-labs/skills) | `npx skills add owner/repo --skill name`, agent-specific install paths | Use the standard Agent Skills installer; no proprietary runtime CLI |
 | [Vercel react-best-practices](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices) | High-impact performance checks are prioritized (waterfalls, bundle, rerenders) | Use framework-aware checks, don't force React patterns on Django/Vue |
 | [Vercel web-design-guidelines](https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines) | UI findings and guidance tied to concrete files | Audit requires defect location, severity, evidence and remediation |
 | [Superpowers](https://github.com/obra/superpowers) | Design → plan → isolated work → test → review → finish | Stage gates, bounded ownership and independent critique |
-| [Addy Osmani agent-skills](https://github.com/addyosmani/agent-skills) | Spec → plan → build → verify → review → ship lifecycle | Explicit handoff packets and user-visible release proofs |
+| [Addy Osmani agent-skills](https://github.com/addyosmani/agent-skills) | Spec → plan → build → verify → review → ship lifecycle | Optional stage guidance and truthful user-visible release proofs |
 | [VoltAgent awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | Broad curated discovery across organizations, with source links | Keep discovery separate from trusted execution; preserve upstream credit |
 | [Agent Skills standard](https://agentskills.io/specification) | Name/description frontmatter and progressive disclosure | A small entrypoint with richer local reference files |
 
-See [the existing deeper adaptation table](../skills/mungtange/references/PIPELINE.md) for further projects and source-specific workflow details.
+See [DEEP-INTEGRATION.md](../skills/mungtange/references/DEEP-INTEGRATION.md) for directly inspected and attributed mechanisms.
 
 ## What is actually verified
 

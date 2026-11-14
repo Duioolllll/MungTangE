@@ -27,8 +27,6 @@ jobs:
           node-version: "22"
       - name: Test, build and validate catalog
         run: npm run verify
-      - name: CLI smoke test
-        run: npm run smoke
       - name: Upload static site preview for review
         uses: actions/upload-artifact@v4
         with:
