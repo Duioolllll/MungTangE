@@ -1,7 +1,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadCatalog, CATEGORIES } from '../src/catalog.js';
+import { loadCatalog, CATEGORIES } from './catalog-data.mjs';
 
 const destination = fileURLToPath(new URL('../site/catalog.json', import.meta.url));
 const fields = ['id', 'name', 'category', 'source_repo', 'source_url', 'blob_sha', 'fit_score', 'tags', 'reviewed'];
