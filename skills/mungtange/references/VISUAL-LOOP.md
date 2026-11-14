@@ -57,3 +57,9 @@ When running the optional repository tools, separate three states:
 Do not consider capture and diff automation a full visual evaluation. After any targeted fix, capture the *same* viewport, browser, color scheme, loaded content, fonts and motion conditions. Confirm the original issue is resolved and that the fix did not introduce new mobile readability regressions.
 
 **Tooling location:** The scripts documented above are maintained at the **full MungTangE repository root** and are **not copied** by the standard `npx skills add` installation. Installed skill users should use their own authorized browser/capture tools; only run these `node scripts/*` commands when working from a full repository checkout.
+
+## 6. Temporal critique for requested 3D/motion
+
+For animation or an interactive 3D world, **one screenshot at the beginning is not motion QA**. Capture actual deterministic story beats at start, midpoints and end, in both forward and reverse scroll when appropriate. Inspect 1440/768/390px screenshots of those states and a short real recording/contact sheet when tools are available. Verify frame continuity, focused camera subject, readable HTML overlay, small mobile captions, GPU/context fallback, hover/touch/keyboard parity, reduced motion and offscreen pause/teardown. Re-capture the same beat after a focused fix.
+
+The repository's optional `visual-capture.mjs` currently captures **static page states**, not a full animated timeline. Don't claim this helper verified frame choreography, WebGL stability or temporal FPS unless additional real browser runs demonstrate it. See [MOTION-3D.md](MOTION-3D.md) for the complete opt-in manual/agent protocol.

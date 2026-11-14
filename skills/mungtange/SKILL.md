@@ -111,6 +111,20 @@ keyboard navigation, contrast, zoom, overflow, errors and browser
 console. **At 390px inspect secondary text legibility, line-height, code labels and tap targets**; zero horizontal overflow does not mean readable. Treat machine-detected tiny text as review evidence, not an automatic WCAG violation. Only claim visual improvements after opening and comparing screenshots. Measure performance before claiming improvement. Unavailable
 tools mean NOT RUN, not invented results.
 
+### Opt-in 3D and motion path — identity, not decoration
+
+**Activate only when 3D/motion is explicitly requested or a project-specific interaction genuinely requires it.** Do not add a WebGL hero to ordinary blogs, dashboards or quick CSS repairs by default. The **brand's source-backed identity** and primary action remain in charge; avoid generic floating shapes that would fit any other site.
+
+For an immersive request, run a scoped **MOTION** sub-path inside the six gates:
+
+1. **BRIEF / EXPLORE:** state why spatial depth/motion helps this product and compare CSS/SVG, GSAP/scroll, pre-rendered sequence, Three.js/WebGL, React Three Fiber and advanced WebGPU only as appropriate. Choose the least complex suitable medium; name capability/asset constraints.
+2. **DESIGN:** produce a World Bible/Motion DNA: project-grounded motif, real assets and rights, camera/scene ledger, content hierarchy, 3–5 storyboard beats, reversible scroll/timeline, keyboard/touch interaction, 390px composition and meaningful static/reduced-motion fallback. Perform the same **owner/project swap test** as for 2D brand identity.
+3. **BUILD:** implement one working scene with semantic DOM for copy and controls; one renderer/animation-loop owner, predictable time state, loading/error/poster fallback, bounded DPR/assets, offscreen pause and resource disposal. Do not introduce a new animation dependency without need.
+4. **VERIFY:** inspect actual 1440/768/390 captures **plus named temporal beats and reverse scroll**. Check 390px text/CTA, reduced motion, touch/keyboard, loading/context failure and teardown. Measure actual loading/frame/console evidence before claiming smoothness or gains. If frames cannot be captured or viewed, record **NOT RUN** for temporal/visual review.
+5. **DELIVER:** include brand-specific reason, scene owner, source-backed assets, actual captured frames/screenshots, real measurements and remaining limitations. Never call a static screenshot a complete motion review.
+
+See optional [MOTION-3D.md](references/MOTION-3D.md), which synthesizes 12 directly examined upstreams. Its [100-source router](references/motion/ROUTER.md) provides SHA-pinned **automated source cards, not 100 expert reviews**. Load only the necessary one or two supporting references within the **existing two-reference limit**; never mass-load or run untrusted upstream code.
+
 ## 5. Specialist thinking without imaginary agents
 
 Select only relevant *perspectives*: product/UX, art direction,

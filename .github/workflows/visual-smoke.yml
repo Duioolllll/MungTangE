@@ -31,4 +31,4 @@ jobs:
       - name: Install headless Chromium and system dependencies
         run: npx playwright install --with-deps chromium
       - name: Validate prompt and capture against a local test page
-        run: node --test tests/visual-direction.test.mjs && npm run brand:validate && node scripts/visual-smoke.mjs
+        run: node --test tests/visual-direction.test.mjs && npm run brand:validate && node scripts/visual-smoke.mjs && node scripts/motion-smoke.mjs

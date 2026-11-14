@@ -47,6 +47,20 @@ CLI·외부 모델 호출·서브에이전트가 없어도 지침 자체는 작�
 
 브라우저 설치 환경에서 테스트용 페이지로 **실제 캡처/비교 코드가 동작하는지** `npm run visual:smoke`로 검사할 수 있습니다. 이 테스트는 PyNext 랜딩의 품질 향상이나 MungTangE 점수 상승을 뜻하지 않습니다. 별도 Playwright 설치가 필요하며 일반 `npm run verify`에는 포함되지 않습니다.
 
+## 3D·모션 전문 파이프라인 — 100개 실제 소스 조사
+
+3D와 인터랙티브 모션이 **정말 필요한 요청**에서만 [MOTION-3D.md](skills/mungtange/references/MOTION-3D.md)를 선택적으로 적용합니다. 본문/브랜드의 실제 증거보다 입체 효과를 먼저 넣지 않고, CSS·SVG·GSAP·이미지 시퀀스·Three.js·R3F·WebGPU 중 **가장 단순하면서 목적에 맞는 방식**을 선택합니다.
+
+- [100개 SHA 고정 원본 인덱스](skills/mungtange/references/motion/ROUTER.md): 5개 원본 저장소에서 중복 없는 SKILL.md **100개**를 찾아 각 원문을 실제 조회하고 목차·구현 단서·QA 단서를 자동 구조 분석. **100개 전문가 심층 평가나 품질 검증이라는 뜻은 아닙니다.**
+- [연구 명세](research/motion-100-sources.json)와 [100개 구조 분석 기록](research/motion-100-analysis.json): 원본 경로, SHA, 실제 읽기 상태, 행 번호, 역할 분류, 위험 및 검증 단서.
+- [12개 직접 읽은 출처의 전문 가이드](skills/mungtange/references/MOTION-3D.md): 브랜딩에 맞는 World Bible/Motion DNA, 스크롤·카메라 타임라인, GPU/리스너 수명주기, 접근성·저사양 대안, 시간축 검증을 원래 6-gate 파이프라인 안에 연결.
+
+**실행 순서:** 브랜드 근거 → 모션 필요성 판단 → 3D/비3D 방식 선택 → 장면·타임라인·정지 대안 설계 → 최소 구현 → 1440·768·390px 및 시간축 주요 장면 실제 확인 → 오류 수정·재검증.
+
+전체 저장소에서 Playwright를 설치한 경우 `npm run motion:smoke`는 실제 브라우저에서 **1440·768·390px × 스크롤 주요 위치(정방향·역방향)**를 캡처하는 `scripts/motion-capture.mjs` 동작을 테스트합니다. 현장 페이지 캡처 예시: `node scripts/motion-capture.mjs --url http://127.0.0.1:3000 --out .visual-review/motion --selector "#scene"` (브라우저 의존성 필요). 생성된 프레임은 사람이 실제로 열어 확인해야 하며, 자동 캡처만으로 GPU FPS·미적 품질·실제 3D 효과의 완성도를 인증하지 않습니다.
+
+스크린샷 한 장이나 가로 넘침 0건이 **모션 품질**을 증명하지 않습니다. 실제 프레임·스크롤 되감기·키보드·모바일 읽기·`prefers-reduced-motion`·GPU 정리 등을 확인하고, 실행되지 않은 항목은 NOT RUN으로 기록합니다. 100개 원본을 자동 설치하거나 실행하지 않으며 라이선스·버전은 개별 적용 전에 다시 확인합니다.
+
 ## 포함된 기능
 
 | 영역 | 프롬프트의 행동 지침 |

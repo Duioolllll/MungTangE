@@ -31,7 +31,9 @@
     "visual:smoke": "node scripts/visual-smoke.mjs",
     "visual:contract": "node --test tests/visual-direction.test.mjs",
     "brand:validate": "node scripts/brand-competition.mjs validate --file examples/brand-competition-pynext.json",
-    "visual:critic": "node scripts/visual-critic.mjs"
+    "visual:critic": "node scripts/visual-critic.mjs",
+    "motion:smoke": "node scripts/motion-smoke.mjs",
+    "motion:capture": "node scripts/motion-capture.mjs"
   },
   "engines": {
     "node": ">=20"

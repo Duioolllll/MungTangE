@@ -100,3 +100,9 @@ On a 390px screenshot, inspect *body and secondary text* in their actual rendere
 ### Validation contract
 
 Optional `scripts/brand-competition.mjs` validates that an identity ledger, content outlines, cross-section manifestations and substitution-test explanations **exist**, not that the descriptions are true or the visual identity succeeds. Run real-user or independent blind comparison to evaluate actual differentiation. For confidential projects, keep personal sources inside the user's permitted workspace; never print secrets or sensitive content in a report.
+
+## 7. Optional brand-grounded 3D / motion
+
+When immersive 3D or motion is genuinely relevant or explicitly requested, keep the Identity Evidence Ledger and swap test **before** implementing shaders or choosing a camera. Map specific authenticated source artifacts into **world geometry, motion rhythm, materials, story beats and actual UI proof**. Avoid interchangeable particle-orb hero templates. Compare different media and content hierarchies, not three gradient palettes. Prefer the lighter truthful medium when live WebGL is unnecessary.
+
+Use [MOTION-3D.md](MOTION-3D.md) as the **one optional specialist reference** for the complete world-bible, renderer lifecycle, screenshot/temporal and reduced-motion contract. Do not claim 100 independent expert reviews; the separate router contains 100 source-fetched, machine-structured references. If a brand direction is already chosen, implement it without another forced three-way competition.
