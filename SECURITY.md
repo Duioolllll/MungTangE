@@ -8,7 +8,7 @@ Threats include prompt injection, dependency confusion, remote code execution, e
 
 ## Enforced in the repository
 
-- The package declares **zero runtime dependencies** and its CLI only works with local files.
+- The primary Agent Skill is plain Markdown without a runtime CLI. Optional repository-local scripts use Node; browser capture dependencies are installed explicitly by the maintainer.
 - The catalog is read from three reviewed-in-repository JSON datasets; publishing the site does not fetch/run upstream code.
 - CI checks the shape, URI allowlist, Git blob SHA format and quantity of records, plus build output determinism.
 - Site source links use allowlisted GitHub URLs; cards are rendered using DOM `textContent`, not upstream HTML.

@@ -41,11 +41,25 @@ CLI·외부 모델 호출·서브에이전트가 없어도 지침 자체는 작�
 
 ## 브랜드 특화 랜딩페이지 업그레이드
 
-개발자 프레임워크·오픈소스 라이브러리·개발 운영 도구·B2B SaaS는 **구매/설치 의사결정에 필요한 증거가 다릅니다.** 새 [BRAND-DIRECTION.md](skills/mungtange/references/BRAND-DIRECTION.md)는 제품 유형별 히어로·실제 증거·CTA·안티패턴을 구분하고, PyNext(Python + Rust 실험적 프레임워크)의 네 가지 서로 다른 아트 디렉션을 구체적으로 예시로 듭니다.
+개발자 프레임워크·오픈소스 라이브러리·개발 운영 도구·B2B SaaS는 **구매/설치 의사결정에 필요한 증거가 다릅니다.** 새 [BRAND-DIRECTION.md](skills/mungtange/references/BRAND-DIRECTION.md)는 제품 유형별 히어로·실제 증거·CTA·안티패턴을 구분하고, PyNext(Python + Rust 실험적 프레임워크)의 **세 가지 경쟁 디자인(Design Direction Competition)**을 실제 근거·히어로·타이포·시그니처 모티프로 비교하고 최종 방향을 선정하는 예시를 제공합니다. **Brand Identity Engine**은 선택된 방향을 제품만의 일관된 시각 규칙으로 변환합니다.
 
-실제 디자인 수정이 필요하면 [VISUAL-LOOP.md](skills/mungtange/references/VISUAL-LOOP.md)에 따라 **스크린샷 기준선 → 시각적 자기평가 → 관찰된 문제의 국소 수정 → 동일 환경 재캡처**를 수행합니다. 브라우저가 있는 환경에서는 [선택형 캡처 CLI](scripts/visual-capture.mjs)가 화면별 PNG와 측정 사실을 저장합니다. 시각 품질 점수는 자동으로 만들어내지 않으며, 브라우저가 없으면 검증 결과를 NOT RUN으로 기록합니다.
+실제 디자인 수정이 필요하면 [VISUAL-LOOP.md](skills/mungtange/references/VISUAL-LOOP.md)에 따라 **1440·768·390px 스크린샷 → Visual Critic Loop → 관찰된 문제 수정 → 동일 환경 재검증**를 수행합니다. 브라우저가 있는 환경에서는 [선택형 캡처 CLI](scripts/visual-capture.mjs)가 화면별 PNG와 측정 사실을 저장합니다. 시각 품질 점수는 자동으로 만들어내지 않으며, 브라우저가 없으면 검증 결과를 NOT RUN으로 기록합니다.
 
 브라우저 설치 환경에서 테스트용 페이지로 **실제 캡처/비교 코드가 동작하는지** `npm run visual:smoke`로 검사할 수 있습니다. 이 테스트는 PyNext 랜딩의 품질 향상이나 MungTangE 점수 상승을 뜻하지 않습니다. 별도 Playwright 설치가 필요하며 일반 `npm run verify`에는 포함되지 않습니다.
+
+## 3D·모션 전문 파이프라인 — 100개 실제 소스 조사
+
+3D와 인터랙티브 모션이 **정말 필요한 요청**에서만 [MOTION-3D.md](skills/mungtange/references/MOTION-3D.md)를 선택적으로 적용합니다. 본문/브랜드의 실제 증거보다 입체 효과를 먼저 넣지 않고, CSS·SVG·GSAP·이미지 시퀀스·Three.js·R3F·WebGPU 중 **가장 단순하면서 목적에 맞는 방식**을 선택합니다.
+
+- [100개 SHA 고정 원본 인덱스](skills/mungtange/references/motion/ROUTER.md): 5개 원본 저장소에서 중복 없는 SKILL.md **100개**를 찾아 각 원문을 실제 조회하고 목차·구현 단서·QA 단서를 자동 구조 분석. **100개 전문가 심층 평가나 품질 검증이라는 뜻은 아닙니다.**
+- [연구 명세](research/motion-100-sources.json)와 [100개 구조 분석 기록](research/motion-100-analysis.json): 원본 경로, SHA, 실제 읽기 상태, 행 번호, 역할 분류, 위험 및 검증 단서.
+- [12개 직접 읽은 출처의 전문 가이드](skills/mungtange/references/MOTION-3D.md): 브랜딩에 맞는 World Bible/Motion DNA, 스크롤·카메라 타임라인, GPU/리스너 수명주기, 접근성·저사양 대안, 시간축 검증을 원래 6-gate 파이프라인 안에 연결.
+
+**실행 순서:** 브랜드 근거 → 모션 필요성 판단 → 3D/비3D 방식 선택 → 장면·타임라인·정지 대안 설계 → 최소 구현 → 1440·768·390px 및 시간축 주요 장면 실제 확인 → 오류 수정·재검증.
+
+전체 저장소에서 Playwright를 설치한 경우 `npm run motion:smoke`는 실제 브라우저에서 **1440·768·390px × 스크롤 주요 위치(정방향·역방향)**를 캡처하는 `scripts/motion-capture.mjs` 동작을 테스트합니다. 현장 페이지 캡처 예시: `node scripts/motion-capture.mjs --url http://127.0.0.1:3000 --out .visual-review/motion --selector "#scene"` (브라우저 의존성 필요). 생성된 프레임은 사람이 실제로 열어 확인해야 하며, 자동 캡처만으로 GPU FPS·미적 품질·실제 3D 효과의 완성도를 인증하지 않습니다.
+
+스크린샷 한 장이나 가로 넘침 0건이 **모션 품질**을 증명하지 않습니다. 실제 프레임·스크롤 되감기·키보드·모바일 읽기·`prefers-reduced-motion`·GPU 정리 등을 확인하고, 실행되지 않은 항목은 NOT RUN으로 기록합니다. 100개 원본을 자동 설치하거나 실행하지 않으며 라이선스·버전은 개별 적용 전에 다시 확인합니다.
 
 ## 포함된 기능
 
@@ -78,7 +92,13 @@ npx skills add Duioolllll/MungTangE --skill mungtange
 
 표준 설치기는 `skills/mungtange/SKILL.md`를 읽습니다. 이 파일은 루트 `SKILLS.md`에서 `npm run sync:skill`로 생성되며 **설치 경로에 맞게 링크가 변환**됩니다. 핵심 프롬프트는 단독으로 동작합니다. 필요할 때만 `references/DEEP-INTEGRATION.md` 또는 `references/knowledge/ROUTER.md`에서 특정 분야의 실제 원문 출처를 찾아 적용합니다. 300개를 매번 컨텍스트에 넣지 않습니다. 일반적인 작업에는 추가 로딩이 필요 없습니다. CLI는 필요 없습니다.
 
-기존 `mungtange` Node CLI와 300개 카탈로그는 **호환성·연구 기록을 위한 부수 기능**입니다. 스킬 사용에 필요하지 않으며, [선택 기능 안내](docs/LEGACY.md)에 분리해 두었습니다.
+구형 `mungtange` Node CLI와 관련 실행 코드는 제거했습니다. 300개 카탈로그·지식 라우터·GitHub Pages는 출처 탐색 자료로 유지하며 기본 스킬 실행에는 필요하지 않습니다. 저장소의 브라우저 캡처 및 비교 스크립트는 **전체 저장소를 체크아웃했을 때만** 사용할 수 있습니다. 표준 스킬 설치는 `SKILL.md`와 `references/`를 제공하지만 루트 `scripts/`를 설치하지는 않습니다.
+
+## 개인 브랜드와 모바일 가독성
+
+**브랜드의 정체성이 단순한 스타일보다 우선합니다.** 새 디자인을 만들 때는 실존하는 작업 기록·글·프로젝트·사용자 제공 정보에서 고유 신호를 찾고, 본문 구성·히어로·타이포·모티프·프로젝트 증거에 연결합니다. 개발자 이름만 바꿔도 그대로 재사용할 수 있는 디자인이라면 정체성 설계는 미완료입니다. 근거가 없으면 프로필을 지어내지 않고 임시 디자인임을 밝힙니다.
+
+브랜드 랜딩은 서로 다른 **3안의 구성·콘텐츠 흐름·타이포·증거**를 비교합니다. 시안 설명 3개는 실제 구현 3개와 다르므로 명확히 구분합니다. 1440·768·390px 시각 검증에서는 단순 가로 넘침 외에 **모바일 보조 텍스트의 읽기 편안함**과 글 간격을 직접 확인합니다. 자동 측정 결과만으로 사람의 가독성이나 미적 완성도를 보증하지 않습니다.
 
 ## 한계
 
@@ -86,4 +106,4 @@ npx skills add Duioolllll/MungTangE --skill mungtange
 
 ## 개발 및 기여
 
-기존 CLI·카탈로그·GitHub Pages 기능은 유지됩니다. 프롬프트 수정은 루트 `SKILLS.md`만 편집한 뒤 `npm run sync:skill`로 설치용 사본을 생성합니다. `npm run verify`는 생성 결과·기존 코드·출처 검증 기록을 확인합니다. 원문 재검증은 별도 수동 작업이며, **자동으로 추출한 원문 구조/키워드를 완성된 심층 리뷰나 효과의 증거로 부풀리지 않습니다.** 외부 SKILL.md의 라이선스는 해당 프로젝트에 남아 있으며 MungTangE에 자동 귀속되지 않습니다. [기여 가이드](CONTRIBUTING.md) · [보안 정책](SECURITY.md) · [라이선스](LICENSE).
+출처 카탈로그·선택형 검증 스크립트·GitHub Pages는 유지하며 구형 Node CLI는 제거했습니다. 프롬프트 수정은 루트 `SKILLS.md`만 편집한 뒤 `npm run sync:skill`로 설치용 사본을 생성합니다. `npm run verify`는 생성 결과·검증 도구·출처 기록을 확인합니다. `npm run brand:validate`는 브랜드 명세의 구조만 검사하고, 실제 디자인 결과 평가는 별도의 브라우저·사람 검토가 필요합니다. 원문 재검증은 별도 수동 작업이며, **자동으로 추출한 원문 구조/키워드를 완성된 심층 리뷰나 효과의 증거로 부풀리지 않습니다.** 외부 SKILL.md의 라이선스는 해당 프로젝트에 남아 있으며 MungTangE에 자동 귀속되지 않습니다. [기여 가이드](CONTRIBUTING.md) · [보안 정책](SECURITY.md) · [라이선스](LICENSE).

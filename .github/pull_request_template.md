@@ -9,7 +9,7 @@ What real user problem does this change solve?
 ## Verification evidence
 
 - [ ] npm run verify
-- [ ] npm run smoke
+- [ ] `npm run visual:contract` and `npm run brand:validate` when branding logic changes
 - [ ] Real responsive / keyboard checks attached if UI changed
 - [ ] Upstream references and license review documented if applicable
 - [ ] No secrets, injection payloads, remote scripts or invented test results

@@ -16,8 +16,8 @@ Thank you for helping improve MungTangE. This is a **quality-first** reference l
 - [ ] Every displayed fact or provenance statement is accurate
 - [ ] No unlicensed third-party content was copied
 - [ ] No secrets, private information or unsafe remote code were added
-- [ ] Pages view remains keyboard-accessible and usable at 375, 768 and 1440 px (attach real evidence if tested)
-- [ ] CLI backwards compatibility is preserved or breaking changes documented
+- [ ] Pages view remains keyboard-accessible and usable at 390, 768 and 1440 px (attach real evidence if tested)
+- [ ] Installed `SKILL.md` matches canonical `SKILLS.md`; retired CLI is not reintroduced
 - [ ] Scope and rollback plan are clear
 
 A PR should target `main`; do not bypass checks or merge on a self-declared pass.

@@ -12,7 +12,7 @@ import {readFileSync,writeFileSync,mkdirSync,existsSync} from 'node:fs';
 import {resolve,join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 
-const widths=[375,768,1440],height=900;
+const widths=[1440,768,390],height=900;
 const scriptPath=fileURLToPath(import.meta.url);
 export function parseFlags(argv){
  const flags={};
@@ -44,7 +44,10 @@ export function checkComparable(before,after){
  if(before.url!==after.url)issues.push('URLs differ (even if visual content looks similar)');
  if(before.height!==after.height)issues.push('Viewport heights differ');
  if(before.colorScheme!==after.colorScheme)issues.push('Color schemes differ');
+ if(before.reducedMotion!==after.reducedMotion)issues.push('Motion preferences differ');
  if(JSON.stringify(before.widths)!==JSON.stringify(after.widths))issues.push('Captured widths differ');
+ if(before.browserVersion!==after.browserVersion)issues.push('Browser versions differ');
+ if(before.waitMs!==after.waitMs)issues.push('Capture stabilization delays differ');
  return issues;
 }
 const fmt=n=>Math.round(n*10000)/100;
@@ -60,7 +63,7 @@ export async function captureSite({url,out,colorScheme='light',allowRemote=false
  mkdirSync(dest,{recursive:true});
  const browser=await chromium.launch({headless:true});
  const manifest={schema:1,url:safeURL,capturedAt:new Date().toISOString(),browser:'chromium',browserVersion:browser.version(),
-  colorScheme,widths,height,waitMs,screens:[]};
+  colorScheme,widths,height,waitMs,reducedMotion:'reduce',screens:[]};
  try{
   for(const width of widths){
    const context=await browser.newContext({viewport:{width,height},colorScheme,reducedMotion:'reduce'});
@@ -81,6 +84,27 @@ export async function captureSite({url,out,colorScheme='light',allowRemote=false
       brokenImages:images.length,documentTitle:document.title,h1:headings,
       interactiveElements:document.querySelectorAll('a[href],button,input,select,textarea').length,
       fontsStatus:document.fonts?.status??'unavailable'};
+     // Readability heuristic only. CSS pixels are NOT a WCAG compliance verdict.
+     // Record element geometry, not its potentially private text content.
+     const candidates=[...document.querySelectorAll('p,li,span,small,a,button,label,time,figcaption,dd,dt')]
+      .filter(el=>{
+       const rect=el.getBoundingClientRect(),style=getComputedStyle(el);
+       if(!rect.width||!rect.height||style.display==='none'||style.visibility==='hidden')return false;
+       if((el.innerText||el.textContent||'').trim().length<7)return false;
+       const size=parseFloat(style.fontSize);
+       if(!Number.isFinite(size)||size<=0)return false;
+       const height=parseFloat(style.lineHeight),ratio=Number.isFinite(height)?height/size:null;
+       return size<14||(size<16&&ratio!==null&&ratio<1.35);
+      })
+      .map(el=>{
+       const rect=el.getBoundingClientRect(),style=getComputedStyle(el),size=parseFloat(style.fontSize);
+       const height=parseFloat(style.lineHeight);
+       return {tag:el.tagName.toLowerCase(),top:Math.round(rect.top+scrollY),
+        fontSizePx:Math.round(size*10)/10,lineHeightRatio:Number.isFinite(height)?Math.round(height/size*100)/100:null,
+        textLength:(el.innerText||el.textContent||'').trim().length};
+      });
+     screen.smallText=candidates.slice(0,25);
+     screen.smallTextTotal=candidates.length;
      return screen;
     });
     const viewportFile=join(dest,width+'.png');
@@ -103,13 +127,14 @@ export async function captureSite({url,out,colorScheme='light',allowRemote=false
    'Source URL: '+manifest.url,'Browser: Chromium '+manifest.browserVersion,
    'Captured: '+manifest.capturedAt,'Color scheme: '+colorScheme,
    'These are technical observations, NOT a visual quality score. Open the actual PNG images before making aesthetic claims.','',
-   '| Width | Capture | Horizontal overflow | Broken images | JS console errors |',
-   '| ---: | --- | --- | ---: | ---: |'];
+   '| Width | Capture | Horizontal overflow | Broken images | JS console errors | Small-text candidates |',
+   '| ---: | --- | --- | ---: | ---: | ---: |'];
  for(const s of manifest.screens){
   lines.push('| '+s.width+' | '+(s.status||'CAPTURED')+' | '+(s.horizontalOverflow??'NOT RUN')+
-   ' | '+(s.brokenImages??'NOT RUN')+' | '+(s.pageErrors?.length??'NOT RUN')+' |');
+   ' | '+(s.brokenImages??'NOT RUN')+' | '+(s.pageErrors?.length??'NOT RUN')+' | '+(s.smallTextTotal??'NOT RUN')+' |');
  }
  lines.push('','## Human / visual-model critique (fill only after viewing images)','',
+ '- 390px secondary text, contrast, 200% zoom and reading comfort: **NOT RUN** (CSS small-text candidates are suggestions, not proven failures)',
  '- Brand and audience fit: **NOT RUN**',
  '- Hero hierarchy and product proof: **NOT RUN**',
  '- Typographic rhythm, spacing and component details: **NOT RUN**',

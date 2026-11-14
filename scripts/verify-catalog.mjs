@@ -1,6 +1,6 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { loadCatalog, CATEGORIES } from '../src/catalog.js';
+import { loadCatalog, CATEGORIES } from './catalog-data.mjs';
 
 const root = new URL('../', import.meta.url);
 const site = (path) => fileURLToPath(new URL(path, root));

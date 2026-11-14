@@ -31,7 +31,7 @@ Choose **QUICK** for a small fix, **STANDARD** for a feature/page, or
 
 **Intake:** Identify user, primary task, existing stack, content,
 constraints, protected behavior, acceptance criteria and non-goals.
-Inspect provided code/design first. If a crucial detail blocks safe work,
+For personal or project brands, inspect authentic first-party signals (writing, projects, values, audience and existing visuals) before inventing a style. If identity evidence is absent, mark the direction PROVISIONAL rather than claiming it is uniquely personal. Inspect provided code/design first. If a crucial detail blocks safe work,
 ask; otherwise state a reversible assumption and proceed.
 
 **Do the work:** If editing tools exist, implement rather than merely
@@ -83,10 +83,15 @@ Before coding substantial UI, identify the **product archetype and trust
 mechanism** (e.g. developer framework → runnable code/docs; SaaS → real
 workflow/outcomes). Write an internal creative thesis:
 "This should feel like [specific identity] for [user/context], expressed
-through [type, composition, color, interaction]." For brand-sensitive
-work, compare materially different **content/composition/proof** directions,
-not color swaps; choose by relevance, ownability, accessibility and effort.
+through [type, composition, color, interaction]." For an open-ended brand-sensitive landing, run **Design Direction Competition**:
+compare **three** materially different narrative/hero/proof concepts, select
+one with project-grounded trade-offs, then apply **Brand Identity Engine**:
+consistent type roles, semantic tokens, ownable motif, layout grammar,
+real proof and CTA. Don't mistake palette changes for distinct directions.
 See optional [BRAND-DIRECTION.md](references/BRAND-DIRECTION.md).
+Skip competition if the user already selected a direction. For each of the three directions, compare **narrative, hero composition, content sequence, typography, proof, signature motif and mobile reflow**, not palette alone. A plan-only comparison is not a rendered three-design evaluation; label it accordingly. **If the user requests three rendered concepts, implement three separate actual previews and capture each at the requested widths before comparing.** Do not substitute three written concepts or claim three screenshots without creating them.
+
+**Identity-before-style contract:** Ground at least three specific signals in real project/owner material when available; map each to an observable design/content decision. For a personal site, preserve the author's actual voice, recurring themes and proof instead of writing interchangeable developer copy. Apply a **swap test**: if the author's name and avatar were replaced, which two meaningful parts of the site would become inaccurate or visually incoherent? If nothing breaks, identity differentiation failed; revise the content architecture or brand motif before polishing. Never invent personal details to pass this test.
 
 Implement the smallest end-to-end journey first. Use semantic HTML,
 accessible names, keyboard focus, clear hierarchy, realistic content,
@@ -95,16 +100,30 @@ Reuse existing components and dependencies. Never call a dead button
 "functional" or a screenshot recreation "pixel perfect" without a real
 comparison.
 
-For brand-sensitive launches, **capture → inspect screenshots → fix an
-observed visual defect → re-capture** when real browser and image review
-tools exist; compare against the original brand thesis. A changed pixel
-count is not improved visual quality. See optional
+For launch-quality work, use **Visual Critic Loop** if real screenshot
+inspection tools exist: **1440 / 768 / 390px** capture → view screenshots →
+fix observed brand/layout defects → recapture and verify. Pixel changes
+cannot certify better design. See optional
 [VISUAL-LOOP.md](references/VISUAL-LOOP.md).
 
-When possible, inspect approximately **375 / 768 / 1440 px** layouts,
+When possible, inspect **1440 / 768 / 390 px** layouts,
 keyboard navigation, contrast, zoom, overflow, errors and browser
-console. Measure performance before claiming improvement. Unavailable
+console. **At 390px inspect secondary text legibility, line-height, code labels and tap targets**; zero horizontal overflow does not mean readable. Treat machine-detected tiny text as review evidence, not an automatic WCAG violation. Only claim visual improvements after opening and comparing screenshots. Measure performance before claiming improvement. Unavailable
 tools mean NOT RUN, not invented results.
+
+### Opt-in 3D and motion path — identity, not decoration
+
+**Activate only when 3D/motion is explicitly requested or a project-specific interaction genuinely requires it.** Do not add a WebGL hero to ordinary blogs, dashboards or quick CSS repairs by default. The **brand's source-backed identity** and primary action remain in charge; avoid generic floating shapes that would fit any other site.
+
+For an immersive request, run a scoped **MOTION** sub-path inside the six gates:
+
+1. **BRIEF / EXPLORE:** state why spatial depth/motion helps this product and compare CSS/SVG, GSAP/scroll, pre-rendered sequence, Three.js/WebGL, React Three Fiber and advanced WebGPU only as appropriate. Choose the least complex suitable medium; name capability/asset constraints.
+2. **DESIGN:** produce a World Bible/Motion DNA: project-grounded motif, real assets and rights, camera/scene ledger, content hierarchy, 3–5 storyboard beats, reversible scroll/timeline, keyboard/touch interaction, 390px composition and meaningful static/reduced-motion fallback. Perform the same **owner/project swap test** as for 2D brand identity.
+3. **BUILD:** implement one working scene with semantic DOM for copy and controls; one renderer/animation-loop owner, predictable time state, loading/error/poster fallback, bounded DPR/assets, offscreen pause and resource disposal. Do not introduce a new animation dependency without need.
+4. **VERIFY:** inspect actual 1440/768/390 captures **plus named temporal beats and reverse scroll**. Check 390px text/CTA, reduced motion, touch/keyboard, loading/context failure and teardown. Measure actual loading/frame/console evidence before claiming smoothness or gains. If frames cannot be captured or viewed, record **NOT RUN** for temporal/visual review.
+5. **DELIVER:** include brand-specific reason, scene owner, source-backed assets, actual captured frames/screenshots, real measurements and remaining limitations. Never call a static screenshot a complete motion review.
+
+See optional [MOTION-3D.md](references/MOTION-3D.md), which synthesizes 12 directly examined upstreams. Its [100-source router](references/motion/ROUTER.md) provides SHA-pinned **automated source cards, not 100 expert reviews**. Load only the necessary one or two supporting references within the **existing two-reference limit**; never mass-load or run untrusted upstream code.
 
 ## 5. Specialist thinking without imaginary agents
 
@@ -137,6 +156,7 @@ report the diagnosis rather than repeatedly regenerating.
 
 ## 7. Deliver a truthful, compact handoff
 
+For identity-sensitive implementation, state **IDENTITY PROOF** (source-backed owner/project signals, choices manifested in the actual page, and the swap-test outcome). If signals or screenshots are missing, say PROVISIONAL / NOT RUN instead of certifying a unique brand.
 For implementation: **RESULT**, **CHANGED** (actual paths/artifacts),
 **PROOF** (actual commands, screenshots, tests and statuses),
 **OPEN** (remaining issues), **NEXT** (only necessary approval/action).
@@ -161,9 +181,9 @@ references merely because a job is STANDARD or DEEP.
 - [SECURITY.md](references/SECURITY.md):
   untrusted sources, credentials and permission boundaries.
 - [BRAND-DIRECTION.md](references/BRAND-DIRECTION.md):
-  developer frameworks versus SaaS, distinct hero directions and proof.
+  three-way Design Direction Competition and Brand Identity Engine.
 - [VISUAL-LOOP.md](references/VISUAL-LOOP.md):
-  screenshot-based visual critique and targeted iteration.
+  Visual Critic Loop with actual 1440/768/390 captures and repair.
 
 Prefer the **narrowest applicable section**, not an entire catalog.
 Apply techniques only when useful to the current work; no citation,

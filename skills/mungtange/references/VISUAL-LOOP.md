@@ -1,59 +1,65 @@
-# Visual self-review and screenshot repair loop
+# Visual Critic Loop — 1440 / 768 / 390 px
 
-> **Optional reference for design-sensitive releases**. A checklist or score alone does not certify visual quality. Distinguish measurable browser facts from subjective art direction, and never invent a screenshot, a review, or a defect.
+> Optional for brand-sensitive landing work. A real screenshot is required before claiming visual critique. Mechanical browser facts are **not** aesthetic quality. No screenshot = **NOT RUN**, no invented defects or score.
 
-## A. Two complementary review lenses
+## 1. Critic evidence has two different levels
 
-**Mechanical facts (need real code/browser):** layout/viewport overflow, clipped and overlapping content, actual font loading, visible CTA, image integrity, console/page errors, focus and accessibility observations. Browser automation can detect some of these but **cannot automatically decide brand uniqueness or visual elegance**.
+**Measured mechanical signals:** HTTP response, horizontal overflow, broken images, JavaScript console/page errors, loaded fonts and differences at fixed viewport settings. These can be captured by a browser script.
 
-**Visual editorial review (requires viewed screenshots):** brand signature, product-specific proof, focal hierarchy, typographic rhythm, spacing consistency, visual balance, image authenticity, microdetail and deliberate transitions. If no screenshot can be viewed, mark this section NOT RUN; a DOM/CSS scan is not an aesthetic assessment.
+**Visual editorial observations:** product-specific motif, first-screen proof, hierarchy, typography, optical alignment, spacing, narrative continuity, code legibility and CTA. These require somebody actually **viewing the PNGs**. Pixel difference only proves change, never better design.
 
-## B. Screenshot review rubric (0–4 only with evidence)
+## 2. Capture → inspect → repair → validate
 
-| Dimension | 0 = fails | 2 = serviceable | 4 = distinctive / resolved |
-| --- | --- | --- | --- |
-| **Brand/product fit** | Could swap logo with any SaaS without changing page | Some product-specific copy | Ownable visual system derived from actual product evidence |
-| **Information hierarchy** | Primary action, product, proof unclear | Functional reading order | Strong first-screen focus + intentional deeper story |
-| **Typography and microcraft** | Broken rhythm, wrapping or alignment | Legible but generic | Intentional type contrast, consistent optical detail across components |
-| **Visual cohesion** | Hero and lower sections feel unrelated | Basic tokens repeated | Typography, color, space, diagrams, motion form a recognisable whole |
-| **Proof and trust** | Invented claims, decorative fake console, non-working CTA | Some real proof | Real syntax/workflows, transparent limitations, direct verified action |
-| **Responsive composition** | Clipped or hidden content | Fits widths with compromises | Recomposition preserves hierarchy and interaction across widths |
+1. **Capture baseline:** same actual build at **1440px desktop, 768px tablet and 390px mobile**, constant viewport height, locale, color scheme, content, fonts, Chromium version and motion preference. Save both viewport and full-page screenshots with a technical manifest.
+2. **Inspect images:** open screenshots at each width. Distinguish mechanical failures from subjective art direction. For a real issue record **width + image region + observed defect + evidence path + expected correction**. Do not fill an issue quota.
+3. **Visual Critic review:** assess hero/product explanation, CTA, visual motif continuity beyond hero, code/diagram authenticity, typography, spacing and component micro-detail. Use source code/project docs for factual claims.
+4. **Targeted correction:** fix the most consequential **observed** issue, preserve the selected Brand DNA, CTA, accessibility and existing routing. Don't rewrite an entire page merely to increase screenshot difference.
+5. **Re-capture:** same 1440/768/390 environment after edits. Verify original defect resolved and no new overflow, broken imagery, JS errors or inaccessible controls; view before/after PNGs.
+6. **Decision:** if an actual high-impact issue remains, a second targeted iteration may help. Otherwise stop; there is no mandatory loop count. Never label subjective quality as 9/10 without a reviewer actually examining the visuals.
+7. **Handoff:** actual changed paths, screenshot artifact paths, browser outcomes and observed visual improvement with evidence. Separate **PASS, FAIL, NOT RUN**.
 
-Use **observed screenshot references** (viewport + region + issue) as evidence. **N/A / NOT RUN** for unavailable dimensions; don't sum fake 24-point totals. A rubric is a diagnostic framework, not a claim of 8/10 or 9/10 improvement.
+## 3. Brand-specific visual review sheet
 
-**Release blocker independent of taste:** inaccessible primary controls, known deceptive claims, unreadable text, broken navigation, severe layout clipping. Do not label a visually nice page "ship ready" until function, content and accessibility checks actually pass.
+| Area | What to inspect | Evidence |
+| --- | --- | --- |
+| Brand ownability | Can generic SaaS swap its logo onto this page? Does the product motif persist into section two? | Viewed screenshot and a specific visual observation |
+| Hierarchy | What is the first fixated element? Is actual product proof readable before the CTA? | Region + width |
+| Type and microcraft | Optical rhythm, cap height, heading wraps, code gutter, icon stroke, lines/spacing | Cropped before/after image or full screenshot |
+| Responsive | At 390px, do code, menus and proof survive? At 768px does the hero compose rather than just shrink? | Three real PNGs and browser overflow record |
+| Trust | Are examples/metrics/logo/version/claims actually verified? | Project docs and rendered text |
+| Accessibility | Contrast, focus order, keyboard and reduced motion | Actual test evidence, not screenshot alone |
 
-## C. Repeatable screenshot iteration
-
-1. **Baseline:** Capture real same-build screens at 375, 768 and 1440 px (or meaningful project-specific widths). Record URL, viewport, timestamp, fonts readiness and browser logs. Save screenshot files under a local output directory.
-2. **Inspect:** Actually open the images (or provide them to a vision-capable reviewer). State observed defects precisely: "1440 hero: code pane visually outweighs thesis", not "needs pop".
-3. **Prioritize:** Choose the **one or two highest-impact observed problems**, not an invented quota. Separate factual bugs from subjective design decisions.
-4. **Edit:** Make a targeted fix tied to brand thesis. Preserve function and routing. Do not indiscriminately regenerate the entire page.
-5. **Re-capture:** Use identical browser/viewport/theme/content and compare before/after. A pixel diff only shows **change**, never which version is better.
-6. **Re-evaluate:** Confirm original issue improved and no new regressions in mobile, keyboard, content or speed. A second pass is appropriate if there is still an observed high-impact gap. Stop if improvements plateau or evidence is unavailable.
-7. **Deliver:** Include actual paths to before/after PNGs, concrete observed changes, checks run, and any unresolved risks. Mark anything not executed NOT RUN.
-
-Do **not** trigger repetitive redesign for a quick CSS patch. Two focused iterations is a sensible default **maximum**, not a mandatory loop; change it for user scope or observed evidence.
-
-## D. Practical capture CLI (optional)
-
-If available, run the repo's screenshot helper:
+## 4. Optional runnable tools
 
 ~~~bash
-# Requires optional local Playwright installation + Chromium:
-npm install --no-save playwright@1.65.0 pixelmatch@6.0.0 pngjs@7.0.0
+npm install --no-save --ignore-scripts playwright@1.65.0 pixelmatch@6.0.0 pngjs@7.0.0
 npx playwright install chromium
 
-node scripts/visual-capture.mjs capture \
-  --url http://127.0.0.1:3000/ --out .visual-review/before
-
-# Edit targeted UI, then capture same URL/viewport:
-node scripts/visual-capture.mjs capture \
-  --url http://127.0.0.1:3000/ --out .visual-review/after
-
-node scripts/visual-capture.mjs compare \
-  --before .visual-review/before --after .visual-review/after \
-  --out .visual-review/diff
+node scripts/visual-capture.mjs capture --url http://127.0.0.1:3000/ --out .visual-review/before
+# View 1440.png, 768.png, 390.png and full-page captures, then edit code.
+node scripts/visual-capture.mjs capture --url http://127.0.0.1:3000/ --out .visual-review/after
+node scripts/visual-capture.mjs compare --before .visual-review/before --after .visual-review/after --out .visual-review/diff
+node scripts/visual-critic.mjs --before .visual-review/before --after .visual-review/after --out .visual-review/critic.json
 ~~~
 
-This captures actual PNGs and mechanical JSON findings; optional comparison uses pixel-level differences. The script should be treated as **source evidence for human/vision critique**, not a magical visual-quality grader. For Figma/other sources, obtain authorized rendered captures first. If the browser is unavailable, deliver a review checklist/spec and explicitly label screenshot comparison NOT RUN.
+`visual-critic.mjs` compares **observed browser failures and regressions**; a clean browser report never implies someone visually reviewed the brand. Source screenshots stay local and are not automatically published. If tools are missing, record the visual loop as **NOT RUN** rather than inventing a comparison.
+
+## 5. Mobile readability and honest critic gates
+
+The browser helper now records candidate **small visible text** at 390px. A warning for text below 14px is a **manual reading review request**, not a proven accessibility defect. Review secondary labels, metadata, captions, dates, code annotations and navigation in screenshots. Inspect line height, contrast, sentence wrapping, zoom and tap target spacing. A page with no overflow can still be tiring or unreadable.
+
+When running the optional repository tools, separate three states:
+
+1. **Mechanical defects** — HTTP/page failures, overflow, broken images, JS or request failures. These can block a technical pass.
+2. **Readability candidates** — small 390px text and compressed line-height reported with element type, approximate position and measured CSS values. They are warnings until the screenshots are actually viewed.
+3. **Editorial brand criticism** — identity substitution, hierarchy, typography, visual consistency and individual authorship. Only mark reviewed when a person or vision reviewer really inspects the PNGs and records specific evidence.
+
+Do not consider capture and diff automation a full visual evaluation. After any targeted fix, capture the *same* viewport, browser, color scheme, loaded content, fonts and motion conditions. Confirm the original issue is resolved and that the fix did not introduce new mobile readability regressions.
+
+**Tooling location:** The scripts documented above are maintained at the **full MungTangE repository root** and are **not copied** by the standard `npx skills add` installation. Installed skill users should use their own authorized browser/capture tools; only run these `node scripts/*` commands when working from a full repository checkout.
+
+## 6. Temporal critique for requested 3D/motion
+
+For animation or an interactive 3D world, **one screenshot at the beginning is not motion QA**. Capture actual deterministic story beats at start, midpoints and end, in both forward and reverse scroll when appropriate. Inspect 1440/768/390px screenshots of those states and a short real recording/contact sheet when tools are available. Verify frame continuity, focused camera subject, readable HTML overlay, small mobile captions, GPU/context fallback, hover/touch/keyboard parity, reduced motion and offscreen pause/teardown. Re-capture the same beat after a focused fix.
+
+The repository's optional `visual-capture.mjs` currently captures **static page states**, not a full animated timeline. Don't claim this helper verified frame choreography, WebGL stability or temporal FPS unless additional real browser runs demonstrate it. See [MOTION-3D.md](MOTION-3D.md) for the complete opt-in manual/agent protocol.

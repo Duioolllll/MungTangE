@@ -14,7 +14,7 @@ npm run verify
 python3 -m http.server 8080 --directory site
 ~~~
 
-`build:site` reads only the three local catalog JSON files and writes `site/catalog.json`. It is deterministic and has no network requests. Run the catalog integrity and CLI tests before merging.
+`build:site` reads only the three local catalog JSON files and writes `site/catalog.json`. It is deterministic and has no network requests. Run catalog integrity, prompt contract and site tests before merging; the Node CLI is retired.
 
 ## CI behavior
 
@@ -43,4 +43,4 @@ Revert the offending commit on `main` and allow Pages to redeploy. Preserve run 
 
 ## Release policy
 
-**Publishing this repository to npm is a separate action.** `npx --yes github:Duioolllll/MungTangE` needs no npm package release. Do not enable automated `npm publish` or trusted publishing until an owner explicitly sets the release policy, verifies package contents and authorizes release.
+**Publishing this repository to npm is a separate action.** The supported skill installation path is `npx skills add Duioolllll/MungTangE --skill mungtange`. This repository does not provide a `mungtange` Node CLI. Do not enable automated `npm publish` or trusted publishing until an owner explicitly sets the release policy, verifies package contents and authorizes release.

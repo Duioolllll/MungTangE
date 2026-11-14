@@ -1,28 +1,20 @@
 {
   "name": "mungtange",
   "version": "0.1.0",
-  "description": "Prompt-first web UI design skill; optional 10-source expert guide and separate research archive",
+  "description": "Prompt-first identity-grounded UI design skill with optional source-backed visual tooling",
   "type": "module",
-  "bin": {
-    "mungtange": "./bin/mungtange.js"
-  },
-  "exports": {
-    ".": "./src/catalog.js"
-  },
   "files": [
-    "bin",
-    "src",
-    "catalog",
     "skills",
     "SKILLS.md",
     "README.md",
     "docs",
+    "catalog",
+    "site",
     "LICENSE"
   ],
   "scripts": {
     "test": "node --test",
-    "check": "node --check bin/mungtange.js && node --check src/catalog.js && node --check src/project.js && node --check src/pipeline.js && node --check src/install.js && npm test",
-    "smoke": "node bin/mungtange.js doctor && node bin/mungtange.js catalog --category web --limit 3",
+    "check": "node --check scripts/brand-competition.mjs && node --check scripts/visual-capture.mjs && node --check scripts/visual-critic.mjs && node --check scripts/visual-smoke.mjs && npm test",
     "build:site": "node scripts/build-site.mjs",
     "lint:catalog": "node scripts/verify-catalog.mjs",
     "verify": "npm run check:skill && npm run check:source-audit && npm run knowledge:verify && npm run check && npm run build:site && npm run lint:catalog",
@@ -37,7 +29,11 @@
     "knowledge:curate": "node scripts/curate-knowledge.mjs",
     "knowledge:index": "node scripts/compile-knowledge-index.mjs",
     "visual:smoke": "node scripts/visual-smoke.mjs",
-    "visual:contract": "node --test tests/visual-direction.test.mjs"
+    "visual:contract": "node --test tests/visual-direction.test.mjs",
+    "brand:validate": "node scripts/brand-competition.mjs validate --file examples/brand-competition-pynext.json",
+    "visual:critic": "node scripts/visual-critic.mjs",
+    "motion:smoke": "node scripts/motion-smoke.mjs",
+    "motion:capture": "node scripts/motion-capture.mjs"
   },
   "engines": {
     "node": ">=20"
